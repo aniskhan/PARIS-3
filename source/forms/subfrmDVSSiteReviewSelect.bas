@@ -15,12 +15,11 @@ Begin Form
     Width =9210
     DatasheetFontHeight =11
     ItemSuffix =65
-    Right =15735
-    Bottom =7920
+    Left =885
+    Top =7185
+    Right =17355
+    Bottom =9015
     DatasheetGridlinesColor =15132391
-    RecSrcDt = Begin
-        0x76ce77df12b7e440
-    End
     RecordSource ="SELECT tblSites.*, tblProjects.[Lane Assigned], IIf([DVS -Site Inspection Requir"
         "ed] Is Null,\"No\",\"Yes\") AS Reviewed FROM tblProjects INNER JOIN tblSites ON "
         "(tblProjects.ProjectID = tblSites.ProjectID) AND (tblProjects.ApplicantID = tblS"
@@ -173,6 +172,7 @@ Begin Form
                     Visible = NotDefault
                     Enabled = NotDefault
                     Locked = NotDefault
+                    ColumnHidden = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =1140
@@ -215,6 +215,7 @@ Begin Form
                     Visible = NotDefault
                     Enabled = NotDefault
                     Locked = NotDefault
+                    ColumnHidden = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =4500
@@ -258,6 +259,7 @@ Begin Form
                     Visible = NotDefault
                     Enabled = NotDefault
                     Locked = NotDefault
+                    ColumnHidden = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =7680
@@ -307,6 +309,7 @@ Begin Form
                     Top =840
                     Width =1530
                     Height =315
+                    ColumnWidth =945
                     ColumnOrder =0
                     TabIndex =3
                     BackColor =15527148
@@ -332,7 +335,7 @@ Begin Form
                             Height =315
                             BorderColor =8355711
                             Name ="Site Number_Label"
-                            Caption ="Site Reference Number"
+                            Caption ="Site ID"
                             EventProcPrefix ="Site_Number_Label"
                             GridlineColor =10921638
                             LayoutCachedLeft =60
@@ -353,6 +356,7 @@ Begin Form
                     Top =1560
                     Width =4620
                     Height =360
+                    ColumnWidth =1800
                     ColumnOrder =1
                     TabIndex =4
                     BackColor =15527148
@@ -400,7 +404,7 @@ Begin Form
                     Top =1200
                     Width =1260
                     Height =315
-                    ColumnWidth =900
+                    ColumnWidth =810
                     ColumnOrder =2
                     TabIndex =5
                     BackColor =15527148
@@ -425,7 +429,7 @@ Begin Form
                             Height =315
                             BorderColor =8355711
                             Name ="Label116"
-                            Caption ="Category"
+                            Caption ="Cat"
                             GridlineColor =10921638
                             LayoutCachedLeft =60
                             LayoutCachedTop =1200
@@ -445,7 +449,7 @@ Begin Form
                     Top =1980
                     Width =3900
                     Height =315
-                    ColumnWidth =3240
+                    ColumnWidth =2325
                     ColumnOrder =3
                     TabIndex =6
                     BackColor =15527148
@@ -470,7 +474,7 @@ Begin Form
                             Height =315
                             BorderColor =8355711
                             Name ="Label118"
-                            Caption ="Closest Intersection or E911 Address"
+                            Caption ="Address"
                             GridlineColor =10921638
                             LayoutCachedLeft =60
                             LayoutCachedTop =1980
@@ -491,7 +495,7 @@ Begin Form
                     Top =2400
                     Width =2220
                     Height =315
-                    ColumnWidth =1650
+                    ColumnWidth =1275
                     ColumnOrder =4
                     TabIndex =7
                     BackColor =15527148
@@ -516,7 +520,7 @@ Begin Form
                             Height =315
                             BorderColor =8355711
                             Name ="Label128"
-                            Caption ="Subrecipient Priority"
+                            Caption ="Priority"
                             GridlineColor =10921638
                             LayoutCachedLeft =60
                             LayoutCachedTop =2400
@@ -536,12 +540,13 @@ Begin Form
                     Top =2820
                     Width =1920
                     Height =300
+                    ColumnWidth =1095
                     ColumnOrder =5
                     TabIndex =8
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text12"
-                    ControlSource ="Requires Site Inspection"
+                    ControlSource ="DVS -Site Inspection Required"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2580
@@ -558,7 +563,7 @@ Begin Form
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label13"
-                            Caption ="Requires Site Inspecction"
+                            Caption ="Site Inspection Required"
                             GridlineColor =10921638
                             LayoutCachedLeft =60
                             LayoutCachedTop =2820
@@ -570,6 +575,7 @@ Begin Form
                 Begin ComboBox
                     LimitToList = NotDefault
                     Locked = NotDefault
+                    ColumnHidden = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     ColumnCount =2

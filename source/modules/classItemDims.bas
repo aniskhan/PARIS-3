@@ -211,8 +211,10 @@ Public Function NeedsRfiID() As Boolean
 End Function
 Public Function NeedsLaneID() As Boolean
     NeedsLaneID = False
+    If pItemType = "Project" Then NeedsLaneID = True
     If pItemType = "Site" Then NeedsLaneID = True
     If pItemType = "RFI" Then
+        If pRfiItemType = "Project" Then NeedsLaneID = True
         If pRfiItemType = "Site" Then NeedsLaneID = True
     End If
 End Function
@@ -297,6 +299,6 @@ Public Sub LoadByForm(frm As Form, formType As String, Optional ReviewName As St
     If NeedsApplicantID Then pApplicantID = Nz(frm.[ApplicantID], "")
     If NeedsProjectID Then pProjectID = Nz(frm.[ProjectID], 0)
     If NeedsSiteID Then pSiteID = Nz(frm.[SiteID], 0)
-    If NeedsProjectID Then pLaneID = Nz(frm.[Lane Assigned], "")
+    If NeedsLaneID Then pLaneID = Nz(frm.[Lane Assigned], "")
     If NeedsRfiID Then pRfiID = Nz(frm.[RfiID], 0)
 End Sub

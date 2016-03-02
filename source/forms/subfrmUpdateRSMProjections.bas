@@ -2,7 +2,6 @@
 VersionRequired =20
 Begin Form
     DividingLines = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     ViewsAllowed =2
@@ -13,15 +12,13 @@ Begin Form
     Width =12458
     DatasheetFontHeight =11
     ItemSuffix =24
-    Left =-15
-    Top =-5625
-    Right =13650
-    Bottom =-4005
+    Right =10335
+    Bottom =7920
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xbb9771b7acb7e440
+        0x7dc6acf1dcb2e440
     End
-    RecordSource ="fqryProjectionsMaxUpdate_ALL"
+    RecordSource ="fqryProjectionsMaxUpdate"
     OnCurrent ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -673,8 +670,6 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
-Option Explicit
-
 
 Private Sub Form_Current()
 '///Error Handling
@@ -684,7 +679,6 @@ Private Sub Form_Current()
 
 '///Code
     Forms("frmUpdateRSMProjections").Form.Filter = "[ID] = " & Me.MaxOfID
-
 '///Code
 
 '///ErrorHandling

@@ -17,8 +17,8 @@ Begin Form
     Width =16500
     DatasheetFontHeight =11
     ItemSuffix =110
-    Right =13605
-    Bottom =14055
+    Right =17205
+    Bottom =10395
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x6fcc3bcd72a5e440
@@ -333,7 +333,7 @@ Begin Form
                     BorderColor =10921638
                     ForeColor =4210752
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
-                    Name ="cboAssignPdc"
+                    Name ="cboAssignPdm"
                     ControlSource ="Assigned PDC"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT qryNames.UserID, qryNames.[Reverse Full Name], tblStaffRoles.DisasterID, "
@@ -401,7 +401,7 @@ Begin Form
                     Width =2160
                     TabIndex =3
                     ForeColor =4210752
-                    Name ="cmdAssignPdcComplete"
+                    Name ="cmdAssignPdmComplete"
                     Caption ="Assign PDM Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
@@ -953,14 +953,14 @@ Option Explicit
 Private Const FormItemType As String = "RPA" 'used in determining what type of record is handled
 
 'BUTTONS
-Private Sub cmdAssignPdcComplete_Click()
+Private Sub cmdAssignPdmComplete_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdAssignPdcComplete_Click"
+    PushCallStack Me.name & "." & "cmdAssignPdmComplete_Click"
 '///Error Handling
 
 '///Code
-    CompleteReview "Assign PDC"
+    CompleteReview "Assign PDM"
 '///Code
 
 '///ErrorHandling
@@ -976,12 +976,12 @@ End Sub
 
 
 'OTHER PAGE EVENTS
-Private Sub cboAssignPdc_Change()
+Private Sub cboAssignPdm_Change()
 'This ensures that the reports showing the PDC change when a new one is selected.
 
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cboAssignPdc_Change"
+    PushCallStack Me.name & "." & "cboAssignPdm_Change"
 '///Error Handling
 
 '///Code
@@ -1054,7 +1054,7 @@ Private Sub RepaintForm()
 '///Error Handling
 
 '///Code
-    EnableFormArea "Assign PDC"
+    EnableFormArea "Assign PDM"
     Me.subHistory.Requery
 '///Code
 
@@ -1086,9 +1086,9 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
     End If
     
     Select Case AreaName
-        Case "Assign PDC"
-            Me.cboAssignPdc.Enabled = CanEnable
-            Me.cmdAssignPdcComplete.Enabled = CanEnable
+        Case "Assign PDM"
+            Me.cboAssignPdm.Enabled = CanEnable
+            Me.cmdAssignPdmComplete.Enabled = CanEnable
 
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & AreaName
@@ -1118,8 +1118,8 @@ Private Function PreDialogCheck(ReviewType As String) As Boolean
 
 '///Code
 '    No checks on this page.
-    If Nz(Me.cboAssignPdc, "") = "" And ReviewType = "Assign PDC" Then
-        MsgBox "Please select a PDC before trying to complete this."
+    If Nz(Me.cboAssignPdm, "") = "" And ReviewType = "Assign PDM" Then
+        MsgBox "Please select a PDM before trying to complete this."
         PreDialogCheck = False
     Else
         PreDialogCheck = True
@@ -1177,7 +1177,7 @@ Private Sub HandleDisposition(ReviewType As String, frm As Form)
         Case "SUB"
 '            Main section of page specific code. Creates new reviews as needed.
             Select Case ReviewType
-                Case "Assign PDC"
+                Case "Assign PDM"
                     Reviews.EnterReview GetItemDims("Exploratory Call"), Me.[Assigned PDC]
                 Case Else
                     Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & ReviewType

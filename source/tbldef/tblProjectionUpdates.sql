@@ -40,7 +40,5 @@ CREATE TABLE [tblProjectionUpdates] (
   [Partial List of Damages] VARCHAR (255),
   [Complete list of Damages] VARCHAR (255),
   [FinalizeUserID] VARCHAR (255),
-  [FinalizeDate] DATETIME ,
-  [DateProjectionsEnteredIntoEMMIE] DATETIME ,
-  [ExplainationOfChanges] VARCHAR (255)
+  [FinalizeDate] DATETIME 
 )

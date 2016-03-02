@@ -16,7 +16,7 @@ Begin Form
     ItemSuffix =61
     Left =60
     Top =4740
-    Right =15990
+    Right =16245
     Bottom =12000
     DatasheetGridlinesColor =15132391
     AfterInsert ="[Event Procedure]"

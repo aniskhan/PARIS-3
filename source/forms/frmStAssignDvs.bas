@@ -17,8 +17,8 @@ Begin Form
     Width =16500
     DatasheetFontHeight =11
     ItemSuffix =93
-    Right =13605
-    Bottom =14055
+    Right =20805
+    Bottom =12900
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x3d9df0f012b1e440
@@ -409,6 +409,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =215
                     Left =13860
                     Top =2460
@@ -425,6 +426,7 @@ Begin Form
                     LayoutCachedHeight =3600
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     TabStop = NotDefault
                     EnterKeyBehavior = NotDefault
                     OverlapFlags =215
@@ -448,6 +450,7 @@ Begin Form
                     LayoutCachedHeight =5100
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =223
                             Left =14040
                             Top =4380
@@ -470,6 +473,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     TabStop = NotDefault
                     EnterKeyBehavior = NotDefault
                     OverlapFlags =215
@@ -493,6 +497,7 @@ Begin Form
                     LayoutCachedHeight =6000
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =223
                             Left =14160
                             Top =5340
@@ -515,6 +520,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     TabStop = NotDefault
                     EnterKeyBehavior = NotDefault
                     OverlapFlags =215
@@ -539,6 +545,7 @@ Begin Form
                     LayoutCachedHeight =6900
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =223
                             Left =13980
                             Top =6180
@@ -561,6 +568,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     TabStop = NotDefault
                     EnterKeyBehavior = NotDefault
                     OverlapFlags =215
@@ -584,6 +592,7 @@ Begin Form
                     LayoutCachedHeight =7740
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =223
                             Left =13800
                             Top =7080
@@ -1537,7 +1546,7 @@ Private Sub HandleDisposition(ReviewType As String, frm As Form)
             Select Case ReviewType
                 Case "Assign DVS"
                     Reviews.EnterReview GetItemDims("Generate Work Order"), Me.[Assigned Data Validation Specialist]
-                    Reviews.PushAllChildren GetItemDims("Assign DVS"), Environ("UserName"), frm.cboResult, "Generate Work Order"
+                    Reviews.PushAllChildren GetItemDims("Assign DVS"), Environ("UserName"), frm.cboResult, "Generate Work Order", Me.[Assigned Data Validation Specialist]
 '                Case "Validation"
 '                    Reviews.EnterReview GetItemDims("DDD Entry"), Me.[Assigned Data Validation Specialist]
                 Case Else

@@ -14,11 +14,9 @@ Begin Form
     Width =17340
     DatasheetFontHeight =11
     ItemSuffix =82
-    Right =13605
-    Bottom =14055
+    Right =17010
+    Bottom =12615
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999' and [ApplicantID]='810-19JXO-00' and [ProjectID]=11 and [Sit"
-        "eID]=1"
     RecSrcDt = Begin
         0x0255a2a713b1e440
     End
@@ -202,6 +200,7 @@ Begin Form
                     BackTint =20.0
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     Enabled = NotDefault
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
@@ -224,6 +223,7 @@ Begin Form
                     LayoutCachedHeight =2640
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =13740
                             Top =2340
@@ -242,6 +242,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     Enabled = NotDefault
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
@@ -265,6 +266,7 @@ Begin Form
                     LayoutCachedHeight =3060
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =13620
                             Top =2700
@@ -283,6 +285,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -304,6 +307,7 @@ Begin Form
                     LayoutCachedHeight =3510
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =14340
                             Top =3180
@@ -1325,6 +1329,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     SpecialEffect =4
                     BorderWidth =3
                     OverlapFlags =223
@@ -1412,6 +1417,7 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
+                    Enabled = NotDefault
                     SpecialEffect =4
                     BorderWidth =3
                     OverlapFlags =247
@@ -1654,6 +1660,7 @@ Begin Form
                     End
                 End
                 Begin CheckBox
+                    Enabled = NotDefault
                     SpecialEffect =4
                     OverlapFlags =215
                     BorderWidth =3
@@ -1805,6 +1812,7 @@ Begin Form
                     ForeTint =100.0
                 End
                 Begin CommandButton
+                    Visible = NotDefault
                     Enabled = NotDefault
                     OverlapFlags =215
                     Left =14520
@@ -1849,6 +1857,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
+                    Visible = NotDefault
                     Enabled = NotDefault
                     OverlapFlags =215
                     Left =12300

@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -13,8 +15,8 @@ Begin Form
     Width =20475
     DatasheetFontHeight =11
     ItemSuffix =241
-    Right =13605
-    Bottom =14055
+    Right =16755
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xb8f3af4051b5e440
@@ -196,6 +198,7 @@ Begin Form
                     BackThemeColorIndex =-1
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =17910
@@ -214,6 +217,7 @@ Begin Form
                     LayoutCachedHeight =555
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =16860
                             Top =240
@@ -232,6 +236,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -253,6 +258,7 @@ Begin Form
                     LayoutCachedHeight =1020
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =16860
                             Top =660
@@ -271,6 +277,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -292,6 +299,7 @@ Begin Form
                     LayoutCachedHeight =1440
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =16860
                             Top =1080
@@ -310,6 +318,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =17910
@@ -330,6 +339,7 @@ Begin Form
                     LayoutCachedHeight =1890
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =16860
                             Top =1560
@@ -389,11 +399,11 @@ Begin Form
                     Left =60
                     Top =2760
                     Width =16320
-                    Height =2460
+                    Height =1680
                     TabIndex =6
                     BorderColor =10921638
                     Name ="subfrmSITFLAssignProjects-Site Inspection"
-                    SourceObject ="Form.subfrmSITFLAssignProjects-DDD Complete"
+                    SourceObject ="Form.subfrmlProjects banner"
                     LinkChildFields ="DisasterID;ApplicantID;ProjectID"
                     LinkMasterFields ="DisasterID;ApplicantID;ProjectID"
                     EventProcPrefix ="subfrmSITFLAssignProjects_Site_Inspection"
@@ -402,7 +412,7 @@ Begin Form
                     LayoutCachedLeft =60
                     LayoutCachedTop =2760
                     LayoutCachedWidth =16380
-                    LayoutCachedHeight =5220
+                    LayoutCachedHeight =4440
                 End
                 Begin Label
                     SpecialEffect =2

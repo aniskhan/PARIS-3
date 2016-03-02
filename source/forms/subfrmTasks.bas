@@ -15,9 +15,9 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =61
     Left =240
-    Top =525
+    Top =660
     Right =12705
-    Bottom =8025
+    Bottom =8160
     DatasheetGridlinesColor =15132391
     Filter ="[positionTier] = 0 and [ReviewUserID] is Null"
     RecSrcDt = Begin
@@ -697,16 +697,9 @@ Private Sub Form_DblClick(Cancel As Integer)
 
 '///Code
 'Debug.Print GetItemDims.WhereID(False)
-If Me.TaskType = "DIU Update EMMIE Projections" Then
-        DoCmd.OpenForm FormName:=Me![FormName]
-            With Forms!frmUpdateRSMProjections!subfrm_fqryProjectionsMaxUpdate.Form
-                .Filter = GetItemDims.WhereID(False)
-                .FilterOn = True
-            End With
-Else
         DoCmd.OpenForm FormName:=Me![FormName], _
         WhereCondition:=GetItemDims.WhereID(False)
-End If
+        
         'The following passes the item type to an unbound field
         'on navProjectFormulation to ensure the Applicant ID can be
         'passed to forms opened from the navigation page

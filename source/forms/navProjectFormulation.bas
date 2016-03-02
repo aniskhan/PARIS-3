@@ -6,17 +6,18 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
+    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =31680
+    Width =16560
     DatasheetFontHeight =11
-    ItemSuffix =42
-    Right =14985
-    Bottom =8505
+    ItemSuffix =40
+    Right =13605
+    Bottom =12735
     DatasheetGridlinesColor =15132391
     Filter ="[DisasterID]='9999'"
     RecSrcDt = Begin
@@ -577,6 +578,7 @@ Begin Form
                     BackTint =20.0
                 End
                 Begin CommandButton
+                    Enabled = NotDefault
                     OverlapFlags =223
                     Left =14160
                     Top =4860
@@ -584,9 +586,8 @@ Begin Form
                     Height =960
                     TabIndex =5
                     ForeColor =4210752
-                    Name ="cmdDamInvTemplate"
-                    Caption ="Damage Inventory Template"
-                    OnClick ="[Event Procedure]"
+                    Name ="Command93"
+                    Caption ="List of Damages Template"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =14160
@@ -953,50 +954,15 @@ Attribute VB_Exposed = False
 Option Compare Database
 Option Explicit
 
-Public Sub cmdDamInvTemplate_Click()
-    Dim wb As Object
-    Dim fileName As String
-    Dim xlapp As Object
-    Dim filenamepath As String
-    Dim NeedToClose As Boolean
-    filenamepath = "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/Damage_Inventory_2016-02-23.xlsx"
-    fileName = Right(filenamepath, Len(filenamepath) - InStrRev(filenamepath, "\"))
-
-    Set xlapp = Nothing
-    On Error Resume Next
-        Set xlapp = GetObject(, "Excel.Application")
-    On Error GoTo 0
-
-    If xlapp Is Nothing Then
-        'no instance of Excel running, so create one
-        Set xlapp = CreateObject("Excel.Application")
-        xlapp.Visible = True
-    End If
-
-    On Error Resume Next
-        Set wb = xlapp.Workbooks(fileName)
-    On Error GoTo 0
-
-    If wb Is Nothing Then
-        Set wb = xlapp.Workbooks.Open(filenamepath, , True)
-        NeedToClose = True
-    Else
-        NeedToClose = False
-    End If
-
-
-End Sub
-
 Private Sub cmdEnterListofDamages_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
     PushCallStack Me.name & "." & "cmdEnterListofDamages_Click"
 '///Error Handling
 
-
+'///Code
         DoCmd.OpenForm "frmEnterListofDamages", _
-        WhereCondition:=GetItemDims.WhereID(False) & "AND" & "[Assigned PDC] = '" & Environ("UserName") & "'"
-        Debug.Print GetItemDims.WhereID(False)
+        WhereCondition:=GetItemDims.WhereID(False)
             With Forms("frmEnterListofDamages")
                 !lbInputMode.Caption = "In Copy-Paste Mode"
                 !cmdSwitch.Caption = "Switch to Manual"
@@ -1024,7 +990,7 @@ Private Sub cmdOpenEnterListof_Projects_Click()
 
 '///Code
         DoCmd.OpenForm "frmEnterListofProjects", _
-        WhereCondition:=GetItemDims.WhereID(False) & "AND" & "[Assigned PDC] = '" & Environ("UserName") & "'"
+        WhereCondition:=GetItemDims.WhereID(False)
             With Forms("frmEnterListofProjects")
                 !lbInputMode.Caption = "In Manual Mode"
                 !cmdSwitch.Caption = "Switch to Datasheet"
@@ -1052,6 +1018,40 @@ Private Sub cmdProjectFormulation_Click()
     DoCmd.OpenForm "frmProjectSiteLink", , "[Assigned PDC] = '" & Environ("UserName") & "'"
 End Sub
 
+Private Sub Command93_Click()
+    Dim wb As Object
+    Dim fileName As String
+    Dim xlapp As Object
+    Dim filenamepath As String
+    Dim NeedToClose As Boolean
+    filenamepath = "P:\IF OPEN\Database Dev (TEMP)\SubR test Data\Monroe County Engineer\Template List of Damages.xlsx"
+    
+    fileName = Right(filenamepath, Len(filenamepath) - InStrRev(filenamepath, "\"))
+    
+    Set xlapp = Nothing
+    On Error Resume Next
+        Set xlapp = GetObject(, "Excel.Application")
+    On Error GoTo 0
+    
+    If xlapp Is Nothing Then
+        'no instance of Excel running, so create one
+        Set xlapp = CreateObject("Excel.Application")
+        xlapp.Visible = True
+    End If
+    
+    On Error Resume Next
+        Set wb = xlapp.Workbooks(fileName)
+    On Error GoTo 0
+    
+    If wb Is Nothing Then
+        Set wb = xlapp.Workbooks.Open(filenamepath, , True)
+        NeedToClose = True
+    Else
+        NeedToClose = False
+    End If
+    
+
+End Sub
 
 
 Private Function GetItemDims() As classItemDims

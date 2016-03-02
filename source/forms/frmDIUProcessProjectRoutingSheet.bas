@@ -17,8 +17,8 @@ Begin Form
     Width =16740
     DatasheetFontHeight =11
     ItemSuffix =92
-    Right =13605
-    Bottom =14055
+    Right =13155
+    Bottom =10395
     DatasheetGridlinesColor =15132391
     Filter ="[DisasterID]='9999' and [ApplicantID]='810-19JXO-00' and [ProjectID]=1"
     RecSrcDt = Begin
@@ -1839,12 +1839,7 @@ Private Function PreDialogCheck(ReviewType As String) As Boolean
 
 '///Code
 '    No checks on this page.
-    If IsNull(Me![Lane Assigned]) And ReviewType = "DIU Lane Select" Then
-        MsgBox "Please select a Lane before trying to complete this."
-        PreDialogCheck = False
-    Else
-        PreDialogCheck = True
-    End If
+    PreDialogCheck = True
 '///Code
 
 '///ErrorHandling
@@ -1869,7 +1864,12 @@ Private Function PostDialogCheck(ReviewType As String, DialogResult As String) A
 
 '///Code
 '   No Check Needed.
-    PostDialogCheck = True
+    If IsNull(Me![Lane Assigned]) And ReviewType = "DIU Lane Select" And DialogResult = "SUB" Then
+        MsgBox "Please select a lane before trying to submit this to the next step."
+        PostDialogCheck = False
+    Else
+        PostDialogCheck = True
+    End If
 '///Code
 
 '///ErrorHandling

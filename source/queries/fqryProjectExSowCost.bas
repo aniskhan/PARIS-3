@@ -1,8 +1,8 @@
 ﻿Operation =1
 Option =0
-Where ="(((revtblProject.ReviewType)=\"Assign PAS\" Or (revtblProject.ReviewType)=\"Ente"
-    "r SOW and Cost\" Or (revtblProject.ReviewType)=\"Submit in EMMIE\") AND ((revtbl"
-    "Project.ReviewExitDate) Is Null) AND ((tblProjects.[Lane Assigned])=\"EX\"))"
+Where ="(((revtblProject.ReviewType)=\"Assign DAS\" Or (revtblProject.ReviewType)=\"Ente"
+    "r Cost\" Or (revtblProject.ReviewType)=\"Submit in EMMIE\") AND ((revtblProject."
+    "ReviewExitDate) Is Null) AND ((tblProjects.[Lane Assigned])=\"EX\"))"
 Begin InputTables
     Name ="tblProjects"
     Name ="revtblProject"
@@ -83,12 +83,12 @@ Begin
     State =0
     Left =0
     Top =0
-    Right =1423
-    Bottom =851
+    Right =894
+    Bottom =710
     Left =-1
     Top =-1
-    Right =1407
-    Bottom =470
+    Right =878
+    Bottom =453
     Left =0
     Top =0
     ColumnsShown =539

@@ -17,11 +17,11 @@ Begin Form
     GridY =24
     Width =16680
     DatasheetFontHeight =11
-    ItemSuffix =43
-    Right =20805
-    Bottom =12735
+    ItemSuffix =41
+    Right =19725
+    Bottom =7920
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999'AND[Assigned PDC] = 'akhandka'"
+    Filter ="[DisasterID]='9999'"
     RecSrcDt = Begin
         0x5510ef712da9e440
     End
@@ -1085,6 +1085,19 @@ Option Compare Database
 Option Explicit
 Private bManual As Boolean
 
+'Private Sub cboSubR_AfterUpdate()
+'    Dim strFilter As String
+'    If Me.cboSubR <> "" Then
+'        strFilter = "[ApplicantID]='" & Me.cboSubR & "'"
+'        Me.Filter = strFilter
+'        Me.FilterOn = True
+'    Else
+'        Me.Filter = ""
+'        Me.FilterOn = False
+'    End If
+'
+'
+'End Sub
 
 Private Sub cmdSearch_Click()
     Dim strFilter As String

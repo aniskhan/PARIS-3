@@ -12,11 +12,11 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =23280
+    Width =22380
     DatasheetFontHeight =11
     ItemSuffix =179
-    Right =13605
-    Bottom =14055
+    Right =16755
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x4fc1e0fd12b1e440
@@ -357,7 +357,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =10560
+            Height =11040
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -367,16 +367,16 @@ Begin Form
                 Begin Rectangle
                     BackStyle =1
                     OverlapFlags =93
-                    Top =2940
+                    Top =4440
                     Width =17340
-                    Height =4800
+                    Height =3360
                     BackColor =16247774
                     BorderColor =10921638
                     Name ="Box170"
                     GridlineColor =10921638
-                    LayoutCachedTop =2940
+                    LayoutCachedTop =4440
                     LayoutCachedWidth =17340
-                    LayoutCachedHeight =7740
+                    LayoutCachedHeight =7800
                     BackThemeColorIndex =4
                     BackTint =20.0
                 End
@@ -386,7 +386,7 @@ Begin Form
                     OldBorderStyle =1
                     BorderWidth =1
                     OverlapFlags =223
-                    Left =600
+                    Left =540
                     Top =5100
                     Width =16740
                     Height =420
@@ -398,9 +398,9 @@ Begin Form
                     Name ="Label103"
                     Caption ="Review Site Information (Double Click to Review and Edit Site Information)"
                     GridlineColor =10921638
-                    LayoutCachedLeft =600
+                    LayoutCachedLeft =540
                     LayoutCachedTop =5100
-                    LayoutCachedWidth =17340
+                    LayoutCachedWidth =17280
                     LayoutCachedHeight =5520
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
@@ -464,7 +464,7 @@ Begin Form
                 End
                 Begin Subform
                     OverlapFlags =215
-                    Left =600
+                    Left =540
                     Top =5520
                     Width =16740
                     Height =2100
@@ -476,30 +476,30 @@ Begin Form
                     LinkMasterFields ="DisasterID;ApplicantID;ProjectID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =600
+                    LayoutCachedLeft =540
                     LayoutCachedTop =5520
-                    LayoutCachedWidth =17340
+                    LayoutCachedWidth =17280
                     LayoutCachedHeight =7620
                 End
                 Begin Subform
-                    OverlapFlags =215
-                    OldBorderStyle =0
+                    OverlapFlags =87
+                    SpecialEffect =2
                     Left =60
-                    Top =3000
+                    Top =2880
                     Width =17280
-                    Height =1980
+                    Height =1560
                     TabIndex =4
                     BorderColor =10921638
                     Name ="subfrmDVSReviewlProject"
-                    SourceObject ="Form.subfrmDVSReviewlProject"
+                    SourceObject ="Form.subfrmlProjects banner"
                     LinkChildFields ="DisasterID;ApplicantID;ProjectID"
                     LinkMasterFields ="DisasterID;ApplicantID;ProjectID"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =60
-                    LayoutCachedTop =3000
+                    LayoutCachedTop =2880
                     LayoutCachedWidth =17340
-                    LayoutCachedHeight =4980
+                    LayoutCachedHeight =4440
                 End
                 Begin Rectangle
                     BackStyle =1
@@ -507,7 +507,7 @@ Begin Form
                     Left =17520
                     Top =60
                     Width =2640
-                    Height =10320
+                    Height =10980
                     BackColor =15788753
                     BorderColor =10921638
                     Name ="Box161"
@@ -515,7 +515,7 @@ Begin Form
                     LayoutCachedLeft =17520
                     LayoutCachedTop =60
                     LayoutCachedWidth =20160
-                    LayoutCachedHeight =10380
+                    LayoutCachedHeight =11040
                     BackThemeColorIndex =-1
                 End
                 Begin Rectangle
@@ -524,21 +524,21 @@ Begin Form
                     Left =17700
                     Top =4980
                     Width =2280
-                    Height =2580
+                    Height =3240
                     BorderColor =10921638
                     Name ="Box175"
                     GridlineColor =10921638
                     LayoutCachedLeft =17700
                     LayoutCachedTop =4980
                     LayoutCachedWidth =19980
-                    LayoutCachedHeight =7560
+                    LayoutCachedHeight =8220
                 End
                 Begin CommandButton
                     OverlapFlags =215
                     Left =17940
                     Top =6000
                     Width =1740
-                    Height =1440
+                    Height =1560
                     FontSize =14
                     FontWeight =700
                     TabIndex =5
@@ -551,7 +551,7 @@ Begin Form
                     LayoutCachedLeft =17940
                     LayoutCachedTop =6000
                     LayoutCachedWidth =19680
-                    LayoutCachedHeight =7440
+                    LayoutCachedHeight =7560
                     ForeThemeColorIndex =7
                     ForeTint =20.0
                     UseTheme =1
@@ -575,6 +575,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =85
                     Left =20220
                     Top =1620
@@ -591,6 +592,7 @@ Begin Form
                     LayoutCachedHeight =2280
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =85
                     Left =20220
                     Top =2340
@@ -607,6 +609,7 @@ Begin Form
                     LayoutCachedHeight =2940
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =85
                     Left =20460
                     Top =3180
@@ -623,23 +626,24 @@ Begin Form
                     LayoutCachedHeight =3780
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =215
                     Left =17640
                     Top =120
                     Width =2220
-                    Height =4860
+                    Height =4680
                     FontSize =14
                     FontWeight =700
                     BorderColor =8355711
                     Name ="Label165"
-                    Caption ="Project Level Review - Project Level Documentation such as insurance etc\015\012"
-                        "RFI developement- Mandatory for each project cah \015\012Command button to open "
-                        "below by Site Review"
+                    Caption ="Project Level Review - Project Level Documentation such as insurance\015\012RFI "
+                        "development- Mandatory for each project cah \015\012Command button to open below"
+                        " by Site Review"
                     GridlineColor =10921638
                     LayoutCachedLeft =17640
                     LayoutCachedTop =120
                     LayoutCachedWidth =19860
-                    LayoutCachedHeight =4980
+                    LayoutCachedHeight =4800
                     ForeTint =100.0
                 End
                 Begin Label
@@ -682,7 +686,7 @@ Begin Form
                     Height =1440
                     FontSize =14
                     FontWeight =700
-                    TabIndex =6
+                    TabIndex =7
                     ForeColor =13431551
                     Name ="cmdDvsSubmitDraftDDD"
                     Caption ="DVS Submits Draft DDD"
@@ -731,6 +735,59 @@ Begin Form
                     LayoutCachedWidth =19800
                     LayoutCachedHeight =8625
                     ForeTint =100.0
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    SpecialEffect =4
+                    BorderWidth =3
+                    OverlapFlags =215
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =5460
+                    Top =4620
+                    Width =3780
+                    Height =420
+                    FontSize =14
+                    TabIndex =6
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =3484194
+                    Name ="tbAssignedDVS"
+                    ControlSource ="=DLookUp(\"[Full Name]\",\"qryNames\",\"[UserID]='\" & [Assigned Data Validation"
+                        " Specialist] & \"'\")"
+                    StatusBarText ="EX"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =4620
+                    LayoutCachedWidth =9240
+                    LayoutCachedHeight =5040
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                    ForeThemeColorIndex =2
+                    ForeTint =100.0
+                    ForeShade =50.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =600
+                            Top =4620
+                            Width =4815
+                            Height =390
+                            FontSize =14
+                            FontWeight =700
+                            BorderColor =8355711
+                            Name ="Assigned Data Validation Specialist_Label"
+                            Caption ="Assigned Validation Specialist:"
+                            EventProcPrefix ="Assigned_Data_Validation_Specialist_Label"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =600
+                            LayoutCachedTop =4620
+                            LayoutCachedWidth =5415
+                            LayoutCachedHeight =5010
+                            ForeTint =100.0
+                        End
+                    End
                 End
             End
         End

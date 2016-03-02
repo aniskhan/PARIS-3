@@ -103,6 +103,7 @@ CREATE TABLE [tblProjects] (
   [Recipient POC] VARCHAR (255),
   [Site Inspection Location] LONGTEXT ,
   [Scheduled Date of Site Inspection] DATETIME ,
+  [Scheduled Time of Site Inspection] DATETIME ,
   [Assigned EHP Specialists] VARCHAR (255),
   [EHP Site Inspection Report Required] BIT ,
   [Mitgation Specialists requested] BIT ,

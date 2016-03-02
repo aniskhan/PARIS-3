@@ -9,16 +9,16 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =24285
+    Width =8850
     DatasheetFontHeight =11
-    ItemSuffix =12
-    Right =11355
-    Bottom =8505
+    ItemSuffix =7
+    Right =12390
+    Bottom =12735
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xa960a2f609b7e440
     End
-    Caption ="Hooray! A new PARIS update!"
+    Caption ="Hooray! A new, major PARIS update!"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
         0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
@@ -116,22 +116,47 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =240
-                    Top =420
-                    Width =23955
-                    Height =285
+                    Left =360
+                    Top =30
+                    Width =8460
+                    Height =270
                     BorderColor =8355711
                     ForeColor =8355711
                     Name ="Label0"
-                    Caption ="You must update to the most current version of PARIS. To download, please visit:"
-                        " "
+                    Caption ="You must update to the current version of PARIS. To download, please visit: "
                     GroupTable =1
                     GridlineColor =10921638
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =420
-                    LayoutCachedWidth =24195
-                    LayoutCachedHeight =705
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =30
+                    LayoutCachedWidth =8820
+                    LayoutCachedHeight =300
                     LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =360
+                    Top =360
+                    Width =8460
+                    Height =600
+                    BorderColor =8355711
+                    ForeColor =12673797
+                    Name ="Label2"
+                    Caption =" NEED LINK TO SHAREPOINT"
+                    HyperlinkAddress ="http://www.xkcd.com"
+                    GroupTable =1
+                    GridlineColor =10921638
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =8820
+                    LayoutCachedHeight =960
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    ForeThemeColorIndex =10
+                    ForeTint =100.0
                     GroupTable =1
                 End
                 Begin CommandButton
@@ -178,35 +203,6 @@ Begin Form
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
                     WebImagePaddingBottom =1
-                End
-                Begin Label
-                    FontUnderline = NotDefault
-                    OverlapFlags =85
-                    TextAlign =1
-                    Left =240
-                    Top =765
-                    Width =23955
-                    Height =540
-                    FontSize =16
-                    BorderColor =8355711
-                    ForeColor =12673797
-                    Name ="Label7"
-                    Caption ="The New PA Technology Toolkit"
-                    HyperlinkAddress ="https://intranet.fema.net/org/orr/recovery/pad/NewPA/New%20PA%20Technology%20%20"
-                        "HSINParis/Forms/AllItems.aspx?RootFolder=%2Forg%2Forr%2Frecovery%2Fpad%2FNewPA%2"
-                        "FNew%20PA%20Technology%20%20HSINParis%2FApplication%20Files"
-                    GroupTable =1
-                    GridlineColor =10921638
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =765
-                    LayoutCachedWidth =24195
-                    LayoutCachedHeight =1305
-                    RowStart =1
-                    RowEnd =1
-                    LayoutGroup =1
-                    ForeThemeColorIndex =10
-                    ForeTint =100.0
-                    GroupTable =1
                 End
             End
         End

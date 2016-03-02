@@ -16,8 +16,8 @@ Begin Form
     Width =21615
     DatasheetFontHeight =11
     ItemSuffix =93
-    Right =13605
-    Bottom =14055
+    Right =17205
+    Bottom =10395
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xac74c6f13aaee440
@@ -162,7 +162,7 @@ Begin Form
                     BackColor =15788753
                     BorderColor =8355711
                     Name ="lbHeader"
-                    Caption ="Expedited Lane - Damage Intake and Eligibility Determination"
+                    Caption ="Expedited Lane - Intake Damage and Eligibility Analysis"
                     GridlineColor =10921638
                     LayoutCachedWidth =16560
                     LayoutCachedHeight =660
@@ -239,7 +239,7 @@ Begin Form
                     Top =9480
                     Width =13620
                     Height =3720
-                    TabIndex =20
+                    TabIndex =19
                     BorderColor =10921638
                     Name ="subHistory"
                     SourceObject ="Form.subfrmProjectReviewHistory"
@@ -543,7 +543,7 @@ Begin Form
                     Width =2340
                     Height =360
                     ColumnWidth =3000
-                    TabIndex =10
+                    TabIndex =9
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="EMMIE Update Application #"
@@ -684,7 +684,7 @@ Begin Form
                     Top =8880
                     Width =1740
                     Height =360
-                    TabIndex =19
+                    TabIndex =18
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbMeetingDate"
@@ -724,10 +724,10 @@ Begin Form
                     Top =8040
                     Width =3765
                     Height =480
-                    TabIndex =17
+                    TabIndex =16
                     ForeColor =4210752
-                    Name ="cmdRecipientReturned"
-                    Caption ="Recipient Concurrence Returned"
+                    Name ="cmdApplicantReturned"
+                    Caption ="Applicant Concurrence Returned"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
@@ -749,10 +749,10 @@ Begin Form
                     Top =7500
                     Width =3765
                     Height =480
-                    TabIndex =16
+                    TabIndex =15
                     ForeColor =4210752
-                    Name ="cmdRecipientSent"
-                    Caption ="Recipient Concurrence Sent"
+                    Name ="cmdApplicantSent"
+                    Caption ="Applicant Concurrence Sent"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
@@ -760,56 +760,6 @@ Begin Form
                     LayoutCachedTop =7500
                     LayoutCachedWidth =13125
                     LayoutCachedHeight =7980
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =9240
-                    Top =6060
-                    Width =1800
-                    Height =660
-                    TabIndex =12
-                    ForeColor =4210752
-                    Name ="cmdPagsConcurrence"
-                    Caption ="PAGS Concurrence"
-                    OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =9240
-                    LayoutCachedTop =6060
-                    LayoutCachedWidth =11040
-                    LayoutCachedHeight =6720
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =9240
-                    Top =5220
-                    Width =1800
-                    Height =660
-                    TabIndex =8
-                    ForeColor =4210752
-                    Name ="cmdExglConcurrence"
-                    Caption ="Group Lead Concurrence"
-                    OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =9240
-                    LayoutCachedTop =5220
-                    LayoutCachedWidth =11040
-                    LayoutCachedHeight =5880
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -827,7 +777,7 @@ Begin Form
                     Top =6060
                     Width =4560
                     Height =1143
-                    TabIndex =11
+                    TabIndex =10
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbDvsComments"
@@ -867,7 +817,7 @@ Begin Form
                     Top =5580
                     Width =3900
                     Height =480
-                    TabIndex =9
+                    TabIndex =8
                     BorderColor =10921638
                     ForeColor =4210752
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
@@ -916,7 +866,7 @@ Begin Form
                     Top =6180
                     Width =1800
                     Height =660
-                    TabIndex =13
+                    TabIndex =12
                     ForeColor =4210752
                     Name ="cmdAssignDvsComplete"
                     Caption ="Assign DVS Complete"
@@ -941,9 +891,9 @@ Begin Form
                     Top =8580
                     Width =1800
                     Height =660
-                    TabIndex =18
+                    TabIndex =17
                     ForeColor =4210752
-                    Name ="cmdMeetWithPdcComplete"
+                    Name ="cmdMeetWithPdmComplete"
                     Caption ="Meet With PDM Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
@@ -966,10 +916,10 @@ Begin Form
                     Top =7320
                     Width =1800
                     Height =660
-                    TabIndex =15
+                    TabIndex =14
                     ForeColor =4210752
                     Name ="cmdInputDddComplete"
-                    Caption ="Input DDD Complete"
+                    Caption ="Input DDD/SOW Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
@@ -991,7 +941,7 @@ Begin Form
                     Top =7320
                     Width =1800
                     Height =660
-                    TabIndex =14
+                    TabIndex =13
                     ForeColor =4210752
                     Name ="cmdValidationComplete"
                     Caption ="Validation Complete"
@@ -1068,7 +1018,7 @@ Begin Form
                     BorderColor =8355711
                     ForeColor =8355711
                     Name ="Label48"
-                    Caption ="Clicking \"Recipient Concurrence Complete\" will submit this to Phase 3."
+                    Caption ="Clicking \"Applicant Concurrence Complete\" will submit this to Phase 3."
                     GridlineColor =10921638
                     LayoutCachedLeft =9360
                     LayoutCachedTop =8520
@@ -1087,7 +1037,7 @@ Begin Form
                     BorderColor =8355711
                     ForeColor =12349952
                     Name ="Label87"
-                    Caption ="Recipient/Subrecipient Concurrence"
+                    Caption ="Applicant Concurrence"
                     GridlineColor =10921638
                     LayoutCachedLeft =9360
                     LayoutCachedTop =7020
@@ -1117,6 +1067,31 @@ Begin Form
                     LayoutCachedHeight =8580
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =9240
+                    Top =5700
+                    Width =1800
+                    Height =660
+                    TabIndex =11
+                    ForeColor =4210752
+                    Name ="cmdPDMConcurrence"
+                    Caption ="PDM Concurrence"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =9240
+                    LayoutCachedTop =5700
+                    LayoutCachedWidth =11040
+                    LayoutCachedHeight =6360
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
                 End
             End
         End
@@ -1598,27 +1573,6 @@ PROC_ERR:
 End Sub
 
 
-Private Sub cmdExglConcurrence_Click()
-'///Error Handling
-    If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdExglConcurrence_Click"
-'///Error Handling
-
-'///Code
-    CompleteReview "Lead Concurrence"
-'///Code
-
-'///ErrorHandling
-PROC_EXIT:
-    PopCallStack
-    Exit Sub
-    
-PROC_ERR:
-    GlobalErrHandler
-    Resume PROC_EXIT
-'///ErrorHandline
-End Sub
-
 Private Sub cmdInputDddComplete_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
@@ -1640,14 +1594,14 @@ PROC_ERR:
 '///ErrorHandline
 End Sub
 
-Private Sub cmdMeetWithPdcComplete_Click()
+Private Sub cmdMeetWithPdmComplete_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdMeetWithPdcComplete_Click"
+    PushCallStack Me.name & "." & "cmdMeetWithPdmComplete_Click"
 '///Error Handling
 
 '///Code
-    CompleteReview "DDD with PDC"
+    CompleteReview "DDD with PDM"
 '///Code
 
 '///ErrorHandling
@@ -1661,14 +1615,14 @@ PROC_ERR:
 '///ErrorHandline
 End Sub
 
-Private Sub cmdPagsConcurrence_Click()
+Private Sub cmdPDMConcurrence_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdPagsConcurrence_Click"
+    PushCallStack Me.name & "." & "cmdPDMConcurrence_Click"
 '///Error Handling
 
 '///Code
-    CompleteReview "PAGS Concurrence"
+    CompleteReview "PDM Concurrence"
 '///Code
 
 '///ErrorHandling
@@ -1682,14 +1636,14 @@ PROC_ERR:
 '///ErrorHandline
 End Sub
 
-Private Sub cmdRecipientReturned_Click()
+Private Sub cmdApplicantReturned_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdRecipientReturned_Click"
+    PushCallStack Me.name & "." & "cmdApplicantReturned_Click"
 '///Error Handling
 
 '///Code
-    CompleteReview "Recipient Concurrence"
+    CompleteReview "Applicant Concurrence"
 '///Code
 
 '///ErrorHandling
@@ -1703,14 +1657,14 @@ PROC_ERR:
 '///ErrorHandline
 End Sub
 
-Private Sub cmdRecipientSent_Click()
+Private Sub cmdApplicantSent_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdRecipientSent_Click"
+    PushCallStack Me.name & "." & "cmdApplicantSent_Click"
 '///Error Handling
 
 '///Code
-    StartReview "Recipient Concurrence"
+    StartReview "Applicant Concurrence"
 '///Code
 
 '///ErrorHandling
@@ -1823,10 +1777,9 @@ Private Sub RepaintForm()
     EnableFormArea "Assign DVS"
     EnableFormArea "Validation"
     EnableFormArea "DDD Entry"
-    EnableFormArea "DDD with PDC"
-    EnableFormArea "Lead Concurrence"
-    EnableFormArea "PAGS Concurrence"
-    EnableFormArea "Recipient Concurrence"
+    EnableFormArea "DDD with PDM"
+    EnableFormArea "PDM Concurrence"
+    EnableFormArea "Applicant Concurrence"
     Me.subHistory.Requery
 '///Code
 
@@ -1867,16 +1820,14 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
             Me.cmdValidationStart.Enabled = CanEnable
         Case "DDD Entry"
             Me.cmdInputDddComplete.Enabled = CanEnable
-        Case "DDD with PDC"
-            Me.cmdMeetWithPdcComplete.Enabled = CanEnable
+        Case "DDD with PDM"
+            Me.cmdMeetWithPdmComplete.Enabled = CanEnable
             Me.tbMeetingDate.Enabled = CanEnable
-        Case "Lead Concurrence"
-            Me.cmdExglConcurrence.Enabled = CanEnable
-        Case "PAGS Concurrence"
-            Me.cmdPagsConcurrence.Enabled = CanEnable
-        Case "Recipient Concurrence"
-            Me.cmdRecipientReturned.Enabled = CanEnable
-            Me.cmdRecipientSent.Enabled = CanEnable
+        Case "PDM Concurrence"
+            Me.cmdPDMConcurrence.Enabled = CanEnable
+        Case "Applicant Concurrence"
+            Me.cmdApplicantReturned.Enabled = CanEnable
+            Me.cmdApplicantSent.Enabled = CanEnable
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & AreaName
     End Select
@@ -1969,15 +1920,13 @@ Private Sub HandleDisposition(ReviewType As String, frm As Form)
                 Case "Validation"
                     Reviews.EnterReview GetItemDims("DDD Entry"), Me.[Assigned Data Validation Specialist]
                 Case "DDD Entry"
-                    Reviews.EnterReview GetItemDims("DDD with PDC"), Me.[Assigned Data Validation Specialist]
-                Case "DDD with PDC"
-                    Reviews.EnterReview GetItemDims("Lead Concurrence")
-                Case "Lead Concurrence"
-                    Reviews.EnterReview GetItemDims("PAGS Concurrence")
-                Case "PAGS Concurrence"
-                    Reviews.EnterReview GetItemDims("Recipient Concurrence"), GetItemDims(ReviewType).AssignedPDC
-                Case "Recipient Concurrence"
-                    Reviews.EnterReview GetItemDims("Assign PAS")
+                    Reviews.EnterReview GetItemDims("DDD with PDM"), Me.[Assigned Data Validation Specialist]
+                Case "DDD with PDM"
+                    Reviews.EnterReview GetItemDims("PDM Concurrence"), GetItemDims(ReviewType).AssignedPDC
+                Case "PDM Concurrence"
+                    Reviews.EnterReview GetItemDims("Applicant Concurrence"), GetItemDims(ReviewType).AssignedPDC
+                Case "Applicant Concurrence"
+                    Reviews.EnterReview GetItemDims("Assign DAS")
                 Case Else
                     Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & ReviewType
             End Select

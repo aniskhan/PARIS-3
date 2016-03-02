@@ -6,7 +6,6 @@ Where ="(((revtblProject.ReviewType)=\"Inspection Assignment\" Or (revtblProject
 Begin InputTables
     Name ="tblProjects"
     Name ="revtblProject"
-    Name ="tblSubRecipient"
 End
 Begin OutputColumns
     Expression ="tblProjects.DisasterID"
@@ -31,9 +30,10 @@ Begin OutputColumns
     Expression ="tblProjects.[Assigned Site Inspector]"
     Expression ="tblProjects.[Date Assigned]"
     Expression ="tblProjects.[Assigned Insurance Specialist]"
-    Expression ="tblSubRecipient.[Recipient POC]"
-    Expression ="tblSubRecipient.[Subrecipient POC]"
+    Expression ="tblProjects.[Recipient POC]"
+    Expression ="tblProjects.[Subrecipient POC]"
     Expression ="tblProjects.[Inspection Notes]"
+    Expression ="tblProjects.[Scheduled Time of Site Inspection]"
 End
 Begin Joins
     LeftTable ="tblProjects"
@@ -47,14 +47,6 @@ Begin Joins
     LeftTable ="tblProjects"
     RightTable ="revtblProject"
     Expression ="tblProjects.ProjectID = revtblProject.ProjectID"
-    Flag =1
-    LeftTable ="tblProjects"
-    RightTable ="tblSubRecipient"
-    Expression ="tblProjects.DisasterID = tblSubRecipient.DisasterID"
-    Flag =1
-    LeftTable ="tblProjects"
-    RightTable ="tblSubRecipient"
-    Expression ="tblProjects.ApplicantID = tblSubRecipient.ApplicantID"
     Flag =1
 End
 dbBoolean "ReturnsRecords" ="-1"
@@ -104,15 +96,19 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblSubRecipient.[Recipient POC]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblSubRecipient.[Subrecipient POC]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblProjects.[Inspection Notes]"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblProjects.[Scheduled Time of Site Inspection]"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblProjects.[Recipient POC]"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblProjects.[Subrecipient POC]"
         dbLong "AggregateType" ="-1"
     End
 End
@@ -120,12 +116,12 @@ Begin
     State =0
     Left =0
     Top =0
-    Right =1375
-    Bottom =937
+    Right =1134
+    Bottom =860
     Left =-1
     Top =-1
-    Right =1359
-    Bottom =584
+    Right =1118
+    Bottom =567
     Left =0
     Top =0
     ColumnsShown =539
@@ -145,15 +141,6 @@ Begin
         Bottom =286
         Top =0
         Name ="revtblProject"
-        Name =""
-    End
-    Begin
-        Left =610
-        Top =12
-        Right =897
-        Bottom =337
-        Top =0
-        Name ="tblSubRecipient"
         Name =""
     End
 End

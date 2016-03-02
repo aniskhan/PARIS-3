@@ -2,6 +2,7 @@
 ADM	Database Admin
 CFC	Compliance Facilitation Coordinator
 COS	Costing Specialist
+DAS	Document Assembly Specialist
 DIUL	Document Integrity Unit Lead
 DIUS	Document Integrity Specialist
 DPAGS	Deputy PA Group Supervisor
@@ -9,7 +10,6 @@ EHPR	EHP Reviewer
 EHPS	EHP Specialist
 EXDVS	EX Document Validation Specialist
 EXGL	Expedited Group Lead
-EXPAS	EX Project Assembly Specialist
 FCO	FCO
 IM	Information Manager
 INSP	Insurance Specialist

@@ -13,8 +13,8 @@ Begin Form
     Width =26355
     DatasheetFontHeight =11
     ItemSuffix =101
-    Right =13605
-    Bottom =14055
+    Right =20805
+    Bottom =12615
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x6ad3b01033b5e440
@@ -190,6 +190,8 @@ Begin Form
                     BackThemeColorIndex =-1
                 End
                 Begin TextBox
+                    Visible = NotDefault
+                    Enabled = NotDefault
                     TabStop = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -212,6 +214,7 @@ Begin Form
                     ForeTint =100.0
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =16740
                             Top =2520
@@ -252,6 +255,8 @@ Begin Form
                     LayoutCachedHeight =9420
                 End
                 Begin TextBox
+                    Visible = NotDefault
+                    Enabled = NotDefault
                     TabStop = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -272,6 +277,7 @@ Begin Form
                     LayoutCachedHeight =3360
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =16620
                             Top =3000
@@ -330,6 +336,8 @@ Begin Form
                     LayoutCachedHeight =2880
                 End
                 Begin TextBox
+                    Visible = NotDefault
+                    Enabled = NotDefault
                     TabStop = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -349,6 +357,7 @@ Begin Form
                     LayoutCachedHeight =3735
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =215
                             Left =16740
                             Top =3420
@@ -439,6 +448,7 @@ Begin Form
                     ForeTint =20.0
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =215
                     Left =16680
                     Top =5220
