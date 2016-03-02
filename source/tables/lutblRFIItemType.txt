@@ -1,0 +1,14 @@
+﻿Item	SourceType
+503…	RPA
+Charter	RPA
+Contract	Project
+Force Account Equipment Records	Project
+Force Account Labor Records	Project
+Force Account Material Records	Project
+Lease	Project
+Legal Ownership of Facility	RPA
+Maintenance Records	Project
+Other RPA Stuff	RPA
+PNP Documentation	RPA
+Procurement Records	Project
+Proof of Taxing Authority	RPA
