@@ -7,7 +7,6 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -18,8 +17,8 @@ Begin Form
     Width =16500
     DatasheetFontHeight =11
     ItemSuffix =94
-    Right =16455
-    Bottom =12735
+    Right =19635
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     Filter ="[Assigned PDC] = 'akhandka'"
     RecSrcDt = Begin
@@ -915,7 +914,6 @@ Begin Form
                     LayoutCachedHeight =9120
                 End
                 Begin CommandButton
-                    Enabled = NotDefault
                     OverlapFlags =223
                     Left =13980
                     Top =8700
@@ -923,8 +921,9 @@ Begin Form
                     Height =960
                     TabIndex =17
                     ForeColor =4210752
-                    Name ="Command93"
-                    Caption ="Recovery Meeting Checklist"
+                    Name ="cmdRSMGuide"
+                    Caption ="Recovery Meeting Guide / Checklist"
+                    OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =13980
@@ -1488,6 +1487,21 @@ PROC_ERR:
 '///ErrorHandling
 End Sub
 
+Private Sub cmdRSMGuide_Click()
+Dim oApp As Object
+Dim filePath As String
+
+filePath = "\\intranet.fema.net@SSL\DavWWWRoot\org\orr\recovery\pad\NewPA\New PA Training\Program Delivery Manager and Program Delivery Task Force Leader/Recovery Scoping Meeting Guide 01282016.docx"
+'Create an instance of MS Word
+Set oApp = CreateObject(Class:="Word.Application")
+oApp.Visible = True
+
+'Open the Document
+oApp.Documents.Open fileName:=filePath
+
+
+End Sub
+
 Private Sub cmdScopingMeetingComplete_Click()
 
 '///Error Handling
@@ -1509,6 +1523,8 @@ PROC_ERR:
     Resume PROC_EXIT
 '///ErrorHandling
 End Sub
+
+
 
 'OTHER PAGE EVENTS
 Private Sub Form_Current()

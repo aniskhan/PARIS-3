@@ -7,6 +7,7 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
+    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -14,19 +15,20 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =31680
+    Width =16500
     DatasheetFontHeight =11
-    ItemSuffix =107
-    Right =13605
-    Bottom =14055
+    ItemSuffix =111
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
-    Filter ="[ID] = 2"
+    Filter ="[ID] = 112"
     RecSrcDt = Begin
         0x998eff7ddbb2e440
     End
     RecordSource ="fqryUpdateRSMProjections"
     Caption ="Update Projections"
     OnCurrent ="[Event Procedure]"
+    BeforeUpdate ="[Event Procedure]"
     OnOpen ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -153,7 +155,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =11640
+            Height =12960
             BackColor =15921906
             Name ="Detail"
             AlternateBackColor =15921906
@@ -167,7 +169,7 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     Left =13740
-                    Top =60
+                    Top =120
                     Width =2760
                     Height =8820
                     BackColor =14282978
@@ -175,9 +177,9 @@ Begin Form
                     Name ="Box84"
                     GridlineColor =10921638
                     LayoutCachedLeft =13740
-                    LayoutCachedTop =60
+                    LayoutCachedTop =120
                     LayoutCachedWidth =16500
-                    LayoutCachedHeight =8880
+                    LayoutCachedHeight =8940
                     BackThemeColorIndex =9
                     BackTint =20.0
                 End
@@ -205,7 +207,7 @@ Begin Form
                     Left =60
                     Top =4440
                     Width =13560
-                    Height =7140
+                    Height =8520
                     BackColor =15590879
                     BorderColor =10921638
                     Name ="Box90"
@@ -213,7 +215,7 @@ Begin Form
                     LayoutCachedLeft =60
                     LayoutCachedTop =4440
                     LayoutCachedWidth =13620
-                    LayoutCachedHeight =11580
+                    LayoutCachedHeight =12960
                     BackThemeColorIndex =-1
                 End
                 Begin Rectangle
@@ -1838,11 +1840,11 @@ Begin Form
                 Begin Rectangle
                     SpecialEffect =2
                     BackStyle =1
-                    OverlapFlags =93
+                    OverlapFlags =95
                     Left =13740
                     Top =8940
                     Width =2760
-                    Height =2580
+                    Height =4020
                     BackColor =14282978
                     BorderColor =10921638
                     Name ="Box94"
@@ -1850,7 +1852,7 @@ Begin Form
                     LayoutCachedLeft =13740
                     LayoutCachedTop =8940
                     LayoutCachedWidth =16500
-                    LayoutCachedHeight =11520
+                    LayoutCachedHeight =12960
                     BackThemeColorIndex =9
                     BackTint =20.0
                 End
@@ -1958,7 +1960,7 @@ Begin Form
                 End
                 Begin Subform
                     Locked = NotDefault
-                    OverlapFlags =215
+                    OverlapFlags =85
                     SpecialEffect =2
                     BorderWidth =2
                     Left =60
@@ -1981,7 +1983,7 @@ Begin Form
                 Begin CommandButton
                     Enabled = NotDefault
                     TabStop = NotDefault
-                    OverlapFlags =215
+                    OverlapFlags =223
                     Left =12180
                     Top =4680
                     Width =1320
@@ -2181,8 +2183,8 @@ Begin Form
                     Visible = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =14460
-                    Top =1380
+                    Left =14400
+                    Top =4500
                     Height =315
                     TabIndex =36
                     BorderColor =10921638
@@ -2191,15 +2193,15 @@ Begin Form
                     ControlSource ="DisasterID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =14460
-                    LayoutCachedTop =1380
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =1695
+                    LayoutCachedLeft =14400
+                    LayoutCachedTop =4500
+                    LayoutCachedWidth =15840
+                    LayoutCachedHeight =4815
                     Begin
                         Begin Label
-                            OverlapFlags =93
-                            Left =12660
-                            Top =1380
+                            OverlapFlags =215
+                            Left =12600
+                            Top =4500
                             Width =1020
                             Height =315
                             BorderColor =8355711
@@ -2207,10 +2209,10 @@ Begin Form
                             Name ="Label102"
                             Caption ="DisasterID"
                             GridlineColor =10921638
-                            LayoutCachedLeft =12660
-                            LayoutCachedTop =1380
-                            LayoutCachedWidth =13680
-                            LayoutCachedHeight =1695
+                            LayoutCachedLeft =12600
+                            LayoutCachedTop =4500
+                            LayoutCachedWidth =13620
+                            LayoutCachedHeight =4815
                         End
                     End
                 End
@@ -2218,8 +2220,8 @@ Begin Form
                     Visible = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =14760
-                    Top =2160
+                    Left =14700
+                    Top =5280
                     Height =315
                     TabIndex =37
                     BorderColor =10921638
@@ -2228,15 +2230,15 @@ Begin Form
                     ControlSource ="ApplicantID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =14760
-                    LayoutCachedTop =2160
-                    LayoutCachedWidth =16200
-                    LayoutCachedHeight =2475
+                    LayoutCachedLeft =14700
+                    LayoutCachedTop =5280
+                    LayoutCachedWidth =16140
+                    LayoutCachedHeight =5595
                     Begin
                         Begin Label
-                            OverlapFlags =223
-                            Left =12960
-                            Top =2160
+                            OverlapFlags =215
+                            Left =12900
+                            Top =5280
                             Width =1155
                             Height =315
                             BorderColor =8355711
@@ -2244,10 +2246,10 @@ Begin Form
                             Name ="Label104"
                             Caption ="ApplicantID"
                             GridlineColor =10921638
-                            LayoutCachedLeft =12960
-                            LayoutCachedTop =2160
-                            LayoutCachedWidth =14115
-                            LayoutCachedHeight =2475
+                            LayoutCachedLeft =12900
+                            LayoutCachedTop =5280
+                            LayoutCachedWidth =14055
+                            LayoutCachedHeight =5595
                         End
                     End
                 End
@@ -2305,6 +2307,159 @@ Begin Form
                     WebImagePaddingBottom =1
                     Overlaps =1
                 End
+                Begin CommandButton
+                    Enabled = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    Left =13920
+                    Top =1980
+                    Width =2400
+                    Height =600
+                    TabIndex =41
+                    ForeColor =4210752
+                    Name ="cmdDIUEntry"
+                    Caption ="Updates Entered into EMMIE Complete"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =13920
+                    LayoutCachedTop =1980
+                    LayoutCachedWidth =16320
+                    LayoutCachedHeight =2580
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =13920
+                    Top =1320
+                    Width =2400
+                    Height =540
+                    TabIndex =40
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Date Projections Entered To EMMIE"
+                    ControlSource ="DateProjectionsEnteredIntoEMMIE"
+                    Format ="Short Date"
+                    EventProcPrefix ="Date_Projections_Entered_To_EMMIE"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =13920
+                    LayoutCachedTop =1320
+                    LayoutCachedWidth =16320
+                    LayoutCachedHeight =1860
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =13920
+                            Top =720
+                            Width =2400
+                            Height =540
+                            BorderColor =8355711
+                            ForeColor =8355711
+                            Name ="lblDUIProcessing"
+                            Caption ="Updates entered into EMMIE:"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =13920
+                            LayoutCachedTop =720
+                            LayoutCachedWidth =16320
+                            LayoutCachedHeight =1260
+                        End
+                    End
+                End
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =13920
+                    Top =300
+                    Width =2400
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="Label85"
+                    Caption ="DIU Processing"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =13920
+                    LayoutCachedTop =300
+                    LayoutCachedWidth =16320
+                    LayoutCachedHeight =660
+                    ForeTint =100.0
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =120
+                    Top =12360
+                    Width =8640
+                    Height =540
+                    TabIndex =42
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="txtExplainationOfChanges"
+                    ControlSource ="ExplainationOfChanges"
+                    StatusBarText ="This is intentionally a text field to allow auditing"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =12360
+                    LayoutCachedWidth =8760
+                    LayoutCachedHeight =12900
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =180
+                            Top =12000
+                            Width =8550
+                            Height =315
+                            BorderColor =8355711
+                            ForeColor =8355711
+                            Name ="Label108"
+                            Caption ="If the \"Projected Date All PWs Submitted\" is extended, please provide a brief "
+                                "explanation: "
+                            GridlineColor =10921638
+                            LayoutCachedLeft =180
+                            LayoutCachedTop =12000
+                            LayoutCachedWidth =8730
+                            LayoutCachedHeight =12315
+                        End
+                    End
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    Left =13920
+                    Top =2700
+                    Width =2400
+                    Height =600
+                    TabIndex =43
+                    ForeColor =4210752
+                    Name ="cmdViewHistory"
+                    Caption ="View History of Projection UpdatescmdViewHistory"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =13920
+                    LayoutCachedTop =2700
+                    LayoutCachedWidth =16320
+                    LayoutCachedHeight =3300
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
             End
         End
         Begin FormFooter
@@ -2338,13 +2493,13 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =14460
-                    Top =60
+                    Left =12180
+                    Top =120
                     Width =1290
                     Height =405
                     ForeColor =4210752
                     Name ="cmdCloseForm"
-                    Caption ="Save / Close"
+                    Caption ="Close"
                     GridlineColor =10921638
                     OnClickEmMacro = Begin
                         Version =196611
@@ -2366,66 +2521,10 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =14460
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =15750
-                    LayoutCachedHeight =465
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    Enabled = NotDefault
-                    OverlapFlags =215
-                    Left =9900
-                    Top =60
-                    Width =1290
-                    Height =405
-                    TabIndex =1
-                    ForeColor =4210752
-                    Name ="cmdSaveRecord"
-                    Caption ="Save Record"
-                    GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =10
-                        Begin
-                            Action ="OnError"
-                            Argument ="0"
-                        End
-                        Begin
-                            Action ="RunCommand"
-                            Argument ="97"
-                        End
-                        Begin
-                            Condition ="[MacroError]<>0"
-                            Action ="MsgBox"
-                            Argument ="=[MacroError].[Description]"
-                            Argument ="-1"
-                            Argument ="0"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"cmdSaveRecord\" xmlns=\"http://schemas.microsoft.com/office/"
-                                "accessservices/2009/11/application\"><Statements><Action Name=\"OnError\"/><Acti"
-                                "on Name=\"SaveRecord\"/><Conditio"
-                        End
-                        Begin
-                            Comment ="_AXL:nalBlock><If><Condition>[MacroError]&lt;&gt;0</Condition><Statements><Actio"
-                                "n Name=\"MessageBox\"><Argument Name=\"Message\">=[MacroError].[Description]</Ar"
-                                "gument></Action></Statements></If></ConditionalBlock></Statements></UserInterfac"
-                                "eMacro>"
-                        End
-                    End
-
-                    LayoutCachedLeft =9900
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =11190
-                    LayoutCachedHeight =465
+                    LayoutCachedLeft =12180
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =13470
+                    LayoutCachedHeight =525
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -2443,6 +2542,9 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
 'Commenting on this page will be page specific only.
 'For in depth commenting please refer to frmRpaReview.
 
@@ -2462,23 +2564,50 @@ Attribute VB_Exposed = False
 '/ carbon-copy records (no changes made)
 'TODO: Consider removing autonumber from table to allow simple SELECT * SQL statement
 
-Private Const FormItemType As String = "Projection"
-Option Compare Database
-Option Explicit
-
+Private Const FormItemType As String = "RPA" 'used in determining what type of record is handled
+Private ItemDims As New classItemDims 'used by form open and load to help with filters.
+Dim UserIsPDC As Boolean ' Tracks if the current user is an assigned PDC
+Dim UserIsDIU As Boolean ' Tracks if the current user is a DIU or DIUL
 
 'BUTTONS
 Private Sub cmdFinalize_Click()
+Dim Db As Database
+Dim rsRev As Recordset
+Dim rsLastCompRev As Recordset ' last completed DIU EMMIE update
+Dim rsLastChange As Recordset ' last logged change to audit log
+Dim DateLastReview As Date
+Dim DateLastChange As Date
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
     PushCallStack Me.name & "." & "cmdFinalize_Click"
 '///Error Handling
 
 '///Code
-'    creates abbreviated review on item itself.
+
     Me![FinalizeDate] = Now()
     Me![FinalizeUserID] = Environ("UserName")
-    RepaintForm
+    RepaintForm (UserIsPDC)
+
+Set Db = CurrentDb
+' Check if an unfinished review exists before adding another
+Set rsRev = Db.OpenRecordset("SELECT * FROM [revtblRpa] WHERE ((([revtblRpa].[ReviewType]) = 'DIU Update EMMIE Projections') AND (([revtblRpa].[ReviewExitDate]) Is Null) AND (([revtblRpa].[ApplicantID]) = '" & Me.ApplicantID & "'))")
+
+Set rsLastCompRev = Db.OpenRecordset("SELECT MAX (ReviewExitDate) As lastCompReview FROM [revtblRpa] WHERE ((([revtblRpa].[ReviewType]) = 'DIU Update EMMIE Projections') AND (([revtblRpa].[ReviewExitDate]) Is Not Null) AND (([revtblRpa].[ApplicantID]) = '" & Me.ApplicantID & "'))")
+Set rsLastChange = Db.OpenRecordset("SELECT MAX (EditDate) As lastChange FROM [tblAuditTrail] WHERE ((([tblAuditTrail].[SourceTable]) = 'fqryUpdateRSMProjections') AND  (([tblAuditTrail].[ApplicantID]) = '" & Me.ApplicantID & "'))")
+
+
+DateLastReview = CDate(Nz(rsLastCompRev![lastCompReview], 0))
+DateLastChange = CDate(Nz(rsLastChange![lastChange], 0))
+
+    If Not (rsRev.BOF And rsRev.EOF) Then
+        'Do not add a new review if an uncompleted one already exists
+        ElseIf DateLastChange > DateLastReview Then
+            'Additonal check to see if there are entries in the audit log after the last completed DIU review
+            Reviews.EnterReview GetItemDims("DIU Update EMMIE Projections")
+    End If
+
+Debug.Print DateLastChange
+Debug.Print DateLastReview
 '///Code
 
 '///ErrorHandling
@@ -2553,7 +2682,7 @@ subfrmRS.MoveFirst
 'Iterate throughout the subform to bring the appropriate Applicant record back into focus for UpdateDTS
 While Not subfrmRS.EOF
     inFocusApplicantID = subfrm_fqryProjectionsMaxUpdate![ApplicantID]
-    Debug.Print inFocusApplicantID
+    'Debug.Print inFocusApplicantID
     If inFocusApplicantID = targetApplicantID Then
         Me![Date of Update] = Now()
     Else
@@ -2578,8 +2707,65 @@ PROC_ERR:
 
 End Sub
 
+Private Sub cmdDIUEntry_Click()
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "cmdDIUEntry_Click"
+'///Error Handling
+
+'///Code
+    CompleteReview "DIU Update EMMIE Projections"
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+
+
+Private Sub cmdViewHistory_Click()
+ DoCmd.OpenReport "rptPWProjectionUpdateHistory", acViewPreview, , "[SourceTable] = 'fqryUpdateRSMProjections' AND  [tblAuditTrail].[ApplicantID] = '" & Me.ApplicantID & "'", acWindowNormal
+
+End Sub
+
+
+
 'OTHER PAGE EVENTS
+
+Private Sub Form_BeforeUpdate(Cancel As Integer)
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "Form_BeforeUpdate"
+'///Error Handling
+
+'///Code
+Call AuditTrail(Me, ApplicantID)
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+
+
 Private Sub Form_Open(Cancel As Integer)
+Dim rs As Recordset
+Dim Db As Database
+Set Db = CurrentDb
+
     'Form Open is typically used on forms that have incoming openArg strings
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
@@ -2588,6 +2774,30 @@ Private Sub Form_Open(Cancel As Integer)
 
 '///Code
     'Me.Filter = "[ID] = " & Me.subfrm_fqryProjectionsMaxUpdate!MaxOfID
+UserIsPDC = False
+UserIsDIU = False
+    If DCount("*", "fqryProjectionsMaxUpdate_PDC") = 0 Then
+        With Me!subfrm_fqryProjectionsMaxUpdate.Form
+            .RecordSource = "fqryProjectionsMaxUpdate_ALL"
+        End With
+        UserIsPDC = False
+    Else
+        With Me!subfrm_fqryProjectionsMaxUpdate.Form
+            .RecordSource = "fqryProjectionsMaxUpdate_PDC"
+        End With
+        UserIsPDC = True
+    End If
+    
+    Set rs = Db.OpenRecordset("qryUserPositions")
+        rs.MoveFirst
+        While Not rs.EOF
+            If rs!Position = "DIUL" Or rs!Position = "DIUS" Then
+                UserIsDIU = True
+            Else
+            End If
+            rs.MoveNext
+        Wend
+        Set rs = Nothing
 '///Code
 
 '///ErrorHandling
@@ -2602,13 +2812,15 @@ PROC_ERR:
 End Sub
 
 Private Sub Form_Current()
+
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
     PushCallStack Me.name & "." & "Form_Current"
 '///Error Handling
 
 '///Code
-    RepaintForm
+    RepaintForm (UserIsPDC)
+    
 '///Code
 
 '///ErrorHandling
@@ -2651,7 +2863,7 @@ PROC_ERR:
 End Sub
 
 'INTERNAL PAGE SPECIFIC CODE
-Private Sub RepaintForm()
+Private Sub RepaintForm(IsPDC As Boolean)
 
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
@@ -2659,12 +2871,28 @@ Private Sub RepaintForm()
 '///Error Handling
 
 '///Code
-    If IsNull(Me.[FinalizeDate]) Then
-        EnableFormArea "Scoping Meeting"
-    Else
-        EnableFormArea "Scoping Meeting", "Disable"
-        EnableFormArea "Update"
-    End If
+
+Select Case IsPDC
+    Case True
+        If IsNull(Me.[FinalizeDate]) Then
+            EnableFormArea "Projections"
+        Else
+            EnableFormArea "Projections", "Disable"
+            EnableFormArea "Update"
+        End If
+    
+    Case False
+        EnableFormArea "Projections", "Disable"
+    
+    Case Else
+         MsgBox "There was an permissions exception when opening " & Me.Caption & ". Page will not show."
+         Debug.Print "There was an permissions exception when opening " & Me.Caption & ". Page will not show."
+         DoCmd.Close
+         GoTo PROC_ERR
+    
+End Select
+
+    
 '///Code
 
 '///ErrorHandling
@@ -2690,6 +2918,11 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
 '///Code
     If Override = "Disable" Then
         CanEnable = False
+        If UserIsDIU = True Then
+            cmdDIUEntry.Enabled = True
+        Else
+            cmdDIUEntry.Enabled = False
+        End If
     Else
         CanEnable = True
     End If
@@ -2698,7 +2931,7 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
         Case "Update"
             Me.cmdUpdate.Enabled = True
             
-        Case "Scoping Meeting"
+        Case "Projections"
             Me.Projected_Date_100__PW_Submitted.Enabled = CanEnable
             Me.Actual_Date_100__PWs_Submitted.Enabled = CanEnable
             Me.Number_of_Large_Projects.Enabled = CanEnable
@@ -2731,8 +2964,8 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
             Me.Category_G_Projected_Amount.Enabled = CanEnable
             Me.Number_of_Projects_100__Complete.Enabled = CanEnable
             Me.Number_of_Complex_Projects.Enabled = CanEnable
-            Me.cmdSaveRecord.Enabled = CanEnable
             Me.cmdFinalize.Enabled = CanEnable
+            Me.txtExplainationOfChanges.Enabled = CanEnable
             Me.cmdUpdate.Enabled = False
 
         Case Else
@@ -2752,3 +2985,216 @@ PROC_ERR:
 
 
 End Sub
+
+'INTERNAL STANDARD CODE
+Private Sub CompleteReview(ReviewType As String)
+    Dim frm As Form 'used for getting information from frmReviewResult dialog
+    
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "CompleteReview"
+'///Error Handling
+
+'///Code
+    Reviews.StartReview GetItemDims(ReviewType), Environ("UserName"), True
+    If PreDialogCheck(ReviewType) Then
+        DoCmd.OpenForm "frmReviewResult", , , , , acDialog, GetItemDims(ReviewType).OpenString
+        If Access.CurrentProject.AllForms("frmReviewResult").IsLoaded Then
+            Set frm = Forms("frmReviewResult")
+            If PostDialogCheck(ReviewType, frm.cboResult) Then
+                If Reviews.CompleteReview(GetItemDims(ReviewType), Environ("UserName"), frm.cboResult) Then
+                    HandleDisposition ReviewType, frm
+                End If
+            End If
+            DoCmd.Close acForm, "frmReviewResult"
+        Else
+            MsgBox "Review was cancelled"
+        End If
+    End If
+    RepaintForm (UserIsPDC)
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+
+Private Sub StartReview(ReviewType As String)
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "StartReview"
+'///Error Handling
+
+'///Code
+    Reviews.StartReview GetItemDims(ReviewType), Environ("UserName")
+    RepaintForm (UserIsPDC)
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "HandleStandardDisposition"
+'///Error Handling
+
+'///Code
+    Select Case frm.cboResult
+'        Most review dispositions have fairly standard code.
+        Case "DM"
+            Reviews.EnterReview GetItemDims("Determination Memo")
+        Case "RFI"
+            Reviews.EnterReview GetItemDims("RFI")
+            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+        Case "RSN"
+            Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
+        Case "RW"
+            Reviews.EnterReview GetItemDims(frm.cboRework)
+        Case Else
+            Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
+    End Select
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Sub
+Private Sub HandleDisposition(ReviewType As String, frm As Form)
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "HandleDisposition"
+'///Error Handling
+
+'///Code
+    Select Case frm.cboResult
+        Case "DM", "RFI", "RSN", "RW"
+            HandleStandardDisposition ReviewType, frm
+        Case "SUB"
+            'Main section of page specific code. Creates new reviews as needed.
+            Select Case ReviewType
+                Case "DIU Update EMMIE Projections"
+'                    Reviews.EnterReview GetItemDims("DIU Update EMMIE Projections")
+'                    'This causes a duplicate review.  Putting back at pre check.
+                Case Else
+                    Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & ReviewType
+            End Select
+        Case Else
+            Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
+    End Select
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Sub
+
+
+Private Function GetItemDims(Optional ReviewName As String = "") As classItemDims
+    Dim ItemDims As New classItemDims   ' eventually what is passed out.  Creates new object
+'    each time it is called
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "GetItemDims"
+'///Error Handling
+
+'///Code
+    ItemDims.LoadByForm Me, FormItemType, ReviewName
+    Set GetItemDims = ItemDims
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Function
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Function
+Private Function PreDialogCheck(ReviewType As String) As Boolean
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "PreDialogCheck"
+'///Error Handling
+
+'///Code
+Debug.Print ReviewType
+    Select Case ReviewType
+        Case "DIU Update EMMIE Projections"
+            Me.[Date Projections Entered To EMMIE] = Now()
+            PreDialogCheck = True
+        Case Else
+            PreDialogCheck = False
+            Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & ReviewType
+    End Select
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Function
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Function
+
+Private Function PostDialogCheck(ReviewType As String, DialogResult As String) As Boolean
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "PostDialogCheck"
+'///Error Handling
+
+'///Code
+'   No Check Needed.
+    PostDialogCheck = True
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Function
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Function
