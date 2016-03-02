@@ -3,9 +3,9 @@ VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
+    NavigationButtons = NotDefault
     AllowDeletions = NotDefault
     DividingLines = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -16,10 +16,10 @@ Begin Form
     Width =16620
     DatasheetFontHeight =11
     ItemSuffix =105
-    Right =15375
-    Bottom =9240
+    Right =11445
+    Bottom =7920
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999' and [ApplicantID]='810-19JXO-00'"
+    Filter ="[DisasterID]='9999' and [ApplicantID]='822-200K6-00'"
     RecSrcDt = Begin
         0x16df9ff41aa6e440
     End
@@ -1627,7 +1627,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =3780
@@ -1670,7 +1669,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    EnterKeyBehavior = NotDefault
+                    TabStop = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =8760

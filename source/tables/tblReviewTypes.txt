@@ -2,7 +2,7 @@
 1	RPA	Ops Initial	10	1	2	frmRPAreview	OPSL	ODIU
 2	RPA	OCC Review	20	1	2	frmRPAreview	OCC	
 3	RPA	PAGS Review	30	1	2	frmRPAreview	PAGS	
-4	RPA	Assign PDM	40	1	3	frmAssignPDC	PAGS	
+4	RPA	Assign PDC	40	1	3	frmAssignPDC	PAGS	
 5	RPA	Exploratory Call	50	1	4	frmSubrecipientExploratoryCall	PDTFL	
 6	RPA	DIU Enter Call	60	1	4	frmSubrecipientExploratoryCall	DIUL	DIUS
 7	RPA	Scoping Meeting	60	1	5	frmSubrecipientRSM	PDTFL	
@@ -11,17 +11,17 @@
 10	RPA	Ops RPA Eligibility	40	1	2	frmRPAreview	OPSL	ODIU
 11	RPA	Exit Briefing	80	4	13		PDTFL	
 12	Project	Project Entry	10	1	7	frmProcessProjectRoutingSheet PDC	PDTFL	
-13	Project	DIU Lane Select	20	2	6	frmDIUProcessProjectRoutingSheet	DIUL	DIUS
+13	Project	DIU Lane Select	20	2	6	frmDIUProcessProjectRoutingSheet	DIUL	
 14	EXProject	Assign DVS	10	2	9	frmExpeditedLaneDI	EXGL	
-15	EXProject	Validation	20	2	9	frmExpeditedLaneDI	EXGL	EXDVS
-16	EXProject	DDD Entry	30	2	9	frmExpeditedLaneDI	EXGL	EXDVS
-17	EXProject	DDD with PDM	40	2	9	frmExpeditedLaneDI	EXGL	EXDVS
-18	EXProject	NA	50	2	9	frmExpeditedLaneDI	EXGL	
-19	EXProject	PDM Concurrence	60	2	9	frmExpeditedLaneDI	PDTFL	
-20	EXProject	Applicant Concurrence	70	2	9	frmExpeditedLaneDI	PDTFL	
-21	EXProject	Assign DAS	80	3	10	frmExpeditedScopingCosting	DIUL	
-22	EXProject	Enter Cost	90	3	10	frmExpeditedScopingCosting	DIUL	DAS
-23	EXProject	Submit in EMMIE	100	3	10	frmExpeditedScopingCosting	QAS	
+15	EXProject	Validation	20	2	9	frmExpeditedLaneDI	EXDVS	
+16	EXProject	DDD Entry	30	2	9	frmExpeditedLaneDI	EXDVS	
+17	EXProject	DDD with PDC	40	2	9	frmExpeditedLaneDI	EXDVS	
+18	EXProject	Lead Concurrence	50	2	9	frmExpeditedLaneDI	EXGL	
+19	EXProject	PAGS Concurrence	60	2	9	frmExpeditedLaneDI	PAGS	
+20	EXProject	Recipient Concurrence	70	2	9	frmExpeditedLaneDI	PDTFL	
+21	EXProject	Assign PAS	80	3	10	frmExpeditedScopingCosting	EXGL	
+22	EXProject	Enter SOW and Cost	90	3	10	frmExpeditedScopingCosting	EXPAS	
+23	EXProject	Submit in EMMIE	100	3	10	frmExpeditedScopingCosting	CFC	
 24	STProject	Assign DVS	10	2	9	frmStAssignDvs	STGL	
 25	STProject	Generate Work Order	20	2	9	frmStWorkOrderDev	STDVS	
 26	STProject	Site Inspections	30	2	8	frmSTSiteInspections	SITFL	SI
@@ -52,5 +52,5 @@
 54	RFI	RFI Creation	10	1	1	frmRFIRequest	DIUS	
 55	RFI	PDM Concurrence	20	1	1	frmRFIConcurrence	PDTFL	
 56	RFI	Transmittal	30	1	1	frmRFITransmittal	PDTFL	
-57	RFI	Pending Receipt	40	1	1	frmRFIReceipt	DIUL	DIUS
-58	RPA	Update EMMIE Projections	75	1	12	frmUpdateRSMProjections	DIUS	
+57	RFI	Pending Receipt	40	1	1	frmRFIReceipt	DIUS	
+58	RPA	DIU Update EMMIE Projections	75	1	12	frmUpdateRSMProjections	DIUS	
