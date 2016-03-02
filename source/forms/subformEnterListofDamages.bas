@@ -5,7 +5,6 @@ Begin Form
     AutoCenter = NotDefault
     AllowDeletions = NotDefault
     DividingLines = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -16,9 +15,9 @@ Begin Form
     DatasheetFontHeight =11
     ItemSuffix =61
     Left =60
-    Top =4515
-    Right =15990
-    Bottom =11775
+    Top =4740
+    Right =16245
+    Bottom =12000
     DatasheetGridlinesColor =15132391
     AfterInsert ="[Event Procedure]"
     RecSrcDt = Begin

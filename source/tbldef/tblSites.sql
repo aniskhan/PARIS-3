@@ -63,6 +63,7 @@ CREATE TABLE [tblSites] (
   [Assigned Insurance Specialist] VARCHAR (255),
   [Insurance Inspection Report Required] BIT ,
   [Scheduled Date of Site Inspection] DATETIME ,
+  [Scheduled Time of Site Inspection] DATETIME ,
   [Projected time to complete site inspoection] VARCHAR (255),
   [Date of Site Inspection] DATETIME ,
   [SI has Subrecipient Agent sign draft site DDD] DATETIME ,

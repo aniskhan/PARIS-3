@@ -17,8 +17,8 @@ Begin Form
     Width =16560
     DatasheetFontHeight =11
     ItemSuffix =35
-    Right =13605
-    Bottom =14055
+    Right =13155
+    Bottom =10395
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x873e80fc3baee440
@@ -164,7 +164,7 @@ Begin Form
                     BackColor =13431551
                     BorderColor =8355711
                     Name ="lbHeader"
-                    Caption ="Expedited Lane - Scoping and Costing"
+                    Caption ="Expedited Lane - Costing"
                     GridlineColor =10921638
                     LayoutCachedWidth =16500
                     LayoutCachedHeight =660
@@ -209,7 +209,7 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =223
                     Left =9300
-                    Top =5460
+                    Top =6540
                     Width =3780
                     Height =2220
                     BackColor =15921906
@@ -217,9 +217,9 @@ Begin Form
                     Name ="Box34"
                     GridlineColor =10921638
                     LayoutCachedLeft =9300
-                    LayoutCachedTop =5460
+                    LayoutCachedTop =6540
                     LayoutCachedWidth =13080
-                    LayoutCachedHeight =7680
+                    LayoutCachedHeight =8760
                     BackShade =95.0
                 End
                 Begin Rectangle
@@ -400,7 +400,7 @@ Begin Form
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10080
-                    Top =8340
+                    Top =5820
                     Width =2520
                     Height =480
                     FontSize =14
@@ -413,14 +413,14 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =10080
-                    LayoutCachedTop =8340
+                    LayoutCachedTop =5820
                     LayoutCachedWidth =12600
-                    LayoutCachedHeight =8820
+                    LayoutCachedHeight =6300
                     Begin
                         Begin Label
                             OverlapFlags =223
                             Left =10080
-                            Top =7860
+                            Top =5340
                             Width =2520
                             Height =480
                             FontSize =14
@@ -430,9 +430,9 @@ Begin Form
                             Caption ="Project Worksheet #"
                             GridlineColor =10921638
                             LayoutCachedLeft =10080
-                            LayoutCachedTop =7860
+                            LayoutCachedTop =5340
                             LayoutCachedWidth =12600
-                            LayoutCachedHeight =8340
+                            LayoutCachedHeight =5820
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -443,18 +443,18 @@ Begin Form
                     OverlapFlags =215
                     Left =180
                     Top =4860
-                    Width =4200
+                    Width =4260
                     Height =420
                     FontSize =14
                     FontWeight =700
                     BorderColor =8355711
                     ForeColor =12874308
                     Name ="Label23"
-                    Caption ="Assign Project Assembly Specialist"
+                    Caption ="Assign Doc Assembly Specialist"
                     GridlineColor =10921638
                     LayoutCachedLeft =180
                     LayoutCachedTop =4860
-                    LayoutCachedWidth =4380
+                    LayoutCachedWidth =4440
                     LayoutCachedHeight =5280
                     ForeThemeColorIndex =8
                     ForeTint =100.0
@@ -467,8 +467,8 @@ Begin Form
                     Height =660
                     TabIndex =9
                     ForeColor =4210752
-                    Name ="cmdAssignPasComplete"
-                    Caption ="Assign PAS Complete"
+                    Name ="cmdAssignDasComplete"
+                    Caption ="Assign DAS Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
@@ -507,14 +507,14 @@ Begin Form
                     BorderColor =10921638
                     ForeColor =4210752
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
-                    Name ="cboAssignPas"
+                    Name ="cboAssignDas"
                     ControlSource ="Assigned Project Assembly Specialist"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT qryNames.UserID, qryNames.[Reverse Full Name] FROM qryNames INNER JOIN tb"
-                        "lStaffRoles ON qryNames.UserID = tblStaffRoles.StaffID WHERE (((tblStaffRoles.[D"
-                        "isasterID])=Forms!frmExpeditedScopingCosting![Disaster Number]) And ((tblStaffRo"
-                        "les.EndDate) Is Null Or (tblStaffRoles.EndDate)>=Date()) And ((tblStaffRoles.Pos"
-                        "ition)=\"EXPAS\")); "
+                        "lStaffRoles ON qryNames.UserID = tblStaffRoles.StaffID WHERE (((tblStaffRoles.Di"
+                        "sasterID)=Forms!frmExpeditedScopingCosting![Disaster Number]) And ((tblStaffRole"
+                        "s.EndDate) Is Null Or (tblStaffRoles.EndDate)>=Date()) And ((tblStaffRoles.Posit"
+                        "ion)=\"DAS\")); "
                     ColumnWidths ="0;2880"
                     GridlineColor =10921638
 
@@ -530,17 +530,17 @@ Begin Form
                             OverlapFlags =215
                             Left =180
                             Top =5460
-                            Width =4140
+                            Width =4275
                             Height =315
                             FontSize =12
                             FontWeight =600
                             BorderColor =8355711
                             Name ="Label44"
-                            Caption ="Assign Project Assembly Specialist"
+                            Caption ="Assign Document Assembly Specialist"
                             GridlineColor =10921638
                             LayoutCachedLeft =180
                             LayoutCachedTop =5460
-                            LayoutCachedWidth =4320
+                            LayoutCachedWidth =4455
                             LayoutCachedHeight =5775
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
@@ -559,7 +559,7 @@ Begin Form
                     BorderColor =8355711
                     ForeColor =12349952
                     Name ="Label59"
-                    Caption ="SOW and Cost Entered into EMMIE"
+                    Caption ="Cost Entered into EMMIE"
                     GridlineColor =10921638
                     LayoutCachedLeft =4680
                     LayoutCachedTop =4860
@@ -576,7 +576,7 @@ Begin Form
                     Height =540
                     TabIndex =5
                     ForeColor =4210752
-                    Name ="cmdEnterSowStart"
+                    Name ="cmdEnterCostStart"
                     Caption ="Assembly Started"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
@@ -610,7 +610,7 @@ Begin Form
                     Height =660
                     TabIndex =11
                     ForeColor =4210752
-                    Name ="cmdEnterSowComplete"
+                    Name ="cmdEnterCostComplete"
                     Caption ="Assembly Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
@@ -648,7 +648,7 @@ Begin Form
                     TabIndex =10
                     BorderColor =10921638
                     ForeColor =4210752
-                    Name ="tbPasComments"
+                    Name ="tbDasComments"
                     ControlSource ="PAS Comments"
                     GridlineColor =10921638
 
@@ -666,7 +666,7 @@ Begin Form
                             BorderColor =8355711
                             ForeColor =8355711
                             Name ="Label68"
-                            Caption ="Project Assembly Specialist Comments"
+                            Caption ="Document Assembly Specialist Comments"
                             GridlineColor =10921638
                             LayoutCachedLeft =4800
                             LayoutCachedTop =6120
@@ -700,7 +700,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =10380
-                    Top =5640
+                    Top =6720
                     Width =1800
                     Height =660
                     TabIndex =6
@@ -711,9 +711,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =10380
-                    LayoutCachedTop =5640
+                    LayoutCachedTop =6720
                     LayoutCachedWidth =12180
-                    LayoutCachedHeight =6300
+                    LayoutCachedHeight =7380
                     UseTheme =0
                     BackColor =15123357
                     BorderColor =15123357
@@ -755,7 +755,7 @@ Begin Form
                     OverlapFlags =215
                     TextAlign =2
                     Left =9540
-                    Top =6360
+                    Top =7440
                     Width =3360
                     Height =1020
                     BorderColor =8355711
@@ -764,9 +764,9 @@ Begin Form
                     Caption ="Clicking \"EMMIE Submittal Complete\" will submit this to Phase 4."
                     GridlineColor =10921638
                     LayoutCachedLeft =9540
-                    LayoutCachedTop =6360
+                    LayoutCachedTop =7440
                     LayoutCachedWidth =12900
-                    LayoutCachedHeight =7380
+                    LayoutCachedHeight =8460
                 End
                 Begin Subform
                     OverlapFlags =85
@@ -1388,14 +1388,14 @@ Option Explicit
 Private Const FormItemType As String = "Project" 'used in determining what type of record is handled
 
 'BUTTONS
-Private Sub cmdAssignPasComplete_Click()
+Private Sub cmdAssignDasComplete_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdAssignPasComplete_Click"
+    PushCallStack Me.name & "." & "cmdAssignDasComplete_Click"
 '///Error Handling
 
 '///Code
-    CompleteReview "Assign PAS"
+    CompleteReview "Assign DAS"
 '///Code
 
 '///ErrorHandling
@@ -1430,14 +1430,14 @@ PROC_ERR:
 '///ErrorHandline
 End Sub
 
-Private Sub cmdEnterSowComplete_Click()
+Private Sub cmdEnterCostComplete_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdEnterSowComplete_Click"
+    PushCallStack Me.name & "." & "cmdEnterCostComplete_Click"
 '///Error Handling
 
 '///Code
-    CompleteReview "Enter SOW and Cost"
+    CompleteReview "Enter Cost"
 '///Code
 
 '///ErrorHandling
@@ -1451,14 +1451,14 @@ PROC_ERR:
 '///ErrorHandline
 End Sub
 
-Private Sub cmdEnterSowStart_Click()
+Private Sub cmdEnterCostStart_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdEnterSowStart_Click"
+    PushCallStack Me.name & "." & "cmdEnterCostStart_Click"
 '///Error Handling
 
 '///Code
-    StartReview "Enter SOW and Cost"
+    StartReview "Enter Cost"
 '///Code
 
 '///ErrorHandling
@@ -1526,8 +1526,8 @@ Private Sub RepaintForm()
 '///Error Handling
 
 '///Code
-    EnableFormArea "Assign PAS"
-    EnableFormArea "Enter SOW and Cost"
+    EnableFormArea "Assign DAS"
+    EnableFormArea "Enter Cost"
     EnableFormArea "Submit in EMMIE"
     Me.subHistory.Requery
 '///Code
@@ -1560,13 +1560,13 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
     End If
     
     Select Case AreaName
-        Case "Assign PAS"
-            Me.cboAssignPas.Enabled = CanEnable
-            Me.cmdAssignPasComplete.Enabled = CanEnable
-        Case "Enter SOW and Cost"
-            Me.cmdEnterSowStart.Enabled = CanEnable
-            Me.cmdEnterSowComplete.Enabled = CanEnable
-            Me.tbPasComments.Enabled = CanEnable
+        Case "Assign DAS"
+            Me.cboAssignDas.Enabled = CanEnable
+            Me.cmdAssignDasComplete.Enabled = CanEnable
+        Case "Enter Cost"
+            Me.cmdEnterCostStart.Enabled = CanEnable
+            Me.cmdEnterCostComplete.Enabled = CanEnable
+            Me.tbDasComments.Enabled = CanEnable
         Case "Submit in EMMIE"
             Me.tbPwNumber.Enabled = CanEnable
             Me.cmdEmmieSubmittal.Enabled = CanEnable
@@ -1599,8 +1599,8 @@ Private Function PreDialogCheck(ReviewType As String) As Boolean
 
 '///Code
 '    No checks on this page.
-    If Nz(Me.cboAssignPas, "") = "" And ReviewType = "Assign PAS" Then
-        MsgBox "Please select a PAS before trying to complete this."
+    If Nz(Me.cboAssignDas, "") = "" And ReviewType = "Assign DAS" Then
+        MsgBox "Please select a DAS before trying to complete this."
         PreDialogCheck = False
     Else
         PreDialogCheck = True
@@ -1658,9 +1658,9 @@ Private Sub HandleDisposition(ReviewType As String, frm As Form)
         Case "SUB"
 '            Main section of page specific code. Creates new reviews as needed.
             Select Case ReviewType
-                Case "Assign PAS"
-                    Reviews.EnterReview GetItemDims("Enter SOW and Cost"), Me.[Assigned Project Assembly Specialist]
-                Case "Enter SOW and Cost"
+                Case "Assign DAS"
+                    Reviews.EnterReview GetItemDims("Enter Cost"), Me.[Assigned Project Assembly Specialist]
+                Case "Enter Cost"
                     Reviews.EnterReview GetItemDims("Submit in EMMIE")
                 Case "Submit in EMMIE"
                     Reviews.EnterReview GetItemDims("Compliance Reviews")

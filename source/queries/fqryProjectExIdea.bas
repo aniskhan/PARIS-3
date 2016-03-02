@@ -2,10 +2,9 @@
 Option =0
 Where ="(((revtblProject.ReviewType)=\"Assign DVS\" Or (revtblProject.ReviewType)=\"Vali"
     "dation\" Or (revtblProject.ReviewType)=\"DDD Entry\" Or (revtblProject.ReviewTyp"
-    "e)=\"DDD with PDC\" Or (revtblProject.ReviewType)=\"Lead Concurrence\" Or (revtb"
-    "lProject.ReviewType)=\"PAGS Concurrence\" Or (revtblProject.ReviewType)=\"Recipi"
-    "ent Concurrence\") AND ((revtblProject.ReviewExitDate) Is Null) AND ((tblProject"
-    "s.[Lane Assigned])=\"EX\"))"
+    "e)=\"DDD with PDM\" Or (revtblProject.ReviewType)=\"PDM Concurrence\" Or (revtbl"
+    "Project.ReviewType)=\"Applicant Concurrence\") AND ((revtblProject.ReviewExitDat"
+    "e) Is Null) AND ((tblProjects.[Lane Assigned])=\"EX\"))"
 Begin InputTables
     Name ="tblProjects"
     Name ="revtblProject"
@@ -96,12 +95,12 @@ Begin
     State =0
     Left =0
     Top =0
-    Right =1423
-    Bottom =851
+    Right =894
+    Bottom =710
     Left =-1
     Top =-1
-    Right =1407
-    Bottom =521
+    Right =878
+    Bottom =504
     Left =0
     Top =0
     ColumnsShown =539

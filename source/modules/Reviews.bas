@@ -190,7 +190,7 @@ Public Sub EnterReview(ItemDims As classItemDims, Optional Assignto As String = 
     Set Db = Nothing
 
 End Sub
-Public Sub PushAllChildren(ItemDims As classItemDims, UserName As String, Disposition As String, Optional EnterChildReview As String = "")
+Public Sub PushAllChildren(ItemDims As classItemDims, UserName As String, Disposition As String, Optional EnterChildReview As String = "", Optional AssignChildTo As String = "")
     Dim Db As Database
     Dim recChildren As Recordset
     Dim ChildDim As New classItemDims
@@ -254,7 +254,7 @@ Public Sub PushAllChildren(ItemDims As classItemDims, UserName As String, Dispos
             If CompleteReview(ChildDim, UserName, Disposition) Then
                 If EnterChildReview <> "" Then
                     ChildDim.ReviewType = EnterChildReview
-                    EnterReview ChildDim
+                    EnterReview ChildDim, AssignChildTo
                 End If
             Else
                 Debug.Print "Push Child Failed Complete Review Failed"; ChildDim.OpenString

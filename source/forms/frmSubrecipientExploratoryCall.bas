@@ -17,9 +17,9 @@ Begin Form
     GridY =24
     Width =16440
     DatasheetFontHeight =11
-    ItemSuffix =154
-    Right =19725
-    Bottom =9495
+    ItemSuffix =155
+    Right =20805
+    Bottom =12900
     DatasheetGridlinesColor =15132391
     Filter ="[Assigned PDC] = 'akhandka'"
     RecSrcDt = Begin
@@ -1118,6 +1118,32 @@ Begin Form
                     ForeThemeColorIndex =1
                     ForeShade =65.0
                 End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    Left =13860
+                    Top =2640
+                    Width =2400
+                    Height =600
+                    TabIndex =22
+                    ForeColor =4210752
+                    Name ="cmdViewExploratoryCallInfo"
+                    Caption ="View Exploratory Call Info"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =13860
+                    LayoutCachedTop =2640
+                    LayoutCachedWidth =16260
+                    LayoutCachedHeight =3240
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
             End
         End
         Begin FormFooter
@@ -1628,7 +1654,26 @@ PROC_ERR:
 '///ErrorHandling
 End Sub
 
+Private Sub cmdViewExploratoryCallInfo_Click()
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "cmdViewExploratoryCallInfo_Click"
+'///Error Handling
 
+'///Code
+    DoCmd.OpenReport "rptRpaEnterExploratoryCall", acViewReport, , "[ApplicantID]='" & [ApplicantID] & "'", acWindowNormal
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
 
 'OTHER PAGE EVENTS
 Private Sub Form_Current()

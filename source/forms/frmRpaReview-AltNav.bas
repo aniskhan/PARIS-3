@@ -16,8 +16,8 @@ Begin Form
     Width =17939
     DatasheetFontHeight =11
     ItemSuffix =165
-    Right =13605
-    Bottom =14055
+    Right =17205
+    Bottom =10395
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xdfc5c038afa8e440
@@ -2070,7 +2070,7 @@ Private Sub HandleDisposition(ReviewType As String, frm As Form)
                     Reviews.EnterReview GetItemDims("PAGS Review")
                 Case "PAGS Review"
                     Reviews.EnterReview GetItemDims("DIU RPA Eligibility")
-                    Reviews.EnterReview GetItemDims("Assign PDC")
+                    Reviews.EnterReview GetItemDims("Assign PDM")
                 Case Else
                     Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & ReviewType
             End Select

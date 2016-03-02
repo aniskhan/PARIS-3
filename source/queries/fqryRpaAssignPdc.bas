@@ -1,6 +1,6 @@
 ﻿Operation =1
 Option =0
-Where ="(((revtblRpa.ReviewType)=\"Assign PDC\") And ((revtblRpa.ReviewExitDate) Is Null"
+Where ="(((revtblRpa.ReviewType)=\"Assign PDM\") And ((revtblRpa.ReviewExitDate) Is Null"
     ") And ((tblSubRecipient.DisasterID)=Forms!navMain!DisasterID) And ((tblSubRecipi"
     "ent.Status)=\"ELIGIBLE\"))"
 Begin InputTables
@@ -13,11 +13,11 @@ End
 Begin Joins
     LeftTable ="revtblRpa"
     RightTable ="tblSubRecipient"
-    Expression ="revtblRpa.DisasterID = tblSubRecipient.DisasterID"
+    Expression ="revtblRpa.ApplicantID = tblSubRecipient.ApplicantID"
     Flag =1
     LeftTable ="revtblRpa"
     RightTable ="tblSubRecipient"
-    Expression ="revtblRpa.ApplicantID = tblSubRecipient.ApplicantID"
+    Expression ="revtblRpa.DisasterID = tblSubRecipient.DisasterID"
     Flag =1
 End
 dbBoolean "ReturnsRecords" ="-1"
@@ -255,12 +255,12 @@ Begin
     State =0
     Left =0
     Top =0
-    Right =1035
-    Bottom =834
+    Right =894
+    Bottom =710
     Left =-1
     Top =-1
-    Right =1019
-    Bottom =487
+    Right =878
+    Bottom =470
     Left =0
     Top =0
     ColumnsShown =539

@@ -13,8 +13,8 @@ Begin Form
     Width =16560
     DatasheetFontHeight =11
     ItemSuffix =47
-    Right =13605
-    Bottom =14055
+    Right =17205
+    Bottom =10365
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xc6b354959da4e440
@@ -411,6 +411,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -452,6 +453,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -493,6 +495,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -534,6 +537,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -575,6 +579,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -616,6 +621,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -657,6 +663,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -698,6 +705,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -739,6 +747,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -780,6 +789,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -821,6 +831,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -862,6 +873,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =11070
@@ -907,6 +919,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =11070

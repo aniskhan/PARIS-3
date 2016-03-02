@@ -47,6 +47,7 @@ Begin OutputColumns
     Expression ="tblSites.[Assigned Mitigation Specialist]"
     Expression ="tblSites.[Assigned Insurance Specialist]"
     Expression ="tblSites.[Inspection Notes]"
+    Expression ="tblSites.[Scheduled Time of Site Inspection]"
 End
 Begin Joins
     LeftTable ="tblSites"
@@ -238,18 +239,23 @@ Begin
     End
     Begin
         dbText "Name" ="Lane Assigned"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblSites.[Scheduled Time of Site Inspection]"
+        dbLong "AggregateType" ="-1"
     End
 End
 Begin
     State =0
     Left =0
     Top =0
-    Right =767
-    Bottom =834
+    Right =1134
+    Bottom =860
     Left =-1
     Top =-1
-    Right =751
-    Bottom =383
+    Right =1118
+    Bottom =366
     Left =0
     Top =0
     ColumnsShown =539
