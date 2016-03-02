@@ -7,7 +7,6 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -18,10 +17,10 @@ Begin Form
     Width =16500
     DatasheetFontHeight =11
     ItemSuffix =111
-    Right =16005
-    Bottom =8505
+    Right =15825
+    Bottom =7260
     DatasheetGridlinesColor =15132391
-    Filter ="[ID] = 112"
+    Filter ="[ID] = 2"
     RecSrcDt = Begin
         0x998eff7ddbb2e440
     End
@@ -2444,7 +2443,7 @@ Begin Form
                     TabIndex =43
                     ForeColor =4210752
                     Name ="cmdViewHistory"
-                    Caption ="View History of Projection UpdatescmdViewHistory"
+                    Caption ="View History of Projection Updates"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
@@ -2764,7 +2763,10 @@ End Sub
 Private Sub Form_Open(Cancel As Integer)
 Dim rs As Recordset
 Dim Db As Database
+Dim countUnfiltered As Integer
+Dim frm As Form
 Set Db = CurrentDb
+Set frm = Me.Form
 
     'Form Open is typically used on forms that have incoming openArg strings
 '///Error Handling
@@ -2773,7 +2775,13 @@ Set Db = CurrentDb
 '///Error Handling
 
 '///Code
-    'Me.Filter = "[ID] = " & Me.subfrm_fqryProjectionsMaxUpdate!MaxOfID
+
+
+countUnfiltered = DCount("DisasterID", frm.RecordSource)
+If countUnfiltered < 0 Then
+FormFilter.RecordFilterCheck Me.Form, FormItemType
+Else
+
 UserIsPDC = False
 UserIsDIU = False
     If DCount("*", "fqryProjectionsMaxUpdate_PDC") = 0 Then
@@ -2798,6 +2806,7 @@ UserIsDIU = False
             rs.MoveNext
         Wend
         Set rs = Nothing
+End If
 '///Code
 
 '///ErrorHandling

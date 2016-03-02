@@ -16,8 +16,8 @@ Begin Form
     Width =15480
     DatasheetFontHeight =11
     ItemSuffix =118
-    Right =19725
-    Bottom =9240
+    Right =15825
+    Bottom =7260
     TimerInterval =30
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
@@ -3769,7 +3769,7 @@ Private Sub cmdOpenUpdateProjections_Click()
 '///Error Handling
 
 '///Code
-    DoCmd.OpenForm "frmUpdateRSMProjections", acNormal, , "[Assigned PDC] = '" & Environ("UserName") & "'"
+    DoCmd.OpenForm "frmUpdateRSMProjections", acNormal
 '///Code
 
 '///ErrorHandling

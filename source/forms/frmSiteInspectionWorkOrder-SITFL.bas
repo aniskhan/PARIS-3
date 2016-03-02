@@ -15,8 +15,8 @@ Begin Form
     Width =20460
     DatasheetFontHeight =11
     ItemSuffix =180
-    Right =16755
-    Bottom =12645
+    Right =14835
+    Bottom =8580
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x9c5223c2aeb1e440
@@ -1533,7 +1533,7 @@ Begin Form
                     BackColor =15788753
                     BorderColor =8355711
                     Name ="lbFooter"
-                    Caption ="Damage Intake and Eligibility Determinations"
+                    Caption ="Intake Damage and Eligibility Analysis"
                     FontName ="Broadway"
                     GridlineColor =10921638
                     LayoutCachedWidth =20160

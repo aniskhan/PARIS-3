@@ -186,7 +186,7 @@ Function entryPointEnterLineBehavior()
 
 Dim obj As AccessObject
 
-
+Application.Echo False
 For Each obj In CurrentProject.AllForms
     DoCmd.OpenForm ("NavMain")
     On Error GoTo CloseFORM
@@ -202,7 +202,7 @@ CloseFORM:
     Resume Next
  
 Next obj
-
+Application.Echo True
 End Function
 
 Function entryPointTimefind()

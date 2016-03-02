@@ -104,27 +104,6 @@ Begin
         dbText "Name" ="tblProjects.[Lane Assigned]"
         dbLong "AggregateType" ="-1"
     End
-    Begin
-        dbText "Name" ="DisasterID"
-    End
-    Begin
-        dbText "Name" ="ApplicantID"
-    End
-    Begin
-        dbText "Name" ="ProjectID"
-    End
-    Begin
-        dbText "Name" ="Lane Assigned"
-    End
-    Begin
-        dbText "Name" ="Assigned Data Validation Specialist"
-    End
-    Begin
-        dbText "Name" ="Full Reference"
-    End
-    Begin
-        dbText "Name" ="Full Name"
-    End
 End
 Begin
     State =0

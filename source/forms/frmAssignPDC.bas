@@ -17,14 +17,14 @@ Begin Form
     Width =16500
     DatasheetFontHeight =11
     ItemSuffix =110
-    Right =17205
-    Bottom =10395
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x6fcc3bcd72a5e440
     End
     RecordSource ="fqryRpaAssignPdc"
-    Caption ="Assign PDC"
+    Caption ="Assign PDM"
     OnCurrent ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     PrtMip = Begin

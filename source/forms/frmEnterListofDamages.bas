@@ -7,7 +7,6 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -18,10 +17,10 @@ Begin Form
     Width =16440
     DatasheetFontHeight =11
     ItemSuffix =15
-    Right =12525
-    Bottom =12735
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999'"
+    Filter ="[DisasterID]='9999'AND[Assigned PDC] = 'akhandka'"
     RecSrcDt = Begin
         0xf34f976f2da9e440
     End

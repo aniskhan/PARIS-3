@@ -15,10 +15,8 @@ Begin Form
     Width =9210
     DatasheetFontHeight =11
     ItemSuffix =65
-    Left =885
-    Top =7185
-    Right =17355
-    Bottom =9015
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecordSource ="SELECT tblSites.*, tblProjects.[Lane Assigned], IIf([DVS -Site Inspection Requir"
         "ed] Is Null,\"No\",\"Yes\") AS Reviewed FROM tblProjects INNER JOIN tblSites ON "

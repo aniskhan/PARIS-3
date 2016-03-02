@@ -78,6 +78,12 @@ Begin
         dbText "Name" ="tblProjects.[PW Number]"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="ReviewType"
+    End
+    Begin
+        dbText "Name" ="ReviewExitDate"
+    End
 End
 Begin
     State =0

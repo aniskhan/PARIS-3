@@ -18,12 +18,9 @@ Begin Form
     Width =13380
     DatasheetFontHeight =11
     ItemSuffix =16
-    Right =13605
-    Bottom =14055
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
-    RecSrcDt = Begin
-        0xe0800c11d0b7e440
-    End
     RecordSource ="SELECT tblProjects.ApplicantID, tblProjects.ProjectID, tblProjects.[Application "
         "Title], tblProjects.[Lane Recommendation], tblProjects.[Project Category], tblPr"
         "ojects.[Date Assigned to Lane], tblProjects.[EMMIE Update Application  Number], "

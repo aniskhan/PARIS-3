@@ -14,8 +14,8 @@ Begin Form
     Width =17340
     DatasheetFontHeight =11
     ItemSuffix =82
-    Right =17010
-    Bottom =12615
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x0255a2a713b1e440
@@ -202,7 +202,6 @@ Begin Form
                 Begin TextBox
                     Visible = NotDefault
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -244,7 +243,6 @@ Begin Form
                 Begin TextBox
                     Visible = NotDefault
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -426,7 +424,6 @@ Begin Form
                 Begin TextBox
                     Locked = NotDefault
                     TabStop = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OldBorderStyle =0
                     OverlapFlags =215
@@ -475,7 +472,6 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OldBorderStyle =0
                     OverlapFlags =215
@@ -522,7 +518,6 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OldBorderStyle =0
                     OverlapFlags =215

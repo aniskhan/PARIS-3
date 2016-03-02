@@ -15,8 +15,8 @@ Begin Form
     Width =15960
     DatasheetFontHeight =11
     ItemSuffix =36
-    Right =13605
-    Bottom =14055
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xecfa0503d4a7e440
@@ -732,9 +732,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =14220
+                    Left =13980
                     Top =120
-                    Width =1200
                     Height =405
                     ForeColor =4210752
                     Name ="Command28"
@@ -757,7 +756,7 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =14220
+                    LayoutCachedLeft =13980
                     LayoutCachedTop =120
                     LayoutCachedWidth =15420
                     LayoutCachedHeight =525

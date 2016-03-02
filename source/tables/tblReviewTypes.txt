@@ -2,7 +2,7 @@
 1	RPA	Ops Initial	10	1	2	frmRPAreview	OPSL	ODIU
 2	RPA	OCC Review	20	1	2	frmRPAreview	OCC	
 3	RPA	PAGS Review	30	1	2	frmRPAreview	PAGS	
-4	RPA	Assign PDC	40	1	3	frmAssignPDC	PAGS	
+4	RPA	Assign PDM	40	1	3	frmAssignPDC	PAGS	
 5	RPA	Exploratory Call	50	1	4	frmSubrecipientExploratoryCall	PDTFL	
 6	RPA	DIU Enter Call	60	1	4	frmSubrecipientExploratoryCall	DIUL	DIUS
 7	RPA	Scoping Meeting	60	1	5	frmSubrecipientRSM	PDTFL	

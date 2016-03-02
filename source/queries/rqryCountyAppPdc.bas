@@ -52,9 +52,6 @@ Begin
         dbText "Name" ="tblSubRecipient.[Assigned PDC]"
         dbLong "AggregateType" ="-1"
     End
-    Begin
-        dbText "Name" ="Full Name"
-    End
 End
 Begin
     State =0

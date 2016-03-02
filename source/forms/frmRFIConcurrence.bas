@@ -15,8 +15,8 @@ Begin Form
     Width =12540
     DatasheetFontHeight =11
     ItemSuffix =48
-    Right =13605
-    Bottom =14055
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x8ca256aaf8b6e440
@@ -677,7 +677,6 @@ Begin Form
                     OverlapFlags =215
                     Left =9060
                     Top =180
-                    Width =1200
                     Height =405
                     ForeColor =4210752
                     Name ="cmdCloseForm"
@@ -705,7 +704,7 @@ Begin Form
 
                     LayoutCachedLeft =9060
                     LayoutCachedTop =180
-                    LayoutCachedWidth =10260
+                    LayoutCachedWidth =10500
                     LayoutCachedHeight =585
                     BackColor =15123357
                     BorderColor =15123357

@@ -19,18 +19,18 @@ Begin Form
     Bottom =13800
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xbcacc416d2b7e440
+        0x29c8bb5bd8b7e440
     End
     RecordSource ="SELECT tblProjects.DisasterID, tblProjects.ApplicantID, tblProjects.ProjectID, t"
         "blProjects.[Project Category], tblProjects.[Application Title], tblProjects.[Lan"
         "e Assigned], tblProjects.[Assigned Data Validation Specialist], qdProjectRef.[La"
         "ne Assigned], qdProjectRef.[Full Reference], qdLaneAssignedDate.[Lane Assigned D"
-        "ate] FROM (tblProjects INNER JOIN qdProjectRef ON (tblProjects.ProjectID = qdPro"
-        "jectRef.ProjectID) AND (tblProjects.ApplicantID = qdProjectRef.ApplicantID) AND "
-        "(tblProjects.DisasterID = qdProjectRef.DisasterID)) LEFT JOIN qdLaneAssignedDate"
-        " ON (tblProjects.ProjectID = qdLaneAssignedDate.ProjectID) AND (tblProjects.Appl"
-        "icantID = qdLaneAssignedDate.ApplicantID) AND (tblProjects.DisasterID = qdLaneAs"
-        "signedDate.DisasterID); "
+        "ate] FROM (tblProjects INNER JOIN qdProjectRef ON (tblProjects.DisasterID = qdPr"
+        "ojectRef.DisasterID) AND (tblProjects.ApplicantID = qdProjectRef.ApplicantID) AN"
+        "D (tblProjects.ProjectID = qdProjectRef.ProjectID)) LEFT JOIN qdLaneAssignedDate"
+        " ON (tblProjects.DisasterID = qdLaneAssignedDate.DisasterID) AND (tblProjects.Ap"
+        "plicantID = qdLaneAssignedDate.ApplicantID) AND (tblProjects.ProjectID = qdLaneA"
+        "ssignedDate.ProjectID); "
     Caption ="subfrmDVSReviewlProject"
     DatasheetFontName ="Calibri"
     FilterOnLoad =0

@@ -17,8 +17,8 @@ Begin Form
     Width =10230
     DatasheetFontHeight =11
     ItemSuffix =6
-    Right =12525
-    Bottom =12735
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x36be6bf716b7e440
@@ -94,7 +94,6 @@ Begin Form
             BackThemeColorIndex =1
             Begin
                 Begin TextBox
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =85
                     IMESentenceMode =3
@@ -133,7 +132,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =85
                     IMESentenceMode =3

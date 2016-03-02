@@ -16,8 +16,8 @@ Begin Form
     Width =21615
     DatasheetFontHeight =11
     ItemSuffix =93
-    Right =17205
-    Bottom =10395
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xac74c6f13aaee440
@@ -351,7 +351,6 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -417,7 +416,6 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -488,7 +486,6 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -534,7 +531,6 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
-                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -1114,7 +1110,7 @@ Begin Form
                     BackColor =15788753
                     BorderColor =8355711
                     Name ="lbFooter"
-                    Caption ="Damage Intake and Eligibility Determinations"
+                    Caption ="Intake Damage and Eligibility Analysis"
                     FontName ="Broadway"
                     GridlineColor =10921638
                     LayoutCachedWidth =16440
@@ -1127,7 +1123,7 @@ Begin Form
                     OverlapFlags =215
                     Left =14640
                     Top =60
-                    Width =1200
+                    Width =1500
                     Height =540
                     ForeColor =4210752
                     Name ="Command42"
@@ -1152,7 +1148,7 @@ Begin Form
 
                     LayoutCachedLeft =14640
                     LayoutCachedTop =60
-                    LayoutCachedWidth =15840
+                    LayoutCachedWidth =16140
                     LayoutCachedHeight =600
                     BackColor =15123357
                     BorderColor =15123357

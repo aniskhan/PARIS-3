@@ -7,7 +7,6 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -18,8 +17,8 @@ Begin Form
     Width =16440
     DatasheetFontHeight =11
     ItemSuffix =155
-    Right =20805
-    Bottom =12900
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     Filter ="[Assigned PDC] = 'akhandka'"
     RecSrcDt = Begin
@@ -176,7 +175,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =12480
+            Height =16740
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -620,7 +619,7 @@ Begin Form
                     Left =13680
                     Top =60
                     Width =2760
-                    Height =7800
+                    Height =6360
                     BackColor =14282978
                     BorderColor =10921638
                     Name ="Box84"
@@ -628,7 +627,7 @@ Begin Form
                     LayoutCachedLeft =13680
                     LayoutCachedTop =60
                     LayoutCachedWidth =16440
-                    LayoutCachedHeight =7860
+                    LayoutCachedHeight =6420
                     BackThemeColorIndex =9
                     BackTint =20.0
                 End
@@ -699,15 +698,15 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     Left =13680
-                    Top =7980
+                    Top =6600
                     Width =2760
-                    Height =4440
+                    Height =5820
                     BackColor =14282978
                     BorderColor =10921638
                     Name ="Box94"
                     GridlineColor =10921638
                     LayoutCachedLeft =13680
-                    LayoutCachedTop =7980
+                    LayoutCachedTop =6600
                     LayoutCachedWidth =16440
                     LayoutCachedHeight =12420
                     BackThemeColorIndex =9
@@ -799,31 +798,6 @@ Begin Form
                     LayoutCachedWidth =11760
                     LayoutCachedHeight =7200
                 End
-                Begin CommandButton
-                    Enabled = NotDefault
-                    OverlapFlags =215
-                    Left =14100
-                    Top =9840
-                    Width =1860
-                    Height =900
-                    TabIndex =14
-                    ForeColor =4210752
-                    Name ="Command136"
-                    Caption ="Exploratory Call Checklist"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =14100
-                    LayoutCachedTop =9840
-                    LayoutCachedWidth =15960
-                    LayoutCachedHeight =10740
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
                 Begin Subform
                     OverlapFlags =247
                     SpecialEffect =2
@@ -851,7 +825,7 @@ Begin Form
                     Top =1920
                     Width =13455
                     Height =1680
-                    TabIndex =15
+                    TabIndex =14
                     BorderColor =10921638
                     Name ="subfrmRpaInfo"
                     SourceObject ="Form.subfrmRpaInfo"
@@ -867,16 +841,16 @@ Begin Form
                 Begin Label
                     OverlapFlags =215
                     Left =13800
-                    Top =8040
+                    Top =6780
                     Width =2460
                     Height =540
                     Name ="Label143"
                     Caption ="Reference Information"
                     GridlineColor =10921638
                     LayoutCachedLeft =13800
-                    LayoutCachedTop =8040
+                    LayoutCachedTop =6780
                     LayoutCachedWidth =16260
-                    LayoutCachedHeight =8580
+                    LayoutCachedHeight =7320
                 End
                 Begin CommandButton
                     TabStop = NotDefault
@@ -885,7 +859,7 @@ Begin Form
                     Top =1920
                     Width =2400
                     Height =600
-                    TabIndex =17
+                    TabIndex =16
                     ForeColor =4210752
                     Name ="cmdDIUEntry"
                     Caption ="Exploratory Call Entered into EMMIE Complete"
@@ -913,7 +887,7 @@ Begin Form
                     Left =2760
                     Top =2520
                     Height =315
-                    TabIndex =18
+                    TabIndex =17
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="ApplicantID"
@@ -950,7 +924,7 @@ Begin Form
                     Left =2760
                     Top =420
                     Height =315
-                    TabIndex =16
+                    TabIndex =15
                     BorderColor =10921638
                     ForeColor =3484194
                     Name ="DisasterID"
@@ -990,7 +964,7 @@ Begin Form
                     Height =420
                     FontSize =14
                     FontWeight =700
-                    TabIndex =19
+                    TabIndex =18
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbCallTime"
@@ -1025,32 +999,32 @@ Begin Form
                 End
                 Begin CheckBox
                     OverlapFlags =215
-                    Left =10260
-                    Top =7890
-                    TabIndex =20
+                    Left =9960
+                    Top =7860
+                    TabIndex =19
                     BorderColor =10921638
                     Name ="Exploratory Call Checklist emailed to Subrecipient"
                     ControlSource ="Exploratory Call Checklist emailed to Subrecipient"
                     EventProcPrefix ="Exploratory_Call_Checklist_emailed_to_Subrecipient"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =10260
-                    LayoutCachedTop =7890
-                    LayoutCachedWidth =10520
-                    LayoutCachedHeight =8130
+                    LayoutCachedLeft =9960
+                    LayoutCachedTop =7860
+                    LayoutCachedWidth =10220
+                    LayoutCachedHeight =8100
                     Begin
                         Begin Label
-                            OverlapFlags =247
-                            Left =10500
+                            OverlapFlags =215
+                            Left =10260
                             Top =7740
-                            Width =2880
+                            Width =3180
                             Height =600
                             Name ="Label149"
-                            Caption ="Scoping Meeting Agenda emailed to Subrecipient"
+                            Caption ="Scoping Meeting Agenda, etc. emailed to Subrecipient"
                             GridlineColor =10921638
-                            LayoutCachedLeft =10500
+                            LayoutCachedLeft =10260
                             LayoutCachedTop =7740
-                            LayoutCachedWidth =13380
+                            LayoutCachedWidth =13440
                             LayoutCachedHeight =8340
                         End
                     End
@@ -1073,31 +1047,6 @@ Begin Form
                     LayoutCachedHeight =4740
                     ForeThemeColorIndex =1
                     ForeShade =65.0
-                End
-                Begin CommandButton
-                    Enabled = NotDefault
-                    OverlapFlags =215
-                    Left =14100
-                    Top =8760
-                    Width =1860
-                    Height =900
-                    TabIndex =21
-                    ForeColor =4210752
-                    Name ="Command152"
-                    Caption ="PDA Summary Sheet"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =14100
-                    LayoutCachedTop =8760
-                    LayoutCachedWidth =15960
-                    LayoutCachedHeight =9660
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
                 End
                 Begin Label
                     OverlapFlags =215
@@ -1125,7 +1074,7 @@ Begin Form
                     Top =2640
                     Width =2400
                     Height =600
-                    TabIndex =22
+                    TabIndex =20
                     ForeColor =4210752
                     Name ="cmdViewExploratoryCallInfo"
                     Caption ="View Exploratory Call Info"
@@ -1136,6 +1085,131 @@ Begin Form
                     LayoutCachedTop =2640
                     LayoutCachedWidth =16260
                     LayoutCachedHeight =3240
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    Enabled = NotDefault
+                    OverlapFlags =215
+                    Left =14040
+                    Top =7680
+                    Width =1860
+                    Height =720
+                    TabIndex =21
+                    ForeColor =4210752
+                    Name ="Command136"
+                    Caption ="Exploratory Call Checklist"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14040
+                    LayoutCachedTop =7680
+                    LayoutCachedWidth =15900
+                    LayoutCachedHeight =8400
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14040
+                    Top =11160
+                    Width =1860
+                    Height =720
+                    TabIndex =22
+                    ForeColor =4210752
+                    Name ="cmdPDASummary"
+                    Caption ="PDA Summary Sheet"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14040
+                    LayoutCachedTop =11160
+                    LayoutCachedWidth =15900
+                    LayoutCachedHeight =11880
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14040
+                    Top =8520
+                    Width =1860
+                    Height =720
+                    TabIndex =23
+                    ForeColor =4210752
+                    Name ="cmdDamageInventory"
+                    Caption ="Damage Inventory"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14040
+                    LayoutCachedTop =8520
+                    LayoutCachedWidth =15900
+                    LayoutCachedHeight =9240
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14040
+                    Top =9360
+                    Width =1860
+                    Height =840
+                    TabIndex =24
+                    ForeColor =4210752
+                    Name ="cmdCatChecklists"
+                    Caption ="Categorical Information Checklists"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14040
+                    LayoutCachedTop =9360
+                    LayoutCachedWidth =15900
+                    LayoutCachedHeight =10200
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14040
+                    Top =10320
+                    Width =1860
+                    Height =720
+                    TabIndex =25
+                    ForeColor =4210752
+                    Name ="cmdPWTemplates"
+                    Caption ="PW Templates"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14040
+                    LayoutCachedTop =10320
+                    LayoutCachedWidth =15900
+                    LayoutCachedHeight =11040
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -1589,6 +1663,15 @@ Option Explicit
 
 Private Const FormItemType As String = "RPA" 'used in determining what type of record is handled
 
+Private Sub cmdCatChecklists_Click()
+Application.FollowHyperlink "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/Categorical Information Checklists"
+
+End Sub
+
+Private Sub cmdDamageInventory_Click()
+Call Form_navProjectFormulation.cmdDamInvTemplate_Click
+End Sub
+
 'BUTTONS
 Private Sub cmdDIUEntry_Click()
 '///Error Handling
@@ -1652,6 +1735,44 @@ PROC_ERR:
     GlobalErrHandler
     Resume PROC_EXIT
 '///ErrorHandling
+End Sub
+
+Private Sub cmdPDASummary_Click()
+Dim wb As Object
+    Dim fileName As String
+    Dim xlapp As Object
+    Dim filenamepath As String
+    Dim NeedToClose As Boolean
+    'filenamepath = "P:\IF OPEN\Database Dev (TEMP)\SubR test Data\Monroe County Engineer\Template List of Damages.xlsx"
+    filenamepath = "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Technology  HSINParis/Disaster Specific/4258/FINAL Joint PDA spreadsheet_Oregons Dec 6-23-15 Severe Winter Storm.xlsx"
+    fileName = Right(filenamepath, Len(filenamepath) - InStrRev(filenamepath, "\"))
+
+    Set xlapp = Nothing
+    On Error Resume Next
+        Set xlapp = GetObject(, "Excel.Application")
+    On Error GoTo 0
+
+    If xlapp Is Nothing Then
+        'no instance of Excel running, so create one
+        Set xlapp = CreateObject("Excel.Application")
+        xlapp.Visible = True
+    End If
+
+    On Error Resume Next
+        Set wb = xlapp.Workbooks(fileName)
+    On Error GoTo 0
+
+    If wb Is Nothing Then
+        Set wb = xlapp.Workbooks.Open(filenamepath, , True)
+        NeedToClose = True
+    Else
+        NeedToClose = False
+    End If
+
+End Sub
+
+Private Sub cmdPWTemplates_Click()
+Application.FollowHyperlink "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/PW Templates and Checklists"
 End Sub
 
 Private Sub cmdViewExploratoryCallInfo_Click()

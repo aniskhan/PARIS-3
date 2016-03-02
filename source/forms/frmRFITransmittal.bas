@@ -15,8 +15,8 @@ Begin Form
     Width =12540
     DatasheetFontHeight =11
     ItemSuffix =49
-    Right =13605
-    Bottom =14055
+    Right =16005
+    Bottom =8505
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x746843c1f8b6e440
@@ -508,7 +508,6 @@ Begin Form
                     Overlaps =1
                 End
                 Begin TextBox
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =3045
@@ -555,7 +554,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =2790
@@ -761,7 +759,6 @@ Begin Form
                     OverlapFlags =215
                     Left =9060
                     Top =180
-                    Width =1200
                     Height =405
                     ForeColor =4210752
                     Name ="cmdCloseForm"
@@ -789,7 +786,7 @@ Begin Form
 
                     LayoutCachedLeft =9060
                     LayoutCachedTop =180
-                    LayoutCachedWidth =10260
+                    LayoutCachedWidth =10500
                     LayoutCachedHeight =585
                     BackColor =15123357
                     BorderColor =15123357

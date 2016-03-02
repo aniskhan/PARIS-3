@@ -17,8 +17,8 @@ Begin Form
     Width =16740
     DatasheetFontHeight =11
     ItemSuffix =92
-    Right =13155
-    Bottom =10395
+    Right =14835
+    Bottom =8580
     DatasheetGridlinesColor =15132391
     Filter ="[DisasterID]='9999' and [ApplicantID]='810-19JXO-00' and [ProjectID]=1"
     RecSrcDt = Begin
@@ -1189,7 +1189,7 @@ Begin Form
                     BackColor =15788753
                     BorderColor =8355711
                     Name ="lbFooter"
-                    Caption ="Damage Intake and Eligibility Determinations"
+                    Caption ="Intake Damage and Eligibility Analysis"
                     FontName ="Broadway"
                     GridlineColor =10921638
                     LayoutCachedWidth =16560
@@ -1202,7 +1202,7 @@ Begin Form
                     OverlapFlags =215
                     Left =14700
                     Top =60
-                    Width =1020
+                    Width =1380
                     Height =600
                     ForeColor =4210752
                     Name ="cmdCloseForm"
@@ -1230,7 +1230,7 @@ Begin Form
 
                     LayoutCachedLeft =14700
                     LayoutCachedTop =60
-                    LayoutCachedWidth =15720
+                    LayoutCachedWidth =16080
                     LayoutCachedHeight =660
                     BackColor =15123357
                     BorderColor =15123357

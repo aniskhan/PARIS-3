@@ -238,10 +238,6 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="Lane Assigned"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblSites.[Scheduled Time of Site Inspection]"
         dbLong "AggregateType" ="-1"
     End
