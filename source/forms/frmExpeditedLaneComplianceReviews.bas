@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -13,13 +15,13 @@ Begin Form
     Width =16560
     DatasheetFontHeight =11
     ItemSuffix =47
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xc6b354959da4e440
+        0x52c499b0b4b9e440
     End
-    RecordSource ="tblProjects"
+    RecordSource ="fqryProjectInfo"
     Caption ="EX- Compliance Reviews"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -411,7 +413,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -453,7 +454,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -495,7 +495,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -537,7 +536,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -579,7 +577,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -621,7 +618,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -663,7 +659,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -705,7 +700,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -747,7 +741,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -789,7 +782,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -831,7 +823,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4290
@@ -873,7 +864,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =11070
@@ -919,7 +909,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =11070

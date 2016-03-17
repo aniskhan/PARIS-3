@@ -1,0 +1,106 @@
+Form	Record Source	Filter
+frmDeterminationMemo	tblDeterminationMemo	
+subfrmSITFLAssignProjects-Site Inspection	SELECT tblProjects.* FROM tblProjects; 	
+frmSpecializedsiteInspections	tblProjects	
+frmStandardLaneCompleteSiteInspections	tblProjects	
+frmSTSiteInspections	fqryProjectStInspection	
+frmTasks		
+navMenu_Applicant	"SELECT tblSubRecipient.DisasterID, tblSubRecipient.ApplicantID, tblSubRecipient.[Subrecipient Name] FROM tblSubRecipient; "	
+subformRFIbanner	fqryRfiBanner	
+subformSpecializedSiteInspections	"SELECT tblSites.DisasterID, tblSites.ApplicantID, tblSites.ProjectID, tblSites.SiteID, tblSiteInspections.ID, tblSiteInspections.[FEMA PDC], tblSiteInspections.[Assigned Site Inspector], tblSiteInspections.[Date Assigned], tblSiteInspections.[Inspection Date -Start], tblSiteInspections.[Inspection Date - Finish], tblSiteInspections.[Subrecipient Participant], tblSiteInspections.[Recipient Participant], tblSiteInspections.[PDC Participated], tblSiteInspections.[EHP Participated], tblSiteInspections.[Mitigation Specialist Participated], tblSiteInspections.[Insurance Specialist Participated], tblSiteInspections.[Inpection Notes], tblSiteInspections.[Inspection Complete], tblSiteInspections.[Additional Inspection needed], tblSiteInspections.[Reason for Additional Inspections], tblSiteInspections.[Inpection Report Complete], tblSiteInspections.[Subrecipient acknowledges recipeipt of SIR], tblSiteInspections.[Eligibility Concerns], tblSiteInspections.[PDC Notified  WO Complete], tblSiteInspections.[SITFL Notified WO Complete], tblSiteInspections.[DDD Entered into EMMIE], tblSiteInspections.[Date of meetng with PDC to brief DDD], tblSiteInspections.[FEMA PDC Concurs with DDD], tblSiteInspections.[State PDC Concurs with DDD], tblSiteInspections.[Subrecipeint Concurs with DDD], tblSiteInspections.[DIU Attaches DDD in EMMIE], tblProjects.[Date Assigned], tblProjects.[Assigned Site Inspector], tblProjects.[Scheduled Date of Site Inspection], tblSites.[Draft DDD] FROM tblProjects LEFT JOIN (tblSites LEFT JOIN tblSiteInspections ON tblSites.SiteID = tblSiteInspections.SiteID) ON tblProjects.ProjectID = tblSites.ProjectID; "	
+subfrmlProjects banner	"SELECT tblProjects.ApplicantID, tblProjects.ProjectID, tblProjects.[Application Title], tblProjects.[Lane Recommendation], tblProjects.[Project Category], tblProjects.[Date Assigned to Lane], tblProjects.[EMMIE Update Application  Number], tblProjects.[Lane Assigned], tblProjects.Submitted, tblProjects.SubmitDate, tblProjects.[PW Number], tblProjects.DisasterID, qdLaneAssignedDate.[Lane Assigned Date], qdProjectRef.[Full Reference] FROM (tblProjects LEFT JOIN qdLaneAssignedDate ON (tblProjects.ProjectID = qdLaneAssignedDate.ProjectID) AND (tblProjects.ApplicantID = qdLaneAssignedDate.ApplicantID) AND (tblProjects.DisasterID = qdLaneAssignedDate.DisasterID)) INNER JOIN qdProjectRef ON (tblProjects.ProjectID = qdProjectRef.ProjectID) AND (tblProjects.ApplicantID = qdProjectRef.ApplicantID) AND (tblProjects.DisasterID = qdProjectRef.DisasterID); "	
+subfrmSpecializedSiteInspections	"SELECT tblSites.DisasterID, tblSites.ApplicantID, tblSites.ProjectID, tblSites.SiteID, tblSiteInspections.ID, tblSiteInspections.[FEMA PDC], tblSiteInspections.[Assigned Site Inspector], tblSiteInspections.[Date Assigned], tblSiteInspections.[Inspection Date -Start], tblSiteInspections.[Inspection Date - Finish], tblSiteInspections.[Subrecipient Participant], tblSiteInspections.[Recipient Participant], tblSiteInspections.[PDC Participated], tblSiteInspections.[EHP Participated], tblSiteInspections.[Mitigation Specialist Participated], tblSiteInspections.[Insurance Specialist Participated], tblSiteInspections.[Inpection Notes], tblSiteInspections.[Inspection Complete], tblSiteInspections.[Additional Inspection needed], tblSiteInspections.[Reason for Additional Inspections], tblSiteInspections.[Inpection Report Complete], tblSiteInspections.[Subrecipient acknowledges recipeipt of SIR], tblSiteInspections.[Eligibility Concerns], tblSiteInspections.[PDC Notified  WO Complete], tblSiteInspections.[SITFL Notified WO Complete], tblSiteInspections.[DDD Entered into EMMIE], tblSiteInspections.[Date of meetng with PDC to brief DDD], tblSiteInspections.[FEMA PDC Concurs with DDD], tblSiteInspections.[State PDC Concurs with DDD], tblSiteInspections.[Subrecipeint Concurs with DDD], tblSiteInspections.[DIU Attaches DDD in EMMIE], tblProjects.[Date Assigned], tblProjects.[Assigned Site Inspector], tblProjects.[Scheduled Date of Site Inspection], tblSites.[Draft DDD] FROM tblProjects LEFT JOIN (tblSites LEFT JOIN tblSiteInspections ON tblSites.SiteID = tblSiteInspections.SiteID) ON tblProjects.ProjectID = tblSites.ProjectID; "	
+subfrmRfiReviewHistory	qryReviewRfiSub	
+frmProcessProjectRoutingSheet PDC	fqryProjectEntry	[DisasterID]='9999' and [ApplicantID]='846-R5Q1O-00' and [ProjectID]=1
+frmSubrecipientRSM	tblSubRecipient	[Assigned PDC] = 'akhandka'
+navMain	tblDisaster	
+frmRFIConcurrence	tblRFI	
+frmStSiteConcurrence	fqryProjectStDddConcurrence	
+navStandardLane	"SELECT tblDisaster.DisasterID, tblDisaster.State FROM tblDisaster; "	
+subfrmDisasterInfoExtend	tblDisaster	
+navMenu_Project	"SELECT tblProjects.DisasterID, tblProjects.ApplicantID, tblProjects.ProjectID, tblProjects.[Project Category], tblProjects.[Application Title] FROM tblProjects; "	
+frmAssignPDC	fqryRpaAssignPdc	
+frmProjectSiteLink	fqryProjectFormulation	
+subformRFIRequestedInformation	tblRFIRequestedInformation	
+subfrmBannerGeneral	"SELECT tblDisaster.*, tblSubRecipient.ApplicantID, tblSubRecipient.[Subrecipient Name], tblSubRecipient.[Assigned PDC], tblProjects.ProjectID, tblProjects.[Project Category], tblProjects.[Application Title], tblProjects.[Lane Assigned] FROM (tblDisaster INNER JOIN tblSubRecipient ON tblDisaster.DisasterID = tblSubRecipient.DisasterID) INNER JOIN tblProjects ON (tblSubRecipient.ApplicantID = tblProjects.ApplicantID) AND (tblSubRecipient.DisasterID = tblProjects.DisasterID); "	
+subfrmSiteStInspection	fqrySiteStInspection	[DisasterID]='9999' and [ApplicantID]='877-07O1Y-00' and [ProjectID]=4 and [SiteID]=4
+frmExpeditedScopingCosting	fqryProjectExSowCost	
+frmStlaneScopingCosting	tblProjects	
+subfrmStaff	tblStaff	
+frmStAssignDvs	tblProjects	
+navMenu_Disaster	SELECT tblDisaster.DisasterID FROM tblDisaster; 	
+subfrmInspectStSiteInspection	fqryInspectStSiteInspection	
+frmDocTransmittal	tblDisaster	
+frmRFITransmittal	tblRFI	
+frmEnterListofDamages	fqryRpaProjectEntry	[DisasterID]='9999'
+navRFIProcess	"SELECT tblDisaster.DisasterID, tblDisaster.State FROM tblDisaster; "	
+subformEnterListofDamages	tblSites	
+frmSpecializedAssignPM	fqryProjectStWorkOrderDev	
+frmPDCActions	fqryRpaProjectEntry	
+subformDeterminationMemoBanner	fqryDeterminationMemoBanner	
+subfrmDisasterInfo	tblDisaster	
+frmDDDCompleteforProject	fqryProjectStCheckSiteStatus	
+frmDIUProcessProjectRoutingSheet	fqryProjectLaneSelect	[DisasterID]='9999' and [ApplicantID]='810-19JXO-00' and [ProjectID]=1
+frmRFIReceipt	tblRFI	
+frmRpaReview-AltNav	fqryRpaReview	
+subform-DDD Status-VS	fqrySiteStPendingVS	
+subfrmRpaInfo short	fqryRpaInfo	
+frmRFIRequest	tblRFI	
+frmProjectEntry	tblProjects	
+subfrmProjectReviewHistory	qryReviewProjectSub	
+subfrmRpaReviewHistory	qryReviewSub	
+subfrmSiteReviewHistory	qryReviewSiteSub	
+navSpecializedLane-IDEA	"SELECT tblDisaster.DisasterID, tblDisaster.State FROM tblDisaster; "	
+subform-DDD Status-Site Inspection Needed	fqrySiteStPendingSiteInspector	
+subform-DDD Complete	fqrySiteStDddConcurrence	
+subfrmSITFLAssignProjects-DDD Complete	SELECT tblProjects.* FROM tblProjects; 	
+frmRpaSearch	qryRpaSearch	[County] Like '*wrig*'
+frmSpecializedSiteInspectionWorkOrder-CFC	tblProjects	
+frmSubrecipientBriefing	SELECT tblSubrecipientBriefing.* FROM tblSubrecipientBriefing; 	
+frmStaff	tblStaff	
+tblStaff	tblStaff	
+frmDownLoadNewFE		
+subfrmDisasterInfoRevised	SELECT tblDisaster.* FROM tblDisaster; 	
+frmExpeditedLaneDI	fqryProjectExIdea	
+navMenu_Site	"SELECT tblSites.DisasterID, tblSites.ApplicantID, tblSites.ProjectID, tblSites.SiteID, tblSites.[Name of Site/Facility] FROM tblSites; "	
+frmStaffSearch	qryStaffSearch	[UserID] Like '*nli*'
+frmSubrecipientExploratoryCallEEI	SELECT tblSubRecipientExploratoryCall.* FROM tblSubRecipientExploratoryCall; 	[DisasterID]='4258' and [ApplicantID]='009-13750-00'
+frmDisasterInformation	tblDisaster	
+frmSiteInspectionWorkOrder-SITFL	tblProjects	
+frmSiteStInspectionAssign	fqrySiteStInspectionAssignment	
+frmSubrecipientExploratoryCall	tblSubRecipient	[DisasterID]='4258' and [ApplicantID]='009-13750-00'
+navProjectFormulation	"SELECT tblDisaster.DisasterID, tblSubRecipient.ApplicantID, tblSubRecipient.[Subrecipient Name], tblDisaster.[Disaster Type], tblDisaster.State FROM tblDisaster INNER JOIN tblSubRecipient ON tblDisaster.DisasterID = tblSubRecipient.DisasterID; "	[DisasterID]='9999'
+fqryNavMainUserPositions subform	"SELECT [fqryNavMainUserPositions].[StaffID], [fqryNavMainUserPositions].[DisasterID], [fqryNavMainUserPositions].[Position Description] FROM fqryNavMainUserPositions; "	
+navStaffDisasterAdmin	SELECT tblDisaster.DisasterID FROM tblDisaster; 	
+frmInitialRSMProjections	SELECT tblProjectionUpdates.* FROM tblProjectionUpdates; 	[DisasterID]='9999' and [ApplicantID]='822-200K6-00'
+subformSites	SELECT tblSites.* FROM tblSites; 	
+subfrmEnterProjects	tblProjects	
+subfrmRpaInfo	fqryRpaInfo	
+subfrmTasks	qryTaskUnionByUserOversight	[positionTier] = 0 and [ReviewUserID] is Null
+subformProjecRoutingSheet	"SELECT [tblSites].[DisasterID], [tblSites].[ApplicantID], [tblSites].[ProjectID], [tblSites].[SiteID], [tblSites].[Name of Site/Facility], tblSites.[E911 Street Address or Closest Intersection], [tblSites].[Location  Address or GPS Coordinates], [tblSites].[Describe Damage], [tblSites].[Cause of Damage  (wind, flood, etc)], [tblSites].[Requires Site Inspection], [tblSites].[Approximate Cost], [tblSites].[% Work Complete], [tblSites].[Labor Type], [tblSites].[EHP Issues? (H, E, B)], [tblSites].[Facility insured?], [tblSites].[Has Recieved PA grant in prior Stafford Act Disasters?], [tblSites].[Is there a potential mitigation opportunity?], [tblSites].[Subrecipient priority (Low, Med, High)], [tblSites].[Function], [tblSites].[Critical Facility], [tblSites].[Damage Level], [tblSites].[Documentation Notes], [tblSites].[Potential OFA Responsibility], [tblSites].[Specialized Technical Skill needed], [tblSites].[Describe Skill], [tblSites].[Work 100% Complete], [tblSites].[If no, % complete], [tblSites].[Date Expected to be 100% Complete] FROM tblSites; "	
+subfrmSitesScopeCost	SELECT tblSites.* FROM tblSites; 	
+tblSubRecipient	tblSubRecipient	
+frmSubrecipientExploratoryCall-NavTest	fqryRpaExploratoryCall	[DisasterID]='9999' and [ApplicantID]='822-200K6-00'
+subfrmStaffAssignments	tblStaffRoles	
+tblSiteInspections subform1	"SELECT [tblSiteInspections].[ID], [tblSiteInspections].[DisasterID], [tblSiteInspections].[ApplicantID], [tblSiteInspections].[ProjectID], [tblSiteInspections].[SiteID], [tblSiteInspections].[FEMA PDC], [tblSiteInspections].[Assigned Site Inspector], [tblSiteInspections].[Date Assigned], [tblSiteInspections].[Inspection Date -Start], [tblSiteInspections].[Inspection Date - Finish], [tblSiteInspections].[Subrecipient Participant], [tblSiteInspections].[Recipient Participant], [tblSiteInspections].[PDC Participated], [tblSiteInspections].[EHP Participated], [tblSiteInspections].[Mitigation Specialist Participated], [tblSiteInspections].[Insurance Specialist Participated], [tblSiteInspections].[Inpection Notes], [tblSiteInspections].[Inspection Complete], [tblSiteInspections].[Additional Inspection needed], [tblSiteInspections].[Reason for Additional Inspections], [tblSiteInspections].[Inpection Report Complete], [tblSiteInspections].[Subrecipient acknowledges recipeipt of SIR], [tblSiteInspections].[Eligibility Concerns], [tblSiteInspections].[PDC Notified  WO Complete], [tblSiteInspections].[SITFL Notified WO Complete], [tblSiteInspections].[DDD Entered into EMMIE], [tblSiteInspections].[Date of meetng with PDC to brief DDD], [tblSiteInspections].[FEMA PDC Concurs with DDD], [tblSiteInspections].[State PDC Concurs with DDD], [tblSiteInspections].[Subrecipeint Concurs with DDD], [tblSiteInspections].[DIU Attaches DDD in EMMIE] FROM tblSiteInspections; "	
+frmEnterListofProjects	fqryRpaProjectEntry	[DisasterID]='9999'AND[Assigned PDC] = 'akhandka'
+frmSpcializedLaneAssignTechSpecialists	fqryProjectStWorkOrderDev	
+frmStWorkOrderDev	fqryProjectStWorkOrderDev	
+frmUpdateRSMProjections	fqryUpdateRSMProjections	[ID] = 112
+subfrmProjectSites	tblSites	
+subfrmSITFLAssignProjects	SELECT tblProjects.* FROM tblProjects; 	
+subfrmSpecializedAssignsProjects	SELECT tblProjects.* FROM tblProjects; 	
+subfrmUpdateRSMProjections	fqryProjectionsMaxUpdate_ALL	
+tblProjects	tblProjects	
+tblSiteInspections subform2	"SELECT [tblSiteInspections].[ID], [tblSiteInspections].[DisasterID], [tblSiteInspections].[ApplicantID], [tblSiteInspections].[ProjectID], [tblSiteInspections].[SiteID], [tblSiteInspections].[FEMA PDC], [tblSiteInspections].[Assigned Site Inspector], [tblSiteInspections].[Date Assigned], [tblSiteInspections].[Inspection Date -Start], [tblSiteInspections].[Inspection Date - Finish], [tblSiteInspections].[Subrecipient Participant], [tblSiteInspections].[Recipient Participant], [tblSiteInspections].[PDC Participated], [tblSiteInspections].[EHP Participated], [tblSiteInspections].[Mitigation Specialist Participated], [tblSiteInspections].[Insurance Specialist Participated], [tblSiteInspections].[Inpection Notes], [tblSiteInspections].[Inspection Complete], [tblSiteInspections].[Additional Inspection needed], [tblSiteInspections].[Reason for Additional Inspections], [tblSiteInspections].[Inpection Report Complete], [tblSiteInspections].[Subrecipient acknowledges recipeipt of SIR], [tblSiteInspections].[Eligibility Concerns], [tblSiteInspections].[PDC Notified  WO Complete], [tblSiteInspections].[SITFL Notified WO Complete], [tblSiteInspections].[DDD Entered into EMMIE], [tblSiteInspections].[Date of meetng with PDC to brief DDD], [tblSiteInspections].[FEMA PDC Concurs with DDD], [tblSiteInspections].[State PDC Concurs with DDD], [tblSiteInspections].[Subrecipeint Concurs with DDD], [tblSiteInspections].[DIU Attaches DDD in EMMIE] FROM tblSiteInspections; "	
+frmExpeditedLaneComplianceReviews	tblProjects	
+frmNavMainUserPositions	fqryNavMainUserPositions	
+navReports	tblDisaster	
+subfrmDisasterInfoRevised short	SELECT tblDisaster.* FROM tblDisaster; 	
+frmRpaReview	fqryRpaReview	
+subfrmInspectionAssignSiteSelect	fqrySiteStInspectionAssignment	
+subfrmInspectionSiteSelect	fqrySiteStInspectionSelect	
+subfrmSiteAssignment	tblSites	
+frmReviewResult		
+frmStDvsSiteReview	fqrySiteStDvsSiteReview	[DisasterID]='9999' and [ApplicantID]='810-19JXO-00' and [ProjectID]=11 and [SiteID]=1
+subfrmDVSSiteReviewSelect	"SELECT tblSites.*, tblProjects.[Lane Assigned], IIf([DVS -Site Inspection Required] Is Null,""No"",""Yes"") AS Reviewed FROM tblProjects INNER JOIN tblSites ON (tblProjects.DisasterID = tblSites.DisasterID) AND (tblProjects.ApplicantID = tblSites.ApplicantID) AND (tblProjects.ProjectID = tblSites.ProjectID); "	

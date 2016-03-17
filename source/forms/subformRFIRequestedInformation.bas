@@ -2,6 +2,7 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
@@ -12,13 +13,13 @@ Begin Form
     Width =10230
     DatasheetFontHeight =11
     ItemSuffix =14
-    Right =20640
-    Bottom =12510
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x3a995636b5b5e440
+        0xf0158eaeb4b9e440
     End
-    RecordSource ="tblRFIRequestedInformation"
+    RecordSource ="fqryRFIRequestedInfo"
     Caption ="subformRFIRequestedInformation"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -141,47 +142,6 @@ Begin Form
             BackThemeColorIndex =1
             BackShade =95.0
             Begin
-                Begin TextBox
-                    OverlapFlags =85
-                    TextAlign =2
-                    BackStyle =0
-                    IMESentenceMode =3
-                    Left =1560
-                    Top =360
-                    Height =315
-                    ColumnWidth =1320
-                    ColumnOrder =0
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="RFI Tracking #"
-                    ControlSource ="RfiID"
-                    EventProcPrefix ="RFI_Tracking__"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =1560
-                    LayoutCachedTop =360
-                    LayoutCachedWidth =3000
-                    LayoutCachedHeight =675
-                    Begin
-                        Begin Label
-                            OverlapFlags =85
-                            Left =180
-                            Top =360
-                            Width =1320
-                            Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
-                            Name ="RFI Tracking #_Label"
-                            Caption ="RFI Tracking #"
-                            EventProcPrefix ="RFI_Tracking___Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =180
-                            LayoutCachedTop =360
-                            LayoutCachedWidth =1500
-                            LayoutCachedHeight =675
-                        End
-                    End
-                End
                 Begin ComboBox
                     OverlapFlags =85
                     BackStyle =0
@@ -193,7 +153,6 @@ Begin Form
                     Height =330
                     ColumnWidth =2550
                     ColumnOrder =1
-                    TabIndex =1
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"10\";\"510\""
@@ -241,7 +200,7 @@ Begin Form
                     Height =1140
                     ColumnWidth =5115
                     ColumnOrder =5
-                    TabIndex =2
+                    TabIndex =1
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Reason Requested"
@@ -277,51 +236,12 @@ Begin Form
                     OverlapFlags =85
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1980
-                    Top =840
-                    Width =2520
-                    Height =315
-                    ColumnOrder =2
-                    TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Text8"
-                    ControlSource ="ProjectID"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =1980
-                    LayoutCachedTop =840
-                    LayoutCachedWidth =4500
-                    LayoutCachedHeight =1155
-                    Begin
-                        Begin Label
-                            OverlapFlags =85
-                            Left =180
-                            Top =840
-                            Width =1680
-                            Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
-                            Name ="Label9"
-                            Caption ="Reference #"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =180
-                            LayoutCachedTop =840
-                            LayoutCachedWidth =1860
-                            LayoutCachedHeight =1155
-                        End
-                    End
-                End
-                Begin TextBox
-                    OverlapFlags =85
-                    BackStyle =0
-                    IMESentenceMode =3
                     Left =5460
                     Top =840
                     Width =2220
                     Height =315
                     ColumnOrder =3
-                    TabIndex =4
+                    TabIndex =2
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text10"
@@ -348,44 +268,6 @@ Begin Form
                             LayoutCachedTop =840
                             LayoutCachedWidth =5370
                             LayoutCachedHeight =1155
-                        End
-                    End
-                End
-                Begin TextBox
-                    OverlapFlags =85
-                    BackStyle =0
-                    IMESentenceMode =3
-                    Left =1140
-                    Top =1200
-                    Width =6600
-                    Height =315
-                    ColumnOrder =4
-                    TabIndex =5
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Text12"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =1140
-                    LayoutCachedTop =1200
-                    LayoutCachedWidth =7740
-                    LayoutCachedHeight =1515
-                    Begin
-                        Begin Label
-                            OverlapFlags =85
-                            Left =180
-                            Top =1200
-                            Width =840
-                            Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
-                            Name ="Label13"
-                            Caption ="Facility"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =180
-                            LayoutCachedTop =1200
-                            LayoutCachedWidth =1020
-                            LayoutCachedHeight =1515
                         End
                     End
                 End

@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -12,8 +14,8 @@ Begin Form
     Width =23160
     DatasheetFontHeight =11
     ItemSuffix =19
-    Right =16005
-    Bottom =8505
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x3fc0327f9bb0e440

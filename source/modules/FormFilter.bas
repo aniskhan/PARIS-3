@@ -1,7 +1,6 @@
 Option Compare Database
 Option Explicit
 Public Sub FormPermission(frm As Form, ItemType As String)
-
 Dim Db As Database
 Dim rs As Recordset
 Dim accessGranted As Boolean
@@ -14,21 +13,28 @@ Dim accessGranted As Boolean
 '///Code
 Set Db = CurrentDb
 accessGranted = False
-
+'Set rs = Db.OpenRecordset("qryUserPositions")
+Set rs = Db.OpenRecordset("SELECT * FROM [qryUserPositions] WHERE [DisasterID] = '" & [Forms]![navMain].[DisasterID] & "'")
 Select Case ItemType
-    Case "Admin/DIUL"
-        Set rs = Db.OpenRecordset("qryUserPositions")
-        rs.MoveFirst
-        While Not rs.EOF
-            If rs!Position = "DIUL" Or rs!Position = "ADM" Then
-                accessGranted = True
-                GoTo PROC_EXIT 'Allow form load / open to resume
-            Else
-            End If
-            rs.MoveNext
-        Wend
-        Set rs = Nothing
-    
+    Case "Admin/DIUS"
+        
+        If rs.BOF And rs.EOF Then
+            MsgBox "You do not have any user roles assigned for this disaster. Please see a PARIS Administrator for support."
+            DoCmd.Close
+            GoTo PROC_EXIT
+        
+        Else
+            rs.MoveFirst
+            While Not rs.EOF
+                If rs!Position = "DIUS" Or rs!Position = "ADM" Then
+                    accessGranted = True
+                    GoTo PROC_EXIT 'Allow form load / open to resume
+                Else
+                End If
+                rs.MoveNext
+            Wend
+            Set rs = Nothing
+        End If
     Case Else
          MsgBox "There was an permissions exception when opening " & frm.Caption & ". Page will not show."
          Debug.Print "Form passed: " & frm.name, "Case passed: " & ItemType

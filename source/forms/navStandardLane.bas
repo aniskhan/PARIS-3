@@ -15,13 +15,13 @@ Begin Form
     Width =16410
     DatasheetFontHeight =11
     ItemSuffix =33
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xecfa0503d4a7e440
+        0x6f3868aeb4b9e440
     End
-    RecordSource ="SELECT tblDisaster.DisasterID, tblDisaster.State FROM tblDisaster; "
+    RecordSource ="fqryDisasterInfo"
     Caption ="Standard Lane Menu"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -124,10 +124,10 @@ Begin Form
         End
         Begin FormHeader
             Height =1200
-            BackColor =15590879
             Name ="FormHeader"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
+            BackThemeColorIndex =1
             Begin
                 Begin Label
                     OverlapFlags =85
@@ -161,9 +161,9 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =85
                     Left =60
-                    Top =180
+                    Top =60
                     Width =15840
-                    Height =900
+                    Height =1080
                     FontSize =20
                     FontWeight =700
                     BackColor =15788753
@@ -172,9 +172,9 @@ Begin Form
                     Caption ="Standard Lane - Intake Damage and Eligibility Analysis"
                     GridlineColor =10921638
                     LayoutCachedLeft =60
-                    LayoutCachedTop =180
+                    LayoutCachedTop =60
                     LayoutCachedWidth =15900
-                    LayoutCachedHeight =1080
+                    LayoutCachedHeight =1140
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
@@ -806,15 +806,15 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     Left =13080
-                    Top =120
+                    Top =60
                     Width =2880
-                    Height =10500
+                    Height =10560
                     BackColor =15788753
                     BorderColor =10921638
                     Name ="Box31"
                     GridlineColor =10921638
                     LayoutCachedLeft =13080
-                    LayoutCachedTop =120
+                    LayoutCachedTop =60
                     LayoutCachedWidth =15960
                     LayoutCachedHeight =10620
                     BackThemeColorIndex =-1

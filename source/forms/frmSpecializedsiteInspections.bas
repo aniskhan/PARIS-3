@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -13,13 +15,13 @@ Begin Form
     Width =26355
     DatasheetFontHeight =11
     ItemSuffix =103
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x3bfb7b0778b0e440
+        0x538dfbadb4b9e440
     End
-    RecordSource ="tblProjects"
+    RecordSource ="fqryProjectInfo"
     Caption ="frmSTSiteInspections"
     DatasheetFontName ="Calibri"
     PrtMip = Begin

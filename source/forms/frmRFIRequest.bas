@@ -12,14 +12,14 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =12540
+    Width =15960
     DatasheetFontHeight =11
-    ItemSuffix =51
-    Right =16005
-    Bottom =8505
+    ItemSuffix =52
+    Right =20235
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x7f798c7bf8b6e440
+        0x6501ec31f5b8e440
     End
     RecordSource ="fqryRfiRequest"
     Caption ="RFI Request"
@@ -142,7 +142,7 @@ Begin Form
                     BorderWidth =3
                     OverlapFlags =85
                     Top =60
-                    Width =11400
+                    Width =12540
                     Height =720
                     FontSize =20
                     BackColor =15921906
@@ -152,7 +152,7 @@ Begin Form
                     Caption ="Request for Information (RFI) Preparation"
                     GridlineColor =10921638
                     LayoutCachedTop =60
-                    LayoutCachedWidth =11400
+                    LayoutCachedWidth =12540
                     LayoutCachedHeight =780
                     BackShade =95.0
                     ForeThemeColorIndex =-1
@@ -174,14 +174,14 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     Top =2160
-                    Width =11400
+                    Width =12540
                     Height =7860
                     BackColor =15590879
                     BorderColor =10921638
                     Name ="Box46"
                     GridlineColor =10921638
                     LayoutCachedTop =2160
-                    LayoutCachedWidth =11400
+                    LayoutCachedWidth =12540
                     LayoutCachedHeight =10020
                     BackThemeColorIndex =-1
                 End
@@ -209,26 +209,6 @@ Begin Form
                     LayoutCachedHeight =4080
                     BackThemeColorIndex =7
                     BackTint =20.0
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =360
-                            Top =3300
-                            Width =1440
-                            Height =330
-                            BorderColor =8355711
-                            Name ="RFI Reason_Label"
-                            Caption ="RFI Reason"
-                            EventProcPrefix ="RFI_Reason_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =360
-                            LayoutCachedTop =3300
-                            LayoutCachedWidth =1800
-                            LayoutCachedHeight =3630
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
                 End
                 Begin TextBox
                     OverlapFlags =215
@@ -522,7 +502,7 @@ Begin Form
                 End
                 Begin Subform
                     OverlapFlags =215
-                    Width =11520
+                    Width =12540
                     Height =2039
                     TabIndex =8
                     BorderColor =10921638
@@ -532,7 +512,7 @@ Begin Form
                     LinkMasterFields ="RfiID"
                     GridlineColor =10921638
 
-                    LayoutCachedWidth =11520
+                    LayoutCachedWidth =12540
                     LayoutCachedHeight =2039
                     Begin
                         Begin Label
@@ -550,6 +530,23 @@ Begin Form
                         End
                     End
                 End
+                Begin Label
+                    OverlapFlags =247
+                    Left =360
+                    Top =3300
+                    Width =1560
+                    Height =660
+                    BorderColor =8355711
+                    Name ="Label51"
+                    Caption ="RFI Reason (Internal Notes)"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =3300
+                    LayoutCachedWidth =1920
+                    LayoutCachedHeight =3960
+                    ForeThemeColorIndex =-1
+                    ForeTint =100.0
+                End
             End
         End
         Begin FormFooter
@@ -564,7 +561,7 @@ Begin Form
                     BackStyle =1
                     OldBorderStyle =1
                     OverlapFlags =93
-                    Width =11466
+                    Width =12540
                     Height =720
                     FontSize =20
                     BackColor =15527148
@@ -573,7 +570,7 @@ Begin Form
                     Name ="Label36"
                     Caption ="Request for Information (RFI) Preparation"
                     GridlineColor =10921638
-                    LayoutCachedWidth =11466
+                    LayoutCachedWidth =12540
                     LayoutCachedHeight =720
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
@@ -583,7 +580,6 @@ Begin Form
                     OverlapFlags =215
                     Left =9360
                     Top =120
-                    Width =1500
                     Height =405
                     ForeColor =4210752
                     Name ="cmdCloseForm"
@@ -611,7 +607,7 @@ Begin Form
 
                     LayoutCachedLeft =9360
                     LayoutCachedTop =120
-                    LayoutCachedWidth =10860
+                    LayoutCachedWidth =10800
                     LayoutCachedHeight =525
                     BackColor =15123357
                     BorderColor =15123357
@@ -1039,12 +1035,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

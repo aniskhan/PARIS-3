@@ -17,15 +17,13 @@ Begin Form
     Width =19440
     DatasheetFontHeight =11
     ItemSuffix =46
-    Left =405
-    Top =3435
-    Right =16455
-    Bottom =5625
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x4eba7cc5d8b4e440
+        0x54be7aafb4b9e440
     End
-    RecordSource ="SELECT tblProjects.* FROM tblProjects; "
+    RecordSource ="fqryProjectInfo"
     Caption ="subfrmSITFLAssignProjects"
     DatasheetFontName ="Calibri"
     FilterOnLoad =0

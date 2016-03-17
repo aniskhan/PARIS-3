@@ -14,15 +14,15 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =16440
+    Width =17040
     DatasheetFontHeight =11
-    ItemSuffix =155
-    Right =16005
-    Bottom =8505
+    ItemSuffix =200
+    Right =20235
+    Bottom =12645
     DatasheetGridlinesColor =15132391
-    Filter ="[Assigned PDC] = 'akhandka'"
+    Filter ="[Assigned PDC] = 'vrhoads'"
     RecSrcDt = Begin
-        0x7e1fd3d0d1a5e440
+        0x93dd7dcc31b9e440
     End
     RecordSource ="fqryRpaExploratoryCall"
     Caption ="Exploratory Call"
@@ -146,6 +146,12 @@ Begin Form
             BorderShade =65.0
             ShowPageHeaderAndPageFooter =1
         End
+        Begin EmptyCell
+            Height =240
+            GridlineColor =12632256
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
         Begin FormHeader
             CanGrow = NotDefault
             Height =720
@@ -157,16 +163,16 @@ Begin Form
                 Begin Label
                     BackStyle =1
                     OverlapFlags =85
-                    Width =16440
+                    Width =16980
                     Height =660
                     FontSize =20
                     FontWeight =800
                     BackColor =14282978
                     ForeColor =0
                     Name ="lbHeader"
-                    Caption ="Subrecipient Information - Exploratory Call  "
+                    Caption ="Applicant Information - Exploratory Call  "
                     GridlineColor =10921638
-                    LayoutCachedWidth =16440
+                    LayoutCachedWidth =16980
                     LayoutCachedHeight =660
                     BackThemeColorIndex =9
                     BackTint =20.0
@@ -175,7 +181,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =16740
+            Height =14040
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -185,30 +191,65 @@ Begin Form
                 Begin Rectangle
                     BackStyle =1
                     OverlapFlags =93
-                    Left =60
-                    Top =3780
-                    Width =13455
-                    Height =5280
+                    Top =2940
+                    Width =14085
+                    Height =7620
                     BackColor =15590879
                     BorderColor =10921638
                     Name ="Box142"
                     GridlineColor =10921638
-                    LayoutCachedLeft =60
-                    LayoutCachedTop =3780
-                    LayoutCachedWidth =13515
-                    LayoutCachedHeight =9060
+                    LayoutCachedTop =2940
+                    LayoutCachedWidth =14085
+                    LayoutCachedHeight =10560
                     BackThemeColorIndex =-1
                 End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =7080
+                    Top =9420
+                    Width =6900
+                    Height =960
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box190"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7080
+                    LayoutCachedTop =9420
+                    LayoutCachedWidth =13980
+                    LayoutCachedHeight =10380
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =60
+                    Top =7620
+                    Width =6840
+                    Height =960
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box183"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =7620
+                    LayoutCachedWidth =6900
+                    LayoutCachedHeight =8580
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
                 Begin TextBox
-                    OverlapFlags =215
+                    OverlapFlags =223
                     IMESentenceMode =3
-                    Left =3480
-                    Top =4320
+                    Left =3060
+                    Top =3360
                     Width =2340
                     Height =420
                     ColumnWidth =1620
                     FontSize =14
                     FontWeight =700
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbCallDate"
@@ -216,81 +257,89 @@ Begin Form
                     Format ="Short Date"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3480
-                    LayoutCachedTop =4320
-                    LayoutCachedWidth =5820
-                    LayoutCachedHeight =4740
+                    LayoutCachedLeft =3060
+                    LayoutCachedTop =3360
+                    LayoutCachedWidth =5400
+                    LayoutCachedHeight =3780
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
-                            OverlapFlags =215
-                            Left =480
-                            Top =4320
+                            OverlapFlags =223
+                            Left =60
+                            Top =3360
                             Width =2880
                             Height =420
                             FontSize =14
                             FontWeight =600
                             Name ="Exploratory Call_Label"
-                            Caption ="Exploratory Call Date"
+                            Caption ="Exploratory Call Date:"
                             EventProcPrefix ="Exploratory_Call_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =4320
-                            LayoutCachedWidth =3360
-                            LayoutCachedHeight =4740
+                            LayoutCachedLeft =60
+                            LayoutCachedTop =3360
+                            LayoutCachedWidth =2940
+                            LayoutCachedHeight =3780
                         End
                     End
                 End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =3000
-                    Top =5880
-                    Width =8940
-                    Height =390
+                    Left =2400
+                    Top =5700
+                    Width =11520
+                    Height =405
                     ColumnWidth =3000
                     FontSize =12
                     TabIndex =5
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbFemaParticipants"
                     ControlSource ="Exploratory Call FEMA Participants"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3000
-                    LayoutCachedTop =5880
-                    LayoutCachedWidth =11940
-                    LayoutCachedHeight =6270
+                    LayoutCachedLeft =2400
+                    LayoutCachedTop =5700
+                    LayoutCachedWidth =13920
+                    LayoutCachedHeight =6105
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
-                            TextAlign =1
-                            Left =480
-                            Top =5880
-                            Width =2460
-                            Height =390
+                            TextAlign =3
+                            Left =120
+                            Top =5700
+                            Width =2220
+                            Height =465
                             FontWeight =600
                             TopMargin =29
-                            ForeColor =0
+                            ForeColor =9917743
                             Name ="Exploratory Call FEMA Participants_Label"
-                            Caption =" FEMA Participants:"
+                            Caption ="FEMA Participants:"
                             EventProcPrefix ="Exploratory_Call_FEMA_Participants_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =5880
-                            LayoutCachedWidth =2940
-                            LayoutCachedHeight =6270
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =5700
+                            LayoutCachedWidth =2340
+                            LayoutCachedHeight =6165
+                            ForeThemeColorIndex =8
+                            ForeShade =75.0
                         End
                     End
                 End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =2040
-                    Top =7920
-                    Width =2730
-                    Height =450
+                    Left =8400
+                    Top =7620
+                    Width =1380
+                    Height =390
                     ColumnWidth =1620
                     TabIndex =7
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbRsmDate"
@@ -298,39 +347,42 @@ Begin Form
                     Format ="Short Date"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2040
-                    LayoutCachedTop =7920
-                    LayoutCachedWidth =4770
-                    LayoutCachedHeight =8370
+                    LayoutCachedLeft =8400
+                    LayoutCachedTop =7620
+                    LayoutCachedWidth =9780
+                    LayoutCachedHeight =8010
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             TextAlign =1
-                            Left =480
-                            Top =7920
-                            Width =1440
-                            Height =450
+                            Left =7140
+                            Top =7620
+                            Width =1200
+                            Height =390
                             ForeColor =0
                             Name ="Recovery Scoping Meeting Date_Label"
                             Caption ="RSM Date:"
                             EventProcPrefix ="Recovery_Scoping_Meeting_Date_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =7920
-                            LayoutCachedWidth =1920
-                            LayoutCachedHeight =8370
+                            LayoutCachedLeft =7140
+                            LayoutCachedTop =7620
+                            LayoutCachedWidth =8340
+                            LayoutCachedHeight =8010
                         End
                     End
                 End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =6720
-                    Top =7920
+                    Left =11160
+                    Top =7620
                     Width =1560
-                    Height =450
+                    Height =390
                     ColumnWidth =3000
                     TabIndex =8
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbRsmTime"
@@ -338,164 +390,153 @@ Begin Form
                     InputMask ="00:00\\ >LL;0;_"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =6720
-                    LayoutCachedTop =7920
-                    LayoutCachedWidth =8280
-                    LayoutCachedHeight =8370
+                    LayoutCachedLeft =11160
+                    LayoutCachedTop =7620
+                    LayoutCachedWidth =12720
+                    LayoutCachedHeight =8010
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             TextAlign =1
-                            Left =5460
-                            Top =7920
+                            Left =9900
+                            Top =7620
                             Width =1200
-                            Height =450
+                            Height =390
                             ForeColor =0
                             Name ="Recovery Scoping Meeting Time_Label"
-                            Caption ="RSM Time"
+                            Caption ="RSM Time:"
                             EventProcPrefix ="Recovery_Scoping_Meeting_Time_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =5460
-                            LayoutCachedTop =7920
-                            LayoutCachedWidth =6660
-                            LayoutCachedHeight =8370
+                            LayoutCachedLeft =9900
+                            LayoutCachedTop =7620
+                            LayoutCachedWidth =11100
+                            LayoutCachedHeight =8010
                         End
                     End
                 End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =2040
+                    Left =7140
                     Top =8460
-                    Width =8280
-                    Height =450
+                    Width =6780
+                    Height =420
                     ColumnWidth =3000
                     TabIndex =11
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbRsmLocation"
                     ControlSource ="Recovery Scoping Meeting Location"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2040
+                    LayoutCachedLeft =7140
                     LayoutCachedTop =8460
-                    LayoutCachedWidth =10320
-                    LayoutCachedHeight =8910
+                    LayoutCachedWidth =13920
+                    LayoutCachedHeight =8880
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
-                            OverlapFlags =215
+                            OverlapFlags =223
                             TextAlign =1
-                            Left =480
-                            Top =8460
+                            Left =7140
+                            Top =8100
                             Width =1500
-                            Height =585
+                            Height =360
                             ForeColor =0
                             Name ="Recovery Scoping Meeting Location_Label"
                             Caption ="RSM Location:"
                             EventProcPrefix ="Recovery_Scoping_Meeting_Location_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =8460
-                            LayoutCachedWidth =1980
-                            LayoutCachedHeight =9045
+                            LayoutCachedLeft =7140
+                            LayoutCachedTop =8100
+                            LayoutCachedWidth =8640
+                            LayoutCachedHeight =8460
                         End
                     End
                 End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =3000
-                    Top =5400
-                    Width =5040
-                    Height =390
+                    Left =2400
+                    Top =5160
+                    Width =2880
+                    Height =405
                     ColumnWidth =3000
-                    FontSize =12
                     TabIndex =3
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbReciepientPoc"
                     ControlSource ="Recipient POC"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3000
-                    LayoutCachedTop =5400
-                    LayoutCachedWidth =8040
-                    LayoutCachedHeight =5790
+                    LayoutCachedLeft =2400
+                    LayoutCachedTop =5160
+                    LayoutCachedWidth =5280
+                    LayoutCachedHeight =5565
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
-                            TextAlign =1
-                            Left =480
-                            Top =5400
-                            Width =2460
-                            Height =390
+                            TextAlign =3
+                            Left =120
+                            Top =5160
+                            Width =2220
+                            Height =405
                             FontWeight =600
                             TopMargin =29
-                            ForeColor =0
+                            ForeColor =9917743
                             Name ="Recipient POC_Label"
                             Caption ="Recipient POC:"
                             EventProcPrefix ="Recipient_POC_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =5400
-                            LayoutCachedWidth =2940
-                            LayoutCachedHeight =5790
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =5160
+                            LayoutCachedWidth =2340
+                            LayoutCachedHeight =5565
+                            ForeThemeColorIndex =8
+                            ForeShade =75.0
                         End
                     End
                 End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =9480
-                    Top =5400
-                    Width =2460
-                    Height =390
+                    Left =8340
+                    Top =5160
+                    Width =1920
+                    Height =405
                     ColumnWidth =3000
-                    FontSize =12
                     TabIndex =4
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbRecipientPocContact"
                     ControlSource ="Recipient POC Contact Number"
-                    InputMask ="!\\(999\") \"000\\-0000;;_"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =9480
-                    LayoutCachedTop =5400
-                    LayoutCachedWidth =11940
-                    LayoutCachedHeight =5790
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            TextAlign =1
-                            Left =8160
-                            Top =5400
-                            Width =1200
-                            Height =390
-                            FontWeight =600
-                            TopMargin =29
-                            ForeColor =0
-                            Name ="Recipient POC Contract Number_Label"
-                            Caption ="Contact #"
-                            EventProcPrefix ="Recipient_POC_Contract_Number_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =8160
-                            LayoutCachedTop =5400
-                            LayoutCachedWidth =9360
-                            LayoutCachedHeight =5790
-                        End
-                    End
+                    LayoutCachedLeft =8340
+                    LayoutCachedTop =5160
+                    LayoutCachedWidth =10260
+                    LayoutCachedHeight =5565
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                 End
                 Begin TextBox
-                    OverlapFlags =215
+                    OverlapFlags =223
                     IMESentenceMode =3
-                    Left =3000
-                    Top =4860
-                    Width =5040
-                    Height =420
+                    Left =2400
+                    Top =4140
+                    Width =2865
+                    Height =405
                     ColumnWidth =3000
-                    FontSize =12
                     TabIndex =1
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbSubrecipientPoc"
@@ -503,131 +544,90 @@ Begin Form
                     GridlineColor =10921638
                     VerticalAnchor =1
 
-                    LayoutCachedLeft =3000
-                    LayoutCachedTop =4860
-                    LayoutCachedWidth =8040
-                    LayoutCachedHeight =5280
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            TextAlign =1
-                            Left =480
-                            Top =4860
-                            Width =2460
-                            Height =420
-                            FontWeight =600
-                            TopMargin =29
-                            ForeColor =0
-                            Name ="Subrecipient POC_Label"
-                            Caption ="Subrecipient POC:"
-                            EventProcPrefix ="Subrecipient_POC_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =4860
-                            LayoutCachedWidth =2940
-                            LayoutCachedHeight =5280
-                        End
-                    End
+                    LayoutCachedLeft =2400
+                    LayoutCachedTop =4140
+                    LayoutCachedWidth =5265
+                    LayoutCachedHeight =4545
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                 End
                 Begin TextBox
-                    OverlapFlags =215
+                    OverlapFlags =223
                     IMESentenceMode =3
-                    Left =9480
-                    Top =4860
-                    Width =2490
-                    Height =420
+                    Left =8340
+                    Top =4140
+                    Width =1920
+                    Height =405
                     ColumnWidth =3000
-                    FontSize =12
                     TabIndex =2
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbSubrecipientPocContact"
                     ControlSource ="Subrecipient POC Contact Number"
-                    InputMask ="!\\(999\") \"000\\-0000;;_"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =9480
-                    LayoutCachedTop =4860
-                    LayoutCachedWidth =11970
-                    LayoutCachedHeight =5280
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            TextAlign =1
-                            Left =8160
-                            Top =4860
-                            Width =1230
-                            Height =420
-                            FontWeight =600
-                            TopMargin =29
-                            ForeColor =0
-                            Name ="Subrecipient POC Contact Number_Label"
-                            Caption =" Contact #"
-                            EventProcPrefix ="Subrecipient_POC_Contact_Number_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =8160
-                            LayoutCachedTop =4860
-                            LayoutCachedWidth =9390
-                            LayoutCachedHeight =5280
-                        End
-                    End
+                    LayoutCachedLeft =8340
+                    LayoutCachedTop =4140
+                    LayoutCachedWidth =10260
+                    LayoutCachedHeight =4545
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                 End
                 Begin Label
                     BackStyle =1
                     OverlapFlags =215
-                    Left =180
-                    Top =3900
-                    Width =13200
+                    Top =2940
+                    Width =14085
                     Height =360
                     FontSize =14
                     FontWeight =400
                     BackColor =8210719
                     ForeColor =16777215
                     Name ="Label81"
-                    Caption ="Exploratory Call"
+                    Caption ="Step 1:  Enter Exploratory Call Information"
                     GridlineColor =10921638
-                    LayoutCachedLeft =180
-                    LayoutCachedTop =3900
-                    LayoutCachedWidth =13380
-                    LayoutCachedHeight =4260
+                    LayoutCachedTop =2940
+                    LayoutCachedWidth =14085
+                    LayoutCachedHeight =3300
                     BackThemeColorIndex =-1
                 End
                 Begin Label
                     BackStyle =1
                     OverlapFlags =223
-                    Left =180
-                    Top =7380
-                    Width =13200
+                    Left =7080
+                    Top =7140
+                    Width =6780
                     Height =360
                     FontSize =14
                     FontWeight =400
                     BackColor =8210719
                     ForeColor =16777215
                     Name ="Label82"
-                    Caption ="Establishing the Recovery Scoping Meeting"
+                    Caption ="Step 3 : Establishing the Recovery Scoping Meeting"
                     GridlineColor =10921638
-                    LayoutCachedLeft =180
-                    LayoutCachedTop =7380
-                    LayoutCachedWidth =13380
-                    LayoutCachedHeight =7740
+                    LayoutCachedLeft =7080
+                    LayoutCachedTop =7140
+                    LayoutCachedWidth =13860
+                    LayoutCachedHeight =7500
                     BackThemeColorIndex =-1
                 End
                 Begin Rectangle
                     SpecialEffect =2
                     BackStyle =1
                     OverlapFlags =93
-                    Left =13680
+                    Left =14160
                     Top =60
                     Width =2760
-                    Height =6360
+                    Height =6000
                     BackColor =14282978
                     BorderColor =10921638
                     Name ="Box84"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13680
+                    LayoutCachedLeft =14160
                     LayoutCachedTop =60
-                    LayoutCachedWidth =16440
-                    LayoutCachedHeight =6420
+                    LayoutCachedWidth =16920
+                    LayoutCachedHeight =6060
                     BackThemeColorIndex =9
                     BackTint =20.0
                 End
@@ -635,7 +635,7 @@ Begin Form
                     OldBorderStyle =1
                     OverlapFlags =215
                     TextAlign =2
-                    Left =13860
+                    Left =14400
                     Top =240
                     Width =2400
                     Height =360
@@ -644,9 +644,9 @@ Begin Form
                     Name ="Label85"
                     Caption ="DIU Processing"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13860
+                    LayoutCachedLeft =14400
                     LayoutCachedTop =240
-                    LayoutCachedWidth =16260
+                    LayoutCachedWidth =16800
                     LayoutCachedHeight =600
                     ForeThemeColorIndex =0
                 End
@@ -654,7 +654,7 @@ Begin Form
                     Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =13860
+                    Left =14400
                     Top =1260
                     Width =2400
                     Height =540
@@ -667,14 +667,14 @@ Begin Form
                     EventProcPrefix ="Date_Exploratory_Call"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =13860
+                    LayoutCachedLeft =14400
                     LayoutCachedTop =1260
-                    LayoutCachedWidth =16260
+                    LayoutCachedWidth =16800
                     LayoutCachedHeight =1800
                     Begin
                         Begin Label
                             OverlapFlags =215
-                            Left =13860
+                            Left =14400
                             Top =660
                             Width =2400
                             Height =540
@@ -684,9 +684,9 @@ Begin Form
                             Name ="lblDUIProcessing"
                             Caption ="Exploratory Call entered into EMMIE:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =13860
+                            LayoutCachedLeft =14400
                             LayoutCachedTop =660
-                            LayoutCachedWidth =16260
+                            LayoutCachedWidth =16800
                             LayoutCachedHeight =1200
                             ForeThemeColorIndex =0
                             ForeTint =50.0
@@ -697,41 +697,61 @@ Begin Form
                     SpecialEffect =2
                     BackStyle =1
                     OverlapFlags =93
-                    Left =13680
-                    Top =6600
+                    Left =14160
+                    Top =6120
                     Width =2760
-                    Height =5820
+                    Height =7560
                     BackColor =14282978
                     BorderColor =10921638
                     Name ="Box94"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13680
-                    LayoutCachedTop =6600
-                    LayoutCachedWidth =16440
-                    LayoutCachedHeight =12420
+                    LayoutCachedLeft =14160
+                    LayoutCachedTop =6120
+                    LayoutCachedWidth =16920
+                    LayoutCachedHeight =13680
                     BackThemeColorIndex =9
                     BackTint =20.0
                 End
                 Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =215
-                    Left =10680
-                    Top =8400
-                    Width =2160
-                    Height =600
+                    Left =10980
+                    Top =9480
+                    Width =2760
+                    Height =840
+                    FontSize =12
+                    FontWeight =700
                     TabIndex =9
-                    ForeColor =4210752
+                    ForeColor =16777215
                     Name ="cmdExploratoryCallComplete"
                     Caption ="Exploratory Call Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =10680
-                    LayoutCachedTop =8400
-                    LayoutCachedWidth =12840
-                    LayoutCachedHeight =9000
-                    BackColor =15123357
+                    LayoutCachedLeft =10980
+                    LayoutCachedTop =9480
+                    LayoutCachedWidth =13740
+                    LayoutCachedHeight =10320
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =14282978
+                    PressedThemeColorIndex =9
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -741,10 +761,9 @@ Begin Form
                 Begin Subform
                     TabStop = NotDefault
                     OverlapFlags =85
-                    Left =60
-                    Top =9120
-                    Width =13455
-                    Height =3360
+                    Top =10620
+                    Width =14085
+                    Height =3120
                     TabIndex =12
                     BorderColor =10921638
                     Name ="subHistory"
@@ -753,31 +772,49 @@ Begin Form
                     LinkMasterFields ="DisasterID;ApplicantID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =60
-                    LayoutCachedTop =9120
-                    LayoutCachedWidth =13515
-                    LayoutCachedHeight =12480
+                    LayoutCachedTop =10620
+                    LayoutCachedWidth =14085
+                    LayoutCachedHeight =13740
                 End
                 Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =215
-                    Left =3000
-                    Top =6480
+                    Left =3900
+                    Top =7680
                     Width =2880
-                    Height =660
+                    Height =840
+                    FontWeight =700
                     TabIndex =6
-                    ForeColor =4210752
+                    ForeColor =16777215
                     Name ="cmdOpenExploratoryCallEEI"
                     Caption ="Exploratory Call -Essential Elements of Information"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3000
-                    LayoutCachedTop =6480
-                    LayoutCachedWidth =5880
-                    LayoutCachedHeight =7140
-                    BackColor =15123357
+                    LayoutCachedLeft =3900
+                    LayoutCachedTop =7680
+                    LayoutCachedWidth =6780
+                    LayoutCachedHeight =8520
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =14282978
+                    PressedThemeColorIndex =9
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -786,89 +823,110 @@ Begin Form
                 End
                 Begin Label
                     OverlapFlags =215
-                    Left =6060
-                    Top =6480
-                    Width =5700
+                    Left =180
+                    Top =7740
+                    Width =3600
                     Height =720
                     Name ="Label132"
                     Caption ="Click to enter damage information and PW projections."
                     GridlineColor =10921638
-                    LayoutCachedLeft =6060
-                    LayoutCachedTop =6480
-                    LayoutCachedWidth =11760
-                    LayoutCachedHeight =7200
+                    LayoutCachedLeft =180
+                    LayoutCachedTop =7740
+                    LayoutCachedWidth =3780
+                    LayoutCachedHeight =8460
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14640
+                    Top =7620
+                    Width =1860
+                    Height =720
+                    TabIndex =14
+                    ForeColor =4210752
+                    Name ="cmdECChecklist"
+                    Caption ="Exploratory Call Guide / Checklist"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14640
+                    LayoutCachedTop =7620
+                    LayoutCachedWidth =16500
+                    LayoutCachedHeight =8340
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
                 End
                 Begin Subform
                     OverlapFlags =247
                     SpecialEffect =2
-                    Left =60
                     Top =60
-                    Width =13455
-                    Height =1800
+                    Width =14085
+                    Height =1380
                     TabIndex =13
                     BorderColor =10921638
                     Name ="subfrmDisasterInfoRevised"
-                    SourceObject ="Form.subfrmDisasterInfoRevised"
+                    SourceObject ="Form.subfrmDisasterInfoRevised short"
                     LinkChildFields ="DisasterID"
                     LinkMasterFields ="DisasterID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =60
                     LayoutCachedTop =60
-                    LayoutCachedWidth =13515
-                    LayoutCachedHeight =1860
+                    LayoutCachedWidth =14085
+                    LayoutCachedHeight =1440
                 End
                 Begin Subform
                     OverlapFlags =247
                     SpecialEffect =2
-                    Left =60
-                    Top =1920
-                    Width =13455
-                    Height =1680
-                    TabIndex =14
+                    Top =1500
+                    Width =14085
+                    Height =1380
+                    TabIndex =15
                     BorderColor =10921638
                     Name ="subfrmRpaInfo"
-                    SourceObject ="Form.subfrmRpaInfo"
+                    SourceObject ="Form.subfrmRpaInfo short"
                     LinkChildFields ="DisasterID;ApplicantID"
                     LinkMasterFields ="DisasterID;ApplicantID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =60
-                    LayoutCachedTop =1920
-                    LayoutCachedWidth =13515
-                    LayoutCachedHeight =3600
+                    LayoutCachedTop =1500
+                    LayoutCachedWidth =14085
+                    LayoutCachedHeight =2880
                 End
                 Begin Label
-                    OverlapFlags =215
-                    Left =13800
-                    Top =6780
+                    OverlapFlags =223
+                    Left =14340
+                    Top =6240
                     Width =2460
                     Height =540
                     Name ="Label143"
                     Caption ="Reference Information"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13800
-                    LayoutCachedTop =6780
-                    LayoutCachedWidth =16260
-                    LayoutCachedHeight =7320
+                    LayoutCachedLeft =14340
+                    LayoutCachedTop =6240
+                    LayoutCachedWidth =16800
+                    LayoutCachedHeight =6780
                 End
                 Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =215
-                    Left =13860
+                    Left =14400
                     Top =1920
                     Width =2400
                     Height =600
-                    TabIndex =16
+                    TabIndex =17
                     ForeColor =4210752
                     Name ="cmdDIUEntry"
                     Caption ="Exploratory Call Entered into EMMIE Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =13860
+                    LayoutCachedLeft =14400
                     LayoutCachedTop =1920
-                    LayoutCachedWidth =16260
+                    LayoutCachedWidth =16800
                     LayoutCachedHeight =2520
                     BackColor =15123357
                     BorderColor =15123357
@@ -885,9 +943,9 @@ Begin Form
                     OverlapFlags =93
                     IMESentenceMode =3
                     Left =2760
-                    Top =2520
+                    Top =2100
                     Height =315
-                    TabIndex =17
+                    TabIndex =18
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="ApplicantID"
@@ -895,23 +953,23 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2760
-                    LayoutCachedTop =2520
+                    LayoutCachedTop =2100
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =2835
+                    LayoutCachedHeight =2415
                     Begin
                         Begin Label
                             OverlapFlags =93
                             Left =960
-                            Top =2520
+                            Top =2100
                             Width =1275
                             Height =330
                             Name ="Label146"
                             Caption ="ApplicantID"
                             GridlineColor =10921638
                             LayoutCachedLeft =960
-                            LayoutCachedTop =2520
+                            LayoutCachedTop =2100
                             LayoutCachedWidth =2235
-                            LayoutCachedHeight =2850
+                            LayoutCachedHeight =2430
                         End
                     End
                 End
@@ -924,7 +982,7 @@ Begin Form
                     Left =2760
                     Top =420
                     Height =315
-                    TabIndex =15
+                    TabIndex =16
                     BorderColor =10921638
                     ForeColor =3484194
                     Name ="DisasterID"
@@ -956,15 +1014,16 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =215
+                    OverlapFlags =223
                     IMESentenceMode =3
-                    Left =7320
-                    Top =4320
+                    Left =6900
+                    Top =3360
                     Width =1860
                     Height =420
                     FontSize =14
                     FontWeight =700
-                    TabIndex =18
+                    TabIndex =19
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbCallTime"
@@ -974,65 +1033,35 @@ Begin Form
                     GridlineColor =10921638
                     ShowDatePicker =0
 
-                    LayoutCachedLeft =7320
-                    LayoutCachedTop =4320
-                    LayoutCachedWidth =9180
-                    LayoutCachedHeight =4740
+                    LayoutCachedLeft =6900
+                    LayoutCachedTop =3360
+                    LayoutCachedWidth =8760
+                    LayoutCachedHeight =3780
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
-                            OverlapFlags =215
-                            Left =6420
-                            Top =4320
+                            OverlapFlags =223
+                            Left =6000
+                            Top =3360
                             Width =780
                             Height =420
                             FontSize =14
                             FontWeight =600
                             Name ="Label148"
-                            Caption ="Time"
+                            Caption ="Time:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =6420
-                            LayoutCachedTop =4320
-                            LayoutCachedWidth =7200
-                            LayoutCachedHeight =4740
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =9960
-                    Top =7860
-                    TabIndex =19
-                    BorderColor =10921638
-                    Name ="Exploratory Call Checklist emailed to Subrecipient"
-                    ControlSource ="Exploratory Call Checklist emailed to Subrecipient"
-                    EventProcPrefix ="Exploratory_Call_Checklist_emailed_to_Subrecipient"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =9960
-                    LayoutCachedTop =7860
-                    LayoutCachedWidth =10220
-                    LayoutCachedHeight =8100
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =10260
-                            Top =7740
-                            Width =3180
-                            Height =600
-                            Name ="Label149"
-                            Caption ="Scoping Meeting Agenda, etc. emailed to Subrecipient"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =10260
-                            LayoutCachedTop =7740
-                            LayoutCachedWidth =13440
-                            LayoutCachedHeight =8340
+                            LayoutCachedLeft =6000
+                            LayoutCachedTop =3360
+                            LayoutCachedWidth =6780
+                            LayoutCachedHeight =3780
                         End
                     End
                 End
                 Begin Label
                     OverlapFlags =215
-                    Left =9360
-                    Top =4440
+                    Left =8820
+                    Top =3420
                     Width =1620
                     Height =300
                     FontSize =9
@@ -1041,49 +1070,149 @@ Begin Form
                     Name ="Label150"
                     Caption ="Ex. 12:00 PM"
                     GridlineColor =10921638
-                    LayoutCachedLeft =9360
-                    LayoutCachedTop =4440
-                    LayoutCachedWidth =10980
-                    LayoutCachedHeight =4740
-                    ForeThemeColorIndex =1
-                    ForeShade =65.0
-                End
-                Begin Label
-                    OverlapFlags =215
-                    Left =8580
-                    Top =7980
-                    Width =1260
-                    Height =300
-                    FontSize =9
-                    FontWeight =400
-                    ForeColor =10921638
-                    Name ="Label153"
-                    Caption ="Ex. 12:00 PM"
-                    GridlineColor =10921638
-                    LayoutCachedLeft =8580
-                    LayoutCachedTop =7980
-                    LayoutCachedWidth =9840
-                    LayoutCachedHeight =8280
+                    LayoutCachedLeft =8820
+                    LayoutCachedTop =3420
+                    LayoutCachedWidth =10440
+                    LayoutCachedHeight =3720
                     ForeThemeColorIndex =1
                     ForeShade =65.0
                 End
                 Begin CommandButton
+                    OverlapFlags =215
+                    Left =14640
+                    Top =6780
+                    Width =1860
+                    Height =720
+                    TabIndex =20
+                    ForeColor =4210752
+                    Name ="cmdPDASummary"
+                    Caption ="PDA Summary Sheet"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14640
+                    LayoutCachedTop =6780
+                    LayoutCachedWidth =16500
+                    LayoutCachedHeight =7500
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =12780
+                    Top =7680
+                    Width =1260
+                    Height =300
+                    FontSize =11
+                    FontWeight =400
+                    ForeColor =8355711
+                    Name ="Label153"
+                    Caption ="Ex. 12:00 PM"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =12780
+                    LayoutCachedTop =7680
+                    LayoutCachedWidth =14040
+                    LayoutCachedHeight =7980
+                    ForeThemeColorIndex =1
+                    ForeShade =50.0
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14640
+                    Top =8460
+                    Width =1860
+                    Height =720
+                    TabIndex =21
+                    ForeColor =4210752
+                    Name ="cmdDamageInventory"
+                    Caption ="Damage Inventory"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14640
+                    LayoutCachedTop =8460
+                    LayoutCachedWidth =16500
+                    LayoutCachedHeight =9180
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14640
+                    Top =9300
+                    Width =1860
+                    Height =840
+                    TabIndex =22
+                    ForeColor =4210752
+                    Name ="cmdCatChecklists"
+                    Caption ="Categorical Information Checklists"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14640
+                    LayoutCachedTop =9300
+                    LayoutCachedWidth =16500
+                    LayoutCachedHeight =10140
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =14640
+                    Top =10260
+                    Width =1860
+                    Height =720
+                    TabIndex =23
+                    ForeColor =4210752
+                    Name ="cmdPWTemplates"
+                    Caption ="PW Templates"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14640
+                    LayoutCachedTop =10260
+                    LayoutCachedWidth =16500
+                    LayoutCachedHeight =10980
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =215
-                    Left =13860
+                    Left =14400
                     Top =2640
                     Width =2400
                     Height =600
-                    TabIndex =20
+                    TabIndex =24
                     ForeColor =4210752
                     Name ="cmdViewExploratoryCallInfo"
                     Caption ="View Exploratory Call Info"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =13860
+                    LayoutCachedLeft =14400
                     LayoutCachedTop =2640
-                    LayoutCachedWidth =16260
+                    LayoutCachedWidth =16800
                     LayoutCachedHeight =3240
                     BackColor =15123357
                     BorderColor =15123357
@@ -1093,135 +1222,571 @@ Begin Form
                     WebImagePaddingBottom =1
                     Overlaps =1
                 End
-                Begin CommandButton
-                    Enabled = NotDefault
+                Begin Label
                     OverlapFlags =215
-                    Left =14040
-                    Top =7680
-                    Width =1860
-                    Height =720
-                    TabIndex =21
-                    ForeColor =4210752
-                    Name ="Command136"
-                    Caption ="Exploratory Call Checklist"
+                    TextAlign =1
+                    Left =2400
+                    Top =3780
+                    Width =795
+                    Height =360
+                    FontWeight =600
+                    TopMargin =29
+                    ForeColor =9917743
+                    Name ="Label159"
+                    Caption ="Name:"
                     GridlineColor =10921638
-
-                    LayoutCachedLeft =14040
-                    LayoutCachedTop =7680
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =8400
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
+                    LayoutCachedLeft =2400
+                    LayoutCachedTop =3780
+                    LayoutCachedWidth =3195
+                    LayoutCachedHeight =4140
+                    ForeThemeColorIndex =8
+                    ForeShade =75.0
                 End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =14040
-                    Top =11160
-                    Width =1860
-                    Height =720
-                    TabIndex =22
-                    ForeColor =4210752
-                    Name ="cmdPDASummary"
-                    Caption ="PDA Summary Sheet"
-                    OnClick ="[Event Procedure]"
+                Begin Label
+                    OverlapFlags =223
+                    TextAlign =1
+                    Left =5400
+                    Top =3780
+                    Width =1035
+                    Height =360
+                    FontWeight =600
+                    TopMargin =29
+                    ForeColor =9917743
+                    Name ="Label160"
+                    Caption ="Title:"
                     GridlineColor =10921638
-
-                    LayoutCachedLeft =14040
-                    LayoutCachedTop =11160
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =11880
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
+                    LayoutCachedLeft =5400
+                    LayoutCachedTop =3780
+                    LayoutCachedWidth =6435
+                    LayoutCachedHeight =4140
+                    ForeThemeColorIndex =8
+                    ForeShade =75.0
                 End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =14040
-                    Top =8520
-                    Width =1860
-                    Height =720
-                    TabIndex =23
-                    ForeColor =4210752
-                    Name ="cmdDamageInventory"
-                    Caption ="Damage Inventory"
-                    OnClick ="[Event Procedure]"
+                Begin Label
+                    OverlapFlags =223
+                    TextAlign =1
+                    Left =10335
+                    Top =3780
+                    Width =1050
+                    Height =360
+                    FontWeight =600
+                    TopMargin =29
+                    ForeColor =9917743
+                    Name ="Label161"
+                    Caption ="Email:"
                     GridlineColor =10921638
-
-                    LayoutCachedLeft =14040
-                    LayoutCachedTop =8520
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =9240
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
+                    LayoutCachedLeft =10335
+                    LayoutCachedTop =3780
+                    LayoutCachedWidth =11385
+                    LayoutCachedHeight =4140
+                    ForeThemeColorIndex =8
+                    ForeShade =75.0
                 End
-                Begin CommandButton
+                Begin Label
                     OverlapFlags =215
-                    Left =14040
-                    Top =9360
-                    Width =1860
-                    Height =840
-                    TabIndex =24
-                    ForeColor =4210752
-                    Name ="cmdCatChecklists"
-                    Caption ="Categorical Information Checklists"
-                    OnClick ="[Event Procedure]"
+                    TextAlign =1
+                    Left =8355
+                    Top =3780
+                    Width =1230
+                    Height =360
+                    FontWeight =600
+                    TopMargin =29
+                    ForeColor =9917743
+                    Name ="Label162"
+                    Caption ="Phone #:"
                     GridlineColor =10921638
-
-                    LayoutCachedLeft =14040
-                    LayoutCachedTop =9360
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =10200
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
+                    LayoutCachedLeft =8355
+                    LayoutCachedTop =3780
+                    LayoutCachedWidth =9585
+                    LayoutCachedHeight =4140
+                    ForeThemeColorIndex =8
+                    ForeShade =75.0
                 End
-                Begin CommandButton
+                Begin TextBox
                     OverlapFlags =215
-                    Left =14040
-                    Top =10320
-                    Width =1860
-                    Height =720
+                    IMESentenceMode =3
+                    Left =10350
+                    Top =4140
+                    Width =3570
+                    Height =405
                     TabIndex =25
+                    BackColor =13431551
+                    BorderColor =10921638
                     ForeColor =4210752
-                    Name ="cmdPWTemplates"
-                    Caption ="PW Templates"
-                    OnClick ="[Event Procedure]"
+                    Name ="tbSubrecipientEmail"
+                    ControlSource ="Subrecipient POC Contact Email"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =14040
-                    LayoutCachedTop =10320
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =11040
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
+                    LayoutCachedLeft =10350
+                    LayoutCachedTop =4140
+                    LayoutCachedWidth =13920
+                    LayoutCachedHeight =4545
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5400
+                    Top =4140
+                    Width =2880
+                    Height =405
+                    ColumnWidth =3990
+                    TabIndex =26
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbSubrecipientTitle"
+                    ControlSource ="Subrecipient POC Title"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5400
+                    LayoutCachedTop =4140
+                    LayoutCachedWidth =8280
+                    LayoutCachedHeight =4545
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin TextBox
+                    OverlapFlags =255
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =360
+                    Width =3600
+                    Height =345
+                    TabIndex =27
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Alt Subrecipient POC"
+                    ControlSource ="Alt Subrecipient POC"
+                    EventProcPrefix ="Alt_Subrecipient_POC"
+                    GroupTable =1
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2640
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =6240
+                    LayoutCachedHeight =705
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            TextAlign =1
+                            Left =360
+                            Top =360
+                            Width =2220
+                            Height =345
+                            Name ="Label166"
+                            Caption ="Alt Subrecipient POC"
+                            GroupTable =1
+                            GridlineColor =10921638
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =360
+                            LayoutCachedWidth =2580
+                            LayoutCachedHeight =705
+                            LayoutGroup =1
+                            GroupTable =1
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =2400
+                    Top =4635
+                    Width =2880
+                    Height =405
+                    TabIndex =28
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbAltSubPOC"
+                    ControlSource ="Alt Subrecipient POC"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2400
+                    LayoutCachedTop =4635
+                    LayoutCachedWidth =5280
+                    LayoutCachedHeight =5040
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5400
+                    Top =4635
+                    Width =2865
+                    Height =405
+                    TabIndex =29
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbAltSubTitle"
+                    ControlSource ="Alt Subrecipient POC Title"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5400
+                    LayoutCachedTop =4635
+                    LayoutCachedWidth =8265
+                    LayoutCachedHeight =5040
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =8340
+                    Top =4635
+                    Width =1920
+                    Height =405
+                    TabIndex =30
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbAltSubPhone"
+                    ControlSource ="Alt Subrecipient POC Contact Number"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =8340
+                    LayoutCachedTop =4635
+                    LayoutCachedWidth =10260
+                    LayoutCachedHeight =5040
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =10320
+                    Top =4635
+                    Width =3585
+                    Height =405
+                    TabIndex =31
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbAltSubEmail"
+                    ControlSource ="Alt Subrecipient POC Contact Email"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =10320
+                    LayoutCachedTop =4635
+                    LayoutCachedWidth =13905
+                    LayoutCachedHeight =5040
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin Label
+                    OverlapFlags =223
+                    TextAlign =3
+                    Left =120
+                    Top =4740
+                    Width =2220
+                    Height =405
+                    FontWeight =600
+                    TopMargin =29
+                    ForeColor =9917743
+                    Name ="Label178"
+                    Caption ="Alt. Applicant POC:"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =4740
+                    LayoutCachedWidth =2340
+                    LayoutCachedHeight =5145
+                    ForeThemeColorIndex =8
+                    ForeShade =75.0
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =3
+                    Left =120
+                    Top =4260
+                    Width =2220
+                    Height =405
+                    FontWeight =600
+                    TopMargin =29
+                    ForeColor =9917743
+                    Name ="Label179"
+                    Caption ="Applicant POC:"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =4260
+                    LayoutCachedWidth =2340
+                    LayoutCachedHeight =4665
+                    ForeThemeColorIndex =8
+                    ForeShade =75.0
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =2400
+                    Top =6300
+                    Width =11520
+                    Height =723
+                    TabIndex =32
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="tbExploratoryCallNotes"
+                    ControlSource ="Exploratory Call Notes"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2400
+                    LayoutCachedTop =6300
+                    LayoutCachedWidth =13920
+                    LayoutCachedHeight =7023
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                    ForeTint =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =120
+                            Top =6300
+                            Width =2220
+                            Height =720
+                            FontWeight =600
+                            TopMargin =29
+                            ForeColor =9917743
+                            Name ="Label180"
+                            Caption ="Exploratory Call Notes"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =6300
+                            LayoutCachedWidth =2340
+                            LayoutCachedHeight =7020
+                            ForeThemeColorIndex =8
+                            ForeShade =75.0
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5400
+                    Top =5160
+                    Width =2880
+                    Height =405
+                    TabIndex =33
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbRecipientTitle"
+                    ControlSource ="Recipient Title"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5400
+                    LayoutCachedTop =5160
+                    LayoutCachedWidth =8280
+                    LayoutCachedHeight =5565
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =10335
+                    Top =5160
+                    Width =3585
+                    Height =405
+                    TabIndex =34
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbRecipientEmail"
+                    ControlSource ="Recipient Email"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =10335
+                    LayoutCachedTop =5160
+                    LayoutCachedWidth =13920
+                    LayoutCachedHeight =5565
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin Line
+                    BorderWidth =2
+                    OverlapFlags =87
+                    Left =60
+                    Top =5100
+                    Width =13920
+                    BorderColor =14461583
+                    Name ="Line184"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =5100
+                    LayoutCachedWidth =13980
+                    LayoutCachedHeight =5100
+                    BorderThemeColorIndex =8
+                    BorderTint =60.0
+                End
+                Begin Line
+                    BorderWidth =2
+                    OverlapFlags =87
+                    Left =60
+                    Top =5640
+                    Width =13920
+                    BorderColor =14461583
+                    Name ="Line186"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =5640
+                    LayoutCachedWidth =13980
+                    LayoutCachedHeight =5640
+                    BorderThemeColorIndex =8
+                    BorderTint =60.0
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =223
+                    Top =7140
+                    Width =7080
+                    Height =360
+                    FontSize =14
+                    FontWeight =400
+                    BackColor =8210719
+                    ForeColor =16777215
+                    Name ="Label188"
+                    Caption ="Step 2:  Enter Essential Elements of Information"
+                    GridlineColor =10921638
+                    LayoutCachedTop =7140
+                    LayoutCachedWidth =7080
+                    LayoutCachedHeight =7500
+                    BackThemeColorIndex =-1
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =7260
+                    Top =9600
+                    Width =3420
+                    Height =600
+                    Name ="Label191"
+                    Caption ="Click to Complete Exploratory Call"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7260
+                    LayoutCachedTop =9600
+                    LayoutCachedWidth =10680
+                    LayoutCachedHeight =10200
+                End
+                Begin Line
+                    BorderWidth =2
+                    OverlapFlags =87
+                    Left =60
+                    Top =6240
+                    Width =13920
+                    BorderColor =14461583
+                    Name ="Line192"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =6240
+                    LayoutCachedWidth =13980
+                    LayoutCachedHeight =6240
+                    BorderThemeColorIndex =8
+                    BorderTint =60.0
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =215
+                    Top =9000
+                    Width =14085
+                    Height =360
+                    FontSize =14
+                    FontWeight =400
+                    BackColor =8210719
+                    ForeColor =16777215
+                    Name ="Label193"
+                    Caption ="Step 4 : Complete the Exploratory Call"
+                    GridlineColor =10921638
+                    LayoutCachedTop =9000
+                    LayoutCachedWidth =14085
+                    LayoutCachedHeight =9360
+                    BackThemeColorIndex =-1
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5160
+                    Top =9600
+                    Width =1620
+                    Height =420
+                    TabIndex =35
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tbChecklistSent"
+                    ControlSource ="RSM Agenda sent to Subrecipient"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5160
+                    LayoutCachedTop =9600
+                    LayoutCachedWidth =6780
+                    LayoutCachedHeight =10020
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =120
+                            Top =9600
+                            Width =4980
+                            Height =420
+                            FontSize =14
+                            Name ="Label195"
+                            Caption ="RSM Information emailed to Applicant:"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =9600
+                            LayoutCachedWidth =5100
+                            LayoutCachedHeight =10020
+                        End
+                    End
+                End
+                Begin Line
+                    BorderWidth =2
+                    OverlapFlags =95
+                    Left =7020
+                    Top =7500
+                    Width =0
+                    Height =1380
+                    BorderColor =9917743
+                    Name ="Line196"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7020
+                    LayoutCachedTop =7500
+                    LayoutCachedWidth =7020
+                    LayoutCachedHeight =8880
+                    BorderThemeColorIndex =8
+                    BorderShade =75.0
+                End
+                Begin Line
+                    BorderWidth =2
+                    OverlapFlags =87
+                    Left =7020
+                    Top =7140
+                    Width =0
+                    Height =360
+                    BorderColor =16777215
+                    Name ="Line197"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7020
+                    LayoutCachedTop =7140
+                    LayoutCachedWidth =7020
+                    LayoutCachedHeight =7500
+                    BorderThemeColorIndex =1
                 End
             End
         End
         Begin FormFooter
-            Height =840
+            Height =900
             BackColor =15921906
             Name ="FormFooter"
             AlternateBackThemeColorIndex =1
@@ -1234,7 +1799,7 @@ Begin Form
                     OverlapFlags =93
                     TextFontFamily =82
                     Width =16440
-                    Height =780
+                    Height =840
                     FontSize =20
                     FontWeight =400
                     BackColor =14282978
@@ -1245,7 +1810,7 @@ Begin Form
                     FontName ="Broadway"
                     GridlineColor =10921638
                     LayoutCachedWidth =16440
-                    LayoutCachedHeight =780
+                    LayoutCachedHeight =840
                     ThemeFontIndex =-1
                     BackThemeColorIndex =9
                     BackTint =20.0
@@ -1254,13 +1819,32 @@ Begin Form
                     BorderShade =75.0
                     ForeThemeColorIndex =0
                 End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =7260
+                    Top =60
+                    Width =6840
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box199"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7260
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =14100
+                    LayoutCachedHeight =780
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =14520
+                    Left =14700
                     Top =120
-                    Width =1290
-                    Height =405
-                    ForeColor =4210752
+                    Width =1500
+                    Height =600
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
                     Name ="cmdCloseForm"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -1284,12 +1868,30 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =14520
+                    LayoutCachedLeft =14700
                     LayoutCachedTop =120
-                    LayoutCachedWidth =15810
-                    LayoutCachedHeight =525
-                    BackColor =15123357
+                    LayoutCachedWidth =16200
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15189940
+                    PressedThemeColorIndex =8
+                    PressedTint =40.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -1298,8 +1900,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =9600
-                    Top =60
+                    Left =9720
+                    Top =120
                     Width =1260
                     Height =600
                     TabIndex =1
@@ -1363,10 +1965,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =9600
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =10860
-                    LayoutCachedHeight =660
+                    LayoutCachedLeft =9720
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =10980
+                    LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -1378,8 +1980,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =12300
-                    Top =60
+                    Left =12420
+                    Top =120
                     Width =1215
                     Height =600
                     TabIndex =2
@@ -1443,10 +2045,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =12300
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =13515
-                    LayoutCachedHeight =660
+                    LayoutCachedLeft =12420
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =13635
+                    LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -1458,8 +2060,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =10980
-                    Top =60
+                    Left =11100
+                    Top =120
                     Width =576
                     Height =576
                     TabIndex =3
@@ -1540,10 +2142,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =10980
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =11556
-                    LayoutCachedHeight =636
+                    LayoutCachedLeft =11100
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =11676
+                    LayoutCachedHeight =696
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -1554,8 +2156,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =11640
-                    Top =60
+                    Left =11760
+                    Top =120
                     Width =576
                     Height =576
                     TabIndex =4
@@ -1634,10 +2236,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =11640
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =12216
-                    LayoutCachedHeight =636
+                    LayoutCachedLeft =11760
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =12336
+                    LayoutCachedHeight =696
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -1645,6 +2247,25 @@ Begin Form
                     WebImagePaddingRight =1
                     WebImagePaddingBottom =1
                     Overlaps =1
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =7320
+                    Top =120
+                    Width =2220
+                    Height =600
+                    FontSize =11
+                    FontWeight =400
+                    ForeColor =0
+                    Name ="Label45"
+                    Caption ="Use these buttons to Navigate Records"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7320
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =9540
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =0
                 End
             End
         End
@@ -1692,6 +2313,19 @@ PROC_ERR:
     GlobalErrHandler
     Resume PROC_EXIT
 '///ErrorHandling
+End Sub
+
+Private Sub cmdECChecklist_Click()
+Dim oApp As Object
+Dim filePath As String
+
+filePath = "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/Exploratory Call Guide OR.docx"
+'Create an instance of MS Word
+Set oApp = CreateObject(Class:="Word.Application")
+oApp.Visible = True
+
+'Open the Document
+oApp.Documents.Open fileName:=filePath
 End Sub
 
 Private Sub cmdOpenExploratoryCallEEI_Click()
@@ -1772,7 +2406,7 @@ Dim wb As Object
 End Sub
 
 Private Sub cmdPWTemplates_Click()
-Application.FollowHyperlink "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/PW Templates and Checklists"
+Application.FollowHyperlink "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/PW Templates and Instructions"
 End Sub
 
 Private Sub cmdViewExploratoryCallInfo_Click()
@@ -1885,15 +2519,25 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
             Me.tbCallDate.Enabled = CanEnable
             Me.tbCallTime.Enabled = CanEnable
             Me.tbFemaParticipants.Enabled = CanEnable
+            Me.tbSubrecipientPoc.Enabled = CanEnable
+            Me.tbSubrecipientTitle.Enabled = CanEnable
+            Me.tbSubrecipientPocContact.Enabled = CanEnable
+            Me.tbSubrecipientEmail.Enabled = CanEnable
+            Me.tbAltSubPOC.Enabled = CanEnable
+            Me.tbAltSubTitle.Enabled = CanEnable
+            Me.tbAltSubPhone.Enabled = CanEnable
+            Me.tbAltSubEmail.Enabled = CanEnable
             Me.tbReciepientPoc.Enabled = CanEnable
+            Me.tbRecipientTitle.Enabled = CanEnable
             Me.tbRecipientPocContact.Enabled = CanEnable
+            Me.tbRecipientEmail.Enabled = CanEnable
+            Me.tbExploratoryCallNotes.Enabled = CanEnable
             Me.tbRsmDate.Enabled = CanEnable
             Me.tbRsmLocation.Enabled = CanEnable
             Me.tbRsmTime.Enabled = CanEnable
-            Me.tbSubrecipientPoc.Enabled = CanEnable
-            Me.tbSubrecipientPocContact.Enabled = CanEnable
             Me.cmdExploratoryCallComplete.Enabled = CanEnable
             Me.cmdOpenExploratoryCallEEI.Enabled = CanEnable
+            Me.tbChecklistSent.Enabled = CanEnable
         Case "DIU Enter Call"
             Me.cmdDIUEntry.Enabled = CanEnable
 
@@ -1925,14 +2569,14 @@ Private Function PreDialogCheck(ReviewType As String) As Boolean
 '///Code
     Select Case ReviewType
         Case "Exploratory Call"
-            If Me.Exploratory_Call_Checklist_emailed_to_Subrecipient Then
+            If Nz(Me.tbChecklistSent, 0) > 0 Then
                 PreDialogCheck = True
             Else
                 PreDialogCheck = False
-                MsgBox "You must mark that you have emailed the subrecipient above before continuing."
+                MsgBox "You must mark the date that you have emailed the subrecipient the agenda before continuing."
             End If
         Case "DIU Enter Call"
-            Me.Date_Exploratory_Call = Now()
+'            Me.Date_Exploratory_Call = Now()
             PreDialogCheck = True
         Case Else
             PreDialogCheck = False
@@ -1961,6 +2605,7 @@ Private Function PostDialogCheck(ReviewType As String, DialogResult As String) A
 
 '///Code
 '   No Check Needed.
+    If ReviewType = "DIU Enter Call" And DialogResult = "SUB" Then Me.Date_Exploratory_Call = Now()
     PostDialogCheck = True
 '///Code
 
@@ -2117,12 +2762,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

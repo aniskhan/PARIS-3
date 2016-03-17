@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -12,8 +14,8 @@ Begin Form
     Width =19080
     DatasheetFontHeight =11
     ItemSuffix =15
-    Right =10725
-    Bottom =13545
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x4bd3c896b5b1e440
@@ -21,6 +23,10 @@ Begin Form
     RecordSource ="fqrySiteStInspectionAssignment"
     Caption ="subformSites"
     DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     OnDblClick ="[Event Procedure]"
     FilterOnLoad =0
     SplitFormOrientation =1
@@ -707,56 +713,12 @@ Begin Form
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
-                    Left =1080
-                    Top =1980
-                    Width =2880
-                    Height =315
-                    ColumnOrder =26
-                    TabIndex =13
-                    BackColor =15527148
-                    BorderColor =10921638
-                    Name ="Text119"
-                    ControlSource ="Latitude"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =1080
-                    LayoutCachedTop =1980
-                    LayoutCachedWidth =3960
-                    LayoutCachedHeight =2295
-                    BackThemeColorIndex =-1
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
-                    Begin
-                        Begin Label
-                            OverlapFlags =85
-                            Left =120
-                            Top =1980
-                            Width =900
-                            Height =315
-                            BorderColor =8355711
-                            Name ="Label120"
-                            Caption ="Latitude"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =120
-                            LayoutCachedTop =1980
-                            LayoutCachedWidth =1020
-                            LayoutCachedHeight =2295
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin TextBox
-                    TabStop = NotDefault
-                    OverlapFlags =85
-                    TextAlign =2
-                    IMESentenceMode =3
                     Left =1920
                     Top =2400
                     Width =2760
                     Height =315
                     ColumnOrder =27
-                    TabIndex =14
+                    TabIndex =13
                     BackColor =15527148
                     BorderColor =10921638
                     Name ="Text121"
@@ -799,7 +761,7 @@ Begin Form
                     Width =2220
                     Height =315
                     ColumnOrder =28
-                    TabIndex =15
+                    TabIndex =14
                     BackColor =15527148
                     BorderColor =10921638
                     Name ="Text123"
@@ -844,7 +806,7 @@ Begin Form
                     Height =315
                     ColumnWidth =1125
                     ColumnOrder =20
-                    TabIndex =16
+                    TabIndex =15
                     BackColor =15527148
                     BorderColor =10921638
                     Name ="Text125"
@@ -887,7 +849,7 @@ Begin Form
                     Width =2220
                     Height =315
                     ColumnOrder =2
-                    TabIndex =17
+                    TabIndex =16
                     BackColor =15527148
                     BorderColor =10921638
                     Name ="Text127"
@@ -930,7 +892,7 @@ Begin Form
                     Width =2280
                     Height =315
                     ColumnOrder =29
-                    TabIndex =18
+                    TabIndex =17
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text163"
@@ -1060,194 +1022,6 @@ Begin Form
                     ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =12540
-                    Top =6060
-                    Width =300
-                    Height =300
-                    ColumnOrder =10
-                    TabIndex =19
-                    BorderColor =10921638
-                    Name ="Check131"
-                    ControlSource ="Has Recieved PA grant in prior Stafford Act Disasters?"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =12540
-                    LayoutCachedTop =6060
-                    LayoutCachedWidth =12840
-                    LayoutCachedHeight =6360
-                    Begin
-                        Begin Label
-                            OverlapFlags =247
-                            Left =12780
-                            Top =6060
-                            Width =3900
-                            Height =600
-                            BorderColor =8355711
-                            Name ="Label132"
-                            Caption ="Has received PA grant(s) on this facility in a previous Stafford Act disaster?"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =12780
-                            LayoutCachedTop =6060
-                            LayoutCachedWidth =16680
-                            LayoutCachedHeight =6660
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =10440
-                    Top =6090
-                    Width =300
-                    ColumnOrder =9
-                    TabIndex =20
-                    BorderColor =10921638
-                    Name ="Check113"
-                    ControlSource ="Facility insured?"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =10440
-                    LayoutCachedTop =6090
-                    LayoutCachedWidth =10740
-                    LayoutCachedHeight =6330
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =10740
-                            Top =6030
-                            Width =1740
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="Label114"
-                            Caption ="Facililty Insured?"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =10740
-                            LayoutCachedTop =6030
-                            LayoutCachedWidth =12480
-                            LayoutCachedHeight =6345
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =5160
-                    Top =6030
-                    Width =360
-                    ColumnOrder =8
-                    TabIndex =21
-                    BorderColor =10921638
-                    Name ="Check111"
-                    ControlSource ="Is there a potential mitigation opportunity?"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =5160
-                    LayoutCachedTop =6030
-                    LayoutCachedWidth =5520
-                    LayoutCachedHeight =6270
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =5520
-                            Top =6030
-                            Width =4500
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="Label112"
-                            Caption ="Is there a potential mitigation opportunity?"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =5520
-                            LayoutCachedTop =6030
-                            LayoutCachedWidth =10020
-                            LayoutCachedHeight =6345
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =120
-                    Top =6030
-                    Width =540
-                    Height =360
-                    ColumnOrder =7
-                    TabIndex =22
-                    BorderColor =10921638
-                    Name ="Check109"
-                    ControlSource ="EHP Issues? (H, E, B)"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =120
-                    LayoutCachedTop =6030
-                    LayoutCachedWidth =660
-                    LayoutCachedHeight =6390
-                    Begin
-                        Begin Label
-                            OverlapFlags =247
-                            Left =480
-                            Top =6000
-                            Width =1335
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="Label110"
-                            Caption ="EHP Issues"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =6000
-                            LayoutCachedWidth =1815
-                            LayoutCachedHeight =6315
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =10440
-                    Top =7650
-                    ColumnWidth =2145
-                    ColumnOrder =11
-                    TabIndex =23
-                    BorderColor =10921638
-                    Name ="Insurance Inspection Report Required"
-                    ControlSource ="Insurance Inspection Report Required"
-                    EventProcPrefix ="Insurance_Inspection_Report_Required"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =10440
-                    LayoutCachedTop =7650
-                    LayoutCachedWidth =10700
-                    LayoutCachedHeight =7890
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =10700
-                            Top =7650
-                            Width =3705
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="Insurance Inspection Report Required_Label"
-                            Caption ="Insurance Inspection Report Required"
-                            EventProcPrefix ="Insurance_Inspection_Report_Required_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =10700
-                            LayoutCachedTop =7650
-                            LayoutCachedWidth =14405
-                            LayoutCachedHeight =7965
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
                 Begin TextBox
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
@@ -1259,7 +1033,7 @@ Begin Form
                     Height =360
                     ColumnOrder =17
                     FontSize =12
-                    TabIndex =24
+                    TabIndex =18
                     BorderColor =10921638
                     Name ="Assigned Insurance Specialist"
                     ControlSource ="Assigned Insurance Specialist"
@@ -1294,83 +1068,6 @@ Begin Form
                         End
                     End
                 End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =10440
-                    Top =6720
-                    ColumnWidth =1050
-                    ColumnOrder =12
-                    TabIndex =25
-                    BorderColor =10921638
-                    Name ="Insurance Specialist requested for Site Inspection"
-                    ControlSource ="Insurance Specialist requested for Site Inspection"
-                    EventProcPrefix ="Insurance_Specialist_requested_for_Site_Inspection"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =10440
-                    LayoutCachedTop =6720
-                    LayoutCachedWidth =10700
-                    LayoutCachedHeight =6960
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =10700
-                            Top =6720
-                            Width =4650
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="Insurance Specialist requested for Site Inspection_Label"
-                            Caption ="Insurance Specialist requested for Site Insp"
-                            EventProcPrefix ="Insurance_Specialist_requested_for_Site_Inspection_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =10700
-                            LayoutCachedTop =6720
-                            LayoutCachedWidth =15350
-                            LayoutCachedHeight =7035
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =5100
-                    Top =7680
-                    ColumnOrder =19
-                    TabIndex =26
-                    BorderColor =10921638
-                    Name ="Mitigation Site Inspection Report Requested"
-                    ControlSource ="Mitigation Site Inspection Report Requested"
-                    EventProcPrefix ="Mitigation_Site_Inspection_Report_Requested"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =5100
-                    LayoutCachedTop =7680
-                    LayoutCachedWidth =5360
-                    LayoutCachedHeight =7920
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =5360
-                            Top =7680
-                            Width =4185
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="Mitigation Site Inspection Report Requested_Label"
-                            Caption ="Mitigation Site Inspection Report Requested"
-                            EventProcPrefix ="Mitigation_Site_Inspection_Report_Requested_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =5360
-                            LayoutCachedTop =7680
-                            LayoutCachedWidth =9545
-                            LayoutCachedHeight =7995
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
                 Begin TextBox
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
@@ -1382,7 +1079,7 @@ Begin Form
                     Height =300
                     ColumnOrder =18
                     FontSize =12
-                    TabIndex =27
+                    TabIndex =19
                     BorderColor =10921638
                     Name ="Assigned Mitigation Specialist"
                     ControlSource ="Assigned Mitigation Specialist"
@@ -1417,82 +1114,6 @@ Begin Form
                         End
                     End
                 End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =5160
-                    Top =6450
-                    ColumnOrder =13
-                    TabIndex =28
-                    BorderColor =10921638
-                    Name ="Mitgation Specialists requested for Staff Meeting"
-                    ControlSource ="Mitgation Specialists requested for Staff Meeting"
-                    EventProcPrefix ="Mitgation_Specialists_requested_for_Staff_Meeting"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =5160
-                    LayoutCachedTop =6450
-                    LayoutCachedWidth =5420
-                    LayoutCachedHeight =6690
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =5415
-                            Top =6450
-                            Width =4740
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="Mitgation Specialists requested for Staff Meeting_Label"
-                            Caption ="Mitgation Specialists requested for Site Insp."
-                            EventProcPrefix ="Mitgation_Specialists_requested_for_Staff_Meeting_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =5415
-                            LayoutCachedTop =6450
-                            LayoutCachedWidth =10155
-                            LayoutCachedHeight =6765
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =120
-                    Top =7560
-                    ColumnOrder =14
-                    TabIndex =29
-                    BorderColor =10921638
-                    Name ="EHP Site Inspection Report Required"
-                    ControlSource ="EHP Site Inspection Report Required"
-                    EventProcPrefix ="EHP_Site_Inspection_Report_Required"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =120
-                    LayoutCachedTop =7560
-                    LayoutCachedWidth =380
-                    LayoutCachedHeight =7800
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =480
-                            Top =7560
-                            Width =4020
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="EHP Site Inspection Report Required_Label"
-                            Caption ="EHP Site Inspection Report Required"
-                            EventProcPrefix ="EHP_Site_Inspection_Report_Required_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =480
-                            LayoutCachedTop =7560
-                            LayoutCachedWidth =4500
-                            LayoutCachedHeight =7875
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
                 Begin TextBox
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
@@ -1504,7 +1125,7 @@ Begin Form
                     Height =360
                     ColumnOrder =16
                     FontSize =12
-                    TabIndex =30
+                    TabIndex =20
                     BorderColor =10921638
                     Name ="Assigned EHP Specialists"
                     ControlSource ="Assigned EHP Specialists"
@@ -1534,44 +1155,6 @@ Begin Form
                             LayoutCachedTop =6810
                             LayoutCachedWidth =2460
                             LayoutCachedHeight =7125
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin CheckBox
-                    OverlapFlags =215
-                    Left =120
-                    Top =6390
-                    ColumnOrder =15
-                    TabIndex =31
-                    BorderColor =10921638
-                    Name ="EHP Specialist  requested for Site Inspection"
-                    ControlSource ="EHP Specialist  requested for Site Inspection"
-                    EventProcPrefix ="EHP_Specialist__requested_for_Site_Inspection"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =120
-                    LayoutCachedTop =6390
-                    LayoutCachedWidth =380
-                    LayoutCachedHeight =6630
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =420
-                            Top =6390
-                            Width =4155
-                            Height =315
-                            FontSize =12
-                            BorderColor =8355711
-                            Name ="EHP Specialist  requested for Site Inspection_Label"
-                            Caption ="EHP Specialist  requested for Site Insp."
-                            EventProcPrefix ="EHP_Specialist__requested_for_Site_Inspection_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =420
-                            LayoutCachedTop =6390
-                            LayoutCachedWidth =4575
-                            LayoutCachedHeight =6705
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -1643,7 +1226,7 @@ Begin Form
                     Top =4320
                     Width =2400
                     Height =315
-                    TabIndex =32
+                    TabIndex =21
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text11"

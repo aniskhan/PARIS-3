@@ -16,12 +16,11 @@ Begin Form
     Width =7620
     DatasheetFontHeight =11
     ItemSuffix =24
-    Left =510
-    Top =1095
-    Right =20235
-    Bottom =10335
+    Left =32580
+    Top =2505
+    Right =-18436
+    Bottom =15150
     DatasheetGridlinesColor =15132391
-    Filter ="[UserID] Like '*nli*'"
     OrderBy ="[UserID]"
     RecSrcDt = Begin
         0x6d2282fb8aa4e440

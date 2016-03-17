@@ -24,17 +24,57 @@ dbBoolean "FilterOnLoad" ="0"
 dbBoolean "OrderByOnLoad" ="-1"
 dbBoolean "TotalsRow" ="0"
 Begin
+    Begin
+        dbText "Name" ="tblAuditTrail.EditRecordID"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.SourceTable"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.SourceField"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.RecordID"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblSubRecipient.[Subrecipient Name]"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.ApplicantID"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.BeforeValue"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.AfterValue"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.EditDate"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblAuditTrail.User"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
     Left =0
     Top =0
-    Right =1326
-    Bottom =584
+    Right =1114
+    Bottom =539
     Left =-1
     Top =-1
-    Right =1310
-    Bottom =339
+    Right =1098
+    Bottom =322
     Left =0
     Top =0
     ColumnsShown =539

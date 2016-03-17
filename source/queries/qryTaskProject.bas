@@ -1,8 +1,8 @@
 ﻿Operation =1
 Option =0
-Where ="(((revtblProject.DisasterID)=[Forms]![navMain]![DisasterID]) AND ((tblReviewType"
-    "s.ItemType)=\"Project\" Or (tblReviewTypes.ItemType)=([revtblProject].[Lane Assi"
-    "gned] & \"Project\")) AND ((revtblProject.ReviewExitDate) Is Null))"
+Where ="(((revtblProject.DisasterID)=Forms!navMain!DisasterID) And ((tblReviewTypes.Item"
+    "Type)=\"Project\" Or (tblReviewTypes.ItemType)=(revtblProject.[Lane Assigned] & "
+    "\"Project\")) And ((revtblProject.ReviewExitDate) Is Null))"
 Begin InputTables
     Name ="revtblProject"
     Name ="tblProjects"
@@ -20,6 +20,10 @@ Begin OutputColumns
     Expression ="\"\""
     Alias ="DocID"
     Expression ="\"\""
+    Alias ="RfiID"
+    Expression ="\"\""
+    Alias ="DmID"
+    Expression ="\"\""
     Expression ="tblSubRecipient.[Subrecipient Name]"
     Expression ="tblProjects.[Application Title]"
     Expression ="revtblProject.ReviewUserID"
@@ -29,15 +33,15 @@ End
 Begin Joins
     LeftTable ="tblProjects"
     RightTable ="tblSubRecipient"
-    Expression ="tblProjects.[ApplicantID] = tblSubRecipient.[ApplicantID]"
+    Expression ="tblProjects.[DisasterID] = tblSubRecipient.[DisasterID]"
     Flag =1
     LeftTable ="tblProjects"
     RightTable ="tblSubRecipient"
-    Expression ="tblProjects.[DisasterID] = tblSubRecipient.[DisasterID]"
+    Expression ="tblProjects.[ApplicantID] = tblSubRecipient.[ApplicantID]"
     Flag =1
     LeftTable ="revtblProject"
     RightTable ="tblProjects"
-    Expression ="revtblProject.DisasterID = tblProjects.DisasterID"
+    Expression ="revtblProject.ProjectID = tblProjects.ProjectID"
     Flag =1
     LeftTable ="revtblProject"
     RightTable ="tblProjects"
@@ -45,7 +49,7 @@ Begin Joins
     Flag =1
     LeftTable ="revtblProject"
     RightTable ="tblProjects"
-    Expression ="revtblProject.ProjectID = tblProjects.ProjectID"
+    Expression ="revtblProject.DisasterID = tblProjects.DisasterID"
     Flag =1
     LeftTable ="revtblProject"
     RightTable ="tblReviewTypes"
@@ -106,17 +110,27 @@ Begin
         dbText "Name" ="tblReviewTypes.FormName"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="tblProjects.[Application Title]"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="RfiID"
+    End
+    Begin
+        dbText "Name" ="DmID"
+    End
 End
 Begin
     State =0
     Left =0
     Top =0
-    Right =1035
-    Bottom =834
+    Right =985
+    Bottom =860
     Left =-1
     Top =-1
-    Right =1019
-    Bottom =504
+    Right =969
+    Bottom =487
     Left =0
     Top =0
     ColumnsShown =539

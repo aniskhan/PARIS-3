@@ -2,6 +2,7 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     PictureAlignment =2
@@ -11,13 +12,13 @@ Begin Form
     Width =9660
     DatasheetFontHeight =11
     ItemSuffix =39
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xe66234b28da4e440
+        0xfdb545b0b4b9e440
     End
-    RecordSource ="tblStaffRoles"
+    RecordSource ="fqryStaffRoleInfo"
     Caption ="Staff Assignments"
     DatasheetFontName ="Calibri"
     PrtMip = Begin

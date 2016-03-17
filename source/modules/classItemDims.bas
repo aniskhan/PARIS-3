@@ -13,6 +13,7 @@ Private pProjectID As Long
 Private pSiteID As Long
 Private pLaneID As String
 Private pRfiID As Long
+Private pDmID As Long
 Private pRfiItemType As String
 
 
@@ -64,6 +65,12 @@ End Property
 Public Property Let RfiID(DimValue As Long)
     pRfiID = DimValue
 End Property
+Public Property Get DmID() As Long
+    DmID = pDmID
+End Property
+Public Property Let DmID(DimValue As Long)
+    pDmID = DimValue
+End Property
 
 
 Public Property Get ReviewType() As String
@@ -83,6 +90,8 @@ Public Property Get ReviewTable() As String
             ReviewTable = "revtblSite"
         Case "RFI"
             ReviewTable = "revtblRfi"
+        Case "DM"
+            ReviewTable = "revtblDm"
         Case Else
             Debug.Print "classDims Get ReviewTable", pItemType
     End Select
@@ -103,6 +112,9 @@ Public Property Get WhereID(Optional IncludeReview As Boolean = True) As String
     End If
     If NeedsRfiID Then
         WhereCondition = WhereCondition & " and [RfiID]=" & pRfiID
+    End If
+    If NeedsDmID Then
+        WhereCondition = WhereCondition & " and [DmID]=" & pDmID
     End If
     If IncludeReview Then
         WhereCondition = WhereCondition & " and [ReviewType]='" & pReviewType & "'"
@@ -171,6 +183,7 @@ Public Property Get OpenString() As String
     If pSiteID <> 0 Then Args = Args & "|SiteID|" & pSiteID & "|"
     If pLaneID <> "" Then Args = Args & "|LaneID|" & pLaneID & "|"
     If pRfiID <> 0 Then Args = Args & "|RfiID|" & pRfiID & "|"
+    If pDmID <> 0 Then Args = Args & "|DmID|" & pDmID & "|"
     If pReviewType <> "" Then Args = Args & "|ReviewType|" & pReviewType & "|"
     OpenString = Args
 End Property
@@ -193,7 +206,7 @@ Public Function NeedsProjectID() As Boolean
     NeedsProjectID = False
     If pItemType = "Project" Then NeedsProjectID = True
     If pItemType = "Site" Then NeedsProjectID = True
-    If pItemType = "RFI" Then
+    If pItemType = "RFI" Or pItemType = "DM" Then
         If pRfiItemType = "Project" Then NeedsProjectID = True
         If pRfiItemType = "Site" Then NeedsProjectID = True
     End If
@@ -201,7 +214,7 @@ End Function
 Public Function NeedsSiteID() As Boolean
     NeedsSiteID = False
     If pItemType = "Site" Then NeedsSiteID = True
-    If pItemType = "RFI" Then
+    If pItemType = "RFI" Or pItemType = "DM" Then
         If pRfiItemType = "Site" Then NeedsSiteID = True
     End If
 End Function
@@ -209,11 +222,15 @@ Public Function NeedsRfiID() As Boolean
     NeedsRfiID = False
     If pItemType = "RFI" Then NeedsRfiID = True
 End Function
+Public Function NeedsDmID() As Boolean
+    NeedsDmID = False
+    If pItemType = "DM" Then NeedsDmID = True
+End Function
 Public Function NeedsLaneID() As Boolean
     NeedsLaneID = False
     If pItemType = "Project" Then NeedsLaneID = True
     If pItemType = "Site" Then NeedsLaneID = True
-    If pItemType = "RFI" Then
+    If pItemType = "RFI" Or pItemType = "DM" Then
         If pRfiItemType = "Project" Then NeedsLaneID = True
         If pRfiItemType = "Site" Then NeedsLaneID = True
     End If
@@ -227,7 +244,7 @@ Public Function NeedsApplicantID() As Boolean
     If pItemType = "RPA" Then NeedsApplicantID = True
     If pItemType = "Project" Then NeedsApplicantID = True
     If pItemType = "Site" Then NeedsApplicantID = True
-    If pItemType = "RFI" Then
+    If pItemType = "RFI" Or pItemType = "DM" Then
         If pRfiItemType = "RPA" Then NeedsApplicantID = True
         If pRfiItemType = "Project" Then NeedsApplicantID = True
         If pRfiItemType = "Site" Then NeedsApplicantID = True
@@ -283,6 +300,8 @@ Private Sub ParseSegment(strArgument As String)
             pSiteID = CLng(VarValue)
         Case "RfiID"
             pRfiID = CLng(VarValue)
+        Case "DmID"
+            pDmID = CLng(VarValue)
         Case Else
             Debug.Print "ItemDims Parse OpenArg VarName-Else", VarName
     End Select
@@ -293,7 +312,7 @@ End Sub
 
 Public Sub LoadByForm(frm As Form, formType As String, Optional ReviewName As String = "")
     pItemType = formType
-    If pItemType = "RFI" Then pRfiItemType = Nz(frm.[ItemType], "")
+    If pItemType = "RFI" Or pItemType = "DM" Then pRfiItemType = Nz(frm.[ItemType], "")
     pReviewType = ReviewName
     pDisasterID = Nz(frm.[DisasterID], "")
     If NeedsApplicantID Then pApplicantID = Nz(frm.[ApplicantID], "")
@@ -301,4 +320,20 @@ Public Sub LoadByForm(frm As Form, formType As String, Optional ReviewName As St
     If NeedsSiteID Then pSiteID = Nz(frm.[SiteID], 0)
     If NeedsLaneID Then pLaneID = Nz(frm.[Lane Assigned], "")
     If NeedsRfiID Then pRfiID = Nz(frm.[RfiID], 0)
+    If NeedsDmID Then pDmID = Nz(frm.[DmID], 0)
+End Sub
+
+Public Sub ConvertToRFI(RfiID As Long)
+    If pItemType <> "RFI" Then
+        pRfiItemType = pItemType
+        pItemType = "RFI"
+        pRfiID = RfiID
+    End If
+End Sub
+Public Sub ConvertToDM(DmID As Long)
+    If pItemType <> "DM" Then
+        pRfiItemType = pItemType
+        pItemType = "DM"
+        pDmID = DmID
+    End If
 End Sub

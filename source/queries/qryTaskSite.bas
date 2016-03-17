@@ -1,19 +1,77 @@
-﻿dbMemo "SQL" ="SELECT \"Site\" AS Item, revtblSite.ReviewType, revtblSite.DisasterID, revtblSit"
-    "e.ApplicantID, revtblSite.ProjectID, revtblSite.SiteID, \"\" AS DocID, tblSubRec"
-    "ipient.[Subrecipient Name], tblProjects.[Application Title], revtblSite.ReviewUs"
-    "erID, tblReviewTypes.Position, tblReviewTypes.FormName\015\012FROM (tblProjects "
-    "INNER JOIN ((revtblSite INNER JOIN tblSites ON (revtblSite.ApplicantID = tblSite"
-    "s.ApplicantID) AND (revtblSite.SiteID = tblSites.SiteID) AND (revtblSite.Project"
-    "ID = tblSites.ProjectID) AND (revtblSite.DisasterID = tblSites.DisasterID)) INNE"
-    "R JOIN tblReviewTypes ON revtblSite.ReviewType = tblReviewTypes.ReviewType) ON ("
-    "tblProjects.ProjectID = tblSites.ProjectID) AND (tblProjects.ApplicantID = tblSi"
-    "tes.ApplicantID) AND (tblProjects.DisasterID = tblSites.DisasterID)) INNER JOIN "
-    "tblSubRecipient ON (tblProjects.ApplicantID = tblSubRecipient.ApplicantID) AND ("
-    "tblProjects.DisasterID = tblSubRecipient.DisasterID)\015\012WHERE (((revtblSite."
-    "DisasterID)=Forms!navMain!DisasterID) And ((tblReviewTypes.ItemType)=\"Site\") A"
-    "nd ((revtblSite.ReviewExitDate) Is Null) And ((tblReviewTypes.ReviewType)=\"Insp"
-    "ection\" Or (tblReviewTypes.ReviewType)=\"Validation\"));\015\012"
-dbMemo "Connect" =""
+﻿Operation =1
+Option =0
+Where ="(((revtblSite.DisasterID)=Forms!navMain!DisasterID) And ((tblReviewTypes.ItemTyp"
+    "e)=\"Site\") And ((revtblSite.ReviewExitDate) Is Null) And ((tblReviewTypes.Revi"
+    "ewType)=\"Inspection\" Or (tblReviewTypes.ReviewType)=\"Validation\"))"
+Begin InputTables
+    Name ="tblProjects"
+    Name ="revtblSite"
+    Name ="tblSites"
+    Name ="tblReviewTypes"
+    Name ="tblSubRecipient"
+End
+Begin OutputColumns
+    Alias ="Item"
+    Expression ="\"Site\""
+    Expression ="revtblSite.ReviewType"
+    Expression ="revtblSite.DisasterID"
+    Expression ="revtblSite.ApplicantID"
+    Expression ="revtblSite.ProjectID"
+    Expression ="revtblSite.SiteID"
+    Alias ="DocID"
+    Expression ="\"\""
+    Alias ="RfiID"
+    Expression ="\"\""
+    Alias ="DmID"
+    Expression ="\"\""
+    Expression ="tblSubRecipient.[Subrecipient Name]"
+    Expression ="tblProjects.[Application Title]"
+    Expression ="revtblSite.ReviewUserID"
+    Expression ="tblReviewTypes.Position"
+    Expression ="tblReviewTypes.FormName"
+End
+Begin Joins
+    LeftTable ="revtblSite"
+    RightTable ="tblSites"
+    Expression ="revtblSite.ApplicantID = tblSites.ApplicantID"
+    Flag =1
+    LeftTable ="revtblSite"
+    RightTable ="tblSites"
+    Expression ="revtblSite.SiteID = tblSites.SiteID"
+    Flag =1
+    LeftTable ="revtblSite"
+    RightTable ="tblSites"
+    Expression ="revtblSite.ProjectID = tblSites.ProjectID"
+    Flag =1
+    LeftTable ="revtblSite"
+    RightTable ="tblSites"
+    Expression ="revtblSite.DisasterID = tblSites.DisasterID"
+    Flag =1
+    LeftTable ="revtblSite"
+    RightTable ="tblReviewTypes"
+    Expression ="revtblSite.ReviewType = tblReviewTypes.ReviewType"
+    Flag =1
+    LeftTable ="tblProjects"
+    RightTable ="tblSites"
+    Expression ="tblProjects.ProjectID = tblSites.ProjectID"
+    Flag =1
+    LeftTable ="tblProjects"
+    RightTable ="tblSites"
+    Expression ="tblProjects.ApplicantID = tblSites.ApplicantID"
+    Flag =1
+    LeftTable ="tblProjects"
+    RightTable ="tblSites"
+    Expression ="tblProjects.DisasterID = tblSites.DisasterID"
+    Flag =1
+    LeftTable ="tblProjects"
+    RightTable ="tblSubRecipient"
+    Expression ="tblProjects.ApplicantID = tblSubRecipient.ApplicantID"
+    Flag =1
+    LeftTable ="tblProjects"
+    RightTable ="tblSubRecipient"
+    Expression ="tblProjects.DisasterID = tblSubRecipient.DisasterID"
+    Flag =1
+End
 dbBoolean "ReturnsRecords" ="-1"
 dbInteger "ODBCTimeout" ="60"
 dbByte "RecordsetType" ="0"
@@ -73,5 +131,72 @@ Begin
     Begin
         dbText "Name" ="tblReviewTypes.FormName"
         dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="DmID"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="RfiID"
+        dbLong "AggregateType" ="-1"
+    End
+End
+Begin
+    State =0
+    Left =0
+    Top =0
+    Right =985
+    Bottom =860
+    Left =-1
+    Top =-1
+    Right =969
+    Bottom =615
+    Left =0
+    Top =0
+    ColumnsShown =539
+    Begin
+        Left =48
+        Top =12
+        Right =192
+        Bottom =156
+        Top =0
+        Name ="tblProjects"
+        Name =""
+    End
+    Begin
+        Left =240
+        Top =12
+        Right =384
+        Bottom =156
+        Top =0
+        Name ="revtblSite"
+        Name =""
+    End
+    Begin
+        Left =432
+        Top =12
+        Right =576
+        Bottom =156
+        Top =0
+        Name ="tblSites"
+        Name =""
+    End
+    Begin
+        Left =624
+        Top =12
+        Right =768
+        Bottom =156
+        Top =0
+        Name ="tblReviewTypes"
+        Name =""
+    End
+    Begin
+        Left =816
+        Top =12
+        Right =960
+        Bottom =156
+        Top =0
+        Name ="tblSubRecipient"
+        Name =""
     End
 End

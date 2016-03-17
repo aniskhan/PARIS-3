@@ -78,23 +78,17 @@ Begin
         dbText "Name" ="tblProjects.[PW Number]"
         dbLong "AggregateType" ="-1"
     End
-    Begin
-        dbText "Name" ="ReviewType"
-    End
-    Begin
-        dbText "Name" ="ReviewExitDate"
-    End
 End
 Begin
     State =0
     Left =0
     Top =0
-    Right =894
-    Bottom =710
+    Right =1404
+    Bottom =860
     Left =-1
     Top =-1
-    Right =878
-    Bottom =453
+    Right =1388
+    Bottom =436
     Left =0
     Top =0
     ColumnsShown =539

@@ -16,8 +16,10 @@ Begin Form
     Width =13140
     DatasheetFontHeight =11
     ItemSuffix =20
-    Right =10335
-    Bottom =7920
+    Left =465
+    Top =2265
+    Right =13890
+    Bottom =5985
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xa12c2df930b5e440
@@ -1013,11 +1015,11 @@ End Function
 '            Reviews.EnterReview GetItemDims("Determination Memo")
 '        Case "RFI"
 '            Reviews.EnterReview GetItemDims("RFI")
-'            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+'            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
 '        Case "RSN"
 '            Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
 '        Case "RW"
-'            Reviews.EnterReview GetItemDims(frm.cboRework)
+'            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
 '        Case Else
 '            Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
 '    End Select

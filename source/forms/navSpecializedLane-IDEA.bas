@@ -15,13 +15,13 @@ Begin Form
     Width =15960
     DatasheetFontHeight =11
     ItemSuffix =32
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xecfa0503d4a7e440
+        0x5f7267afb4b9e440
     End
-    RecordSource ="SELECT tblDisaster.DisasterID, tblDisaster.State FROM tblDisaster; "
+    RecordSource ="fqryDisasterInfo"
     Caption ="Specialized Lane Menu"
     DatasheetFontName ="Calibri"
     PrtMip = Begin

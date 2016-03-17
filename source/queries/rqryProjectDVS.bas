@@ -53,27 +53,11 @@ dbBoolean "OrderByOnLoad" ="-1"
 dbBoolean "TotalsRow" ="0"
 Begin
     Begin
-        dbText "Name" ="tblSubRecipient.DisasterID"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblSubRecipient.ApplicantID"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblProjects.ApplicantID"
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblProjects.[Assigned PDC]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="tblSubRecipient.[Subrecipient Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblSubRecipient.County"
         dbLong "AggregateType" ="-1"
     End
     Begin
@@ -82,10 +66,6 @@ Begin
     End
     Begin
         dbText "Name" ="tblProjects.DisasterID"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblSubRecipient.[Assigned PDC]"
         dbLong "AggregateType" ="-1"
     End
     Begin

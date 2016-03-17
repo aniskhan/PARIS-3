@@ -10,17 +10,19 @@ Begin Report
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =11520
+    Width =11160
     DatasheetFontHeight =11
-    ItemSuffix =10
+    ItemSuffix =74
     DatasheetGridlinesColor =15132391
+    Filter ="(((rqryRpaEnterExploratoryCall.tblSubRecipient.[Subrecipient Name]) Like \"rock*"
+        "\"))"
     RecSrcDt = Begin
         0x0100d971b7b7e440
     End
     RecordSource ="rqryRpaEnterExploratoryCall"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
-        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x6801000068010000680100006801000000000000982b0000fc30000001000000 ,
         0x010000006801000000000000a10700000100000001000000
     End
     FilterOnLoad =0
@@ -56,6 +58,39 @@ Begin Report
             BorderShade =65.0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
+        End
+        Begin Line
+            BorderLineStyle =0
+            BorderThemeColorIndex =0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin CommandButton
+            FontSize =11
+            FontWeight =400
+            FontName ="Calibri"
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+            UseTheme =1
+            Shape =1
+            Gradient =12
+            BackThemeColorIndex =4
+            BackTint =60.0
+            BorderLineStyle =0
+            BorderColor =16777215
+            BorderThemeColorIndex =4
+            BorderTint =60.0
+            ThemeFontIndex =1
+            HoverThemeColorIndex =4
+            HoverTint =40.0
+            PressedThemeColorIndex =4
+            PressedShade =75.0
+            HoverForeThemeColorIndex =0
+            HoverForeTint =75.0
+            PressedForeThemeColorIndex =0
+            PressedForeTint =75.0
         End
         Begin OptionButton
             BorderLineStyle =0
@@ -101,26 +136,250 @@ Begin Report
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
+        Begin ListBox
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =0
+            ForeTint =75.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            BorderLineStyle =0
+            LabelX =-1800
+            FontSize =11
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+            ThemeFontIndex =1
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
+            ForeThemeColorIndex =2
+            ForeShade =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineColor =12632256
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
         Begin PageHeader
-            Height =0
+            Height =1575
             Name ="PageHeaderSection"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
+            Begin
+                Begin Rectangle
+                    Left =60
+                    Top =60
+                    Width =11040
+                    Height =1320
+                    BackColor =14282978
+                    BorderColor =10921638
+                    Name ="Box68"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =11100
+                    LayoutCachedHeight =1380
+                    BackThemeColorIndex =9
+                    BackTint =20.0
+                End
+                Begin Label
+                    Left =360
+                    Top =360
+                    Width =4860
+                    Height =540
+                    FontSize =24
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Label49"
+                    Caption ="Exploratory Call Report "
+                    GridlineColor =10921638
+                    LayoutCachedLeft =360
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =5220
+                    LayoutCachedHeight =900
+                End
+                Begin EmptyCell
+                    Left =9480
+                    Top =120
+                    Width =255
+                    Height =315
+                    Name ="EmptyCell51"
+                    GroupTable =2
+                    BottomPadding =150
+                    GridlineColor =10921638
+                    LayoutCachedLeft =9480
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =9735
+                    LayoutCachedHeight =435
+                    LayoutGroup =1
+                    GroupTable =2
+                End
+                Begin EmptyCell
+                    Left =9480
+                    Top =615
+                    Width =255
+                    Height =315
+                    Name ="EmptyCell55"
+                    GroupTable =2
+                    BottomPadding =150
+                    GridlineColor =10921638
+                    LayoutCachedLeft =9480
+                    LayoutCachedTop =615
+                    LayoutCachedWidth =9735
+                    LayoutCachedHeight =930
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    GroupTable =2
+                End
+                Begin EmptyCell
+                    Left =9480
+                    Top =1110
+                    Width =255
+                    Height =315
+                    Name ="EmptyCell57"
+                    GroupTable =2
+                    BottomPadding =150
+                    GridlineColor =10921638
+                    LayoutCachedLeft =9480
+                    LayoutCachedTop =1110
+                    LayoutCachedWidth =9735
+                    LayoutCachedHeight =1425
+                    RowStart =2
+                    RowEnd =2
+                    LayoutGroup =1
+                    GroupTable =2
+                End
+                Begin CommandButton
+                    Left =10440
+                    Top =180
+                    Width =420
+                    Height =420
+                    ForeColor =4210752
+                    Name ="cmdFilterReport"
+                    Caption ="Filter Report"
+                    GridlineColor =10921638
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff0000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff0000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff0000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff0000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff0000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x727272ff727272ff727272ff0000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000072727281 ,
+                        0x727272ff727272ff727272ff7272728100000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000072727281727272ff ,
+                        0x727272ff727272ff727272ff727272ff72727281000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000072727281727272ff727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff727272810000000000000000 ,
+                        0x0000000000000000000000000000000072727281727272ff727272ff727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff727272ff7272728100000000 ,
+                        0x00000000000000000000000072727281727272ff727272ff727272ff727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff727272ff727272ff72727281 ,
+                        0x000000000000000072727281727272ff727272ff727272ff727272ff727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff727272ff727272ff727272ff ,
+                        0x7272728100000000727272ff727272ff727272ff727272ff727272ff727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff727272ff727272ff727272ff ,
+                        0x727272ff00000000727272ff727272ff727272ff727272ff727272ff727272ff ,
+                        0x727272ff727272ff727272ff727272ff727272ff727272ff727272ff727272ff ,
+                        0x727272ff00000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    LayoutCachedLeft =10440
+                    LayoutCachedTop =180
+                    LayoutCachedWidth =10860
+                    LayoutCachedHeight =600
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverColor =15652797
+                    PressedColor =11957550
+                    HoverForeColor =4210752
+                    PressedForeColor =4210752
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin ListBox
+                    RowSourceTypeInt =1
+                    IMESentenceMode =3
+                    Left =7740
+                    Top =120
+                    Width =2280
+                    Height =1200
+                    ColumnOrder =0
+                    TabIndex =1
+                    ForeColor =4210752
+                    BorderColor =10921638
+                    Name ="lboFEMASpecRequired"
+                    RowSourceType ="Value List"
+                    RowSource ="\"EHP\";\"Insurance\";\"Mitigation\";\"Other\""
+                    ColumnWidths ="1440"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =7740
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =10020
+                    LayoutCachedHeight =1320
+                    Begin
+                        Begin Label
+                            Left =5940
+                            Top =300
+                            Width =1740
+                            Height =840
+                            FontSize =9
+                            BorderColor =8355711
+                            ForeColor =8355711
+                            Name ="lboFEMASpecReq_Label"
+                            Caption ="Filter by FEMA Specialist Required at Recovery Scoping Meeting"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =5940
+                            LayoutCachedTop =300
+                            LayoutCachedWidth =7680
+                            LayoutCachedHeight =1140
+                        End
+                    End
+                End
+            End
         End
         Begin Section
             KeepTogether = NotDefault
-            Height =12630
+            CanGrow = NotDefault
+            Height =12540
             Name ="Detail"
-            AutoHeight =1
-            AlternateBackColor =15921906
-            AlternateBackThemeColorIndex =1
-            AlternateBackShade =95.0
             BackThemeColorIndex =1
             Begin
                 Begin CheckBox
-                    Left =240
-                    Top =3180
+                    Left =300
+                    Top =5940
                     Width =215
                     Height =525
                     BorderColor =10921638
@@ -130,14 +389,14 @@ Begin Report
                     EventProcPrefix ="Are_there_any_known_Environmental_or_Historic_Preservation_Issu"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =3180
-                    LayoutCachedWidth =455
-                    LayoutCachedHeight =3705
+                    LayoutCachedLeft =300
+                    LayoutCachedTop =5940
+                    LayoutCachedWidth =515
+                    LayoutCachedHeight =6465
                     Begin
                         Begin Label
-                            Left =540
-                            Top =3180
+                            Left =600
+                            Top =5940
                             Width =3660
                             Height =600
                             BorderColor =8355711
@@ -145,18 +404,18 @@ Begin Report
                             Caption ="Are there any known Environmental or Historic Preservation Issues"
                             EventProcPrefix ="Are_there_any_known_Environmental_or_Historic_Preservation_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =3180
-                            LayoutCachedWidth =4200
-                            LayoutCachedHeight =3780
+                            LayoutCachedLeft =600
+                            LayoutCachedTop =5940
+                            LayoutCachedWidth =4260
+                            LayoutCachedHeight =6540
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =3840
+                    Left =300
+                    Top =6480
                     TabIndex =1
                     BorderColor =10921638
                     Name ="Can Site Inspections be conducted"
@@ -165,14 +424,14 @@ Begin Report
                     EventProcPrefix ="Can_Site_Inspections_be_conducted"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =3840
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =4080
+                    LayoutCachedLeft =300
+                    LayoutCachedTop =6480
+                    LayoutCachedWidth =560
+                    LayoutCachedHeight =6720
                     Begin
                         Begin Label
-                            Left =540
-                            Top =3840
+                            Left =600
+                            Top =6480
                             Width =3300
                             Height =315
                             BorderColor =8355711
@@ -180,18 +439,18 @@ Begin Report
                             Caption ="Can Site Inspections be conducted"
                             EventProcPrefix ="Can_Site_Inspections_be_conducted_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =3840
-                            LayoutCachedWidth =3840
-                            LayoutCachedHeight =4155
+                            LayoutCachedLeft =600
+                            LayoutCachedTop =6480
+                            LayoutCachedWidth =3900
+                            LayoutCachedHeight =6795
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =2820
+                    Left =300
+                    Top =5580
                     TabIndex =2
                     BorderColor =10921638
                     Name ="Is all disaster-related work completed"
@@ -200,14 +459,14 @@ Begin Report
                     EventProcPrefix ="Is_all_disaster_related_work_completed"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =2820
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =3060
+                    LayoutCachedLeft =300
+                    LayoutCachedTop =5580
+                    LayoutCachedWidth =560
+                    LayoutCachedHeight =5820
                     Begin
                         Begin Label
-                            Left =540
-                            Top =2820
+                            Left =600
+                            Top =5580
                             Width =3585
                             Height =315
                             BorderColor =8355711
@@ -215,18 +474,18 @@ Begin Report
                             Caption ="Is all disaster-related work completed"
                             EventProcPrefix ="Is_all_disaster_related_work_completed_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =2820
-                            LayoutCachedWidth =4125
-                            LayoutCachedHeight =3135
+                            LayoutCachedLeft =600
+                            LayoutCachedTop =5580
+                            LayoutCachedWidth =4185
+                            LayoutCachedHeight =5895
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =4920
+                    Left =60
+                    Top =2280
                     TabIndex =3
                     BorderColor =10921638
                     Name ="Subrecipient Emergency Manager"
@@ -235,33 +494,33 @@ Begin Report
                     EventProcPrefix ="Subrecipient_Emergency_Manager"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =4920
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =5160
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =2280
+                    LayoutCachedWidth =320
+                    LayoutCachedHeight =2520
                     Begin
                         Begin Label
-                            Left =540
-                            Top =4920
+                            Left =360
+                            Top =2280
                             Width =3180
                             Height =315
                             BorderColor =8355711
                             Name ="Subrecipient Emergency Manager_Label"
-                            Caption ="Subrecipient Emergency Manager"
+                            Caption ="Applicant Emergency Manager"
                             EventProcPrefix ="Subrecipient_Emergency_Manager_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =4920
-                            LayoutCachedWidth =3720
-                            LayoutCachedHeight =5235
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =2280
+                            LayoutCachedWidth =3540
+                            LayoutCachedHeight =2595
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =5340
+                    Left =60
+                    Top =2700
                     TabIndex =4
                     BorderColor =10921638
                     Name ="Subrecipient Insurance Risk Manager"
@@ -270,33 +529,33 @@ Begin Report
                     EventProcPrefix ="Subrecipient_Insurance_Risk_Manager"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =5340
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =5580
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =2700
+                    LayoutCachedWidth =320
+                    LayoutCachedHeight =2940
                     Begin
                         Begin Label
-                            Left =540
-                            Top =5340
+                            Left =360
+                            Top =2700
                             Width =3480
                             Height =315
                             BorderColor =8355711
                             Name ="Subrecipient Insurance Risk Manager_Label"
-                            Caption ="Subrecipient Insurance Risk Manager"
+                            Caption ="Applicant Insurance Risk Manager"
                             EventProcPrefix ="Subrecipient_Insurance_Risk_Manager_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =5340
-                            LayoutCachedWidth =4020
-                            LayoutCachedHeight =5655
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =2700
+                            LayoutCachedWidth =3840
+                            LayoutCachedHeight =3015
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =5760
+                    Left =60
+                    Top =3120
                     TabIndex =5
                     BorderColor =10921638
                     Name ="Subrecipient Environmental/Historic Specialist"
@@ -305,33 +564,33 @@ Begin Report
                     EventProcPrefix ="Subrecipient_Environmental_Historic_Specialist"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =5760
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =6000
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =3120
+                    LayoutCachedWidth =320
+                    LayoutCachedHeight =3360
                     Begin
                         Begin Label
-                            Left =540
-                            Top =5760
-                            Width =3540
-                            Height =600
+                            Left =360
+                            Top =3120
+                            Width =4320
+                            Height =360
                             BorderColor =8355711
                             Name ="Subrecipient Environmental/Historic Specialist_Label"
-                            Caption ="Subrecipient Environmental/Historic Specialist"
+                            Caption ="Applicant Environmental/Historic Specialist"
                             EventProcPrefix ="Subrecipient_Environmental_Historic_Specialist_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =5760
-                            LayoutCachedWidth =4080
-                            LayoutCachedHeight =6360
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3120
+                            LayoutCachedWidth =4680
+                            LayoutCachedHeight =3480
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =6480
+                    Left =60
+                    Top =3540
                     TabIndex =6
                     BorderColor =10921638
                     Name ="Subrecipient Public Works Staff"
@@ -340,33 +599,33 @@ Begin Report
                     EventProcPrefix ="Subrecipient_Public_Works_Staff"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =6480
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =6720
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =3540
+                    LayoutCachedWidth =320
+                    LayoutCachedHeight =3780
                     Begin
                         Begin Label
-                            Left =540
-                            Top =6480
+                            Left =360
+                            Top =3540
                             Width =2985
                             Height =315
                             BorderColor =8355711
                             Name ="Subrecipient Public Works Staff_Label"
-                            Caption ="Subrecipient Public Works Staff"
+                            Caption ="Applicant Public Works Staff"
                             EventProcPrefix ="Subrecipient_Public_Works_Staff_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =6480
-                            LayoutCachedWidth =3525
-                            LayoutCachedHeight =6795
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3540
+                            LayoutCachedWidth =3345
+                            LayoutCachedHeight =3855
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =6900
+                    Left =60
+                    Top =3960
                     TabIndex =7
                     BorderColor =10921638
                     Name ="Subrecipient Finance Representative"
@@ -375,33 +634,33 @@ Begin Report
                     EventProcPrefix ="Subrecipient_Finance_Representative"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =6900
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =7140
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =3960
+                    LayoutCachedWidth =320
+                    LayoutCachedHeight =4200
                     Begin
                         Begin Label
-                            Left =540
-                            Top =6900
+                            Left =360
+                            Top =3960
                             Width =3495
                             Height =315
                             BorderColor =8355711
                             Name ="Subrecipient Finance Representative_Label"
-                            Caption ="Subrecipient Finance Representative"
+                            Caption ="Applicant Finance Representative"
                             EventProcPrefix ="Subrecipient_Finance_Representative_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =6900
-                            LayoutCachedWidth =4035
-                            LayoutCachedHeight =7215
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =3960
+                            LayoutCachedWidth =3855
+                            LayoutCachedHeight =4275
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =7320
+                    Left =60
+                    Top =4380
                     TabIndex =8
                     BorderColor =10921638
                     Name ="Subrecipient Engineering Representative"
@@ -410,33 +669,33 @@ Begin Report
                     EventProcPrefix ="Subrecipient_Engineering_Representative"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =7320
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =7560
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =4380
+                    LayoutCachedWidth =320
+                    LayoutCachedHeight =4620
                     Begin
                         Begin Label
-                            Left =540
-                            Top =7320
+                            Left =360
+                            Top =4380
                             Width =3885
                             Height =315
                             BorderColor =8355711
                             Name ="Subrecipient Engineering Representative_Label"
-                            Caption ="Subrecipient Engineering Representative"
+                            Caption ="Applicant Engineering Representative"
                             EventProcPrefix ="Subrecipient_Engineering_Representative_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =7320
-                            LayoutCachedWidth =4425
-                            LayoutCachedHeight =7635
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =4380
+                            LayoutCachedWidth =4245
+                            LayoutCachedHeight =4695
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin CheckBox
-                    Left =240
-                    Top =7740
+                    Left =60
+                    Top =4800
                     TabIndex =9
                     BorderColor =10921638
                     Name ="Subrecipient Police/Fire Representatives"
@@ -445,25 +704,25 @@ Begin Report
                     EventProcPrefix ="Subrecipient_Police_Fire_Representatives"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =7740
-                    LayoutCachedWidth =500
-                    LayoutCachedHeight =7980
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =4800
+                    LayoutCachedWidth =320
+                    LayoutCachedHeight =5040
                     Begin
                         Begin Label
-                            Left =540
-                            Top =7740
+                            Left =360
+                            Top =4800
                             Width =3885
                             Height =315
                             BorderColor =8355711
                             Name ="Subrecipient Police/Fire Representatives_Label"
-                            Caption ="Subrecipient Police/Fire Representatives"
+                            Caption ="Applicant Police/Fire Representatives"
                             EventProcPrefix ="Subrecipient_Police_Fire_Representatives_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =540
-                            LayoutCachedTop =7740
-                            LayoutCachedWidth =4425
-                            LayoutCachedHeight =8055
+                            LayoutCachedLeft =360
+                            LayoutCachedTop =4800
+                            LayoutCachedWidth =4245
+                            LayoutCachedHeight =5115
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -471,30 +730,30 @@ Begin Report
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    Left =240
-                    Top =4440
+                    Left =60
+                    Top =1920
                     Width =4560
-                    Height =420
+                    Height =360
                     FontSize =12
                     FontWeight =700
                     BorderColor =8355711
                     ForeColor =12349952
                     Name ="Label171"
-                    Caption ="Requested Subgrantee Staff"
+                    Caption ="Requested Applicant Staff at RSM"
                     GridlineColor =10921638
-                    LayoutCachedLeft =240
-                    LayoutCachedTop =4440
-                    LayoutCachedWidth =4800
-                    LayoutCachedHeight =4860
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =1920
+                    LayoutCachedWidth =4620
+                    LayoutCachedHeight =2280
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    Left =360
-                    Top =2340
+                    Left =120
+                    Top =5160
                     Width =3600
-                    Height =420
+                    Height =360
                     FontSize =12
                     FontWeight =700
                     BorderColor =8355711
@@ -502,17 +761,17 @@ Begin Report
                     Name ="Label173"
                     Caption ="Information about Damage"
                     GridlineColor =10921638
-                    LayoutCachedLeft =360
-                    LayoutCachedTop =2340
-                    LayoutCachedWidth =3960
-                    LayoutCachedHeight =2760
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =5160
+                    LayoutCachedWidth =3720
+                    LayoutCachedHeight =5520
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =9060
-                    Top =12300
+                    Top =10080
                     Width =1566
                     Height =315
                     TabIndex =10
@@ -522,26 +781,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =12300
+                    LayoutCachedTop =10080
                     LayoutCachedWidth =10626
-                    LayoutCachedHeight =12615
+                    LayoutCachedHeight =10395
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9120
-                            Top =12360
+                            Top =10140
                             BorderColor =10921638
                             Name ="Option275"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9120
-                            LayoutCachedTop =12360
+                            LayoutCachedTop =10140
                             LayoutCachedWidth =9380
-                            LayoutCachedHeight =12600
+                            LayoutCachedHeight =10380
                             Begin
                                 Begin Label
                                     Left =9410
-                                    Top =12300
+                                    Top =10080
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -549,9 +808,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =9410
-                                    LayoutCachedTop =12300
+                                    LayoutCachedTop =10080
                                     LayoutCachedWidth =9800
-                                    LayoutCachedHeight =12615
+                                    LayoutCachedHeight =10395
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -560,20 +819,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9960
-                            Top =12360
+                            Top =10140
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option277"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9960
-                            LayoutCachedTop =12360
+                            LayoutCachedTop =10140
                             LayoutCachedWidth =10220
-                            LayoutCachedHeight =12600
+                            LayoutCachedHeight =10380
                             Begin
                                 Begin Label
                                     Left =10200
-                                    Top =12300
+                                    Top =10080
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -581,9 +840,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =10200
-                                    LayoutCachedTop =12300
+                                    LayoutCachedTop =10080
                                     LayoutCachedWidth =10590
-                                    LayoutCachedHeight =12615
+                                    LayoutCachedHeight =10395
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -594,7 +853,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =9060
-                    Top =11880
+                    Top =9660
                     Width =1566
                     Height =315
                     TabIndex =11
@@ -604,26 +863,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =11880
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =10626
-                    LayoutCachedHeight =12195
+                    LayoutCachedHeight =9975
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9120
-                            Top =11940
+                            Top =9720
                             BorderColor =10921638
                             Name ="Option270"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9120
-                            LayoutCachedTop =11940
+                            LayoutCachedTop =9720
                             LayoutCachedWidth =9380
-                            LayoutCachedHeight =12180
+                            LayoutCachedHeight =9960
                             Begin
                                 Begin Label
                                     Left =9410
-                                    Top =11880
+                                    Top =9660
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -631,9 +890,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =9410
-                                    LayoutCachedTop =11880
+                                    LayoutCachedTop =9660
                                     LayoutCachedWidth =9800
-                                    LayoutCachedHeight =12195
+                                    LayoutCachedHeight =9975
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -642,20 +901,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9960
-                            Top =11940
+                            Top =9720
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option272"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9960
-                            LayoutCachedTop =11940
+                            LayoutCachedTop =9720
                             LayoutCachedWidth =10220
-                            LayoutCachedHeight =12180
+                            LayoutCachedHeight =9960
                             Begin
                                 Begin Label
                                     Left =10200
-                                    Top =11880
+                                    Top =9660
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -663,9 +922,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =10200
-                                    LayoutCachedTop =11880
+                                    LayoutCachedTop =9660
                                     LayoutCachedWidth =10590
-                                    LayoutCachedHeight =12195
+                                    LayoutCachedHeight =9975
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -676,7 +935,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =9060
-                    Top =11460
+                    Top =9240
                     Width =1566
                     Height =315
                     TabIndex =12
@@ -686,26 +945,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =11460
+                    LayoutCachedTop =9240
                     LayoutCachedWidth =10626
-                    LayoutCachedHeight =11775
+                    LayoutCachedHeight =9555
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9120
-                            Top =11520
+                            Top =9300
                             BorderColor =10921638
                             Name ="Option265"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9120
-                            LayoutCachedTop =11520
+                            LayoutCachedTop =9300
                             LayoutCachedWidth =9380
-                            LayoutCachedHeight =11760
+                            LayoutCachedHeight =9540
                             Begin
                                 Begin Label
                                     Left =9410
-                                    Top =11460
+                                    Top =9240
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -713,9 +972,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =9410
-                                    LayoutCachedTop =11460
+                                    LayoutCachedTop =9240
                                     LayoutCachedWidth =9800
-                                    LayoutCachedHeight =11775
+                                    LayoutCachedHeight =9555
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -724,20 +983,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9960
-                            Top =11520
+                            Top =9300
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option267"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9960
-                            LayoutCachedTop =11520
+                            LayoutCachedTop =9300
                             LayoutCachedWidth =10220
-                            LayoutCachedHeight =11760
+                            LayoutCachedHeight =9540
                             Begin
                                 Begin Label
                                     Left =10200
-                                    Top =11460
+                                    Top =9240
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -745,9 +1004,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =10200
-                                    LayoutCachedTop =11460
+                                    LayoutCachedTop =9240
                                     LayoutCachedWidth =10590
-                                    LayoutCachedHeight =11775
+                                    LayoutCachedHeight =9555
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -758,7 +1017,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =9060
-                    Top =11040
+                    Top =8820
                     Width =1566
                     Height =315
                     TabIndex =13
@@ -768,26 +1027,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =11040
+                    LayoutCachedTop =8820
                     LayoutCachedWidth =10626
-                    LayoutCachedHeight =11355
+                    LayoutCachedHeight =9135
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9120
-                            Top =11100
+                            Top =8880
                             BorderColor =10921638
                             Name ="Option260"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9120
-                            LayoutCachedTop =11100
+                            LayoutCachedTop =8880
                             LayoutCachedWidth =9380
-                            LayoutCachedHeight =11340
+                            LayoutCachedHeight =9120
                             Begin
                                 Begin Label
                                     Left =9410
-                                    Top =11040
+                                    Top =8820
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -795,9 +1054,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =9410
-                                    LayoutCachedTop =11040
+                                    LayoutCachedTop =8820
                                     LayoutCachedWidth =9800
-                                    LayoutCachedHeight =11355
+                                    LayoutCachedHeight =9135
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -806,20 +1065,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9960
-                            Top =11100
+                            Top =8880
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option262"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9960
-                            LayoutCachedTop =11100
+                            LayoutCachedTop =8880
                             LayoutCachedWidth =10220
-                            LayoutCachedHeight =11340
+                            LayoutCachedHeight =9120
                             Begin
                                 Begin Label
                                     Left =10200
-                                    Top =11040
+                                    Top =8820
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -827,9 +1086,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =10200
-                                    LayoutCachedTop =11040
+                                    LayoutCachedTop =8820
                                     LayoutCachedWidth =10590
-                                    LayoutCachedHeight =11355
+                                    LayoutCachedHeight =9135
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -840,7 +1099,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =9060
-                    Top =10620
+                    Top =8400
                     Width =1566
                     Height =315
                     TabIndex =14
@@ -850,26 +1109,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =10620
+                    LayoutCachedTop =8400
                     LayoutCachedWidth =10626
-                    LayoutCachedHeight =10935
+                    LayoutCachedHeight =8715
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9120
-                            Top =10680
+                            Top =8460
                             BorderColor =10921638
                             Name ="Option255"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9120
-                            LayoutCachedTop =10680
+                            LayoutCachedTop =8460
                             LayoutCachedWidth =9380
-                            LayoutCachedHeight =10920
+                            LayoutCachedHeight =8700
                             Begin
                                 Begin Label
                                     Left =9410
-                                    Top =10620
+                                    Top =8400
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -877,9 +1136,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =9410
-                                    LayoutCachedTop =10620
+                                    LayoutCachedTop =8400
                                     LayoutCachedWidth =9800
-                                    LayoutCachedHeight =10935
+                                    LayoutCachedHeight =8715
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -888,20 +1147,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9960
-                            Top =10680
+                            Top =8460
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option257"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9960
-                            LayoutCachedTop =10680
+                            LayoutCachedTop =8460
                             LayoutCachedWidth =10220
-                            LayoutCachedHeight =10920
+                            LayoutCachedHeight =8700
                             Begin
                                 Begin Label
                                     Left =10200
-                                    Top =10620
+                                    Top =8400
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -909,9 +1168,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =10200
-                                    LayoutCachedTop =10620
+                                    LayoutCachedTop =8400
                                     LayoutCachedWidth =10590
-                                    LayoutCachedHeight =10935
+                                    LayoutCachedHeight =8715
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -922,7 +1181,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =9060
-                    Top =10200
+                    Top =7980
                     Width =1566
                     Height =315
                     TabIndex =15
@@ -932,26 +1191,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =10200
+                    LayoutCachedTop =7980
                     LayoutCachedWidth =10626
-                    LayoutCachedHeight =10515
+                    LayoutCachedHeight =8295
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9120
-                            Top =10260
+                            Top =8040
                             BorderColor =10921638
                             Name ="Option250"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9120
-                            LayoutCachedTop =10260
+                            LayoutCachedTop =8040
                             LayoutCachedWidth =9380
-                            LayoutCachedHeight =10500
+                            LayoutCachedHeight =8280
                             Begin
                                 Begin Label
                                     Left =9410
-                                    Top =10200
+                                    Top =7980
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -959,9 +1218,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =9410
-                                    LayoutCachedTop =10200
+                                    LayoutCachedTop =7980
                                     LayoutCachedWidth =9800
-                                    LayoutCachedHeight =10515
+                                    LayoutCachedHeight =8295
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -970,20 +1229,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9960
-                            Top =10260
+                            Top =8040
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option252"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9960
-                            LayoutCachedTop =10260
+                            LayoutCachedTop =8040
                             LayoutCachedWidth =10220
-                            LayoutCachedHeight =10500
+                            LayoutCachedHeight =8280
                             Begin
                                 Begin Label
                                     Left =10200
-                                    Top =10200
+                                    Top =7980
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -991,9 +1250,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =10200
-                                    LayoutCachedTop =10200
+                                    LayoutCachedTop =7980
                                     LayoutCachedWidth =10590
-                                    LayoutCachedHeight =10515
+                                    LayoutCachedHeight =8295
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1004,7 +1263,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =9060
-                    Top =9780
+                    Top =7560
                     Width =1566
                     Height =315
                     TabIndex =16
@@ -1014,26 +1273,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =9780
+                    LayoutCachedTop =7560
                     LayoutCachedWidth =10626
-                    LayoutCachedHeight =10095
+                    LayoutCachedHeight =7875
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9120
-                            Top =9840
+                            Top =7620
                             BorderColor =10921638
                             Name ="Option245"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9120
-                            LayoutCachedTop =9840
+                            LayoutCachedTop =7620
                             LayoutCachedWidth =9380
-                            LayoutCachedHeight =10080
+                            LayoutCachedHeight =7860
                             Begin
                                 Begin Label
                                     Left =9410
-                                    Top =9780
+                                    Top =7560
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1041,9 +1300,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =9410
-                                    LayoutCachedTop =9780
+                                    LayoutCachedTop =7560
                                     LayoutCachedWidth =9800
-                                    LayoutCachedHeight =10095
+                                    LayoutCachedHeight =7875
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1052,20 +1311,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =9960
-                            Top =9840
+                            Top =7620
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option247"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =9960
-                            LayoutCachedTop =9840
+                            LayoutCachedTop =7620
                             LayoutCachedWidth =10220
-                            LayoutCachedHeight =10080
+                            LayoutCachedHeight =7860
                             Begin
                                 Begin Label
                                     Left =10200
-                                    Top =9780
+                                    Top =7560
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1073,9 +1332,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =10200
-                                    LayoutCachedTop =9780
+                                    LayoutCachedTop =7560
                                     LayoutCachedWidth =10590
-                                    LayoutCachedHeight =10095
+                                    LayoutCachedHeight =7875
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1086,7 +1345,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =7320
-                    Top =12300
+                    Top =10080
                     Width =1626
                     Height =315
                     TabIndex =17
@@ -1096,26 +1355,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =12300
+                    LayoutCachedTop =10080
                     LayoutCachedWidth =8946
-                    LayoutCachedHeight =12615
+                    LayoutCachedHeight =10395
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =7380
-                            Top =12360
+                            Top =10140
                             BorderColor =10921638
                             Name ="Option240"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =7380
-                            LayoutCachedTop =12360
+                            LayoutCachedTop =10140
                             LayoutCachedWidth =7640
-                            LayoutCachedHeight =12600
+                            LayoutCachedHeight =10380
                             Begin
                                 Begin Label
                                     Left =7670
-                                    Top =12300
+                                    Top =10080
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1123,9 +1382,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =7670
-                                    LayoutCachedTop =12300
+                                    LayoutCachedTop =10080
                                     LayoutCachedWidth =8060
-                                    LayoutCachedHeight =12615
+                                    LayoutCachedHeight =10395
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1134,20 +1393,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =8220
-                            Top =12360
+                            Top =10140
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option242"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =8220
-                            LayoutCachedTop =12360
+                            LayoutCachedTop =10140
                             LayoutCachedWidth =8480
-                            LayoutCachedHeight =12600
+                            LayoutCachedHeight =10380
                             Begin
                                 Begin Label
                                     Left =8460
-                                    Top =12300
+                                    Top =10080
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1155,9 +1414,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =8460
-                                    LayoutCachedTop =12300
+                                    LayoutCachedTop =10080
                                     LayoutCachedWidth =8850
-                                    LayoutCachedHeight =12615
+                                    LayoutCachedHeight =10395
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1168,7 +1427,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =7320
-                    Top =11880
+                    Top =9660
                     Width =1626
                     Height =315
                     TabIndex =18
@@ -1178,26 +1437,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =11880
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =8946
-                    LayoutCachedHeight =12195
+                    LayoutCachedHeight =9975
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =7380
-                            Top =11940
+                            Top =9720
                             BorderColor =10921638
                             Name ="Option235"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =7380
-                            LayoutCachedTop =11940
+                            LayoutCachedTop =9720
                             LayoutCachedWidth =7640
-                            LayoutCachedHeight =12180
+                            LayoutCachedHeight =9960
                             Begin
                                 Begin Label
                                     Left =7670
-                                    Top =11880
+                                    Top =9660
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1205,9 +1464,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =7670
-                                    LayoutCachedTop =11880
+                                    LayoutCachedTop =9660
                                     LayoutCachedWidth =8060
-                                    LayoutCachedHeight =12195
+                                    LayoutCachedHeight =9975
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1216,20 +1475,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =8220
-                            Top =11940
+                            Top =9720
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option237"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =8220
-                            LayoutCachedTop =11940
+                            LayoutCachedTop =9720
                             LayoutCachedWidth =8480
-                            LayoutCachedHeight =12180
+                            LayoutCachedHeight =9960
                             Begin
                                 Begin Label
                                     Left =8460
-                                    Top =11880
+                                    Top =9660
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1237,9 +1496,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =8460
-                                    LayoutCachedTop =11880
+                                    LayoutCachedTop =9660
                                     LayoutCachedWidth =8850
-                                    LayoutCachedHeight =12195
+                                    LayoutCachedHeight =9975
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1250,7 +1509,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =7320
-                    Top =11460
+                    Top =9240
                     Width =1626
                     Height =315
                     TabIndex =19
@@ -1260,26 +1519,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =11460
+                    LayoutCachedTop =9240
                     LayoutCachedWidth =8946
-                    LayoutCachedHeight =11775
+                    LayoutCachedHeight =9555
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =7380
-                            Top =11520
+                            Top =9300
                             BorderColor =10921638
                             Name ="Option230"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =7380
-                            LayoutCachedTop =11520
+                            LayoutCachedTop =9300
                             LayoutCachedWidth =7640
-                            LayoutCachedHeight =11760
+                            LayoutCachedHeight =9540
                             Begin
                                 Begin Label
                                     Left =7670
-                                    Top =11460
+                                    Top =9240
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1287,9 +1546,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =7670
-                                    LayoutCachedTop =11460
+                                    LayoutCachedTop =9240
                                     LayoutCachedWidth =8060
-                                    LayoutCachedHeight =11775
+                                    LayoutCachedHeight =9555
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1298,20 +1557,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =8220
-                            Top =11520
+                            Top =9300
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option232"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =8220
-                            LayoutCachedTop =11520
+                            LayoutCachedTop =9300
                             LayoutCachedWidth =8480
-                            LayoutCachedHeight =11760
+                            LayoutCachedHeight =9540
                             Begin
                                 Begin Label
                                     Left =8460
-                                    Top =11460
+                                    Top =9240
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1319,9 +1578,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =8460
-                                    LayoutCachedTop =11460
+                                    LayoutCachedTop =9240
                                     LayoutCachedWidth =8850
-                                    LayoutCachedHeight =11775
+                                    LayoutCachedHeight =9555
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1332,7 +1591,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =7320
-                    Top =11040
+                    Top =8820
                     Width =1626
                     Height =315
                     TabIndex =20
@@ -1342,26 +1601,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =11040
+                    LayoutCachedTop =8820
                     LayoutCachedWidth =8946
-                    LayoutCachedHeight =11355
+                    LayoutCachedHeight =9135
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =7380
-                            Top =11100
+                            Top =8880
                             BorderColor =10921638
                             Name ="Option225"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =7380
-                            LayoutCachedTop =11100
+                            LayoutCachedTop =8880
                             LayoutCachedWidth =7640
-                            LayoutCachedHeight =11340
+                            LayoutCachedHeight =9120
                             Begin
                                 Begin Label
                                     Left =7670
-                                    Top =11040
+                                    Top =8820
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1369,9 +1628,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =7670
-                                    LayoutCachedTop =11040
+                                    LayoutCachedTop =8820
                                     LayoutCachedWidth =8060
-                                    LayoutCachedHeight =11355
+                                    LayoutCachedHeight =9135
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1380,20 +1639,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =8220
-                            Top =11100
+                            Top =8880
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option227"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =8220
-                            LayoutCachedTop =11100
+                            LayoutCachedTop =8880
                             LayoutCachedWidth =8480
-                            LayoutCachedHeight =11340
+                            LayoutCachedHeight =9120
                             Begin
                                 Begin Label
                                     Left =8460
-                                    Top =11040
+                                    Top =8820
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1401,9 +1660,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =8460
-                                    LayoutCachedTop =11040
+                                    LayoutCachedTop =8820
                                     LayoutCachedWidth =8850
-                                    LayoutCachedHeight =11355
+                                    LayoutCachedHeight =9135
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1414,7 +1673,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =7320
-                    Top =10620
+                    Top =8400
                     Width =1626
                     Height =315
                     TabIndex =21
@@ -1424,26 +1683,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =10620
+                    LayoutCachedTop =8400
                     LayoutCachedWidth =8946
-                    LayoutCachedHeight =10935
+                    LayoutCachedHeight =8715
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =7380
-                            Top =10680
+                            Top =8460
                             BorderColor =10921638
                             Name ="Option220"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =7380
-                            LayoutCachedTop =10680
+                            LayoutCachedTop =8460
                             LayoutCachedWidth =7640
-                            LayoutCachedHeight =10920
+                            LayoutCachedHeight =8700
                             Begin
                                 Begin Label
                                     Left =7670
-                                    Top =10620
+                                    Top =8400
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1451,9 +1710,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =7670
-                                    LayoutCachedTop =10620
+                                    LayoutCachedTop =8400
                                     LayoutCachedWidth =8060
-                                    LayoutCachedHeight =10935
+                                    LayoutCachedHeight =8715
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1462,20 +1721,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =8220
-                            Top =10680
+                            Top =8460
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option222"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =8220
-                            LayoutCachedTop =10680
+                            LayoutCachedTop =8460
                             LayoutCachedWidth =8480
-                            LayoutCachedHeight =10920
+                            LayoutCachedHeight =8700
                             Begin
                                 Begin Label
                                     Left =8460
-                                    Top =10620
+                                    Top =8400
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1483,9 +1742,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =8460
-                                    LayoutCachedTop =10620
+                                    LayoutCachedTop =8400
                                     LayoutCachedWidth =8850
-                                    LayoutCachedHeight =10935
+                                    LayoutCachedHeight =8715
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1496,7 +1755,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =7320
-                    Top =10200
+                    Top =7980
                     Width =1626
                     Height =315
                     TabIndex =22
@@ -1506,26 +1765,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =10200
+                    LayoutCachedTop =7980
                     LayoutCachedWidth =8946
-                    LayoutCachedHeight =10515
+                    LayoutCachedHeight =8295
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =7380
-                            Top =10260
+                            Top =8040
                             BorderColor =10921638
                             Name ="Option215"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =7380
-                            LayoutCachedTop =10260
+                            LayoutCachedTop =8040
                             LayoutCachedWidth =7640
-                            LayoutCachedHeight =10500
+                            LayoutCachedHeight =8280
                             Begin
                                 Begin Label
                                     Left =7670
-                                    Top =10200
+                                    Top =7980
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1533,9 +1792,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =7670
-                                    LayoutCachedTop =10200
+                                    LayoutCachedTop =7980
                                     LayoutCachedWidth =8060
-                                    LayoutCachedHeight =10515
+                                    LayoutCachedHeight =8295
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1544,20 +1803,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =8220
-                            Top =10260
+                            Top =8040
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option217"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =8220
-                            LayoutCachedTop =10260
+                            LayoutCachedTop =8040
                             LayoutCachedWidth =8480
-                            LayoutCachedHeight =10500
+                            LayoutCachedHeight =8280
                             Begin
                                 Begin Label
                                     Left =8460
-                                    Top =10200
+                                    Top =7980
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1565,9 +1824,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =8460
-                                    LayoutCachedTop =10200
+                                    LayoutCachedTop =7980
                                     LayoutCachedWidth =8850
-                                    LayoutCachedHeight =10515
+                                    LayoutCachedHeight =8295
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1578,7 +1837,7 @@ Begin Report
                 Begin OptionGroup
                     SpecialEffect =3
                     Left =7320
-                    Top =9780
+                    Top =7560
                     Width =1626
                     Height =315
                     TabIndex =23
@@ -1588,26 +1847,26 @@ Begin Report
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =9780
+                    LayoutCachedTop =7560
                     LayoutCachedWidth =8946
-                    LayoutCachedHeight =10095
+                    LayoutCachedHeight =7875
                     Begin
                         Begin OptionButton
                             SpecialEffect =2
                             Left =7380
-                            Top =9840
+                            Top =7620
                             BorderColor =10921638
                             Name ="Option210"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =7380
-                            LayoutCachedTop =9840
+                            LayoutCachedTop =7620
                             LayoutCachedWidth =7640
-                            LayoutCachedHeight =10080
+                            LayoutCachedHeight =7860
                             Begin
                                 Begin Label
                                     Left =7670
-                                    Top =9780
+                                    Top =7560
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1615,9 +1874,9 @@ Begin Report
                                     Caption ="Yes"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =7670
-                                    LayoutCachedTop =9780
+                                    LayoutCachedTop =7560
                                     LayoutCachedWidth =8060
-                                    LayoutCachedHeight =10095
+                                    LayoutCachedHeight =7875
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1626,20 +1885,20 @@ Begin Report
                         Begin OptionButton
                             SpecialEffect =2
                             Left =8220
-                            Top =9840
+                            Top =7620
                             OptionValue =0
                             BorderColor =10921638
                             Name ="Option212"
                             GridlineColor =10921638
 
                             LayoutCachedLeft =8220
-                            LayoutCachedTop =9840
+                            LayoutCachedTop =7620
                             LayoutCachedWidth =8480
-                            LayoutCachedHeight =10080
+                            LayoutCachedHeight =7860
                             Begin
                                 Begin Label
                                     Left =8460
-                                    Top =9780
+                                    Top =7560
                                     Width =390
                                     Height =315
                                     BorderColor =8355711
@@ -1647,9 +1906,9 @@ Begin Report
                                     Caption ="No"
                                     GridlineColor =10921638
                                     LayoutCachedLeft =8460
-                                    LayoutCachedTop =9780
+                                    LayoutCachedTop =7560
                                     LayoutCachedWidth =8850
-                                    LayoutCachedHeight =10095
+                                    LayoutCachedHeight =7875
                                     ForeThemeColorIndex =-1
                                     ForeTint =100.0
                                 End
@@ -1660,138 +1919,144 @@ Begin Report
                 Begin Label
                     FontUnderline = NotDefault
                     Left =180
-                    Top =8820
-                    Width =6060
-                    Height =300
-                    FontSize =13
+                    Top =6960
+                    Width =1320
+                    Height =540
+                    FontSize =12
                     FontWeight =700
                     BorderColor =8355711
                     Name ="Label177"
                     Caption ="Initial Projections"
                     GridlineColor =10921638
                     LayoutCachedLeft =180
-                    LayoutCachedTop =8820
-                    LayoutCachedWidth =6240
-                    LayoutCachedHeight =9120
+                    LayoutCachedTop =6960
+                    LayoutCachedWidth =1500
+                    LayoutCachedHeight =7500
                     ForeTint =100.0
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    OldBorderStyle =1
                     TextAlign =2
                     Left =9060
-                    Top =9180
+                    Top =7020
                     Width =1560
                     Height =585
                     FontSize =10
+                    ForeColor =12874308
                     Name ="Label166"
                     Caption ="Is the work complete (Y/N)"
                     GridlineColor =10921638
                     LayoutCachedLeft =9060
-                    LayoutCachedTop =9180
+                    LayoutCachedTop =7020
                     LayoutCachedWidth =10620
-                    LayoutCachedHeight =9765
+                    LayoutCachedHeight =7605
                     BorderTint =100.0
+                    ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    OldBorderStyle =1
                     TextAlign =2
                     Left =7320
-                    Top =9180
+                    Top =7020
                     Width =1500
                     Height =585
                     FontSize =10
+                    ForeColor =12874308
                     Name ="Label165"
                     Caption ="Has work started (Y/N)"
                     GridlineColor =10921638
                     LayoutCachedLeft =7320
-                    LayoutCachedTop =9180
+                    LayoutCachedTop =7020
                     LayoutCachedWidth =8820
-                    LayoutCachedHeight =9765
+                    LayoutCachedHeight =7605
                     BorderTint =100.0
+                    ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    OldBorderStyle =1
                     TextAlign =2
                     Left =5520
-                    Top =9180
+                    Top =7260
                     Width =1560
-                    Height =600
+                    Height =360
                     FontSize =10
+                    ForeColor =12874308
                     Name ="Label164"
                     Caption ="$ of Large Projects"
                     GridlineColor =10921638
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =9180
+                    LayoutCachedTop =7260
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =9780
+                    LayoutCachedHeight =7620
                     BorderTint =100.0
+                    ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    OldBorderStyle =1
                     TextAlign =2
                     Left =4380
-                    Top =9180
+                    Top =7020
                     Width =960
                     Height =600
                     FontSize =10
+                    ForeColor =12874308
                     Name ="Label163"
                     Caption ="# of Large Projects"
                     GridlineColor =10921638
                     LayoutCachedLeft =4380
-                    LayoutCachedTop =9180
+                    LayoutCachedTop =7020
                     LayoutCachedWidth =5340
-                    LayoutCachedHeight =9780
+                    LayoutCachedHeight =7620
                     BorderTint =100.0
+                    ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    OldBorderStyle =1
                     TextAlign =2
                     Left =2640
-                    Top =9180
+                    Top =7260
                     Width =1560
-                    Height =540
+                    Height =300
                     FontSize =10
+                    ForeColor =12874308
                     Name ="Label162"
                     Caption ="$ of Small Projects"
                     GridlineColor =10921638
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =9180
+                    LayoutCachedTop =7260
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =9720
+                    LayoutCachedHeight =7560
                     BorderTint =100.0
+                    ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
                 Begin Label
                     FontUnderline = NotDefault
-                    OldBorderStyle =1
                     TextAlign =2
                     Left =1560
-                    Top =9180
+                    Top =7020
                     Width =960
                     Height =600
                     FontSize =10
+                    ForeColor =12874308
                     Name ="Label161"
                     Caption ="# of Small Projects"
                     GridlineColor =10921638
                     LayoutCachedLeft =1560
-                    LayoutCachedTop =9180
+                    LayoutCachedTop =7020
                     LayoutCachedWidth =2520
-                    LayoutCachedHeight =9780
+                    LayoutCachedHeight =7620
                     BorderTint =100.0
+                    ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
                 Begin Label
                     Left =120
-                    Top =12300
+                    Top =10080
                     Width =1380
                     Height =330
                     FontSize =12
@@ -1802,15 +2067,15 @@ Begin Report
                     Caption ="Category G:"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =12300
+                    LayoutCachedTop =10080
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =12630
+                    LayoutCachedHeight =10410
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
                     Left =120
-                    Top =11880
+                    Top =9660
                     Width =1380
                     Height =330
                     FontSize =12
@@ -1821,15 +2086,15 @@ Begin Report
                     Caption ="Category F:"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =11880
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =12210
+                    LayoutCachedHeight =9990
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
                     Left =120
-                    Top =11460
+                    Top =9240
                     Width =1380
                     Height =330
                     FontSize =12
@@ -1840,15 +2105,15 @@ Begin Report
                     Caption ="Category E:"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =11460
+                    LayoutCachedTop =9240
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =11790
+                    LayoutCachedHeight =9570
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
                     Left =120
-                    Top =11040
+                    Top =8820
                     Width =1380
                     Height =330
                     FontSize =12
@@ -1859,15 +2124,15 @@ Begin Report
                     Caption ="Category D:"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =11040
+                    LayoutCachedTop =8820
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =11370
+                    LayoutCachedHeight =9150
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
                     Left =120
-                    Top =10620
+                    Top =8400
                     Width =1380
                     Height =330
                     FontSize =12
@@ -1878,15 +2143,15 @@ Begin Report
                     Caption ="Category C:"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =10620
+                    LayoutCachedTop =8400
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =10950
+                    LayoutCachedHeight =8730
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
                     Left =120
-                    Top =10200
+                    Top =7980
                     Width =1380
                     Height =330
                     FontSize =12
@@ -1897,15 +2162,15 @@ Begin Report
                     Caption ="Category B:"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =10200
+                    LayoutCachedTop =7980
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =10530
+                    LayoutCachedHeight =8310
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
                     Left =120
-                    Top =9780
+                    Top =7560
                     Width =1380
                     Height =330
                     FontSize =12
@@ -1916,16 +2181,16 @@ Begin Report
                     Caption ="Category A:"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =9780
+                    LayoutCachedTop =7560
                     LayoutCachedWidth =1500
-                    LayoutCachedHeight =10110
+                    LayoutCachedHeight =7890
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =5520
-                    Top =12300
+                    Top =10080
                     Width =1560
                     Height =330
                     TabIndex =24
@@ -1939,9 +2204,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =12300
+                    LayoutCachedTop =10080
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =12630
+                    LayoutCachedHeight =10410
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -1949,7 +2214,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =5520
-                    Top =11880
+                    Top =9660
                     Width =1560
                     Height =330
                     TabIndex =25
@@ -1963,9 +2228,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =11880
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =12210
+                    LayoutCachedHeight =9990
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -1973,7 +2238,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =5520
-                    Top =11460
+                    Top =9240
                     Width =1560
                     Height =330
                     TabIndex =26
@@ -1987,9 +2252,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =11460
+                    LayoutCachedTop =9240
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =11790
+                    LayoutCachedHeight =9570
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -1997,7 +2262,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =5520
-                    Top =11040
+                    Top =8820
                     Width =1560
                     Height =330
                     TabIndex =27
@@ -2011,9 +2276,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =11040
+                    LayoutCachedTop =8820
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =11370
+                    LayoutCachedHeight =9150
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2021,7 +2286,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =5520
-                    Top =10620
+                    Top =8400
                     Width =1560
                     Height =330
                     TabIndex =28
@@ -2035,9 +2300,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =10620
+                    LayoutCachedTop =8400
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =10950
+                    LayoutCachedHeight =8730
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2045,7 +2310,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =5520
-                    Top =10200
+                    Top =7980
                     Width =1560
                     Height =330
                     TabIndex =29
@@ -2059,9 +2324,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =10200
+                    LayoutCachedTop =7980
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =10530
+                    LayoutCachedHeight =8310
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2069,7 +2334,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =5520
-                    Top =9780
+                    Top =7560
                     Width =1560
                     Height =330
                     TabIndex =30
@@ -2083,9 +2348,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =5520
-                    LayoutCachedTop =9780
+                    LayoutCachedTop =7560
                     LayoutCachedWidth =7080
-                    LayoutCachedHeight =10110
+                    LayoutCachedHeight =7890
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2093,7 +2358,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =4500
-                    Top =12300
+                    Top =10080
                     Width =720
                     Height =330
                     TabIndex =31
@@ -2107,16 +2372,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4500
-                    LayoutCachedTop =12300
+                    LayoutCachedTop =10080
                     LayoutCachedWidth =5220
-                    LayoutCachedHeight =12630
+                    LayoutCachedHeight =10410
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =4500
-                    Top =11880
+                    Top =9660
                     Width =720
                     Height =330
                     TabIndex =32
@@ -2130,16 +2395,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4500
-                    LayoutCachedTop =11880
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =5220
-                    LayoutCachedHeight =12210
+                    LayoutCachedHeight =9990
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =4500
-                    Top =11460
+                    Top =9240
                     Width =720
                     Height =330
                     TabIndex =33
@@ -2153,16 +2418,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4500
-                    LayoutCachedTop =11460
+                    LayoutCachedTop =9240
                     LayoutCachedWidth =5220
-                    LayoutCachedHeight =11790
+                    LayoutCachedHeight =9570
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =4500
-                    Top =11040
+                    Top =8820
                     Width =720
                     Height =330
                     TabIndex =34
@@ -2176,16 +2441,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4500
-                    LayoutCachedTop =11040
+                    LayoutCachedTop =8820
                     LayoutCachedWidth =5220
-                    LayoutCachedHeight =11370
+                    LayoutCachedHeight =9150
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =4500
-                    Top =10620
+                    Top =8400
                     Width =720
                     Height =330
                     TabIndex =35
@@ -2199,16 +2464,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4500
-                    LayoutCachedTop =10620
+                    LayoutCachedTop =8400
                     LayoutCachedWidth =5220
-                    LayoutCachedHeight =10950
+                    LayoutCachedHeight =8730
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =4500
-                    Top =10200
+                    Top =7980
                     Width =720
                     Height =330
                     TabIndex =36
@@ -2222,16 +2487,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4500
-                    LayoutCachedTop =10200
+                    LayoutCachedTop =7980
                     LayoutCachedWidth =5220
-                    LayoutCachedHeight =10530
+                    LayoutCachedHeight =8310
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =4500
-                    Top =9780
+                    Top =7560
                     Width =720
                     Height =330
                     TabIndex =37
@@ -2245,16 +2510,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =4500
-                    LayoutCachedTop =9780
+                    LayoutCachedTop =7560
                     LayoutCachedWidth =5220
-                    LayoutCachedHeight =10110
+                    LayoutCachedHeight =7890
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =2640
-                    Top =12300
+                    Top =10080
                     Width =1560
                     Height =330
                     TabIndex =38
@@ -2268,9 +2533,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =12300
+                    LayoutCachedTop =10080
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =12630
+                    LayoutCachedHeight =10410
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2278,7 +2543,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =2640
-                    Top =11880
+                    Top =9660
                     Width =1560
                     Height =330
                     TabIndex =39
@@ -2292,9 +2557,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =11880
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =12210
+                    LayoutCachedHeight =9990
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2302,7 +2567,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =2640
-                    Top =11460
+                    Top =9240
                     Width =1560
                     Height =330
                     TabIndex =40
@@ -2316,9 +2581,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =11460
+                    LayoutCachedTop =9240
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =11790
+                    LayoutCachedHeight =9570
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2326,7 +2591,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =2640
-                    Top =11040
+                    Top =8820
                     Width =1560
                     Height =330
                     TabIndex =41
@@ -2340,9 +2605,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =11040
+                    LayoutCachedTop =8820
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =11370
+                    LayoutCachedHeight =9150
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2350,7 +2615,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =2640
-                    Top =10620
+                    Top =8400
                     Width =1560
                     Height =330
                     TabIndex =42
@@ -2364,9 +2629,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =10620
+                    LayoutCachedTop =8400
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =10950
+                    LayoutCachedHeight =8730
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2374,7 +2639,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =2640
-                    Top =10200
+                    Top =7980
                     Width =1560
                     Height =330
                     TabIndex =43
@@ -2388,9 +2653,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =10200
+                    LayoutCachedTop =7980
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =10530
+                    LayoutCachedHeight =8310
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2398,7 +2663,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =2640
-                    Top =9780
+                    Top =7560
                     Width =1560
                     Height =330
                     TabIndex =44
@@ -2412,9 +2677,9 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =2640
-                    LayoutCachedTop =9780
+                    LayoutCachedTop =7560
                     LayoutCachedWidth =4200
-                    LayoutCachedHeight =10110
+                    LayoutCachedHeight =7890
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     CurrencySymbol ="$"
@@ -2422,7 +2687,7 @@ Begin Report
                 Begin TextBox
                     IMESentenceMode =3
                     Left =1680
-                    Top =12300
+                    Top =10080
                     Width =720
                     Height =330
                     TabIndex =45
@@ -2436,16 +2701,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1680
-                    LayoutCachedTop =12300
+                    LayoutCachedTop =10080
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =12630
+                    LayoutCachedHeight =10410
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =1680
-                    Top =11880
+                    Top =9660
                     Width =720
                     Height =330
                     TabIndex =46
@@ -2459,16 +2724,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1680
-                    LayoutCachedTop =11880
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =12210
+                    LayoutCachedHeight =9990
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =1680
-                    Top =11460
+                    Top =9240
                     Width =720
                     Height =330
                     TabIndex =47
@@ -2482,16 +2747,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1680
-                    LayoutCachedTop =11460
+                    LayoutCachedTop =9240
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =11790
+                    LayoutCachedHeight =9570
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =1680
-                    Top =11040
+                    Top =8820
                     Width =720
                     Height =330
                     TabIndex =48
@@ -2505,16 +2770,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1680
-                    LayoutCachedTop =11040
+                    LayoutCachedTop =8820
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =11370
+                    LayoutCachedHeight =9150
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =1680
-                    Top =10620
+                    Top =8400
                     Width =720
                     Height =330
                     TabIndex =49
@@ -2528,16 +2793,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1680
-                    LayoutCachedTop =10620
+                    LayoutCachedTop =8400
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =10950
+                    LayoutCachedHeight =8730
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =1680
-                    Top =10200
+                    Top =7980
                     Width =720
                     Height =330
                     TabIndex =50
@@ -2551,16 +2816,16 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1680
-                    LayoutCachedTop =10200
+                    LayoutCachedTop =7980
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =10530
+                    LayoutCachedHeight =8310
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
                     Left =1680
-                    Top =9780
+                    Top =7560
                     Width =720
                     Height =330
                     TabIndex =51
@@ -2574,35 +2839,41 @@ Begin Report
                     ShowDatePicker =1
 
                     LayoutCachedLeft =1680
-                    LayoutCachedTop =9780
+                    LayoutCachedTop =7560
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =10110
+                    LayoutCachedHeight =7890
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =180
+                    Left =60
                     Top =60
-                    Width =7620
-                    Height =315
+                    Width =11040
+                    Height =420
+                    FontSize =16
                     TabIndex =52
+                    BackColor =14282978
                     BorderColor =10921638
-                    ForeColor =4210752
+                    ForeColor =12874308
                     Name ="Text0"
                     ControlSource ="=[tblSubRecipient.Subrecipient Name] & \" - \" & [ApplicantID] & \" - \" & [Coun"
                         "ty]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =180
+                    LayoutCachedLeft =60
                     LayoutCachedTop =60
-                    LayoutCachedWidth =7800
-                    LayoutCachedHeight =375
+                    LayoutCachedWidth =11100
+                    LayoutCachedHeight =480
+                    BackThemeColorIndex =9
+                    BackTint =20.0
+                    ForeThemeColorIndex =8
+                    ForeTint =100.0
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =3060
-                    Top =600
+                    Left =3480
+                    Top =720
                     Height =315
                     TabIndex =53
                     BorderColor =10921638
@@ -2615,24 +2886,24 @@ Begin Report
                     GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3060
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =4500
-                    LayoutCachedHeight =915
+                    LayoutCachedLeft =3480
+                    LayoutCachedTop =720
+                    LayoutCachedWidth =4920
+                    LayoutCachedHeight =1035
                     Begin
                         Begin Label
                             OldBorderStyle =1
-                            Left =240
-                            Top =600
-                            Width =2700
+                            Left =1740
+                            Top =720
+                            Width =1620
                             Height =315
                             Name ="Label3"
-                            Caption ="Exploratory Call Date/Time"
+                            Caption ="Exploratory Call "
                             GridlineColor =10921638
-                            LayoutCachedLeft =240
-                            LayoutCachedTop =600
-                            LayoutCachedWidth =2940
-                            LayoutCachedHeight =915
+                            LayoutCachedLeft =1740
+                            LayoutCachedTop =720
+                            LayoutCachedWidth =3360
+                            LayoutCachedHeight =1035
                             BorderTint =100.0
                             ForeTint =100.0
                         End
@@ -2640,9 +2911,9 @@ Begin Report
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =3060
-                    Top =1320
-                    Width =2760
+                    Left =7920
+                    Top =720
+                    Width =2820
                     Height =315
                     TabIndex =54
                     BorderColor =10921638
@@ -2653,24 +2924,24 @@ Begin Report
                     EventProcPrefix ="tblSubRecipient_Subrecipient_POC"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3060
-                    LayoutCachedTop =1320
-                    LayoutCachedWidth =5820
-                    LayoutCachedHeight =1635
+                    LayoutCachedLeft =7920
+                    LayoutCachedTop =720
+                    LayoutCachedWidth =10740
+                    LayoutCachedHeight =1035
                     Begin
                         Begin Label
                             OldBorderStyle =1
-                            Left =240
-                            Top =1320
-                            Width =2700
+                            Left =6420
+                            Top =720
+                            Width =1455
                             Height =315
                             Name ="Label4"
-                            Caption ="Subrecipient POC"
+                            Caption ="Applicant POC:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =240
-                            LayoutCachedTop =1320
-                            LayoutCachedWidth =2940
-                            LayoutCachedHeight =1635
+                            LayoutCachedLeft =6420
+                            LayoutCachedTop =720
+                            LayoutCachedWidth =7875
+                            LayoutCachedHeight =1035
                             BorderTint =100.0
                             ForeTint =100.0
                         End
@@ -2678,8 +2949,8 @@ Begin Report
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =3060
-                    Top =960
+                    Left =3480
+                    Top =1140
                     Height =315
                     ColumnWidth =3945
                     TabIndex =55
@@ -2692,24 +2963,24 @@ Begin Report
                     GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =3060
-                    LayoutCachedTop =960
-                    LayoutCachedWidth =4500
-                    LayoutCachedHeight =1275
+                    LayoutCachedLeft =3480
+                    LayoutCachedTop =1140
+                    LayoutCachedWidth =4920
+                    LayoutCachedHeight =1455
                     Begin
                         Begin Label
                             OldBorderStyle =1
-                            Left =240
-                            Top =960
-                            Width =2700
+                            Left =120
+                            Top =1140
+                            Width =3300
                             Height =315
                             Name ="Label5"
-                            Caption ="Scheduled Kickoff Date"
+                            Caption ="Scheduled Kick-Off (RSM) Meeting"
                             GridlineColor =10921638
-                            LayoutCachedLeft =240
-                            LayoutCachedTop =960
-                            LayoutCachedWidth =2940
-                            LayoutCachedHeight =1275
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =1140
+                            LayoutCachedWidth =3420
+                            LayoutCachedHeight =1455
                             BorderTint =100.0
                             ForeTint =100.0
                         End
@@ -2717,9 +2988,9 @@ Begin Report
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =3060
-                    Top =1740
-                    Width =2760
+                    Left =2040
+                    Top =1500
+                    Width =9060
                     Height =315
                     TabIndex =56
                     BorderColor =10921638
@@ -2729,24 +3000,24 @@ Begin Report
                     EventProcPrefix ="tblSubRecipient_Exploratory_Call_FEMA_Participants"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3060
-                    LayoutCachedTop =1740
-                    LayoutCachedWidth =5820
-                    LayoutCachedHeight =2055
+                    LayoutCachedLeft =2040
+                    LayoutCachedTop =1500
+                    LayoutCachedWidth =11100
+                    LayoutCachedHeight =1815
                     Begin
                         Begin Label
                             OldBorderStyle =1
-                            Left =240
-                            Top =1740
-                            Width =2700
+                            Left =120
+                            Top =1500
+                            Width =1800
                             Height =315
                             Name ="Label6"
                             Caption ="FEMA Participants"
                             GridlineColor =10921638
-                            LayoutCachedLeft =240
-                            LayoutCachedTop =1740
-                            LayoutCachedWidth =2940
-                            LayoutCachedHeight =2055
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =1500
+                            LayoutCachedWidth =1920
+                            LayoutCachedHeight =1815
                             BorderTint =100.0
                             ForeTint =100.0
                         End
@@ -2754,9 +3025,9 @@ Begin Report
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =4560
-                    Top =600
-                    Width =1260
+                    Left =4980
+                    Top =720
+                    Width =900
                     Height =315
                     TabIndex =57
                     BorderColor =10921638
@@ -2768,40 +3039,385 @@ Begin Report
                     GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =4560
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =5820
-                    LayoutCachedHeight =915
+                    LayoutCachedLeft =4980
+                    LayoutCachedTop =720
+                    LayoutCachedWidth =5880
+                    LayoutCachedHeight =1035
                 End
                 Begin TextBox
                     IMESentenceMode =3
-                    Left =4560
-                    Top =960
-                    Width =1260
+                    Left =4980
+                    Top =1140
+                    Width =900
                     Height =315
                     TabIndex =58
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text9"
-                    ControlSource ="=Format([tblSubRecipient.Recovery Scoping Meeting Date],\"Short Time\")"
+                    ControlSource ="=Format([tblSubRecipient.Recovery Scoping Meeting Time],\"Short Time\")"
                     Format ="Short Date"
                     StatusBarText ="Exporatory Call"
                     GridlineColor =10921638
                     ShowDatePicker =1
 
-                    LayoutCachedLeft =4560
-                    LayoutCachedTop =960
-                    LayoutCachedWidth =5820
-                    LayoutCachedHeight =1275
+                    LayoutCachedLeft =4980
+                    LayoutCachedTop =1140
+                    LayoutCachedWidth =5880
+                    LayoutCachedHeight =1455
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    Left =5160
+                    Top =1920
+                    Width =4560
+                    Height =360
+                    FontSize =12
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =12349952
+                    Name ="Label10"
+                    Caption ="Requested FEMA Staff at RSM"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5160
+                    LayoutCachedTop =1920
+                    LayoutCachedWidth =9720
+                    LayoutCachedHeight =2280
+                    ForeThemeColorIndex =-1
+                    ForeTint =100.0
+                End
+                Begin CheckBox
+                    Left =5460
+                    Top =2370
+                    TabIndex =60
+                    BorderColor =10921638
+                    Name ="chkEHP"
+                    ControlSource ="EHP Staff Required at RSM"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =2370
+                    LayoutCachedWidth =5720
+                    LayoutCachedHeight =2610
+                    Begin
+                        Begin Label
+                            Left =5730
+                            Top =2340
+                            Width =1815
+                            Height =315
+                            BorderColor =8355711
+                            Name ="Label17"
+                            Caption ="EHP Staff Required"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =5730
+                            LayoutCachedTop =2340
+                            LayoutCachedWidth =7545
+                            LayoutCachedHeight =2655
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Left =5460
+                    Top =2730
+                    TabIndex =61
+                    BorderColor =10921638
+                    Name ="chkInsurance"
+                    ControlSource ="Insurance Staff Required at RSM"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =2730
+                    LayoutCachedWidth =5720
+                    LayoutCachedHeight =2970
+                    Begin
+                        Begin Label
+                            Left =5730
+                            Top =2700
+                            Width =2490
+                            Height =315
+                            BorderColor =8355711
+                            Name ="Label19"
+                            Caption ="Insurance Staff Required"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =5730
+                            LayoutCachedTop =2700
+                            LayoutCachedWidth =8220
+                            LayoutCachedHeight =3015
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Left =5460
+                    Top =3090
+                    TabIndex =62
+                    BorderColor =10921638
+                    Name ="chkMitigation"
+                    ControlSource ="Mitigation Staff Required at RSM"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =3090
+                    LayoutCachedWidth =5720
+                    LayoutCachedHeight =3330
+                    Begin
+                        Begin Label
+                            Left =5730
+                            Top =3060
+                            Width =2415
+                            Height =315
+                            BorderColor =8355711
+                            Name ="Label21"
+                            Caption ="Mitigation Staff Required"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =5730
+                            LayoutCachedTop =3060
+                            LayoutCachedWidth =8145
+                            LayoutCachedHeight =3375
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Left =5460
+                    Top =3450
+                    TabIndex =63
+                    BorderColor =10921638
+                    Name ="chkSpecialized"
+                    ControlSource ="Specialized Staff Required?"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =3450
+                    LayoutCachedWidth =5720
+                    LayoutCachedHeight =3690
+                    Begin
+                        Begin Label
+                            Left =5730
+                            Top =3420
+                            Width =2550
+                            Height =315
+                            BorderColor =8355711
+                            Name ="Label23"
+                            Caption ="Specialized  Staff Required"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =5730
+                            LayoutCachedTop =3420
+                            LayoutCachedWidth =8280
+                            LayoutCachedHeight =3735
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    IMESentenceMode =3
+                    Left =5460
+                    Top =4140
+                    Width =4020
+                    Height =960
+                    TabIndex =59
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Types of Specialized Staff"
+                    ControlSource ="Types of Specialized Staff"
+                    EventProcPrefix ="Types_of_Specialized_Staff"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =4140
+                    LayoutCachedWidth =9480
+                    LayoutCachedHeight =5100
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    IMESentenceMode =3
+                    Left =1920
+                    Top =10500
+                    Width =8580
+                    Height =660
+                    FontSize =10
+                    TabIndex =64
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tblSubRecipient.Exploratory Call Notes"
+                    ControlSource ="tblSubRecipient.[Exploratory Call Notes]"
+                    EventProcPrefix ="tblSubRecipient_Exploratory_Call_Notes"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =1920
+                    LayoutCachedTop =10500
+                    LayoutCachedWidth =10500
+                    LayoutCachedHeight =11160
+                    Begin
+                        Begin Label
+                            Left =60
+                            Top =10500
+                            Width =1500
+                            Height =315
+                            FontSize =12
+                            BorderColor =8355711
+                            Name ="Label63"
+                            Caption ="Pre- Call Notes"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =60
+                            LayoutCachedTop =10500
+                            LayoutCachedWidth =1560
+                            LayoutCachedHeight =10815
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin Label
+                    Left =5460
+                    Top =3780
+                    Width =2505
+                    Height =285
+                    BorderColor =8355711
+                    ForeColor =8355711
+                    Name ="Label64"
+                    Caption ="Specialized Staff Required"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =3780
+                    LayoutCachedWidth =7965
+                    LayoutCachedHeight =4065
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =1920
+                    Top =11220
+                    Width =8580
+                    Height =1140
+                    FontSize =10
+                    TabIndex =65
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="tblSubRecipientExploratoryCall.Exploratory Call Notes"
+                    ControlSource ="tblSubRecipientExploratoryCall.[Exploratory Call Notes]"
+                    EventProcPrefix ="tblSubRecipientExploratoryCall_Exploratory_Call_Notes"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =1920
+                    LayoutCachedTop =11220
+                    LayoutCachedWidth =10500
+                    LayoutCachedHeight =12360
+                    Begin
+                        Begin Label
+                            Left =60
+                            Top =11220
+                            Width =1860
+                            Height =315
+                            FontSize =12
+                            BorderColor =8355711
+                            Name ="Label65"
+                            Caption ="During-Call Notes"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =60
+                            LayoutCachedTop =11220
+                            LayoutCachedWidth =1920
+                            LayoutCachedHeight =11535
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    Left =3480
+                    Top =480
+                    Width =1140
+                    Height =240
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =12874308
+                    Name ="Label66"
+                    Caption ="Date"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =3480
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =4620
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =8
+                    ForeTint =100.0
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    Left =4980
+                    Top =480
+                    Width =900
+                    Height =240
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =12874308
+                    Name ="Label67"
+                    Caption ="Time"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =4980
+                    LayoutCachedTop =480
+                    LayoutCachedWidth =5880
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =8
+                    ForeTint =100.0
+                End
+                Begin PageBreak
+                    Top =12420
+                    Name ="PageBreak69"
+                End
+                Begin Line
+                    BorderWidth =2
+                    Left =120
+                    Top =6900
+                    Width =10680
+                    BorderColor =9917743
+                    Name ="Line71"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =6900
+                    LayoutCachedWidth =10800
+                    LayoutCachedHeight =6900
+                    BorderThemeColorIndex =8
+                    BorderShade =75.0
                 End
             End
         End
         Begin PageFooter
-            Height =0
+            Height =360
             Name ="PageFooterSection"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6960
+                    Width =3600
+                    Height =315
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text70"
+                    ControlSource ="=\"Page \" & [Page]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =6960
+                    LayoutCachedWidth =10560
+                    LayoutCachedHeight =315
+                End
+            End
         End
     End
 End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database

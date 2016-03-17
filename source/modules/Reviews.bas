@@ -166,26 +166,36 @@ End Function
 Public Sub EnterReview(ItemDims As classItemDims, Optional Assignto As String = "", Optional Comment As String = "")
     Dim Db As Database
     Dim recEditStatus As Recordset
+    Dim WhereCondition As String
+    Dim Count As Integer
     
-
-    Set Db = CurrentDb()
-    Set recEditStatus = Db.OpenRecordset(ItemDims.ReviewTable, dbOpenDynaset)
     
-    recEditStatus.AddNew
-        recEditStatus![DisasterID] = ItemDims.DisasterID
-        recEditStatus![ApplicantID] = ItemDims.ApplicantID
-        If ItemDims.NeedsProjectID Then recEditStatus![ProjectID] = ItemDims.ProjectID
-        If ItemDims.NeedsSiteID Then recEditStatus![SiteID] = ItemDims.SiteID
-        If ItemDims.NeedsRfiID Then recEditStatus![RfiID] = ItemDims.RfiID
-        If ItemDims.NeedsLaneID Then recEditStatus![Lane Assigned] = ItemDims.LaneID
-        recEditStatus![ReviewType] = ItemDims.ReviewType
-        recEditStatus![ReviewEntryDate] = Now
-        If Assignto <> "" Then recEditStatus![ReviewUserID] = Assignto
-        If Comment <> "" Then recEditStatus![Comments] = Comment
+    WhereCondition = ItemDims.WhereID
+    WhereCondition = WhereCondition & " and [ReviewExitDate] is null"
+       
+    Count = DCount("ReviewID", ItemDims.ReviewTable, WhereCondition)
+    If Count = 0 Then
+    
+        Set Db = CurrentDb()
+        Set recEditStatus = Db.OpenRecordset(ItemDims.ReviewTable, dbOpenDynaset)
         
-    recEditStatus.Update
+        recEditStatus.AddNew
+            recEditStatus![DisasterID] = ItemDims.DisasterID
+            recEditStatus![ApplicantID] = ItemDims.ApplicantID
+            If ItemDims.NeedsProjectID Then recEditStatus![ProjectID] = ItemDims.ProjectID
+            If ItemDims.NeedsSiteID Then recEditStatus![SiteID] = ItemDims.SiteID
+            If ItemDims.NeedsRfiID Then recEditStatus![RfiID] = ItemDims.RfiID
+            If ItemDims.NeedsLaneID Then recEditStatus![Lane Assigned] = ItemDims.LaneID
+            recEditStatus![ReviewType] = ItemDims.ReviewType
+            recEditStatus![ReviewEntryDate] = Now
+            If Assignto <> "" Then recEditStatus![ReviewUserID] = Assignto
+            If Comment <> "" Then recEditStatus![Comments] = Comment
+            
+        recEditStatus.Update
+        
+        recEditStatus.Close
+    End If
     
-    recEditStatus.Close
     Set recEditStatus = Nothing
     Set Db = Nothing
 
@@ -414,13 +424,55 @@ Public Sub CreateRFI(ItemDims As classItemDims)
     recAddRFI.Close
     
     'Convert ItemDims
-    ItemDims.ItemType = "RFI"
+    ItemDims.ConvertToRFI RfiID
     ItemDims.ReviewType = "RFI Creation"
-    ItemDims.RfiID = RfiID
     
     EnterReview ItemDims, CurrentUserID
     
     Set recAddRFI = Nothing
+    Set Db = Nothing
+
+End Sub
+Public Sub CreateDM(ItemDims As classItemDims)
+    Dim Db As Database
+    Dim recAddDM As Recordset
+    Dim DmID As Long
+        
+
+    Set Db = CurrentDb()
+    Set recAddDM = Db.OpenRecordset("tblDeterminationMemo", dbOpenDynaset)
+    
+    recAddDM.AddNew
+        If Nz(ItemDims.ItemType, "") <> "" Then recAddDM![ItemType] = ItemDims.ItemType
+        If Nz(ItemDims.DisasterID, "") <> "" Then recAddDM![DisasterID] = ItemDims.DisasterID
+        If Nz(ItemDims.ApplicantID, "") <> "" Then recAddDM![ApplicantID] = ItemDims.ApplicantID
+        If Nz(ItemDims.ProjectID, 0) <> 0 Then recAddDM![ProjectID] = ItemDims.ProjectID
+        If Nz(ItemDims.SiteID, 0) <> 0 Then recAddDM![SiteID] = ItemDims.SiteID
+        If Nz(ItemDims.LaneID, "") <> "" Then recAddDM![Lane Assigned] = ItemDims.LaneID
+        If Nz(ItemDims.ReviewType, "") <> "" Then recAddDM![ReviewFrom] = ItemDims.ReviewType
+        If Nz(ItemDims.ReviewPhase, 0) <> 0 Then recAddDM![ReviewFromPhase] = ItemDims.ReviewPhase
+        If Nz(ItemDims.ReviewStep, 0) <> 0 Then recAddDM![ReviewFromStep] = ItemDims.ReviewStep
+        recAddDM![CreatedBy] = CurrentUserID
+        DmID = recAddDM![DmID]
+    recAddDM.Update
+    
+    Debug.Print "Initial DmID", DmID
+    'Check RFI ID and fetch if needed (dao vs switch to a sql backend
+    If DmID = 0 Then
+        DmID = Db.OpenRecordset("SELECT @@IDENTITY")(0)
+    End If
+    Debug.Print "Revised DmID", DmID
+    
+    
+    recAddDM.Close
+    
+    'Convert ItemDims
+    ItemDims.ConvertToDM DmID
+    ItemDims.ReviewType = "DM Creation"
+    
+    EnterReview ItemDims, CurrentUserID
+    
+    Set recAddDM = Nothing
     Set Db = Nothing
 
 End Sub

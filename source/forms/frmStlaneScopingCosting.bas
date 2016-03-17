@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -13,19 +15,21 @@ Begin Form
     Width =17085
     DatasheetFontHeight =11
     ItemSuffix =23
-    Right =16005
-    Bottom =8505
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xa0a341e299a9e440
+        0xb1984d0f15b9e440
     End
-    RecordSource ="tblProjects"
+    RecordSource ="fqrySiteStScopingCosting"
     Caption ="Standard Scoping and Costing"
+    OnCurrent ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
         0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
         0x010000006801000000000000a10700000100000001000000
     End
+    OnLoad ="[Event Procedure]"
     AllowDatasheetView =0
     FilterOnLoad =0
     ShowPageMargins =0
@@ -419,8 +423,9 @@ Begin Form
                     Height =780
                     TabIndex =7
                     ForeColor =4210752
-                    Name ="Command18"
+                    Name ="cmdSubmitToCFC"
                     Caption ="Submit Project to CFC"
+                    OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =7920
@@ -440,6 +445,7 @@ Begin Form
                     Overlaps =1
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =215
                     Left =1920
                     Top =9780
@@ -457,6 +463,7 @@ Begin Form
                     ForeTint =100.0
                 End
                 Begin CommandButton
+                    Visible = NotDefault
                     OverlapFlags =215
                     Left =14160
                     Top =8160
@@ -466,28 +473,6 @@ Begin Form
                     Name ="cmdOpenScopeCost"
                     Caption ="Open Subfrm Scope Cost"
                     GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =8
-                        Begin
-                            Action ="OpenForm"
-                            Argument ="subfrmSitesScopeCost"
-                            Argument ="0"
-                            Argument =""
-                            Argument =""
-                            Argument ="-1"
-                            Argument ="0"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"cmdOpenScopeCost\" xmlns=\"http://schemas.microsoft.com/offi"
-                                "ce/accessservices/2009/11/application\"><Statements><Action Name=\"OpenForm\"><A"
-                                "rgument Name=\"FormName\">subfrmS"
-                        End
-                        Begin
-                            Comment ="_AXL:itesScopeCost</Argument></Action></Statements></UserInterfaceMacro>"
-                        End
-                    End
 
                     LayoutCachedLeft =14160
                     LayoutCachedTop =8160
@@ -991,3 +976,361 @@ Begin Form
         End
     End
 End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+'Commentting on this page will be page specific only.
+'For in depth commentting please refer to frmRpaReview.
+
+Private Const FormItemType As String = "Project" 'used in determining what type of record is handled
+
+
+'BUTTONS
+Private Sub cmdSubmitToCFC_Click()
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "cmdSubmitToCFC_Click"
+'///Error Handling
+
+'///Code
+    CompleteReview "Scoping and Costing"
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Sub
+
+
+'OTHER PAGE EVENTS
+
+Private Sub Form_Current()
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "Form_Current"
+'///Error Handling
+
+'///Code
+    RepaintForm
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+
+Private Sub Form_Load()
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "Form_Load"
+'///Error Handling
+
+'///Code
+        FormFilter.RecordFilterCheck Me.Form, FormItemType
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+
+'INTERNAL PAGE SPECIFIC CODE
+
+
+Private Sub RepaintForm()
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "RepaintForm"
+'///Error Handling
+
+'///Code
+    EnableFormArea "Scoping and Costing"
+'    Me.subHistory.Requery
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+
+
+Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
+    Dim CanEnable As Boolean    'used so that CanSee is only called once per run.
+    
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "EnableFormArea"
+'///Error Handling
+
+'///Code
+    If Override = "Disable" Then
+        CanEnable = False
+    Else
+        CanEnable = Reviews.CanSee(GetItemDims(AreaName), Environ("UserName"))
+    End If
+    
+    Select Case AreaName
+        Case "Scoping and Costing"
+             Me.cmdSubmitToCFC.Enabled = CanEnable
+             Me.subfrmSitesScopeCost.Enabled = CanEnable
+        Case Else
+            Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & AreaName
+    End Select
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+
+End Sub
+
+Private Function PreDialogCheck(ReviewType As String) As Boolean
+'    This page specific code checks the form for any issues before opening the dialog.  True = pass
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "PreDialogCheck"
+'///Error Handling
+
+'///Code
+'    No checks on this page.
+        PreDialogCheck = True
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Function
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Function
+
+Private Function PostDialogCheck(ReviewType As String, DialogResult As String) As Boolean
+'    This page specific code checks the form for any issues before completing the review. True = pass
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "PostDialogCheck"
+'///Error Handling
+
+'///Code
+'   No Check Needed.
+    PostDialogCheck = True
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Function
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Function
+
+Private Sub HandleDisposition(ReviewType As String, frm As Form)
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "HandleDisposition"
+'///Error Handling
+
+'///Code
+    Select Case frm.cboResult
+        Case "DM", "RFI", "RSN", "RW"
+            HandleStandardDisposition ReviewType, frm
+        Case "SUB"
+'            Main section of page specific code. Creates new reviews as needed.
+            Select Case ReviewType
+                Case "Scoping and Costing"
+                    Reviews.EnterReview GetItemDims("Submit in EMMIE")
+                    Reviews.PushAllChildren GetItemDims("Scoping and Costing"), Environ("UserName"), frm.cboResult, "Submit in EMMIE"
+                Case Else
+                    Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & ReviewType
+            End Select
+        Case Else
+            Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
+    End Select
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Sub
+
+'INTERNAL STANDARD CODE
+
+Private Function GetItemDims(Optional ReviewName As String = "") As classItemDims
+    Dim ItemDims As New classItemDims   ' eventually what is passed out.  Creates new object
+'    each time it is called
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "GetItemDims"
+'///Error Handling
+
+'///Code
+    ItemDims.LoadByForm Me, FormItemType, ReviewName
+    Set GetItemDims = ItemDims
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Function
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Function
+
+Private Sub StartReview(ReviewType As String)
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "StartReview"
+'///Error Handling
+
+'///Code
+    Reviews.StartReview GetItemDims(ReviewType), Environ("UserName")
+    RepaintForm
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
+
+Private Sub CompleteReview(ReviewType As String)
+    Dim frm As Form 'used for getting information from frmReviewResult dialog
+    
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "CompleteReview"
+'///Error Handling
+
+'///Code
+    Reviews.StartReview GetItemDims(ReviewType), Environ("UserName"), True
+    If PreDialogCheck(ReviewType) Then
+        DoCmd.OpenForm "frmReviewResult", , , , , acDialog, GetItemDims(ReviewType).OpenString
+        If Access.CurrentProject.AllForms("frmReviewResult").IsLoaded Then
+            Set frm = Forms("frmReviewResult")
+            If PostDialogCheck(ReviewType, frm.cboResult) Then
+                If Reviews.CompleteReview(GetItemDims(ReviewType), Environ("UserName"), frm.cboResult) Then
+                    HandleDisposition ReviewType, frm
+                End If
+            End If
+            DoCmd.Close acForm, "frmReviewResult"
+        Else
+            MsgBox "Review was cancelled"
+        End If
+    End If
+    RepaintForm
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Sub
+
+Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
+
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "HandleStandardDisposition"
+'///Error Handling
+
+'///Code
+    Select Case frm.cboResult
+'        Most review dispositions have fairly standard code.
+        Case "DM"
+            Reviews.EnterReview GetItemDims("Determination Memo")
+        Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
+            Reviews.EnterReview GetItemDims("RFI")
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
+        Case "RSN"
+            Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
+        Case "RW"
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
+        Case Else
+            Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
+    End Select
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+
+End Sub

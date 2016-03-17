@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -12,9 +14,9 @@ Begin Form
     GridY =24
     Width =26355
     DatasheetFontHeight =11
-    ItemSuffix =101
-    Right =16005
-    Bottom =8505
+    ItemSuffix =102
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x6ad3b01033b5e440
@@ -376,7 +378,7 @@ Begin Form
                     End
                 End
                 Begin Subform
-                    OverlapFlags =215
+                    OverlapFlags =223
                     OldBorderStyle =0
                     Left =60
                     Top =3480
@@ -463,6 +465,62 @@ Begin Form
                     LayoutCachedTop =5220
                     LayoutCachedWidth =18180
                     LayoutCachedHeight =7560
+                End
+                Begin Subform
+                    OverlapFlags =247
+                    SpecialEffect =2
+                    Left =60
+                    Top =3480
+                    Width =16380
+                    TabIndex =7
+                    BorderColor =10921638
+                    Name ="Child101"
+                    SourceObject ="Form.subfrmlProjects banner"
+                    LinkChildFields ="DisasterID;ApplicantID;ProjectID"
+                    LinkMasterFields ="DisasterID;ApplicantID;ProjectID"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =3480
+                    LayoutCachedWidth =16440
+                    LayoutCachedHeight =4920
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =16740
+                    Top =3855
+                    Width =1740
+                    Height =1200
+                    FontWeight =700
+                    TabIndex =8
+                    ForeColor =16777215
+                    Name ="cmdSiteInspectionWorkOrder"
+                    Caption ="Site Inspection Work Order"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =16740
+                    LayoutCachedTop =3855
+                    LayoutCachedWidth =18480
+                    LayoutCachedHeight =5055
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =12874308
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BorderColor =15123357
+                    HoverColor =14282978
+                    HoverThemeColorIndex =9
+                    HoverTint =20.0
+                    HoverForeColor =0
+                    HoverForeThemeColorIndex =0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
                 End
             End
         End
@@ -902,6 +960,11 @@ Option Explicit
 
 Private Const FormItemType As String = "Project" 'used in determining what type of record is handled
 
+Private Sub cmdSiteInspectionWorkOrder_Click()
+    DoCmd.OpenReport "rptSiteInspectionWorkOrder", acViewReport, , "[ProjectID]=" & [ProjectID] & "", acWindowNormal
+
+End Sub
+
 'BUTTONS
 
 
@@ -1202,12 +1265,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

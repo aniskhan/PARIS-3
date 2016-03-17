@@ -1,0 +1,107 @@
+frm.Name	frm.RecordSource	frm.Filter	frm.FilterOnLoad	frm.OrderBy	frm.DataEntry	frm.AllowAdditions	frm.AllowDeletions	frm.AllowEdits	frm.AllowFilters
+frmDeterminationMemo	fqryDeterminationMemo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmSITFLAssignProjects-Site Inspection	fqryProjectInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmSpecializedsiteInspections	fqryProjectInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmStandardLaneCompleteSiteInspections	fqryProjectInfo		FALSE		TRUE	TRUE	TRUE	TRUE	TRUE
+frmSTSiteInspections	fqryProjectStInspection		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmTasks			FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+navMenu_Applicant	"SELECT tblSubRecipient.DisasterID, tblSubRecipient.ApplicantID, tblSubRecipient.[Subrecipient Name] FROM tblSubRecipient; "		FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+subformRFIbanner	fqryRfiBanner		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+subformSpecializedSiteInspections	fqryProjectSitesSiteInspectionsInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmlProjects banner	fqryBannerProjects		FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+subfrmSpecializedSiteInspections	"SELECT tblSites.DisasterID, tblSites.ApplicantID, tblSites.ProjectID, tblSites.SiteID, tblSiteInspections.ID, tblSiteInspections.[FEMA PDC], tblSiteInspections.[Assigned Site Inspector], tblSiteInspections.[Date Assigned], tblSiteInspections.[Inspection Date -Start], tblSiteInspections.[Inspection Date - Finish], tblSiteInspections.[Subrecipient Participant], tblSiteInspections.[Recipient Participant], tblSiteInspections.[PDC Participated], tblSiteInspections.[EHP Participated], tblSiteInspections.[Mitigation Specialist Participated], tblSiteInspections.[Insurance Specialist Participated], tblSiteInspections.[Inpection Notes], tblSiteInspections.[Inspection Complete], tblSiteInspections.[Additional Inspection needed], tblSiteInspections.[Reason for Additional Inspections], tblSiteInspections.[Inpection Report Complete], tblSiteInspections.[Subrecipient acknowledges recipeipt of SIR], tblSiteInspections.[Eligibility Concerns], tblSiteInspections.[PDC Notified  WO Complete], tblSiteInspections.[SITFL Notified WO Complete], tblSiteInspections.[DDD Entered into EMMIE], tblSiteInspections.[Date of meetng with PDC to brief DDD], tblSiteInspections.[FEMA PDC Concurs with DDD], tblSiteInspections.[State PDC Concurs with DDD], tblSiteInspections.[Subrecipeint Concurs with DDD], tblSiteInspections.[DIU Attaches DDD in EMMIE], tblProjects.[Date Assigned], tblProjects.[Assigned Site Inspector], tblProjects.[Scheduled Date of Site Inspection], tblSites.[Draft DDD] FROM tblProjects LEFT JOIN (tblSites LEFT JOIN tblSiteInspections ON tblSites.SiteID = tblSiteInspections.SiteID) ON tblProjects.ProjectID = tblSites.ProjectID; "		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmRfiReviewHistory	qryReviewRfiSub		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmProcessProjectRoutingSheet PDC	fqryProjectEntry		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmSubrecipientRSM	fqryRpaScopingMeeting	[Assigned PDC] = 'vrhoads'	FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+NavMain	tblDisaster		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmRFIConcurrence	fqryRfiConcurrence		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmStSiteConcurrence	fqryProjectStDddConcurrence		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+navStandardLane	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subfrmDisasterInfoExtend	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+navMenu_Project	"SELECT tblProjects.DisasterID, tblProjects.ApplicantID, tblProjects.ProjectID, tblProjects.[Project Category], tblProjects.[Application Title] FROM tblProjects; "		FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+frmAssignPDC	fqryRpaAssignPdc	[DisasterID]='4258' and [ApplicantID]='009-77250-00'	FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmProjectSiteLink	fqryProjectFormulation	[ApplicantID]='009-60850-00'	FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subformRFIRequestedInformation	fqryRFIRequestedInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmBannerGeneral	fqryBannerGeneral		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+subfrmSiteStInspection	fqrySiteStInspection		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmExpeditedScopingCosting	fqryProjectExSowCost		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmStlaneScopingCosting	fqrySiteStScopingCosting		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmStaff	tblStaff		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmStAssignDvs	fqryProjectStAssignDvs		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+navMenu_Disaster	fqryDisasterInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmInspectStSiteInspection	fqryInspectStSiteInspection		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmDocTransmittal	fqryDisasterInfo		FALSE		FALSE	FALSE	TRUE	TRUE	TRUE
+frmRFITransmittal	fqryRfiTransmittal		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmEnterListofDamages	fqryRpaProjectEntry	[DisasterID]='4258'AND[Assigned PDC] = 'vrhoads'	FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+navRFIProcess	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subformEnterListofDamages	fqrySiteInfo		FALSE		FALSE	TRUE	FALSE	TRUE	TRUE
+frmSpecializedAssignPM	fqryProjectStWorkOrderDev		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmPDCActions	fqryRpaProjectEntry		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subformDeterminationMemoBanner	fqryDeterminationMemoBanner		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+subfrmDisasterInfo	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+frmDDDCompleteforProject	fqryProjectStCheckSiteStatus		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmDIUProcessProjectRoutingSheet	fqryProjectLaneSelect		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmRFIReceipt	fqryRfiReceipt		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmRpaReview-AltNav	fqryRpaReview		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subform-DDD Status-VS	fqrySiteStPendingVS		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmRpaInfo short	fqryRpaInfo		TRUE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmRFIRequest	fqryRfiRequest		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmProjectEntry	fqryProjectInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmProjectReviewHistory	qryReviewProjectSub		FALSE	[ReviewEntryDate] DESC	FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmRpaReviewHistory	qryReviewSub		FALSE	[ReviewEntryDate] DESC	FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmSiteReviewHistory	qryReviewSiteSub		FALSE	[ReviewEntryDate] DESC	FALSE	TRUE	TRUE	TRUE	TRUE
+navSpecializedLane-IDEA	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subform-DDD Status-Site Inspection Needed	fqrySiteStPendingSiteInspector		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subform-DDD Complete	fqrySiteStDddConcurrence		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmSITFLAssignProjects-DDD Complete	fqryProjectInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmRpaSearch	qryRpaSearch		FALSE	[Subrecipient Name] DESC	FALSE	FALSE	FALSE	TRUE	TRUE
+frmSpecializedSiteInspectionWorkOrder-CFC	fqryProjectInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmSubrecipientBriefing	fqrySubrecipientBriefingInfo		FALSE		TRUE	TRUE	TRUE	TRUE	TRUE
+frmStaff	fqryStaffInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+tblStaff	tblStaff		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmDownLoadNewFE			FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmDisasterInfoRevised	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+frmExpeditedLaneDI	fqryProjectExIdea		FALSE		FALSE	FALSE	TRUE	TRUE	TRUE
+navMenu_Site	"SELECT tblSites.DisasterID, tblSites.ApplicantID, tblSites.ProjectID, tblSites.SiteID, tblSites.[Name of Site/Facility] FROM tblSites; "		FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+frmStaffSearch	qryStaffSearch		FALSE	[UserID]	FALSE	FALSE	FALSE	TRUE	TRUE
+frmSubrecipientExploratoryCallEEI	fqrySubrecipientExploratoryCallEEIInfo		FALSE		FALSE	TRUE	FALSE	TRUE	TRUE
+frmDisasterInformation	fqryDisasterInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmSiteInspectionWorkOrder-SITFL	fqryProjectInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmSiteStInspectionAssign	fqrySiteStInspectionAssignment		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmSubrecipientExploratoryCall	fqryRpaExploratoryCall		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+navProjectFormulation	fqryDisasterSubrecipient		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+navStaffDisasterAdmin	fqryDeterminationMemo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmInitialRSMProjections	frqyProjectionUpdateInfo		FALSE		FALSE	TRUE	FALSE	TRUE	TRUE
+subformSites	fqrySiteInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmEnterProjects	fqryProjectInfo		FALSE		FALSE	TRUE	FALSE	TRUE	TRUE
+subfrmRpaInfo	fqryRpaInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmTasks	qryTaskUnionByUserOversight	[positionTier] = 0 and [ReviewUserID] is Null	FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+subformProjecRoutingSheet	fqrySiteInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmSitesScopeCost	fqrySiteInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+tblSubRecipient	tblSubRecipient		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmSubrecipientExploratoryCall-NavTest	fqryRpaExploratoryCall		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subfrmStaffAssignments	fqryStaffRoleInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+tblSiteInspections subform1	fqrySiteInspectionInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmEnterListofProjects	fqryRpaProjectEntry		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmSpcializedLaneAssignTechSpecialists	fqryProjectStWorkOrderDev		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmStWorkOrderDev	fqryProjectStWorkOrderDev		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmUpdateRSMProjections	fqryUpdateRSMProjections		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subfrmProjectSites	fqrySiteInfo		FALSE		FALSE	FALSE	TRUE	TRUE	TRUE
+subfrmSITFLAssignProjects	fqryProjectInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subfrmSpecializedAssignsProjects	fqryProjectInfo		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subfrmUpdateRSMProjections	fqryProjectionsMaxUpdate_ALL		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+tblProjects	fqryProjectInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+tblSiteInspections subform2	fqrySiteInspectionInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmExpeditedLaneComplianceReviews	fqryProjectInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmNavMainUserPositions	fqryNavMainUserPositions		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+navReports	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+subfrmDisasterInfoRevised short	fqryDisasterInfo		FALSE		FALSE	FALSE	FALSE	FALSE	FALSE
+subfrmNavMainUserPositions	fqryNavMainUserPositions		FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+frmRpaReview	fqryRpaReview		FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subfrmInspectionAssignSiteSelect	fqrySiteStInspectionAssignment		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmInspectionSiteSelect	fqrySiteStInspectionSelect		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+subfrmSiteAssignment	fqrySiteInfo		FALSE		FALSE	TRUE	TRUE	TRUE	TRUE
+frmReviewResult			FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+frmStDvsSiteReview	fqrySiteStDvsSiteReview	[DisasterID]='4258' and [ApplicantID]='009-60850-00' and [ProjectID]=2 and [SiteID]=2	FALSE		FALSE	FALSE	FALSE	TRUE	TRUE
+subfrmDVSSiteReviewSelect	fqryDVSSiteReviewSelect		FALSE		FALSE	FALSE	FALSE	FALSE	TRUE
+subfrmProjectSitesDIU	fqrySiteInfo		FALSE		FALSE	FALSE	TRUE	TRUE	TRUE

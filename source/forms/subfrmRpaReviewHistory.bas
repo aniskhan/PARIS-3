@@ -3,7 +3,9 @@ VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
     NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     OrderByOn = NotDefault
     AllowDesignChanges = NotDefault
     PictureAlignment =2
@@ -13,8 +15,8 @@ Begin Form
     Width =12300
     DatasheetFontHeight =11
     ItemSuffix =84
-    Right =16005
-    Bottom =8505
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     OrderBy ="[ReviewEntryDate] DESC"
     RecSrcDt = Begin
@@ -320,6 +322,7 @@ Begin Form
             Begin
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =2
@@ -356,6 +359,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =2
@@ -393,6 +397,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =2
@@ -428,6 +433,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =2
@@ -464,6 +470,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =2
@@ -496,6 +503,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =2
@@ -533,6 +541,7 @@ Begin Form
                     GroupTable =4
                 End
                 Begin TextBox
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     TextAlign =2

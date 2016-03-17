@@ -15,9 +15,9 @@ Begin Form
     GridY =24
     Width =17939
     DatasheetFontHeight =11
-    ItemSuffix =168
-    Right =16005
-    Bottom =8505
+    ItemSuffix =169
+    Right =20235
+    Bottom =12615
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xdfc5c038afa8e440
@@ -402,6 +402,7 @@ Begin Form
                     Width =4020
                     Height =1440
                     TabIndex =3
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbOccComments"
@@ -412,6 +413,8 @@ Begin Form
                     LayoutCachedTop =6120
                     LayoutCachedWidth =8760
                     LayoutCachedHeight =7560
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =223
@@ -827,6 +830,7 @@ Begin Form
                     Width =4020
                     Height =2160
                     TabIndex =14
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbOpsNotes"
@@ -837,6 +841,8 @@ Begin Form
                     LayoutCachedTop =6120
                     LayoutCachedWidth =4200
                     LayoutCachedHeight =8280
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =223
@@ -867,6 +873,7 @@ Begin Form
                     Width =3840
                     Height =360
                     TabIndex =15
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbPagsEligibility"
@@ -879,6 +886,8 @@ Begin Form
                     LayoutCachedTop =7980
                     LayoutCachedWidth =13140
                     LayoutCachedHeight =8340
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     ForeThemeColorIndex =0
                     ForeTint =75.0
                     ForeShade =100.0
@@ -975,15 +984,15 @@ Begin Form
                 Begin Label
                     OverlapFlags =215
                     TextAlign =2
-                    Left =60
+                    Left =45
                     Top =4680
-                    Width =4320
+                    Width =4335
                     Height =300
                     BorderColor =8355711
                     Name ="Label135"
-                    Caption ="RPA Reciept, Review and Processing"
+                    Caption ="RPA Receipt, Review and Processing"
                     GridlineColor =10921638
-                    LayoutCachedLeft =60
+                    LayoutCachedLeft =45
                     LayoutCachedTop =4680
                     LayoutCachedWidth =4380
                     LayoutCachedHeight =4980
@@ -1098,6 +1107,7 @@ Begin Form
                     Width =3840
                     Height =720
                     TabIndex =16
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbPagsNotes"
@@ -1108,6 +1118,8 @@ Begin Form
                     LayoutCachedTop =6120
                     LayoutCachedWidth =13140
                     LayoutCachedHeight =6840
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =223
@@ -1172,6 +1184,7 @@ Begin Form
                     Width =990
                     Height =315
                     TabIndex =17
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -1187,6 +1200,8 @@ Begin Form
                     LayoutCachedTop =8040
                     LayoutCachedWidth =5730
                     LayoutCachedHeight =8355
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     ForeThemeColorIndex =0
                     ForeTint =75.0
                     ForeShade =100.0
@@ -1221,6 +1236,7 @@ Begin Form
                     Width =990
                     Height =315
                     TabIndex =18
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -1236,6 +1252,8 @@ Begin Form
                     LayoutCachedTop =7260
                     LayoutCachedWidth =10290
                     LayoutCachedHeight =7575
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     ForeThemeColorIndex =0
                     ForeTint =75.0
                     ForeShade =100.0
@@ -1263,7 +1281,7 @@ Begin Form
             End
         End
         Begin FormFooter
-            Height =1380
+            Height =900
             BackColor =15921906
             Name ="FormFooter"
             AlternateBackThemeColorIndex =1
@@ -1271,122 +1289,12 @@ Begin Form
             BackThemeColorIndex =1
             BackShade =95.0
             Begin
-                Begin CommandButton
-                    OverlapFlags =93
-                    Left =13500
-                    Top =180
-                    Width =1290
-                    Height =405
-                    TabIndex =1
-                    ForeColor =4210752
-                    Name ="cmdAddNewRecord"
-                    Caption ="Add Record"
-                    GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =10
-                        Begin
-                            Action ="OnError"
-                            Argument ="0"
-                        End
-                        Begin
-                            Action ="GoToRecord"
-                            Argument ="-1"
-                            Argument =""
-                            Argument ="5"
-                        End
-                        Begin
-                            Condition ="[MacroError]<>0"
-                            Action ="MsgBox"
-                            Argument ="=[MacroError].[Description]"
-                            Argument ="-1"
-                            Argument ="0"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"cmdAddNewRecord\" xmlns=\"http://schemas.microsoft.com/offic"
-                                "e/accessservices/2009/11/application\"><Statements><Action Name=\"OnError\"/><Ac"
-                                "tion Name=\"GoToRecord\"><Argumen"
-                        End
-                        Begin
-                            Comment ="_AXL:t Name=\"Record\">New</Argument></Action><ConditionalBlock><If><Condition>["
-                                "MacroError]&lt;&gt;0</Condition><Statements><Action Name=\"MessageBox\"><Argumen"
-                                "t Name=\"Message\">=[MacroError].[Description]</Argument></Action></Statements><"
-                                "/If></ConditionalBl"
-                        End
-                        Begin
-                            Comment ="_AXL:ock></Statements></UserInterfaceMacro>"
-                        End
-                    End
-
-                    LayoutCachedLeft =13500
-                    LayoutCachedTop =180
-                    LayoutCachedWidth =14790
-                    LayoutCachedHeight =585
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverColor =15652797
-                    PressedColor =11957550
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =93
-                    Left =14940
-                    Top =120
-                    Width =1290
-                    Height =405
-                    ForeColor =4210752
-                    Name ="cmdCloseForm"
-                    Caption ="Save / Close"
-                    GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =8
-                        Begin
-                            Action ="Close"
-                            Argument ="-1"
-                            Argument =""
-                            Argument ="0"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"cmdCloseForm\" xmlns=\"http://schemas.microsoft.com/office/a"
-                                "ccessservices/2009/11/application\"><Statements><Action Name=\"CloseWindow\"/></"
-                                "Statements></UserInterfaceMacro"
-                        End
-                        Begin
-                            Comment ="_AXL:>"
-                        End
-                    End
-
-                    LayoutCachedLeft =14940
-                    LayoutCachedTop =120
-                    LayoutCachedWidth =16230
-                    LayoutCachedHeight =525
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverColor =15652797
-                    PressedColor =11957550
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
                 Begin Label
                     BackStyle =1
-                    OverlapFlags =223
+                    OverlapFlags =93
                     TextFontFamily =82
                     Width =16380
-                    Height =720
+                    Height =840
                     FontSize =20
                     BackColor =14282978
                     BorderColor =8355711
@@ -1395,20 +1303,38 @@ Begin Form
                     FontName ="Broadway"
                     GridlineColor =10921638
                     LayoutCachedWidth =16380
-                    LayoutCachedHeight =720
+                    LayoutCachedHeight =840
                     ThemeFontIndex =-1
                     BackThemeColorIndex =9
                     BackTint =20.0
                     ForeTint =100.0
                 End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =7080
+                    Top =60
+                    Width =6540
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box168"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7080
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =13620
+                    LayoutCachedHeight =780
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =14460
+                    Left =14340
                     Top =120
-                    Width =1200
-                    Height =405
-                    TabIndex =2
-                    ForeColor =4210752
+                    Width =1380
+                    Height =540
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
                     Name ="cmdClose"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -1429,16 +1355,31 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =14460
+                    LayoutCachedLeft =14340
                     LayoutCachedTop =120
-                    LayoutCachedWidth =15660
-                    LayoutCachedHeight =525
-                    BackColor =15123357
+                    LayoutCachedWidth =15720
+                    LayoutCachedHeight =660
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
-                    HoverColor =15652797
-                    PressedColor =11957550
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverTint =100.0
+                    HoverShade =75.0
+                    PressedColor =15189940
+                    PressedThemeColorIndex =8
+                    PressedTint =40.0
+                    PressedShade =100.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeTint =100.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -1447,11 +1388,11 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =9840
-                    Top =60
+                    Left =9540
+                    Top =120
                     Width =1260
                     Height =600
-                    TabIndex =6
+                    TabIndex =4
                     ForeColor =4210752
                     Name ="Command163"
                     Caption ="First Record"
@@ -1512,10 +1453,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =9840
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =11100
-                    LayoutCachedHeight =660
+                    LayoutCachedLeft =9540
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =10800
+                    LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     UseTheme =0
                     BackColor =15123357
@@ -1536,11 +1477,11 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =12480
-                    Top =60
+                    Left =12240
+                    Top =120
                     Width =1215
                     Height =600
-                    TabIndex =3
+                    TabIndex =1
                     ForeColor =4210752
                     Name ="Command164"
                     Caption ="Last Record"
@@ -1601,10 +1542,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =12480
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =13695
-                    LayoutCachedHeight =660
+                    LayoutCachedLeft =12240
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =13455
+                    LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     UseTheme =0
                     BackColor =15123357
@@ -1625,11 +1566,11 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =11160
-                    Top =60
+                    Left =10920
+                    Top =120
                     Width =576
                     Height =576
-                    TabIndex =4
+                    TabIndex =2
                     ForeColor =4210752
                     Name ="cmdPrevious"
                     ControlTipText ="Previous Record"
@@ -1707,10 +1648,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =11160
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =11736
-                    LayoutCachedHeight =636
+                    LayoutCachedLeft =10920
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =11496
+                    LayoutCachedHeight =696
                     UseTheme =0
                     BackColor =15123357
                     BorderColor =15123357
@@ -1730,11 +1671,11 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =11820
-                    Top =60
+                    Left =11580
+                    Top =120
                     Width =576
                     Height =576
-                    TabIndex =5
+                    TabIndex =3
                     ForeColor =4210752
                     Name ="cmdNext"
                     Caption ="Command92"
@@ -1810,10 +1751,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =11820
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =12396
-                    LayoutCachedHeight =636
+                    LayoutCachedLeft =11580
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =12156
+                    LayoutCachedHeight =696
                     UseTheme =0
                     BackColor =15123357
                     BorderColor =15123357
@@ -1830,6 +1771,23 @@ Begin Form
                     WebImagePaddingRight =1
                     WebImagePaddingBottom =1
                     Overlaps =1
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =7200
+                    Top =120
+                    Width =2280
+                    Height =600
+                    BorderColor =8355711
+                    Name ="Label45"
+                    Caption ="Use these buttons to Navigate Records"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7200
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =9480
+                    LayoutCachedHeight =720
+                    ForeTint =100.0
                 End
             End
         End
@@ -2420,15 +2378,17 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
     Select Case frm.cboResult
 '        Most review dispositions have fairly standard code.
         Case "DM"
+            Reviews.CreateDM GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("Determination Memo")
+            DoCmd.OpenForm "frmDeterminationMemo", , , GetItemDims.WhereID(False)
         Case "RFI"
             Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

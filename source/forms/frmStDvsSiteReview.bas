@@ -11,11 +11,11 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =17340
+    Width =17580
     DatasheetFontHeight =11
     ItemSuffix =82
-    Right =16005
-    Bottom =8505
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x0255a2a713b1e440
@@ -187,21 +187,21 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     Top =1380
-                    Width =17220
+                    Width =17520
                     Height =8520
                     BackColor =16247774
                     BorderColor =10921638
                     Name ="Box74"
                     GridlineColor =10921638
                     LayoutCachedTop =1380
-                    LayoutCachedWidth =17220
+                    LayoutCachedWidth =17520
                     LayoutCachedHeight =9900
                     BackThemeColorIndex =4
                     BackTint =20.0
                 End
                 Begin TextBox
-                    Visible = NotDefault
                     Enabled = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -222,7 +222,6 @@ Begin Form
                     LayoutCachedHeight =2640
                     Begin
                         Begin Label
-                            Visible = NotDefault
                             OverlapFlags =215
                             Left =13740
                             Top =2340
@@ -241,8 +240,8 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Visible = NotDefault
                     Enabled = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -264,7 +263,6 @@ Begin Form
                     LayoutCachedHeight =3060
                     Begin
                         Begin Label
-                            Visible = NotDefault
                             OverlapFlags =215
                             Left =13620
                             Top =2700
@@ -283,7 +281,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Visible = NotDefault
                     Enabled = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -305,7 +302,6 @@ Begin Form
                     LayoutCachedHeight =3510
                     Begin
                         Begin Label
-                            Visible = NotDefault
                             OverlapFlags =215
                             Left =14340
                             Top =3180
@@ -424,6 +420,7 @@ Begin Form
                 Begin TextBox
                     Locked = NotDefault
                     TabStop = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OldBorderStyle =0
                     OverlapFlags =215
@@ -472,6 +469,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OldBorderStyle =0
                     OverlapFlags =215
@@ -518,6 +516,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OldBorderStyle =0
                     OverlapFlags =215
@@ -1324,7 +1323,6 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    Enabled = NotDefault
                     SpecialEffect =4
                     BorderWidth =3
                     OverlapFlags =223
@@ -1412,7 +1410,6 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
-                    Enabled = NotDefault
                     SpecialEffect =4
                     BorderWidth =3
                     OverlapFlags =247
@@ -1563,9 +1560,8 @@ Begin Form
                 End
                 Begin Subform
                     OverlapFlags =85
-                    Left =60
                     Top =9960
-                    Width =17280
+                    Width =17520
                     Height =2520
                     TabIndex =24
                     BorderColor =10921638
@@ -1575,9 +1571,8 @@ Begin Form
                     LinkMasterFields ="DisasterID;ProjectID;SiteID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =60
                     LayoutCachedTop =9960
-                    LayoutCachedWidth =17340
+                    LayoutCachedWidth =17520
                     LayoutCachedHeight =12480
                 End
                 Begin CheckBox
@@ -1655,7 +1650,6 @@ Begin Form
                     End
                 End
                 Begin CheckBox
-                    Enabled = NotDefault
                     SpecialEffect =4
                     OverlapFlags =215
                     BorderWidth =3
@@ -1749,9 +1743,8 @@ Begin Form
                 Begin Subform
                     OverlapFlags =215
                     SpecialEffect =2
-                    Left =60
                     Top =60
-                    Width =17220
+                    Width =17520
                     Height =1260
                     TabIndex =29
                     BorderColor =10921638
@@ -1761,9 +1754,8 @@ Begin Form
                     LinkMasterFields ="DisasterID;ApplicantID;ProjectID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =60
                     LayoutCachedTop =60
-                    LayoutCachedWidth =17280
+                    LayoutCachedWidth =17520
                     LayoutCachedHeight =1320
                     Begin
                         Begin Label
@@ -1807,7 +1799,6 @@ Begin Form
                     ForeTint =100.0
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     Enabled = NotDefault
                     OverlapFlags =215
                     Left =14520
@@ -1852,7 +1843,6 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     Enabled = NotDefault
                     OverlapFlags =215
                     Left =12300
@@ -1909,10 +1899,12 @@ Begin Form
                     OverlapFlags =85
                     Left =14580
                     Top =120
-                    Width =1200
-                    Height =405
+                    Width =1500
+                    Height =600
+                    FontSize =13
+                    FontWeight =700
                     TabIndex =4
-                    ForeColor =4210752
+                    ForeColor =16777215
                     Name ="cmdCloseForm"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -1938,10 +1930,28 @@ Begin Form
 
                     LayoutCachedLeft =14580
                     LayoutCachedTop =120
-                    LayoutCachedWidth =15780
-                    LayoutCachedHeight =525
-                    BackColor =15123357
+                    LayoutCachedWidth =16080
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -2657,12 +2667,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

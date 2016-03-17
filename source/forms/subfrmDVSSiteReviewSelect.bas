@@ -15,13 +15,13 @@ Begin Form
     Width =9210
     DatasheetFontHeight =11
     ItemSuffix =65
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
-    RecordSource ="SELECT tblSites.*, tblProjects.[Lane Assigned], IIf([DVS -Site Inspection Requir"
-        "ed] Is Null,\"No\",\"Yes\") AS Reviewed FROM tblProjects INNER JOIN tblSites ON "
-        "(tblProjects.ProjectID = tblSites.ProjectID) AND (tblProjects.ApplicantID = tblS"
-        "ites.ApplicantID) AND (tblProjects.DisasterID = tblSites.DisasterID); "
+    RecSrcDt = Begin
+        0xb286dab0b4b9e440
+    End
+    RecordSource ="fqryDVSSiteReviewSelect"
     Caption ="subfrmDVSSiteReview"
     DatasheetFontName ="Calibri"
     PrtMip = Begin

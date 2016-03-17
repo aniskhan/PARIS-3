@@ -19,10 +19,10 @@ Begin Form
     Width =6480
     DatasheetFontHeight =11
     ItemSuffix =9
-    Left =10905
-    Top =3810
-    Right =17640
-    Bottom =7005
+    Left =-27631
+    Top =4320
+    Right =-20896
+    Bottom =7515
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xfa536e9313a4e440
@@ -207,18 +207,20 @@ Begin Form
                     Visible = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
+                    ColumnCount =2
                     Left =1500
                     Top =2715
                     Width =2460
                     Height =315
                     TabIndex =2
                     BorderColor =10921638
-                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
                     Name ="cboRework"
                     RowSourceType ="Table/Query"
-                    RowSource ="SELECT [tblReviewTypes].ReviewType FROM tblReviewTypes ORDER BY [tblReviewTypes]"
-                        ".ReviewType; "
-                    ColumnWidths ="1440"
+                    RowSource ="SELECT tblReviewTypes.ReviewType, tblReviewTypes.Position FROM tblReviewTypes OR"
+                        "DER BY tblReviewTypes.ReviewType; "
+                    ColumnWidths ="1440;1440"
+                    AfterUpdate ="[Event Procedure]"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =1500
@@ -318,6 +320,10 @@ Private Sub cboResult_AfterUpdate()
     End If
 End Sub
 
+Private Sub cboRework_AfterUpdate()
+    Me.cboAssign = Me.cboRework.Column(1)
+End Sub
+
 Private Sub cmdSign_Click()
     Me.Visible = False
 End Sub
@@ -327,11 +333,11 @@ Private Sub Form_Load()
     Dim AssignToRows As String
     Dim AssignToPosition As String
     
-    If ItemDims.ItemType = "RPA" Then
-        ReworkRows = "SELECT ReviewType FROM revtblRpa"
-        ReworkRows = ReworkRows & " WHERE DisasterID = '" & ItemDims.DisasterID & "' And ApplicantID = '" & ItemDims.ApplicantID & "' and ReviewExitDate is not null"
+        ReworkRows = "SELECT ReviewType, CompletedUserID FROM " & ItemDims.ReviewTable
+        ReworkRows = ReworkRows & " WHERE " & ItemDims.WhereID(False) & " and ReviewExitDate is not null"
         ReworkRows = ReworkRows & " ORDER BY ReviewEntryDate DESC;"
         Me.cboRework.RowSource = ReworkRows
+        Me.cboRework.ColumnCount = 2
             
         AssignToPosition = Reviews.GetAssignToPosition(ItemDims.ItemType, ItemDims.ReviewType)
         
@@ -342,8 +348,6 @@ Private Sub Form_Load()
         Me.cboAssign.RowSource = AssignToRows
         
 
-
-    End If
     
 
 End Sub

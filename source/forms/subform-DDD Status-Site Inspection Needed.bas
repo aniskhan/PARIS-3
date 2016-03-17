@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -12,8 +14,8 @@ Begin Form
     Width =10230
     DatasheetFontHeight =11
     ItemSuffix =20
-    Right =16005
-    Bottom =8505
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xfb1f4c7212b5e440
@@ -84,6 +86,7 @@ Begin Form
             BackThemeColorIndex =1
             Begin
                 Begin TextBox
+                    EnterKeyBehavior = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =2910
@@ -121,6 +124,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    EnterKeyBehavior = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =2910
@@ -235,6 +239,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    EnterKeyBehavior = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =2910
@@ -273,6 +278,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    EnterKeyBehavior = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =2910
@@ -355,6 +361,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    EnterKeyBehavior = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =2910

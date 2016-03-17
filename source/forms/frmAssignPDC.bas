@@ -16,9 +16,9 @@ Begin Form
     GridY =24
     Width =16500
     DatasheetFontHeight =11
-    ItemSuffix =110
-    Right =16005
-    Bottom =8505
+    ItemSuffix =111
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x6fcc3bcd72a5e440
@@ -176,7 +176,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =14760
+            Height =13320
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -188,7 +188,7 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     Left =120
-                    Top =4920
+                    Top =4740
                     Width =13500
                     Height =1860
                     BackColor =15590879
@@ -196,26 +196,27 @@ Begin Form
                     Name ="Box105"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =4920
+                    LayoutCachedTop =4740
                     LayoutCachedWidth =13620
-                    LayoutCachedHeight =6780
+                    LayoutCachedHeight =6600
                     BackThemeColorIndex =-1
                 End
                 Begin Rectangle
+                    SpecialEffect =2
                     BackStyle =1
                     OverlapFlags =85
                     Left =13740
-                    Top =7680
+                    Top =7620
                     Width =2760
-                    Height =3000
+                    Height =5640
                     BackColor =14282978
                     BorderColor =10921638
                     Name ="Box94"
                     GridlineColor =10921638
                     LayoutCachedLeft =13740
-                    LayoutCachedTop =7680
+                    LayoutCachedTop =7620
                     LayoutCachedWidth =16500
-                    LayoutCachedHeight =10680
+                    LayoutCachedHeight =13260
                     BackThemeColorIndex =9
                     BackTint =20.0
                 End
@@ -223,7 +224,7 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =215
                     Left =120
-                    Top =4500
+                    Top =4320
                     Width =13500
                     Height =420
                     FontSize =16
@@ -235,9 +236,9 @@ Begin Form
                     Caption ="Assign Program Delivery Manager (PDM)"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =4500
+                    LayoutCachedTop =4320
                     LayoutCachedWidth =13620
-                    LayoutCachedHeight =4920
+                    LayoutCachedHeight =4740
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
@@ -247,7 +248,6 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     Left =13740
-                    Top =60
                     Width =2760
                     Height =7560
                     BackColor =14282978
@@ -255,9 +255,8 @@ Begin Form
                     Name ="Box84"
                     GridlineColor =10921638
                     LayoutCachedLeft =13740
-                    LayoutCachedTop =60
                     LayoutCachedWidth =16500
-                    LayoutCachedHeight =7620
+                    LayoutCachedHeight =7560
                     BackThemeColorIndex =9
                     BackTint =20.0
                 End
@@ -327,13 +326,14 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     Left =900
-                    Top =5820
+                    Top =5640
                     Width =2730
                     Height =315
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
-                    Name ="cboAssignPdm"
+                    Name ="cboAssignPdc"
                     ControlSource ="Assigned PDC"
                     RowSourceType ="Table/Query"
                     RowSource ="SELECT qryNames.UserID, qryNames.[Reverse Full Name], tblStaffRoles.DisasterID, "
@@ -346,18 +346,20 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =900
-                    LayoutCachedTop =5820
+                    LayoutCachedTop =5640
                     LayoutCachedWidth =3630
-                    LayoutCachedHeight =6135
+                    LayoutCachedHeight =5955
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     ForeThemeColorIndex =0
                     ForeTint =75.0
                     ForeShade =100.0
                     Begin
                         Begin Label
                             OverlapFlags =215
-                            TextAlign =3
+                            TextAlign =1
                             Left =900
-                            Top =5340
+                            Top =5160
                             Width =4920
                             Height =360
                             FontSize =12
@@ -368,19 +370,19 @@ Begin Form
                             EventProcPrefix ="Assigned_PDC_Label"
                             GridlineColor =10921638
                             LayoutCachedLeft =900
-                            LayoutCachedTop =5340
+                            LayoutCachedTop =5160
                             LayoutCachedWidth =5820
-                            LayoutCachedHeight =5700
+                            LayoutCachedHeight =5520
                             ForeTint =100.0
                         End
                     End
                 End
                 Begin Subform
                     OverlapFlags =85
-                    Left =60
-                    Top =10920
-                    Width =13440
-                    Height =3720
+                    Left =120
+                    Top =10680
+                    Width =13500
+                    Height =2580
                     TabIndex =2
                     BorderColor =10921638
                     Name ="subHistory"
@@ -389,42 +391,47 @@ Begin Form
                     LinkMasterFields ="DisasterID;ApplicantID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =60
-                    LayoutCachedTop =10920
-                    LayoutCachedWidth =13500
-                    LayoutCachedHeight =14640
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =10680
+                    LayoutCachedWidth =13620
+                    LayoutCachedHeight =13260
                 End
                 Begin CommandButton
                     OverlapFlags =215
                     Left =3840
-                    Top =5820
+                    Top =5640
                     Width =2160
+                    FontWeight =700
                     TabIndex =3
-                    ForeColor =4210752
-                    Name ="cmdAssignPdmComplete"
+                    ForeColor =16777215
+                    Name ="cmdAssignPdcComplete"
                     Caption ="Assign PDM Complete"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =3840
-                    LayoutCachedTop =5820
+                    LayoutCachedTop =5640
                     LayoutCachedWidth =6000
-                    LayoutCachedHeight =6180
+                    LayoutCachedHeight =6000
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
                     UseTheme =1
-                    BackColor =15123357
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
-                    HoverColor =15652797
-                    HoverThemeColorIndex =4
-                    HoverTint =40.0
-                    PressedColor =11957550
-                    PressedThemeColorIndex =4
-                    PressedShade =75.0
-                    HoverForeColor =4210752
+                    HoverColor =13431551
+                    HoverThemeColorIndex =7
+                    HoverTint =20.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =0
                     HoverForeThemeColorIndex =0
-                    HoverForeTint =75.0
-                    PressedForeColor =4210752
+                    PressedForeColor =0
                     PressedForeThemeColorIndex =0
-                    PressedForeTint =75.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -457,7 +464,7 @@ Begin Form
                     SpecialEffect =2
                     BorderWidth =2
                     Left =120
-                    Top =2220
+                    Top =2160
                     Width =13500
                     Height =2100
                     TabIndex =5
@@ -469,15 +476,15 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =2220
+                    LayoutCachedTop =2160
                     LayoutCachedWidth =13620
-                    LayoutCachedHeight =4320
+                    LayoutCachedHeight =4260
                 End
                 Begin Subform
-                    OverlapFlags =93
+                    OverlapFlags =85
                     Left =120
-                    Top =6900
-                    Width =6960
+                    Top =6720
+                    Width =6720
                     Height =3900
                     TabIndex =6
                     BorderColor =10921638
@@ -488,15 +495,15 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =120
-                    LayoutCachedTop =6900
-                    LayoutCachedWidth =7080
-                    LayoutCachedHeight =10800
+                    LayoutCachedTop =6720
+                    LayoutCachedWidth =6840
+                    LayoutCachedHeight =10620
                 End
                 Begin Subform
-                    OverlapFlags =87
-                    Left =7080
-                    Top =6900
-                    Width =6480
+                    OverlapFlags =85
+                    Left =6900
+                    Top =6720
+                    Width =6720
                     Height =3900
                     TabIndex =7
                     BorderColor =10921638
@@ -506,16 +513,33 @@ Begin Form
                     LinkMasterFields ="DisasterID;Assigned PDC"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =7080
-                    LayoutCachedTop =6900
-                    LayoutCachedWidth =13560
-                    LayoutCachedHeight =10800
+                    LayoutCachedLeft =6900
+                    LayoutCachedTop =6720
+                    LayoutCachedWidth =13620
+                    LayoutCachedHeight =10620
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =6060
+                    Top =5640
+                    Width =2520
+                    Height =360
+                    BorderColor =8355711
+                    ForeColor =5855577
+                    Name ="Label110"
+                    Caption ="Click to assign PDM"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =6060
+                    LayoutCachedTop =5640
+                    LayoutCachedWidth =8580
+                    LayoutCachedHeight =6000
+                    ForeTint =65.0
                 End
             End
         End
         Begin FormFooter
             CanGrow = NotDefault
-            Height =1380
+            Height =900
             BackColor =15921906
             Name ="FormFooter"
             AlternateBackThemeColorIndex =1
@@ -528,7 +552,7 @@ Begin Form
                     OverlapFlags =93
                     TextFontFamily =82
                     Width =16500
-                    Height =720
+                    Height =900
                     FontSize =20
                     BackColor =14282978
                     BorderColor =8355711
@@ -537,19 +561,38 @@ Begin Form
                     FontName ="Broadway"
                     GridlineColor =10921638
                     LayoutCachedWidth =16500
-                    LayoutCachedHeight =720
+                    LayoutCachedHeight =900
                     ThemeFontIndex =-1
                     BackThemeColorIndex =9
                     BackTint =20.0
                     ForeTint =100.0
                 End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =6960
+                    Top =120
+                    Width =6540
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box168"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =6960
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =13500
+                    LayoutCachedHeight =840
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =14460
-                    Top =120
-                    Width =1290
-                    Height =405
-                    ForeColor =4210752
+                    Left =14280
+                    Top =180
+                    Width =1470
+                    Height =600
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
                     Name ="cmdCloseForm"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -573,12 +616,30 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =14460
-                    LayoutCachedTop =120
+                    LayoutCachedLeft =14280
+                    LayoutCachedTop =180
                     LayoutCachedWidth =15750
-                    LayoutCachedHeight =525
-                    BackColor =15123357
+                    LayoutCachedHeight =780
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -588,7 +649,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =9540
-                    Top =60
+                    Top =180
                     Width =1260
                     Height =600
                     TabIndex =1
@@ -653,9 +714,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =9540
-                    LayoutCachedTop =60
+                    LayoutCachedTop =180
                     LayoutCachedWidth =10800
-                    LayoutCachedHeight =660
+                    LayoutCachedHeight =780
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -668,7 +729,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =12240
-                    Top =60
+                    Top =180
                     Width =1215
                     Height =600
                     TabIndex =2
@@ -733,9 +794,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =12240
-                    LayoutCachedTop =60
+                    LayoutCachedTop =180
                     LayoutCachedWidth =13455
-                    LayoutCachedHeight =660
+                    LayoutCachedHeight =780
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -748,7 +809,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =10920
-                    Top =60
+                    Top =180
                     Width =576
                     Height =576
                     TabIndex =3
@@ -830,9 +891,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =10920
-                    LayoutCachedTop =60
+                    LayoutCachedTop =180
                     LayoutCachedWidth =11496
-                    LayoutCachedHeight =636
+                    LayoutCachedHeight =756
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -844,7 +905,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =11580
-                    Top =60
+                    Top =180
                     Width =576
                     Height =576
                     TabIndex =4
@@ -924,9 +985,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =11580
-                    LayoutCachedTop =60
+                    LayoutCachedTop =180
                     LayoutCachedWidth =12156
-                    LayoutCachedHeight =636
+                    LayoutCachedHeight =756
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -934,6 +995,23 @@ Begin Form
                     WebImagePaddingRight =1
                     WebImagePaddingBottom =1
                     Overlaps =1
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =7140
+                    Top =180
+                    Width =2280
+                    Height =600
+                    BorderColor =8355711
+                    Name ="Label45"
+                    Caption ="Use these buttons to Navigate Records"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7140
+                    LayoutCachedTop =180
+                    LayoutCachedWidth =9420
+                    LayoutCachedHeight =780
+                    ForeTint =100.0
                 End
             End
         End
@@ -953,10 +1031,10 @@ Option Explicit
 Private Const FormItemType As String = "RPA" 'used in determining what type of record is handled
 
 'BUTTONS
-Private Sub cmdAssignPdmComplete_Click()
+Private Sub cmdAssignPdcComplete_Click()
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cmdAssignPdmComplete_Click"
+    PushCallStack Me.name & "." & "cmdAssignPdcComplete_Click"
 '///Error Handling
 
 '///Code
@@ -976,12 +1054,12 @@ End Sub
 
 
 'OTHER PAGE EVENTS
-Private Sub cboAssignPdm_Change()
+Private Sub cboAssignPdc_Change()
 'This ensures that the reports showing the PDC change when a new one is selected.
 
 '///Error Handling
     If gcfHandleErrors Then On Error GoTo PROC_ERR
-    PushCallStack Me.name & "." & "cboAssignPdm_Change"
+    PushCallStack Me.name & "." & "cboAssignPdc_Change"
 '///Error Handling
 
 '///Code
@@ -1087,8 +1165,8 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
     
     Select Case AreaName
         Case "Assign PDM"
-            Me.cboAssignPdm.Enabled = CanEnable
-            Me.cmdAssignPdmComplete.Enabled = CanEnable
+            Me.cboAssignPdc.Enabled = CanEnable
+            Me.cmdAssignPdcComplete.Enabled = CanEnable
 
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & AreaName
@@ -1118,7 +1196,7 @@ Private Function PreDialogCheck(ReviewType As String) As Boolean
 
 '///Code
 '    No checks on this page.
-    If Nz(Me.cboAssignPdm, "") = "" And ReviewType = "Assign PDM" Then
+    If Nz(Me.cboAssignPdc, "") = "" And ReviewType = "Assign PDM" Then
         MsgBox "Please select a PDM before trying to complete this."
         PreDialogCheck = False
     Else
@@ -1301,12 +1379,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

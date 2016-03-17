@@ -4,6 +4,7 @@ Begin Form
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
     NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
@@ -16,8 +17,8 @@ Begin Form
     Width =21615
     DatasheetFontHeight =11
     ItemSuffix =93
-    Right =16005
-    Bottom =8505
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xac74c6f13aaee440
@@ -351,6 +352,7 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -416,6 +418,7 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -486,6 +489,7 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -531,6 +535,7 @@ Begin Form
                 End
                 Begin TextBox
                     Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -1123,7 +1128,7 @@ Begin Form
                     OverlapFlags =215
                     Left =14640
                     Top =60
-                    Width =1500
+                    Width =1200
                     Height =540
                     ForeColor =4210752
                     Name ="Command42"
@@ -1148,7 +1153,7 @@ Begin Form
 
                     LayoutCachedLeft =14640
                     LayoutCachedTop =60
-                    LayoutCachedWidth =16140
+                    LayoutCachedWidth =15840
                     LayoutCachedHeight =600
                     BackColor =15123357
                     BorderColor =15123357
@@ -2045,12 +2050,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

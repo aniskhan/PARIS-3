@@ -3,6 +3,7 @@ VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     DataEntry = NotDefault
     AllowDesignChanges = NotDefault
@@ -12,16 +13,16 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =16560
+    Width =16620
     DatasheetFontHeight =11
-    ItemSuffix =43
-    Right =16005
-    Bottom =8505
+    ItemSuffix =47
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x5748ab8d10a8e440
+        0xa03ea0afb4b9e440
     End
-    RecordSource ="SELECT tblSubrecipientBriefing.* FROM tblSubrecipientBriefing; "
+    RecordSource ="fqrySubrecipientBriefingInfo"
     Caption ="Subrecipient Briefing"
     BeforeInsert ="[Event Procedure]"
     BeforeUpdate ="[Event Procedure]"
@@ -202,29 +203,30 @@ Begin Form
                     BackStyle =1
                     BorderWidth =2
                     OverlapFlags =93
-                    Left =120
-                    Top =3000
+                    Left =60
+                    Top =3060
                     Width =13560
-                    Height =7740
+                    Height =7620
                     BackColor =15590879
                     BorderColor =10921638
                     Name ="Box32"
                     GridlineColor =10921638
-                    LayoutCachedLeft =120
-                    LayoutCachedTop =3000
-                    LayoutCachedWidth =13680
-                    LayoutCachedHeight =10740
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =3060
+                    LayoutCachedWidth =13620
+                    LayoutCachedHeight =10680
                     BackThemeColorIndex =-1
                 End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =600
-                    Top =3900
+                    Left =540
+                    Top =3720
                     Width =1620
-                    Height =360
+                    Height =480
                     ColumnWidth =1620
                     TabIndex =1
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbBriefingDate"
@@ -232,29 +234,31 @@ Begin Form
                     Format ="Short Date"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =600
-                    LayoutCachedTop =3900
-                    LayoutCachedWidth =2220
-                    LayoutCachedHeight =4260
+                    LayoutCachedLeft =540
+                    LayoutCachedTop =3720
+                    LayoutCachedWidth =2160
+                    LayoutCachedHeight =4200
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             TextAlign =1
-                            Left =600
-                            Top =3540
+                            Left =540
+                            Top =3360
                             Width =1620
                             Height =330
                             FontSize =12
                             FontWeight =700
                             BorderColor =8355711
                             Name ="Briefing Date_Label"
-                            Caption ="Briefing Date"
+                            Caption ="Briefing Date:"
                             EventProcPrefix ="Briefing_Date_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =600
-                            LayoutCachedTop =3540
-                            LayoutCachedWidth =2220
-                            LayoutCachedHeight =3870
+                            LayoutCachedLeft =540
+                            LayoutCachedTop =3360
+                            LayoutCachedWidth =2160
+                            LayoutCachedHeight =3690
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -263,41 +267,44 @@ Begin Form
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =2490
+                    Left =2430
                     Top =4380
-                    Width =8910
+                    Width =10590
                     Height =480
                     ColumnWidth =3000
                     TabIndex =3
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbBriefingLocation"
                     ControlSource ="Briefing Location"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2490
+                    LayoutCachedLeft =2430
                     LayoutCachedTop =4380
-                    LayoutCachedWidth =11400
+                    LayoutCachedWidth =13020
                     LayoutCachedHeight =4860
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             TextAlign =1
-                            Left =600
-                            Top =4440
-                            Width =1800
-                            Height =390
+                            Left =540
+                            Top =4380
+                            Width =1860
+                            Height =480
                             FontSize =12
                             FontWeight =700
                             BorderColor =8355711
                             Name ="Briefing Location_Label"
-                            Caption ="Briefing Location"
+                            Caption ="Briefing Location:"
                             EventProcPrefix ="Briefing_Location_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =600
-                            LayoutCachedTop =4440
+                            LayoutCachedLeft =540
+                            LayoutCachedTop =4380
                             LayoutCachedWidth =2400
-                            LayoutCachedHeight =4830
+                            LayoutCachedHeight =4860
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -307,11 +314,12 @@ Begin Form
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =2820
-                    Top =3900
+                    Top =3720
                     Width =1620
-                    Height =360
+                    Height =480
                     ColumnWidth =1620
                     TabIndex =2
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbBriefingTime"
@@ -321,28 +329,30 @@ Begin Form
                     ShowDatePicker =0
 
                     LayoutCachedLeft =2820
-                    LayoutCachedTop =3900
+                    LayoutCachedTop =3720
                     LayoutCachedWidth =4440
-                    LayoutCachedHeight =4260
+                    LayoutCachedHeight =4200
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             TextAlign =1
                             Left =2820
-                            Top =3540
+                            Top =3360
                             Width =1620
                             Height =330
                             FontSize =12
                             FontWeight =700
                             BorderColor =8355711
                             Name ="Briefing Time_Label"
-                            Caption ="Briefing Time"
+                            Caption ="Briefing Time:"
                             EventProcPrefix ="Briefing_Time_Label"
                             GridlineColor =10921638
                             LayoutCachedLeft =2820
-                            LayoutCachedTop =3540
+                            LayoutCachedTop =3360
                             LayoutCachedWidth =4440
-                            LayoutCachedHeight =3870
+                            LayoutCachedHeight =3690
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -351,27 +361,30 @@ Begin Form
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =600
+                    Left =540
                     Top =5400
-                    Width =10800
+                    Width =12480
                     Height =840
                     ColumnWidth =3000
                     TabIndex =4
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbFEMAParticipants"
                     ControlSource ="FEMA Participants"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =600
+                    LayoutCachedLeft =540
                     LayoutCachedTop =5400
-                    LayoutCachedWidth =11400
+                    LayoutCachedWidth =13020
                     LayoutCachedHeight =6240
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =223
                             TextAlign =1
-                            Left =600
+                            Left =540
                             Top =5040
                             Width =2040
                             Height =360
@@ -379,12 +392,12 @@ Begin Form
                             FontWeight =700
                             BorderColor =8355711
                             Name ="FEMA Participants_Label"
-                            Caption ="FEMA Participants"
+                            Caption ="FEMA Participants:"
                             EventProcPrefix ="FEMA_Participants_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =600
+                            LayoutCachedLeft =540
                             LayoutCachedTop =5040
-                            LayoutCachedWidth =2640
+                            LayoutCachedWidth =2580
                             LayoutCachedHeight =5400
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
@@ -397,11 +410,12 @@ Begin Form
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =540
-                    Top =6720
-                    Width =10800
+                    Top =6780
+                    Width =12480
                     Height =3240
                     ColumnWidth =3000
                     TabIndex =5
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbBriefingNotes"
@@ -409,28 +423,30 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =540
-                    LayoutCachedTop =6720
-                    LayoutCachedWidth =11340
-                    LayoutCachedHeight =9960
+                    LayoutCachedTop =6780
+                    LayoutCachedWidth =13020
+                    LayoutCachedHeight =10020
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =223
                             TextAlign =1
                             Left =540
                             Top =6420
-                            Width =2100
-                            Height =330
+                            Width =1740
+                            Height =360
                             FontSize =12
                             FontWeight =700
                             BorderColor =8355711
                             Name ="Briefing Notes_Label"
-                            Caption ="Briefing Notes"
+                            Caption ="Briefing Notes:"
                             EventProcPrefix ="Briefing_Notes_Label"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
                             LayoutCachedTop =6420
-                            LayoutCachedWidth =2640
-                            LayoutCachedHeight =6750
+                            LayoutCachedWidth =2280
+                            LayoutCachedHeight =6780
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -546,28 +562,28 @@ Begin Form
                 End
                 Begin Label
                     OverlapFlags =215
-                    Left =4620
-                    Top =3960
+                    Left =4560
+                    Top =3840
                     Width =1620
                     Height =300
-                    FontSize =9
+                    FontSize =12
                     BorderColor =8355711
-                    ForeColor =10921638
+                    ForeColor =8355711
                     Name ="Label150"
                     Caption ="Ex. 12:00 PM"
                     GridlineColor =10921638
-                    LayoutCachedLeft =4620
-                    LayoutCachedTop =3960
-                    LayoutCachedWidth =6240
-                    LayoutCachedHeight =4260
+                    LayoutCachedLeft =4560
+                    LayoutCachedTop =3840
+                    LayoutCachedWidth =6180
+                    LayoutCachedHeight =4140
                     ForeThemeColorIndex =1
                     ForeTint =100.0
-                    ForeShade =65.0
+                    ForeShade =50.0
                 End
             End
         End
         Begin FormFooter
-            Height =840
+            Height =900
             BackColor =15921906
             Name ="FormFooter"
             AlternateBackThemeColorIndex =1
@@ -579,8 +595,9 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =93
                     TextFontFamily =82
+                    Left =60
                     Width =16500
-                    Height =780
+                    Height =840
                     FontSize =20
                     BackColor =14282978
                     BorderColor =8355711
@@ -588,20 +605,39 @@ Begin Form
                     Caption ="Operational Planning"
                     FontName ="Broadway"
                     GridlineColor =10921638
-                    LayoutCachedWidth =16500
-                    LayoutCachedHeight =780
+                    LayoutCachedLeft =60
+                    LayoutCachedWidth =16560
+                    LayoutCachedHeight =840
                     ThemeFontIndex =-1
                     BackThemeColorIndex =9
                     BackTint =20.0
                     ForeTint =100.0
                 End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =5400
+                    Top =60
+                    Width =8220
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box46"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5400
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =13620
+                    LayoutCachedHeight =780
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
                 Begin CommandButton
                     OverlapFlags =215
                     Left =14460
                     Top =120
-                    Width =1290
-                    Height =480
-                    ForeColor =4210752
+                    Height =600
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
                     Name ="cmdCloseForm"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -627,8 +663,52 @@ Begin Form
 
                     LayoutCachedLeft =14460
                     LayoutCachedTop =120
-                    LayoutCachedWidth =15750
-                    LayoutCachedHeight =600
+                    LayoutCachedWidth =15900
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
+                    BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =12060
+                    Top =120
+                    Height =600
+                    TabIndex =5
+                    ForeColor =10040879
+                    Name ="cmdAddBriefing"
+                    Caption ="Add Record"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =12060
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =13500
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =-1
+                    ForeTint =100.0
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -637,10 +717,26 @@ Begin Form
                     WebImagePaddingBottom =1
                     Overlaps =1
                 End
-                Begin CommandButton
-                    Visible = NotDefault
+                Begin Label
                     OverlapFlags =215
-                    Left =7320
+                    TextAlign =2
+                    Left =5640
+                    Top =120
+                    Width =2280
+                    Height =600
+                    BorderColor =8355711
+                    Name ="Label45"
+                    Caption ="Use these buttons to Navigate Records"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5640
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =7920
+                    LayoutCachedHeight =720
+                    ForeTint =100.0
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7980
                     Top =120
                     Width =1260
                     Height =600
@@ -705,9 +801,9 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =7320
+                    LayoutCachedLeft =7980
                     LayoutCachedTop =120
-                    LayoutCachedWidth =8580
+                    LayoutCachedWidth =9240
                     LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     BackColor =15123357
@@ -719,9 +815,8 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     OverlapFlags =215
-                    Left =9960
+                    Left =10620
                     Top =120
                     Width =1215
                     Height =600
@@ -786,9 +881,9 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =9960
+                    LayoutCachedLeft =10620
                     LayoutCachedTop =120
-                    LayoutCachedWidth =11175
+                    LayoutCachedWidth =11835
                     LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     BackColor =15123357
@@ -800,9 +895,8 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     OverlapFlags =215
-                    Left =8640
+                    Left =9300
                     Top =120
                     Width =576
                     Height =576
@@ -884,9 +978,9 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =8640
+                    LayoutCachedLeft =9300
                     LayoutCachedTop =120
-                    LayoutCachedWidth =9216
+                    LayoutCachedWidth =9876
                     LayoutCachedHeight =696
                     BackColor =15123357
                     BorderColor =15123357
@@ -897,9 +991,8 @@ Begin Form
                     Overlaps =1
                 End
                 Begin CommandButton
-                    Visible = NotDefault
                     OverlapFlags =215
-                    Left =9300
+                    Left =9960
                     Top =120
                     Width =576
                     Height =576
@@ -979,37 +1072,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =9300
+                    LayoutCachedLeft =9960
                     LayoutCachedTop =120
-                    LayoutCachedWidth =9876
+                    LayoutCachedWidth =10536
                     LayoutCachedHeight =696
-                    BackColor =15123357
-                    BorderColor =15123357
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =11700
-                    Top =120
-                    Width =1290
-                    Height =480
-                    TabIndex =5
-                    ForeColor =10040879
-                    Name ="cmdAddBriefing"
-                    Caption ="Add Record"
-                    OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =11700
-                    LayoutCachedTop =120
-                    LayoutCachedWidth =12990
-                    LayoutCachedHeight =600
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2

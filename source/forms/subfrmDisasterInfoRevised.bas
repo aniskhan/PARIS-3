@@ -18,13 +18,13 @@ Begin Form
     Width =13380
     DatasheetFontHeight =11
     ItemSuffix =116
-    Right =11745
-    Bottom =7920
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xfeb873ddd7a6e440
+        0xadd2b5afb4b9e440
     End
-    RecordSource ="SELECT tblDisaster.* FROM tblDisaster; "
+    RecordSource ="fqryDisasterInfo"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
         0x6801000068010000680100006801000000000000201c0000e010000001000000 ,

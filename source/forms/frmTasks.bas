@@ -4,7 +4,9 @@ Begin Form
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
     NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -15,8 +17,8 @@ Begin Form
     Width =14955
     DatasheetFontHeight =11
     ItemSuffix =54
-    Right =16095
-    Bottom =7920
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x2f541299cea3e440

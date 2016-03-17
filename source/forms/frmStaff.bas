@@ -3,6 +3,7 @@ VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
     NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
@@ -13,13 +14,13 @@ Begin Form
     Width =10980
     DatasheetFontHeight =11
     ItemSuffix =97
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x11016012fda3e440
+        0x00b6a9afb4b9e440
     End
-    RecordSource ="tblStaff"
+    RecordSource ="fqryStaffInfo"
     Caption ="Staff Assignments"
     OnCurrent ="[Event Procedure]"
     DatasheetFontName ="Calibri"

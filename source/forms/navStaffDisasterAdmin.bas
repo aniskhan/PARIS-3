@@ -14,14 +14,14 @@ Begin Form
     GridY =24
     Width =15735
     DatasheetFontHeight =11
-    ItemSuffix =6
-    Right =16005
-    Bottom =8505
+    ItemSuffix =7
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xf57065f214b6e440
+        0x75f20fb0b4b9e440
     End
-    RecordSource ="SELECT tblDisaster.DisasterID FROM tblDisaster; "
+    RecordSource ="fqryDeterminationMemo"
     Caption ="Disaster / Staff Administration"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -370,6 +370,47 @@ Begin Form
                     WebImagePaddingBottom =1
                     Overlaps =1
                 End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3900
+                    Top =1500
+                    Width =2805
+                    Height =1200
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =4
+                    ForeColor =16777215
+                    Name ="cmdRPAImport"
+                    Caption ="Daily RPA Import"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =3900
+                    LayoutCachedTop =1500
+                    LayoutCachedWidth =6705
+                    LayoutCachedHeight =2700
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    Gradient =0
+                    BackColor =12874308
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BorderColor =15123357
+                    HoverColor =15788753
+                    HoverThemeColorIndex =-1
+                    HoverTint =100.0
+                    PressedThemeColorIndex =-1
+                    PressedShade =100.0
+                    HoverForeColor =0
+                    HoverForeTint =100.0
+                    PressedForeColor =0
+                    PressedForeTint =100.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
             End
         End
         Begin FormFooter
@@ -444,10 +485,16 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
 Option Explicit
-Private Const FormItemType As String = "Admin/DIUL" 'used in determining what type of record is handled
+Private Const FormItemType As String = "Admin/DIUS" 'used in determining what type of record is handled
 
 Private Sub cmdOpenDisasterSetup_Click()
     DoCmd.OpenForm "frmDisasterInformation", acNormal
+End Sub
+
+
+
+Private Sub cmdRPAImport_Click()
+    ImportCSV.ImportFiles
 End Sub
 
 Private Sub Form_Load()

@@ -14,11 +14,9 @@ Begin Form
     Width =17580
     DatasheetFontHeight =11
     ItemSuffix =24
-    Right =11055
-    Bottom =12255
+    Right =20235
+    Bottom =12645
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999' and [ApplicantID]='810-19JXO-00' and [ProjectID]=11 and [Sit"
-        "eID]=3"
     RecSrcDt = Begin
         0x10d35cf233b5e440
     End
@@ -139,7 +137,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =11760
+            Height =12300
             BackColor =15788753
             Name ="Detail"
             AlternateBackColor =13431551
@@ -186,6 +184,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =15570
@@ -207,6 +206,7 @@ Begin Form
                     LayoutCachedHeight =2160
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =85
                             Left =14940
                             Top =1560
@@ -226,6 +226,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     DecimalPlaces =0
                     OverlapFlags =85
                     TextAlign =2
@@ -250,6 +251,7 @@ Begin Form
                     LayoutCachedHeight =2595
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =85
                             Left =14220
                             Top =2280
@@ -269,6 +271,7 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     OverlapFlags =85
                     TextAlign =2
                     IMESentenceMode =3
@@ -292,6 +295,7 @@ Begin Form
                     LayoutCachedHeight =3030
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =85
                             Left =15060
                             Top =2700
@@ -311,11 +315,12 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =85
                     IMESentenceMode =3
-                    Left =360
+                    Left =2700
                     Top =8520
                     Width =12660
                     Height =540
@@ -327,16 +332,17 @@ Begin Form
                     EventProcPrefix ="Inpection_Notes"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =360
+                    LayoutCachedLeft =2700
                     LayoutCachedTop =8520
-                    LayoutCachedWidth =13020
+                    LayoutCachedWidth =15360
                     LayoutCachedHeight =9060
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =85
-                            Left =360
+                            Left =2700
                             Top =8160
                             Width =1860
                             Height =330
@@ -345,9 +351,9 @@ Begin Form
                             Caption ="Inspection Notes"
                             EventProcPrefix ="Inpection_Notes_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =360
+                            LayoutCachedLeft =2700
                             LayoutCachedTop =8160
-                            LayoutCachedWidth =2220
+                            LayoutCachedWidth =4560
                             LayoutCachedHeight =8490
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
@@ -355,7 +361,7 @@ Begin Form
                     End
                 End
                 Begin CheckBox
-                    OverlapFlags =93
+                    OverlapFlags =85
                     Left =420
                     Top =9240
                     Width =320
@@ -373,7 +379,7 @@ Begin Form
                     LayoutCachedHeight =9480
                     Begin
                         Begin Label
-                            OverlapFlags =255
+                            OverlapFlags =247
                             Left =660
                             Top =9240
                             Width =2685
@@ -393,11 +399,12 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =360
+                    Left =2700
                     Top =7560
                     Width =12660
                     Height =540
@@ -408,16 +415,17 @@ Begin Form
                     EventProcPrefix ="Eligibility_Concerns"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =360
+                    LayoutCachedLeft =2700
                     LayoutCachedTop =7560
-                    LayoutCachedWidth =13020
+                    LayoutCachedWidth =15360
                     LayoutCachedHeight =8100
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =93
-                            Left =360
+                            Left =2700
                             Top =7260
                             Width =1845
                             Height =315
@@ -426,9 +434,9 @@ Begin Form
                             Caption ="Eligibility Concerns"
                             EventProcPrefix ="Eligibility_Concerns_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =360
+                            LayoutCachedLeft =2700
                             LayoutCachedTop =7260
-                            LayoutCachedWidth =2205
+                            LayoutCachedWidth =4545
                             LayoutCachedHeight =7575
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
@@ -488,6 +496,7 @@ Begin Form
                     ForeTint =100.0
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =15780
@@ -507,6 +516,7 @@ Begin Form
                     LayoutCachedHeight =1215
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =85
                             Left =14640
                             Top =900
@@ -525,9 +535,10 @@ Begin Form
                     End
                 End
                 Begin TextBox
+                    Visible = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =420
+                    Left =2760
                     Top =6180
                     Width =11460
                     Height =960
@@ -538,15 +549,16 @@ Begin Form
                     ControlSource ="Draft DDD"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =420
+                    LayoutCachedLeft =2760
                     LayoutCachedTop =6180
-                    LayoutCachedWidth =11880
+                    LayoutCachedWidth =14220
                     LayoutCachedHeight =7140
                     Begin
                         Begin Label
+                            Visible = NotDefault
                             OverlapFlags =93
                             TextAlign =1
-                            Left =420
+                            Left =2760
                             Top =5880
                             Width =4575
                             Height =315
@@ -555,9 +567,9 @@ Begin Form
                             Name ="Label18"
                             Caption ="Draft Damage Dimensions and Description (DDD)"
                             GridlineColor =10921638
-                            LayoutCachedLeft =420
+                            LayoutCachedLeft =2760
                             LayoutCachedTop =5880
-                            LayoutCachedWidth =4995
+                            LayoutCachedWidth =7335
                             LayoutCachedHeight =6195
                             ForeTint =100.0
                         End
@@ -582,8 +594,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =14100
-                    Top =6120
+                    Left =480
+                    Top =6300
                     Width =2160
                     Height =720
                     TabIndex =9
@@ -593,10 +605,10 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =14100
-                    LayoutCachedTop =6120
-                    LayoutCachedWidth =16260
-                    LayoutCachedHeight =6840
+                    LayoutCachedLeft =480
+                    LayoutCachedTop =6300
+                    LayoutCachedWidth =2640
+                    LayoutCachedHeight =7020
                     BackColor =15123357
                     BorderColor =15123357
                     HoverColor =15652797
@@ -610,8 +622,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =14100
-                    Top =6960
+                    Left =480
+                    Top =7140
                     Width =2160
                     Height =720
                     TabIndex =10
@@ -621,10 +633,10 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =14100
-                    LayoutCachedTop =6960
-                    LayoutCachedWidth =16260
-                    LayoutCachedHeight =7680
+                    LayoutCachedLeft =480
+                    LayoutCachedTop =7140
+                    LayoutCachedWidth =2640
+                    LayoutCachedHeight =7860
                     BackColor =15123357
                     BorderColor =15123357
                     HoverColor =15652797
@@ -637,8 +649,8 @@ Begin Form
                     WebImagePaddingBottom =1
                 End
                 Begin Subform
-                    OverlapFlags =247
-                    Top =9180
+                    OverlapFlags =85
+                    Top =9780
                     Width =13140
                     Height =2520
                     TabIndex =11
@@ -649,9 +661,9 @@ Begin Form
                     LinkMasterFields ="DisasterID;ProjectID;SiteID"
                     GridlineColor =10921638
 
-                    LayoutCachedTop =9180
+                    LayoutCachedTop =9780
                     LayoutCachedWidth =13140
-                    LayoutCachedHeight =11700
+                    LayoutCachedHeight =12300
                 End
             End
         End
@@ -1048,12 +1060,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

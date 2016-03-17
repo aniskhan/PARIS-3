@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -12,13 +14,13 @@ Begin Form
     Width =19080
     DatasheetFontHeight =11
     ItemSuffix =15
-    Right =18090
-    Bottom =12510
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x66d6ef60f4b0e440
+        0x1d9920b0b4b9e440
     End
-    RecordSource ="SELECT tblSites.* FROM tblSites; "
+    RecordSource ="fqrySiteInfo"
     Caption ="subformSites"
     DatasheetFontName ="Calibri"
     FilterOnLoad =0

@@ -18,20 +18,13 @@ Begin Form
     Width =13380
     DatasheetFontHeight =11
     ItemSuffix =16
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
-    RecordSource ="SELECT tblProjects.ApplicantID, tblProjects.ProjectID, tblProjects.[Application "
-        "Title], tblProjects.[Lane Recommendation], tblProjects.[Project Category], tblPr"
-        "ojects.[Date Assigned to Lane], tblProjects.[EMMIE Update Application  Number], "
-        "tblProjects.[Lane Assigned], tblProjects.Submitted, tblProjects.SubmitDate, tblP"
-        "rojects.[PW Number], tblProjects.DisasterID, qdLaneAssignedDate.[Lane Assigned D"
-        "ate], qdProjectRef.[Full Reference] FROM (tblProjects LEFT JOIN qdLaneAssignedDa"
-        "te ON (tblProjects.ProjectID = qdLaneAssignedDate.ProjectID) AND (tblProjects.Ap"
-        "plicantID = qdLaneAssignedDate.ApplicantID) AND (tblProjects.DisasterID = qdLane"
-        "AssignedDate.DisasterID)) INNER JOIN qdProjectRef ON (tblProjects.ProjectID = qd"
-        "ProjectRef.ProjectID) AND (tblProjects.ApplicantID = qdProjectRef.ApplicantID) A"
-        "ND (tblProjects.DisasterID = qdProjectRef.DisasterID); "
+    RecSrcDt = Begin
+        0xcef425aeb4b9e440
+    End
+    RecordSource ="fqryBannerProjects"
     Caption ="tblProjects subform"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -148,9 +141,9 @@ Begin Form
                     OverlapFlags =85
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =2040
+                    Left =2160
                     Top =600
-                    Width =8040
+                    Width =7920
                     Height =360
                     FontSize =14
                     FontWeight =700
@@ -163,7 +156,7 @@ Begin Form
                     EventProcPrefix ="Application_Title"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2040
+                    LayoutCachedLeft =2160
                     LayoutCachedTop =600
                     LayoutCachedWidth =10080
                     LayoutCachedHeight =960
@@ -173,6 +166,7 @@ Begin Form
                     Begin
                         Begin Label
                             OverlapFlags =85
+                            Left =120
                             Top =600
                             Width =1995
                             Height =330
@@ -183,8 +177,9 @@ Begin Form
                             Caption ="Application Title:"
                             EventProcPrefix ="Application_Title_Label"
                             GridlineColor =10921638
+                            LayoutCachedLeft =120
                             LayoutCachedTop =600
-                            LayoutCachedWidth =1995
+                            LayoutCachedWidth =2115
                             LayoutCachedHeight =930
                             ForeTint =100.0
                         End
@@ -197,7 +192,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =1800
+                    Left =1920
                     Top =1020
                     Width =1560
                     Height =360
@@ -210,14 +205,15 @@ Begin Form
                     StatusBarText ="LOP"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =1800
+                    LayoutCachedLeft =1920
                     LayoutCachedTop =1020
-                    LayoutCachedWidth =3360
+                    LayoutCachedWidth =3480
                     LayoutCachedHeight =1380
                     BackThemeColorIndex =-1
                     Begin
                         Begin Label
                             OverlapFlags =85
+                            Left =120
                             Top =1020
                             Width =1755
                             Height =360
@@ -227,8 +223,9 @@ Begin Form
                             Name ="Lane_Label"
                             Caption ="Lane Assigned:"
                             GridlineColor =10921638
+                            LayoutCachedLeft =120
                             LayoutCachedTop =1020
-                            LayoutCachedWidth =1755
+                            LayoutCachedWidth =1875
                             LayoutCachedHeight =1380
                             ForeTint =100.0
                         End
@@ -383,7 +380,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =3960
+                    Left =3900
                     Top =60
                     Width =1590
                     Height =330
@@ -397,16 +394,16 @@ Begin Form
                     ControlSource ="Full Reference"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =3960
+                    LayoutCachedLeft =3900
                     LayoutCachedTop =60
-                    LayoutCachedWidth =5550
+                    LayoutCachedWidth =5490
                     LayoutCachedHeight =390
                     BackShade =95.0
                     Begin
                         Begin Label
                             FontUnderline = NotDefault
                             OverlapFlags =93
-                            Left =180
+                            Left =120
                             Top =60
                             Width =3780
                             Height =330
@@ -417,9 +414,9 @@ Begin Form
                             Name ="ProjectID_Label"
                             Caption ="Project Reference Number:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =180
+                            LayoutCachedLeft =120
                             LayoutCachedTop =60
-                            LayoutCachedWidth =3960
+                            LayoutCachedWidth =3900
                             LayoutCachedHeight =390
                             ForeThemeColorIndex =4
                             ForeTint =100.0

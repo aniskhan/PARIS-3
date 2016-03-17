@@ -103,7 +103,6 @@ CREATE TABLE [tblProjects] (
   [Recipient POC] VARCHAR (255),
   [Site Inspection Location] LONGTEXT ,
   [Scheduled Date of Site Inspection] DATETIME ,
-  [Scheduled Time of Site Inspection] DATETIME ,
   [Assigned EHP Specialists] VARCHAR (255),
   [EHP Site Inspection Report Required] BIT ,
   [Mitgation Specialists requested] BIT ,
@@ -117,5 +116,6 @@ CREATE TABLE [tblProjects] (
   [Subrecipient and Recipient Concur] VARCHAR (255),
   [Scope of Work Developed by] VARCHAR (255),
   [Cost Estimate Developed by] VARCHAR (255),
+  [Scheduled Time of Site Inspection] DATETIME ,
    CONSTRAINT [PrimaryKey] PRIMARY KEY ([DisasterID], [ApplicantID], [ProjectID])
 )

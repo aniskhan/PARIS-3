@@ -18,13 +18,13 @@ Begin Form
     Width =13740
     DatasheetFontHeight =11
     ItemSuffix =120
-    Right =11745
-    Bottom =7920
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xc9910992b0b2e440
+        0x84c4b2b0b4b9e440
     End
-    RecordSource ="SELECT tblDisaster.* FROM tblDisaster; "
+    RecordSource ="fqryDisasterInfo"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
         0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
@@ -175,6 +175,7 @@ Begin Form
                     FontItalic = NotDefault
                     FontUnderline = NotDefault
                     OverlapFlags =93
+                    Left =120
                     Width =4200
                     Height =420
                     FontSize =16
@@ -185,7 +186,8 @@ Begin Form
                     Name ="Label104"
                     Caption ="Disaster Reference Information:"
                     GridlineColor =10921638
-                    LayoutCachedWidth =4200
+                    LayoutCachedLeft =120
+                    LayoutCachedWidth =4320
                     LayoutCachedHeight =420
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
@@ -228,7 +230,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =4200
+                    Left =4320
                     Width =2580
                     Height =360
                     ColumnOrder =1
@@ -242,8 +244,8 @@ Begin Form
                     BottomPadding =150
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =4200
-                    LayoutCachedWidth =6780
+                    LayoutCachedLeft =4320
+                    LayoutCachedWidth =6900
                     LayoutCachedHeight =360
                     BorderThemeColorIndex =0
                     BorderTint =50.0

@@ -19,6 +19,10 @@ Begin OutputColumns
     Expression ="\"\""
     Alias ="DocID"
     Expression ="\"\""
+    Alias ="RfiID"
+    Expression ="\"\""
+    Alias ="DmID"
+    Expression ="\"\""
     Expression ="tblSubRecipient.[Subrecipient Name]"
     Alias ="Application Title"
     Expression ="\"\""
@@ -29,11 +33,11 @@ End
 Begin Joins
     LeftTable ="revtblRpa"
     RightTable ="tblSubRecipient"
-    Expression ="revtblRpa.ApplicantID = tblSubRecipient.ApplicantID"
+    Expression ="revtblRpa.DisasterID = tblSubRecipient.DisasterID"
     Flag =1
     LeftTable ="revtblRpa"
     RightTable ="tblSubRecipient"
-    Expression ="revtblRpa.DisasterID = tblSubRecipient.DisasterID"
+    Expression ="revtblRpa.ApplicantID = tblSubRecipient.ApplicantID"
     Flag =1
     LeftTable ="revtblRpa"
     RightTable ="tblReviewTypes"
@@ -98,17 +102,25 @@ Begin
         dbText "Name" ="Application Title"
         dbLong "AggregateType" ="-1"
     End
+    Begin
+        dbText "Name" ="DmID"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="RfiID"
+        dbLong "AggregateType" ="-1"
+    End
 End
 Begin
     State =0
     Left =0
     Top =0
-    Right =1218
-    Bottom =896
+    Right =985
+    Bottom =860
     Left =-1
     Top =-1
-    Right =1202
-    Bottom =419
+    Right =969
+    Bottom =402
     Left =0
     Top =0
     ColumnsShown =539

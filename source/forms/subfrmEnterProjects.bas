@@ -6,21 +6,22 @@ Begin Form
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
+    ScrollBars =0
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =13500
+    Width =13740
     DatasheetFontHeight =11
-    ItemSuffix =31
-    Right =16005
-    Bottom =8505
+    ItemSuffix =34
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     AfterInsert ="[Event Procedure]"
     RecSrcDt = Begin
-        0x908f8d41eca7e440
+        0xa7f228b0b4b9e440
     End
-    RecordSource ="tblProjects"
+    RecordSource ="fqryProjectInfo"
     BeforeUpdate ="[Event Procedure]"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -141,7 +142,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin Section
-            Height =4680
+            Height =6960
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -151,101 +152,119 @@ Begin Form
                 Begin Rectangle
                     BackStyle =1
                     OverlapFlags =93
-                    Top =360
-                    Width =13500
-                    Height =4320
+                    Width =13740
+                    Height =6960
                     BackColor =15590879
                     BorderColor =10921638
                     Name ="Box23"
                     GridlineColor =10921638
-                    LayoutCachedTop =360
-                    LayoutCachedWidth =13500
-                    LayoutCachedHeight =4680
+                    LayoutCachedWidth =13740
+                    LayoutCachedHeight =6960
                     BackThemeColorIndex =-1
+                End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =5040
+                    Top =4200
+                    Width =7740
+                    Height =1440
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box31"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5040
+                    LayoutCachedTop =4200
+                    LayoutCachedWidth =12780
+                    LayoutCachedHeight =5640
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                 End
                 Begin TextBox
                     OverlapFlags =215
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =2130
-                    Top =2220
+                    Left =2490
+                    Top =2580
                     Width =10470
                     Height =1320
                     ColumnWidth =2685
                     ColumnOrder =5
                     FontSize =12
                     TabIndex =5
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text19"
                     ControlSource ="Formulation Notes"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2130
-                    LayoutCachedTop =2220
-                    LayoutCachedWidth =12600
-                    LayoutCachedHeight =3540
+                    LayoutCachedLeft =2490
+                    LayoutCachedTop =2580
+                    LayoutCachedWidth =12960
+                    LayoutCachedHeight =3900
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
-                            OverlapFlags =215
-                            Left =60
-                            Top =2220
-                            Width =1920
-                            Height =330
-                            FontSize =12
+                            OverlapFlags =223
+                            Left =120
+                            Top =2580
+                            Width =2400
+                            Height =360
+                            FontSize =14
                             FontWeight =700
                             BorderColor =8355711
-                            ForeColor =12874308
+                            ForeColor =9917743
                             Name ="Label20"
-                            Caption ="Formulation Notes"
+                            Caption ="Formulation Notes:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =60
-                            LayoutCachedTop =2220
-                            LayoutCachedWidth =1980
-                            LayoutCachedHeight =2550
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =2580
+                            LayoutCachedWidth =2520
+                            LayoutCachedHeight =2940
                             ForeThemeColorIndex =8
                             ForeTint =100.0
+                            ForeShade =75.0
                         End
                     End
                 End
-                Begin Label
-                    BackStyle =1
-                    OverlapFlags =215
-                    Width =13500
-                    Height =360
-                    FontSize =14
-                    FontWeight =700
-                    BackColor =8210719
-                    BorderColor =8355711
-                    ForeColor =16777215
-                    Name ="Label81"
-                    Caption ="Enter Projects (Projected Project Worksheets)"
-                    GridlineColor =10921638
-                    LayoutCachedWidth =13500
-                    LayoutCachedHeight =360
-                    BackThemeColorIndex =-1
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
-                End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =11400
-                    Top =3780
+                    Left =11340
+                    Top =4800
                     Width =1230
-                    Height =600
+                    Height =660
+                    FontSize =13
+                    FontWeight =700
                     TabIndex =11
-                    ForeColor =4210752
                     Name ="cmdAddRecord"
                     Caption ="Add Record"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =11400
-                    LayoutCachedTop =3780
-                    LayoutCachedWidth =12630
-                    LayoutCachedHeight =4380
-                    BackColor =15123357
+                    LayoutCachedLeft =11340
+                    LayoutCachedTop =4800
+                    LayoutCachedWidth =12570
+                    LayoutCachedHeight =5460
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =14282978
+                    BackThemeColorIndex =9
+                    BackTint =20.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -255,7 +274,7 @@ Begin Form
                 Begin TextBox
                     Visible = NotDefault
                     Enabled = NotDefault
-                    OverlapFlags =223
+                    OverlapFlags =215
                     IMESentenceMode =3
                     Left =7500
                     Top =480
@@ -274,7 +293,7 @@ Begin Form
                     LayoutCachedHeight =795
                     Begin
                         Begin Label
-                            OverlapFlags =215
+                            OverlapFlags =223
                             Left =6420
                             Top =480
                             Width =1020
@@ -295,7 +314,7 @@ Begin Form
                 Begin TextBox
                     Visible = NotDefault
                     Enabled = NotDefault
-                    OverlapFlags =223
+                    OverlapFlags =215
                     IMESentenceMode =3
                     Left =11160
                     Top =540
@@ -315,7 +334,7 @@ Begin Form
                     LayoutCachedHeight =855
                     Begin
                         Begin Label
-                            OverlapFlags =223
+                            OverlapFlags =215
                             Left =9480
                             Top =540
                             Width =1620
@@ -335,11 +354,11 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    OverlapFlags =247
+                    OverlapFlags =215
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =11100
-                    Top =540
+                    Left =1980
+                    Top =900
                     Width =1920
                     Height =360
                     ColumnOrder =2
@@ -352,17 +371,17 @@ Begin Form
                     Format ="0000"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =11100
-                    LayoutCachedTop =540
-                    LayoutCachedWidth =13020
-                    LayoutCachedHeight =900
+                    LayoutCachedLeft =1980
+                    LayoutCachedTop =900
+                    LayoutCachedWidth =3900
+                    LayoutCachedHeight =1260
                     Begin
                         Begin Label
                             FontUnderline = NotDefault
-                            OverlapFlags =247
-                            Left =9300
-                            Top =540
-                            Width =1620
+                            OverlapFlags =215
+                            Left =120
+                            Top =900
+                            Width =1680
                             Height =360
                             FontSize =13
                             FontWeight =700
@@ -371,10 +390,10 @@ Begin Form
                             Name ="Label5"
                             Caption ="Project ID"
                             GridlineColor =10921638
-                            LayoutCachedLeft =9300
-                            LayoutCachedTop =540
-                            LayoutCachedWidth =10920
-                            LayoutCachedHeight =900
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =900
+                            LayoutCachedWidth =1800
+                            LayoutCachedHeight =1260
                             ForeThemeColorIndex =4
                             ForeTint =100.0
                         End
@@ -382,8 +401,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =8400
-                    Top =3720
+                    Left =8340
+                    Top =4740
                     Width =1416
                     Height =726
                     TabIndex =9
@@ -448,10 +467,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =8400
-                    LayoutCachedTop =3720
-                    LayoutCachedWidth =9816
-                    LayoutCachedHeight =4446
+                    LayoutCachedLeft =8340
+                    LayoutCachedTop =4740
+                    LayoutCachedWidth =9756
+                    LayoutCachedHeight =5466
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -463,8 +482,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =5400
-                    Top =3720
+                    Left =5340
+                    Top =4740
                     Width =1416
                     Height =726
                     TabIndex =6
@@ -529,10 +548,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =5400
-                    LayoutCachedTop =3720
-                    LayoutCachedWidth =6816
-                    LayoutCachedHeight =4446
+                    LayoutCachedLeft =5340
+                    LayoutCachedTop =4740
+                    LayoutCachedWidth =6756
+                    LayoutCachedHeight =5466
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -544,8 +563,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =7680
-                    Top =3720
+                    Left =7620
+                    Top =4740
                     Width =576
                     Height =576
                     TabIndex =8
@@ -624,10 +643,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =7680
-                    LayoutCachedTop =3720
-                    LayoutCachedWidth =8256
-                    LayoutCachedHeight =4296
+                    LayoutCachedLeft =7620
+                    LayoutCachedTop =4740
+                    LayoutCachedWidth =8196
+                    LayoutCachedHeight =5316
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -638,8 +657,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =6960
-                    Top =3720
+                    Left =6900
+                    Top =4740
                     Width =576
                     Height =576
                     TabIndex =7
@@ -721,10 +740,10 @@ Begin Form
                         0x0000000000000000
                     End
 
-                    LayoutCachedLeft =6960
-                    LayoutCachedTop =3720
-                    LayoutCachedWidth =7536
-                    LayoutCachedHeight =4296
+                    LayoutCachedLeft =6900
+                    LayoutCachedTop =4740
+                    LayoutCachedWidth =7476
+                    LayoutCachedHeight =5316
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -735,12 +754,13 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =10020
-                    Top =3780
+                    Left =9960
+                    Top =4800
                     Width =1290
-                    Height =600
+                    Height =660
+                    FontSize =13
+                    FontWeight =700
                     TabIndex =10
-                    ForeColor =4210752
                     Name ="cmdSaveRecord"
                     Caption ="Save Record"
                     GridlineColor =10921638
@@ -776,12 +796,28 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =10020
-                    LayoutCachedTop =3780
-                    LayoutCachedWidth =11310
-                    LayoutCachedHeight =4380
-                    BackColor =15123357
+                    LayoutCachedLeft =9960
+                    LayoutCachedTop =4800
+                    LayoutCachedWidth =11250
+                    LayoutCachedHeight =5460
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =14282978
+                    BackThemeColorIndex =9
+                    BackTint =20.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -793,14 +829,17 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     ColumnCount =2
-                    Left =2940
+                    Left =3720
                     Top =1500
-                    Width =840
+                    Width =900
                     Height =360
                     ColumnOrder =3
+                    FontSize =14
+                    FontWeight =700
                     TabIndex =3
+                    BackColor =13431551
                     BorderColor =10921638
-                    ForeColor =3484194
+                    ForeColor =9917743
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
                     Name ="Project Category"
                     ControlSource ="Project Category"
@@ -812,27 +851,35 @@ Begin Form
                     GridlineColor =10921638
                     AllowValueListEdits =0
 
-                    LayoutCachedLeft =2940
+                    LayoutCachedLeft =3720
                     LayoutCachedTop =1500
-                    LayoutCachedWidth =3780
+                    LayoutCachedWidth =4620
                     LayoutCachedHeight =1860
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                    ForeThemeColorIndex =8
+                    ForeShade =75.0
                     Begin
                         Begin Label
                             OverlapFlags =215
-                            Left =60
+                            Left =120
                             Top =1500
-                            Width =2790
+                            Width =3540
                             Height =360
-                            FontSize =12
+                            FontSize =14
+                            FontWeight =700
                             BorderColor =8355711
+                            ForeColor =9917743
                             Name ="Label15"
-                            Caption ="Project Worksheet Category"
+                            Caption ="Project Worksheet Category:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =60
+                            LayoutCachedLeft =120
                             LayoutCachedTop =1500
-                            LayoutCachedWidth =2850
+                            LayoutCachedWidth =3660
                             LayoutCachedHeight =1860
+                            ForeThemeColorIndex =8
                             ForeTint =100.0
+                            ForeShade =75.0
                         End
                     End
                 End
@@ -840,12 +887,15 @@ Begin Form
                     OverlapFlags =215
                     TextAlign =1
                     IMESentenceMode =3
-                    Left =6720
-                    Top =1500
-                    Width =5700
+                    Left =2490
+                    Top =2040
+                    Width =10470
                     Height =360
                     ColumnOrder =4
+                    FontSize =14
+                    FontWeight =700
                     TabIndex =4
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Application Title"
@@ -854,27 +904,33 @@ Begin Form
                     EventProcPrefix ="Application_Title"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =6720
-                    LayoutCachedTop =1500
-                    LayoutCachedWidth =12420
-                    LayoutCachedHeight =1860
+                    LayoutCachedLeft =2490
+                    LayoutCachedTop =2040
+                    LayoutCachedWidth =12960
+                    LayoutCachedHeight =2400
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
-                            OverlapFlags =223
-                            Left =4920
-                            Top =1500
-                            Width =3900
+                            OverlapFlags =215
+                            Left =120
+                            Top =2040
+                            Width =2280
                             Height =360
-                            FontSize =12
+                            FontSize =14
+                            FontWeight =700
                             BorderColor =8355711
+                            ForeColor =9917743
                             Name ="Label16"
-                            Caption ="Application Title"
+                            Caption ="Application Title:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =4920
-                            LayoutCachedTop =1500
-                            LayoutCachedWidth =8820
-                            LayoutCachedHeight =1860
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =2040
+                            LayoutCachedWidth =2400
+                            LayoutCachedHeight =2400
+                            ForeThemeColorIndex =8
                             ForeTint =100.0
+                            ForeShade =75.0
                         End
                     End
                 End
@@ -882,10 +938,10 @@ Begin Form
                     FontUnderline = NotDefault
                     OverlapFlags =215
                     Left =120
-                    Top =600
-                    Width =4980
+                    Top =180
+                    Width =6300
                     Height =420
-                    FontSize =13
+                    FontSize =16
                     FontWeight =700
                     BorderColor =8355711
                     ForeColor =12874308
@@ -893,11 +949,32 @@ Begin Form
                     Caption ="Enter Project (Project Worksheet) Information"
                     GridlineColor =10921638
                     LayoutCachedLeft =120
-                    LayoutCachedTop =600
-                    LayoutCachedWidth =5100
-                    LayoutCachedHeight =1020
+                    LayoutCachedTop =180
+                    LayoutCachedWidth =6420
+                    LayoutCachedHeight =600
                     ForeThemeColorIndex =8
                     ForeTint =100.0
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =5280
+                    Top =4320
+                    Width =7200
+                    Height =360
+                    FontSize =12
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =9917743
+                    Name ="Label33"
+                    Caption ="Use these to Navigate between all Projects Entered for this Applicant"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =5280
+                    LayoutCachedTop =4320
+                    LayoutCachedWidth =12480
+                    LayoutCachedHeight =4680
+                    ForeThemeColorIndex =8
+                    ForeTint =100.0
+                    ForeShade =75.0
                 End
             End
         End

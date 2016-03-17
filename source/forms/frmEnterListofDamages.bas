@@ -14,15 +14,14 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =16440
+    Width =17520
     DatasheetFontHeight =11
-    ItemSuffix =15
-    Right =16005
-    Bottom =8505
+    ItemSuffix =21
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999'AND[Assigned PDC] = 'akhandka'"
     RecSrcDt = Begin
-        0xf34f976f2da9e440
+        0x2dd52d8a50b9e440
     End
     RecordSource ="fqryRpaProjectEntry"
     Caption ="Enter List of Damages"
@@ -57,6 +56,16 @@ Begin Form
             BorderTint =50.0
             ForeThemeColorIndex =0
             ForeTint =50.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            BackThemeColorIndex =1
+            BorderThemeColorIndex =1
+            BorderShade =65.0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
@@ -140,12 +149,10 @@ Begin Form
         End
         Begin FormHeader
             Height =840
-            BackColor =15921906
             Name ="FormHeader"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
-            BackShade =95.0
             Begin
                 Begin Label
                     BackStyle =1
@@ -169,66 +176,63 @@ Begin Form
                     BackTint =20.0
                     ForeTint =100.0
                 End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =10740
-                    Top =300
-                    Width =2460
-                    Height =480
-                    ForeColor =4210752
-                    Name ="cmdSearch"
-                    Caption ="Search For Subrecipient"
-                    OnClick ="[Event Procedure]"
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =10920
+                    Top =120
+                    Width =4620
+                    Height =660
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box17"
                     GridlineColor =10921638
-
-                    LayoutCachedLeft =10740
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =13200
+                    LayoutCachedLeft =10920
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =15540
                     LayoutCachedHeight =780
-                    UseTheme =0
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverThemeColorIndex =-1
-                    HoverTint =100.0
-                    PressedThemeColorIndex =-1
-                    PressedShade =100.0
-                    HoverForeThemeColorIndex =-1
-                    HoverForeTint =100.0
-                    PressedForeThemeColorIndex =-1
-                    PressedForeTint =100.0
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                 End
                 Begin CommandButton
-                    OverlapFlags =223
-                    Left =13440
-                    Top =300
-                    Width =2460
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    Left =11100
+                    Top =180
+                    Width =2700
                     Height =480
-                    TabIndex =1
-                    ForeColor =4210752
-                    Name ="cmdSwitch"
-                    Caption ="Switch to Manual"
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
+                    Name ="cmdSearch"
+                    Caption ="Search For Applicant"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =13440
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =780
-                    UseTheme =0
-                    BackColor =15123357
+                    LayoutCachedLeft =11100
+                    LayoutCachedTop =180
+                    LayoutCachedWidth =13800
+                    LayoutCachedHeight =660
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
-                    HoverThemeColorIndex =-1
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
                     HoverTint =100.0
-                    PressedThemeColorIndex =-1
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
                     PressedShade =100.0
-                    HoverForeThemeColorIndex =-1
-                    HoverForeTint =100.0
-                    PressedForeThemeColorIndex =-1
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
                     PressedForeTint =100.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
@@ -240,24 +244,26 @@ Begin Form
                     FontUnderline = NotDefault
                     OverlapFlags =215
                     TextAlign =2
-                    Left =13500
-                    Width =2400
-                    Height =360
+                    Left =13920
+                    Top =120
+                    Width =1500
+                    Height =585
                     FontWeight =700
                     BorderColor =8355711
-                    Name ="lbInputMode"
-                    Caption ="In Copy-Paste Mode"
+                    Name ="Label18"
+                    Caption ="Click to Select Applicant"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13500
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =360
+                    LayoutCachedLeft =13920
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =15420
+                    LayoutCachedHeight =705
                     ForeTint =100.0
                 End
             End
         End
         Begin Section
             CanGrow = NotDefault
-            Height =11940
+            Height =11580
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -319,29 +325,29 @@ Begin Form
                     BorderWidth =2
                     Left =60
                     Top =60
-                    Width =16260
-                    Height =1920
+                    Width =16374
+                    Height =1560
                     TabIndex =1
                     BorderColor =10921638
                     Name ="subDisasterInfo"
-                    SourceObject ="Form.subfrmDisasterInfoRevised"
+                    SourceObject ="Form.subfrmDisasterInfoRevised short"
                     LinkChildFields ="DisasterID"
                     LinkMasterFields ="DisasterID"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =60
                     LayoutCachedTop =60
-                    LayoutCachedWidth =16320
-                    LayoutCachedHeight =1980
+                    LayoutCachedWidth =16434
+                    LayoutCachedHeight =1620
                 End
                 Begin Subform
                     Locked = NotDefault
-                    OverlapFlags =215
+                    OverlapFlags =85
                     SpecialEffect =2
                     BorderWidth =2
                     Left =60
-                    Top =2039
-                    Width =16260
+                    Top =1680
+                    Width =16374
                     Height =1739
                     TabIndex =2
                     BorderColor =10921638
@@ -352,9 +358,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =60
-                    LayoutCachedTop =2039
-                    LayoutCachedWidth =16320
-                    LayoutCachedHeight =3778
+                    LayoutCachedTop =1680
+                    LayoutCachedWidth =16434
+                    LayoutCachedHeight =3419
                 End
                 Begin ComboBox
                     LimitToList = NotDefault
@@ -404,11 +410,12 @@ Begin Form
                     End
                 End
                 Begin Subform
+                    TabStop = NotDefault
                     OverlapFlags =247
                     Left =60
-                    Top =3899
-                    Width =16200
-                    Height =7559
+                    Top =4320
+                    Width =16374
+                    Height =6899
                     TabIndex =5
                     BorderColor =10921638
                     Name ="subformEnterListofDamages"
@@ -418,27 +425,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =60
-                    LayoutCachedTop =3899
-                    LayoutCachedWidth =16260
-                    LayoutCachedHeight =11458
-                    Begin
-                        Begin Label
-                            Visible = NotDefault
-                            OverlapFlags =93
-                            Top =3600
-                            Width =2700
-                            Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
-                            Name ="subformEnterListofDamages Label"
-                            Caption ="subformEnterListofDamages"
-                            EventProcPrefix ="subformEnterListofDamages_Label"
-                            GridlineColor =10921638
-                            LayoutCachedTop =3600
-                            LayoutCachedWidth =2700
-                            LayoutCachedHeight =3915
-                        End
-                    End
+                    LayoutCachedTop =4320
+                    LayoutCachedWidth =16434
+                    LayoutCachedHeight =11219
                 End
                 Begin TextBox
                     Visible = NotDefault
@@ -477,6 +466,128 @@ Begin Form
                         End
                     End
                 End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =60
+                    Top =3480
+                    Width =16374
+                    Height =900
+                    BackColor =9917743
+                    BorderColor =10921638
+                    Name ="Box66"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =3480
+                    LayoutCachedWidth =16434
+                    LayoutCachedHeight =4380
+                    BackThemeColorIndex =8
+                    BackShade =75.0
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =480
+                    Top =3720
+                    Width =7440
+                    Height =420
+                    FontSize =16
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =16777215
+                    Name ="Label67"
+                    Caption ="Add Information for Each Site in the Damage Inventory"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =480
+                    LayoutCachedTop =3720
+                    LayoutCachedWidth =7920
+                    LayoutCachedHeight =4140
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =10920
+                    Top =3660
+                    Width =4620
+                    Height =600
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box15"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =10920
+                    LayoutCachedTop =3660
+                    LayoutCachedWidth =15540
+                    LayoutCachedHeight =4260
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =215
+                    Left =11100
+                    Top =3720
+                    Width =2700
+                    Height =480
+                    FontSize =13
+                    FontWeight =700
+                    TabIndex =6
+                    ForeColor =16777215
+                    Name ="cmdSwitch"
+                    Caption ="Switch to Manual Entry"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =11100
+                    LayoutCachedTop =3720
+                    LayoutCachedWidth =13800
+                    LayoutCachedHeight =4200
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
+                    BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverTint =100.0
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    PressedShade =100.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeTint =100.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =13860
+                    Top =3660
+                    Width =1500
+                    Height =540
+                    FontWeight =700
+                    BorderColor =8355711
+                    Name ="lbInputMode"
+                    Caption ="In Copy-Paste Mode"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =13860
+                    LayoutCachedTop =3660
+                    LayoutCachedWidth =15360
+                    LayoutCachedHeight =4200
+                    ForeTint =100.0
+                End
             End
         End
         Begin FormFooter
@@ -510,11 +621,13 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =15060
-                    Top =120
-                    Width =1200
-                    Height =405
-                    ForeColor =4210752
+                    Left =14760
+                    Top =60
+                    Width =1500
+                    Height =465
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
                     Name ="cmdClose"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -535,401 +648,30 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =15060
-                    LayoutCachedTop =120
+                    LayoutCachedLeft =14760
+                    LayoutCachedTop =60
                     LayoutCachedWidth =16260
                     LayoutCachedHeight =525
-                    BackColor =15123357
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
-                    HoverColor =15652797
-                    PressedColor =11957550
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =10440
-                    Top =60
-                    Width =1260
-                    Height =600
-                    TabIndex =1
-                    ForeColor =4210752
-                    Name ="Command163"
-                    Caption ="First Record"
-                    GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =8
-                        Begin
-                            Action ="GoToRecord"
-                            Argument ="-1"
-                            Argument =""
-                            Argument ="2"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"Command163\" xmlns=\"http://schemas.microsoft.com/office/acc"
-                                "essservices/2009/11/application\"><Statements><Action Name=\"GoToRecord\"><Argum"
-                                "ent Name=\"Record\">First</Argume"
-                        End
-                        Begin
-                            Comment ="_AXL:nt></Action></Statements></UserInterfaceMacro>"
-                        End
-                    End
-                    ImageData = Begin
-                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x000000000000000000000000000000000000000000000000b17d4a33b17d4ae1 ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x0000000000000000000000000000000000000000b17d4a60b17d4af6b17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x000000000000000000000000b17d4a06b17d4a96b17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x0000000000000000b17d4a18b17d4ac3b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000b17d4a39b17d4ae4b17d4affb17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4a66b17d4af9b17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4a66b17d4af9b17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000b17d4a39b17d4ae7b17d4affb17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x0000000000000000b17d4a18b17d4ac6b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x000000000000000000000000b17d4a06b17d4a99b17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x0000000000000000000000000000000000000000b17d4a66b17d4af9b17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x000000000000000000000000000000000000000000000000b17d4a39b17d4ae7 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000
-                    End
-
-                    LayoutCachedLeft =10440
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =11700
-                    LayoutCachedHeight =660
-                    PictureCaptionArrangement =3
-                    UseTheme =0
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverThemeColorIndex =-1
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
                     HoverTint =100.0
-                    PressedThemeColorIndex =-1
+                    HoverShade =75.0
+                    PressedColor =15189940
+                    PressedThemeColorIndex =8
+                    PressedTint =40.0
                     PressedShade =100.0
-                    HoverForeThemeColorIndex =-1
-                    HoverForeTint =100.0
-                    PressedForeThemeColorIndex =-1
-                    PressedForeTint =100.0
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =13080
-                    Top =60
-                    Width =1215
-                    Height =600
-                    TabIndex =2
-                    ForeColor =4210752
-                    Name ="Command164"
-                    Caption ="Last Record"
-                    GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =8
-                        Begin
-                            Action ="GoToRecord"
-                            Argument ="-1"
-                            Argument =""
-                            Argument ="3"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"Command164\" xmlns=\"http://schemas.microsoft.com/office/acc"
-                                "essservices/2009/11/application\"><Statements><Action Name=\"GoToRecord\"><Argum"
-                                "ent Name=\"Record\">Last</Argumen"
-                        End
-                        Begin
-                            Comment ="_AXL:t></Action></Statements></UserInterfaceMacro>"
-                        End
-                    End
-                    ImageData = Begin
-                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000000000000000000000000000b17d4ae1b17d4a360000000000000000 ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4af6b17d4a6000000000 ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4a96 ,
-                        0xb17d4a06000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4ac3b17d4a180000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4affb17d4ae7b17d4a3900000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4af9b17d4a66b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4af9b17d4a66b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4affb17d4ae7b17d4a3900000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0xb17d4ac6b17d4a180000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4a99 ,
-                        0xb17d4a06000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4affb17d4af9b17d4a6600000000 ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x00000000000000000000000000000000b17d4ae7b17d4a390000000000000000 ,
-                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000
-                    End
-
-                    LayoutCachedLeft =13080
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =14295
-                    LayoutCachedHeight =660
-                    PictureCaptionArrangement =3
-                    UseTheme =0
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverThemeColorIndex =-1
-                    HoverTint =100.0
-                    PressedThemeColorIndex =-1
-                    PressedShade =100.0
-                    HoverForeThemeColorIndex =-1
-                    HoverForeTint =100.0
-                    PressedForeThemeColorIndex =-1
-                    PressedForeTint =100.0
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =11760
-                    Top =60
-                    Width =576
-                    Height =576
-                    TabIndex =3
-                    ForeColor =4210752
-                    Name ="cmdPrevious"
-                    ControlTipText ="Previous Record"
-                    GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =10
-                        Begin
-                            Action ="OnError"
-                            Argument ="0"
-                        End
-                        Begin
-                            Action ="GoToRecord"
-                            Argument ="-1"
-                            Argument =""
-                            Argument ="0"
-                        End
-                        Begin
-                            Condition ="[MacroError]<>0"
-                            Action ="MsgBox"
-                            Argument ="=[MacroError].[Description]"
-                            Argument ="-1"
-                            Argument ="0"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"cmdPrevious\" xmlns=\"http://schemas.microsoft.com/office/ac"
-                                "cessservices/2009/11/application\"><Statements><Action Name=\"OnError\"/><Action"
-                                " Name=\"GoToRecord\"><Argument Na"
-                        End
-                        Begin
-                            Comment ="_AXL:me=\"Record\">Previous</Argument></Action><ConditionalBlock><If><Condition>"
-                                "[MacroError]&lt;&gt;0</Condition><Statements><Action Name=\"MessageBox\"><Argume"
-                                "nt Name=\"Message\">=[MacroError].[Description]</Argument></Action></Statements>"
-                                "</If></ConditionalB"
-                        End
-                        Begin
-                            Comment ="_AXL:lock></Statements></UserInterfaceMacro>"
-                        End
-                    End
-                    ImageData = Begin
-                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000000000000000000000000000b17d4a33b17d4ae10000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000b17d4a60b17d4af6b17d4aff0000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000b17d4a06b17d4a96b17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0xb17d4a18b17d4ac3b17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x00000000000000000000000000000000000000000000000000000000b17d4a39 ,
-                        0xb17d4ae4b17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4a66b17d4af9 ,
-                        0xb17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4a66b17d4af9 ,
-                        0xb17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x00000000000000000000000000000000000000000000000000000000b17d4a39 ,
-                        0xb17d4ae7b17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0xb17d4a18b17d4ac6b17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000b17d4a06b17d4a99b17d4affb17d4affb17d4aff0000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000b17d4a66b17d4af9b17d4aff0000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x00000000000000000000000000000000b17d4a39b17d4ae70000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000
-                    End
-
-                    LayoutCachedLeft =11760
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =12336
-                    LayoutCachedHeight =636
-                    UseTheme =0
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverThemeColorIndex =-1
-                    HoverTint =100.0
-                    PressedThemeColorIndex =-1
-                    PressedShade =100.0
-                    HoverForeThemeColorIndex =-1
-                    HoverForeTint =100.0
-                    PressedForeThemeColorIndex =-1
-                    PressedForeTint =100.0
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =12420
-                    Top =60
-                    Width =576
-                    Height =576
-                    TabIndex =4
-                    ForeColor =4210752
-                    Name ="cmdNext"
-                    Caption ="Command92"
-                    ControlTipText ="Next Record"
-                    GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =10
-                        Begin
-                            Action ="OnError"
-                            Argument ="0"
-                        End
-                        Begin
-                            Action ="GoToRecord"
-                            Argument ="-1"
-                            Argument =""
-                            Argument ="1"
-                        End
-                        Begin
-                            Condition ="[MacroError]<>0"
-                            Action ="MsgBox"
-                            Argument ="=[MacroError].[Description]"
-                            Argument ="-1"
-                            Argument ="0"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"cmdNext\" xmlns=\"http://schemas.microsoft.com/office/access"
-                                "services/2009/11/application\"><Statements><Action Name=\"OnError\"/><Action Nam"
-                                "e=\"GoToRecord\"/><ConditionalBlo"
-                        End
-                        Begin
-                            Comment ="_AXL:ck><If><Condition>[MacroError]&lt;&gt;0</Condition><Statements><Action Name"
-                                "=\"MessageBox\"><Argument Name=\"Message\">=[MacroError].[Description]</Argument"
-                                "></Action></Statements></If></ConditionalBlock></Statements></UserInterfaceMacro"
-                                ">"
-                        End
-                    End
-                    ImageData = Begin
-                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4ae1b17d4a36 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4af6 ,
-                        0xb17d4a6000000000000000000000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4a96b17d4a060000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4ac3b17d4a1800000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4affb17d4ae7b17d4a39000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4affb17d4affb17d4af9b17d4a660000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4affb17d4affb17d4af9b17d4a660000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4affb17d4ae7b17d4a39000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4affb17d4ac6b17d4a1800000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
-                        0xb17d4affb17d4a99b17d4a060000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4affb17d4af9 ,
-                        0xb17d4a6600000000000000000000000000000000000000000000000000000000 ,
-                        0x000000000000000000000000000000000000000000000000b17d4ae7b17d4a39 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-                        0x0000000000000000
-                    End
-
-                    LayoutCachedLeft =12420
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =12996
-                    LayoutCachedHeight =636
-                    UseTheme =0
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverThemeColorIndex =-1
-                    HoverTint =100.0
-                    PressedThemeColorIndex =-1
-                    PressedShade =100.0
-                    HoverForeThemeColorIndex =-1
-                    HoverForeTint =100.0
-                    PressedForeThemeColorIndex =-1
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
                     PressedForeTint =100.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2

@@ -7,21 +7,22 @@ Begin Form
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
+    ScrollBars =1
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =16440
+    Width =16500
     DatasheetFontHeight =11
-    ItemSuffix =61
-    Right =16005
-    Bottom =8505
+    ItemSuffix =68
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     AfterInsert ="[Event Procedure]"
     RecSrcDt = Begin
-        0x17d8edb7f2a8e440
+        0x3c19f5aeb4b9e440
     End
-    RecordSource ="tblSites"
+    RecordSource ="fqrySiteInfo"
     Caption ="subformEnterListofDamages"
     BeforeUpdate ="[Event Procedure]"
     DatasheetFontName ="Calibri"
@@ -138,15 +139,13 @@ Begin Form
         End
         Begin FormHeader
             Height =0
-            BackColor =15064278
             Name ="FormHeader"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =2
-            BackTint =20.0
+            BackThemeColorIndex =1
         End
         Begin Section
-            Height =8040
+            Height =6540
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -156,85 +155,45 @@ Begin Form
                 Begin Rectangle
                     BackStyle =1
                     OverlapFlags =93
-                    Top =120
                     Width =16440
-                    Height =7560
+                    Height =6540
                     BackColor =15590879
                     BorderColor =10921638
                     Name ="Box42"
                     GridlineColor =10921638
-                    LayoutCachedTop =120
                     LayoutCachedWidth =16440
-                    LayoutCachedHeight =7680
+                    LayoutCachedHeight =6540
                     BackThemeColorIndex =-1
-                End
-                Begin TextBox
-                    Enabled = NotDefault
-                    OverlapFlags =215
-                    IMESentenceMode =3
-                    Left =8280
-                    Top =240
-                    Width =1530
-                    Height =330
-                    ColumnOrder =1
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="SiteID"
-                    ControlSource ="SiteID"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =8280
-                    LayoutCachedTop =240
-                    LayoutCachedWidth =9810
-                    LayoutCachedHeight =570
-                    Begin
-                        Begin Label
-                            OverlapFlags =215
-                            Left =7500
-                            Top =240
-                            Width =720
-                            Height =330
-                            BorderColor =8355711
-                            ForeColor =8355711
-                            Name ="Site Number_Label"
-                            Caption ="SiteID"
-                            EventProcPrefix ="Site_Number_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =7500
-                            LayoutCachedTop =240
-                            LayoutCachedWidth =8220
-                            LayoutCachedHeight =570
-                        End
-                    End
                 End
                 Begin TextBox
                     Visible = NotDefault
                     Enabled = NotDefault
                     ColumnHidden = NotDefault
+                    TabStop = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =2130
-                    Top =240
+                    Left =9870
+                    Top =360
                     Width =1530
                     Height =315
                     ColumnWidth =1440
                     ColumnOrder =17
-                    TabIndex =1
+                    TabIndex =17
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="DisasterID"
                     ControlSource ="DisasterID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =2130
-                    LayoutCachedTop =240
-                    LayoutCachedWidth =3660
-                    LayoutCachedHeight =555
+                    LayoutCachedLeft =9870
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =11400
+                    LayoutCachedHeight =675
                     Begin
                         Begin Label
                             OverlapFlags =215
-                            Left =240
-                            Top =240
+                            Left =7980
+                            Top =360
                             Width =1800
                             Height =315
                             BorderColor =8355711
@@ -242,10 +201,10 @@ Begin Form
                             Name ="Label43"
                             Caption ="DisasterID"
                             GridlineColor =10921638
-                            LayoutCachedLeft =240
-                            LayoutCachedTop =240
-                            LayoutCachedWidth =2040
-                            LayoutCachedHeight =555
+                            LayoutCachedLeft =7980
+                            LayoutCachedTop =360
+                            LayoutCachedWidth =9780
+                            LayoutCachedHeight =675
                         End
                     End
                 End
@@ -253,30 +212,31 @@ Begin Form
                     Visible = NotDefault
                     Enabled = NotDefault
                     ColumnHidden = NotDefault
+                    TabStop = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =5670
-                    Top =240
+                    Left =13410
+                    Top =360
                     Width =1530
                     Height =315
                     ColumnWidth =1440
                     ColumnOrder =18
-                    TabIndex =2
+                    TabIndex =18
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="ApplicantID"
                     ControlSource ="ApplicantID"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =5670
-                    LayoutCachedTop =240
-                    LayoutCachedWidth =7200
-                    LayoutCachedHeight =555
+                    LayoutCachedLeft =13410
+                    LayoutCachedTop =360
+                    LayoutCachedWidth =14940
+                    LayoutCachedHeight =675
                     Begin
                         Begin Label
                             OverlapFlags =215
-                            Left =3780
-                            Top =240
+                            Left =11520
+                            Top =360
                             Width =1800
                             Height =315
                             BorderColor =8355711
@@ -284,10 +244,10 @@ Begin Form
                             Name ="Label44"
                             Caption ="ApplicantID"
                             GridlineColor =10921638
-                            LayoutCachedLeft =3780
-                            LayoutCachedTop =240
-                            LayoutCachedWidth =5580
-                            LayoutCachedHeight =555
+                            LayoutCachedLeft =11520
+                            LayoutCachedTop =360
+                            LayoutCachedWidth =13320
+                            LayoutCachedHeight =675
                         End
                     End
                 End
@@ -296,11 +256,12 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =2760
-                    Top =1020
+                    Top =480
                     Width =4620
                     Height =363
                     ColumnOrder =3
-                    TabIndex =3
+                    TabIndex =1
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Name of Site/Facility"
@@ -310,25 +271,27 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2760
-                    LayoutCachedTop =1020
+                    LayoutCachedTop =480
                     LayoutCachedWidth =7380
-                    LayoutCachedHeight =1383
+                    LayoutCachedHeight =843
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =1020
+                            Top =480
                             Width =2145
-                            Height =303
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label46"
                             Caption ="Name of Site/Facility"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =1020
+                            LayoutCachedTop =480
                             LayoutCachedWidth =2685
-                            LayoutCachedHeight =1323
+                            LayoutCachedHeight =843
                             ForeTint =100.0
                         End
                     End
@@ -340,11 +303,12 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =4860
-                    Top =1440
+                    Top =900
                     Width =4320
                     Height =363
                     ColumnOrder =4
-                    TabIndex =4
+                    TabIndex =2
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="E911 Street Address or Closest Intersection"
@@ -354,14 +318,16 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =4860
-                    LayoutCachedTop =1440
+                    LayoutCachedTop =900
                     LayoutCachedWidth =9180
-                    LayoutCachedHeight =1803
+                    LayoutCachedHeight =1263
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =1440
+                            Top =900
                             Width =4260
                             Height =363
                             FontSize =12
@@ -370,9 +336,9 @@ Begin Form
                             Caption ="E911 Street Address or Closest Intersection"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =1440
+                            LayoutCachedTop =900
                             LayoutCachedWidth =4800
-                            LayoutCachedHeight =1803
+                            LayoutCachedHeight =1263
                             ForeTint =100.0
                         End
                     End
@@ -382,10 +348,11 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =1560
-                    Top =1920
-                    Height =303
+                    Top =1380
+                    Height =363
                     ColumnOrder =0
-                    TabIndex =5
+                    TabIndex =3
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Latitude"
@@ -394,25 +361,27 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =1560
-                    LayoutCachedTop =1920
+                    LayoutCachedTop =1380
                     LayoutCachedWidth =3000
-                    LayoutCachedHeight =2223
+                    LayoutCachedHeight =1743
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =1920
+                            Top =1380
                             Width =960
-                            Height =303
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label48"
                             Caption ="Latitude"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =1920
+                            LayoutCachedTop =1380
                             LayoutCachedWidth =1500
-                            LayoutCachedHeight =2223
+                            LayoutCachedHeight =1743
                             ForeTint =100.0
                         End
                     End
@@ -422,10 +391,11 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =4260
-                    Top =1920
-                    Height =303
+                    Top =1380
+                    Height =363
                     ColumnOrder =5
-                    TabIndex =6
+                    TabIndex =4
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Longitude"
@@ -434,25 +404,27 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =4260
-                    LayoutCachedTop =1920
+                    LayoutCachedTop =1380
                     LayoutCachedWidth =5700
-                    LayoutCachedHeight =2223
+                    LayoutCachedHeight =1743
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =3180
-                            Top =1920
+                            Top =1380
                             Width =1020
-                            Height =303
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label49"
                             Caption ="Longitude"
                             GridlineColor =10921638
                             LayoutCachedLeft =3180
-                            LayoutCachedTop =1920
+                            LayoutCachedTop =1380
                             LayoutCachedWidth =4200
-                            LayoutCachedHeight =2223
+                            LayoutCachedHeight =1743
                             ForeTint =100.0
                         End
                     End
@@ -464,11 +436,12 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =2400
-                    Top =3180
+                    Top =2640
                     Width =4320
                     Height =363
                     ColumnOrder =6
-                    TabIndex =7
+                    TabIndex =6
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Describe Damage"
@@ -478,14 +451,16 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2400
-                    LayoutCachedTop =3180
+                    LayoutCachedTop =2640
                     LayoutCachedWidth =6720
-                    LayoutCachedHeight =3543
+                    LayoutCachedHeight =3003
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =3180
+                            Top =2640
                             Width =1800
                             Height =363
                             FontSize =12
@@ -494,9 +469,9 @@ Begin Form
                             Caption ="Describe Damage"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =3180
+                            LayoutCachedTop =2640
                             LayoutCachedWidth =2340
-                            LayoutCachedHeight =3543
+                            LayoutCachedHeight =3003
                             ForeTint =100.0
                         End
                     End
@@ -507,10 +482,11 @@ Begin Form
                     IMESentenceMode =3
                     ListWidth =1440
                     Left =4080
-                    Top =3660
+                    Top =3120
                     Height =363
                     ColumnOrder =7
-                    TabIndex =8
+                    TabIndex =7
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"10\";\"510\""
@@ -524,14 +500,16 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =4080
-                    LayoutCachedTop =3660
+                    LayoutCachedTop =3120
                     LayoutCachedWidth =5520
-                    LayoutCachedHeight =4023
+                    LayoutCachedHeight =3483
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =3660
+                            Top =3120
                             Width =3480
                             Height =363
                             FontSize =12
@@ -540,9 +518,9 @@ Begin Form
                             Caption ="Cause of Damage  (wind, flood, etc)"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =3660
+                            LayoutCachedTop =3120
                             LayoutCachedWidth =4020
-                            LayoutCachedHeight =4023
+                            LayoutCachedHeight =3483
                             ForeTint =100.0
                         End
                     End
@@ -552,10 +530,11 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     Left =3060
-                    Top =6780
+                    Top =5940
                     Height =363
                     ColumnOrder =16
-                    TabIndex =9
+                    TabIndex =12
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -570,14 +549,16 @@ Begin Form
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =3060
-                    LayoutCachedTop =6780
+                    LayoutCachedTop =5940
                     LayoutCachedWidth =4500
-                    LayoutCachedHeight =7143
+                    LayoutCachedHeight =6303
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =6780
+                            Top =5940
                             Width =2445
                             Height =363
                             FontSize =12
@@ -586,9 +567,9 @@ Begin Form
                             Caption ="Requires Site Inspection"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =6780
+                            LayoutCachedTop =5940
                             LayoutCachedWidth =2985
-                            LayoutCachedHeight =7143
+                            LayoutCachedHeight =6303
                             ForeTint =100.0
                         End
                     End
@@ -598,10 +579,11 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =2460
-                    Top =5820
+                    Top =4980
                     Height =363
                     ColumnOrder =8
                     TabIndex =10
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Approximate Cost"
@@ -612,16 +594,18 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2460
-                    LayoutCachedTop =5820
+                    LayoutCachedTop =4980
                     LayoutCachedWidth =3900
-                    LayoutCachedHeight =6183
+                    LayoutCachedHeight =5343
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     CurrencySymbol ="$"
                     ColLCID =1033
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =5820
+                            Top =4980
                             Width =1860
                             Height =363
                             FontSize =12
@@ -630,9 +614,9 @@ Begin Form
                             Caption ="Approximate Cost"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =5820
+                            LayoutCachedTop =4980
                             LayoutCachedWidth =2400
-                            LayoutCachedHeight =6183
+                            LayoutCachedHeight =5343
                             ForeTint =100.0
                         End
                     End
@@ -642,10 +626,11 @@ Begin Form
                     TextAlign =1
                     IMESentenceMode =3
                     Left =2460
-                    Top =5340
+                    Top =4500
                     Height =363
                     ColumnOrder =9
-                    TabIndex =11
+                    TabIndex =9
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="% Work Complete"
@@ -656,14 +641,16 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2460
-                    LayoutCachedTop =5340
+                    LayoutCachedTop =4500
                     LayoutCachedWidth =3900
-                    LayoutCachedHeight =5703
+                    LayoutCachedHeight =4863
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =5340
+                            Top =4500
                             Width =1845
                             Height =363
                             FontSize =12
@@ -672,9 +659,9 @@ Begin Form
                             Caption ="% Work Complete"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =5340
+                            LayoutCachedTop =4500
                             LayoutCachedWidth =2385
-                            LayoutCachedHeight =5703
+                            LayoutCachedHeight =4863
                             ForeTint =100.0
                         End
                     End
@@ -685,10 +672,11 @@ Begin Form
                     ColumnCount =2
                     ListWidth =3630
                     Left =1800
-                    Top =6300
+                    Top =5460
                     Height =363
                     ColumnOrder =10
-                    TabIndex =12
+                    TabIndex =11
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -702,14 +690,16 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =1800
-                    LayoutCachedTop =6300
+                    LayoutCachedTop =5460
                     LayoutCachedWidth =3240
-                    LayoutCachedHeight =6663
+                    LayoutCachedHeight =5823
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =6300
+                            Top =5460
                             Width =1170
                             Height =363
                             FontSize =12
@@ -718,9 +708,9 @@ Begin Form
                             Caption ="Labor Type"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =6300
+                            LayoutCachedTop =5460
                             LayoutCachedWidth =1710
-                            LayoutCachedHeight =6663
+                            LayoutCachedHeight =5823
                             ForeTint =100.0
                         End
                     End
@@ -731,10 +721,11 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     Left =9600
-                    Top =2880
-                    Height =345
+                    Top =2340
+                    Height =363
                     ColumnOrder =11
                     TabIndex =13
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -749,25 +740,27 @@ Begin Form
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =9600
-                    LayoutCachedTop =2880
+                    LayoutCachedTop =2340
                     LayoutCachedWidth =11040
-                    LayoutCachedHeight =3225
+                    LayoutCachedHeight =2703
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =7440
-                            Top =2880
+                            Top =2340
                             Width =2100
-                            Height =345
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label56"
                             Caption ="EHP Issues? (H, E, B)"
                             GridlineColor =10921638
                             LayoutCachedLeft =7440
-                            LayoutCachedTop =2880
+                            LayoutCachedTop =2340
                             LayoutCachedWidth =9540
-                            LayoutCachedHeight =3225
+                            LayoutCachedHeight =2703
                             ForeTint =100.0
                         End
                     End
@@ -778,10 +771,11 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     Left =9180
-                    Top =3420
-                    Height =345
+                    Top =2880
+                    Height =363
                     ColumnOrder =12
                     TabIndex =14
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -796,25 +790,27 @@ Begin Form
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =9180
-                    LayoutCachedTop =3420
+                    LayoutCachedTop =2880
                     LayoutCachedWidth =10620
-                    LayoutCachedHeight =3765
+                    LayoutCachedHeight =3243
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =7440
-                            Top =3420
+                            Top =2880
                             Width =1665
-                            Height =345
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label57"
                             Caption ="Facility insured?"
                             GridlineColor =10921638
                             LayoutCachedLeft =7440
-                            LayoutCachedTop =3420
+                            LayoutCachedTop =2880
                             LayoutCachedWidth =9105
-                            LayoutCachedHeight =3765
+                            LayoutCachedHeight =3243
                             ForeTint =100.0
                         End
                     End
@@ -825,10 +821,11 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     Left =12840
-                    Top =3960
-                    Height =345
+                    Top =3420
+                    Height =363
                     ColumnOrder =13
                     TabIndex =15
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -843,25 +840,27 @@ Begin Form
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =12840
-                    LayoutCachedTop =3960
+                    LayoutCachedTop =3420
                     LayoutCachedWidth =14280
-                    LayoutCachedHeight =4305
+                    LayoutCachedHeight =3783
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =7440
-                            Top =3960
+                            Top =3420
                             Width =5325
-                            Height =345
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label58"
                             Caption ="Has Received PA grant in prior Stafford Act Disasters?"
                             GridlineColor =10921638
                             LayoutCachedLeft =7440
-                            LayoutCachedTop =3960
+                            LayoutCachedTop =3420
                             LayoutCachedWidth =12765
-                            LayoutCachedHeight =4305
+                            LayoutCachedHeight =3783
                             ForeTint =100.0
                         End
                     End
@@ -872,10 +871,11 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     Left =11820
-                    Top =4500
-                    Height =345
+                    Top =3960
+                    Height =363
                     ColumnOrder =14
                     TabIndex =16
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -890,25 +890,27 @@ Begin Form
                     AllowValueListEdits =0
 
                     LayoutCachedLeft =11820
-                    LayoutCachedTop =4500
+                    LayoutCachedTop =3960
                     LayoutCachedWidth =13260
-                    LayoutCachedHeight =4845
+                    LayoutCachedHeight =4323
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =7440
-                            Top =4500
+                            Top =3960
                             Width =4335
-                            Height =345
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label59"
                             Caption ="Is there a potential mitigation opportunity?"
                             GridlineColor =10921638
                             LayoutCachedLeft =7440
-                            LayoutCachedTop =4500
+                            LayoutCachedTop =3960
                             LayoutCachedWidth =11775
-                            LayoutCachedHeight =4845
+                            LayoutCachedHeight =4323
                             ForeTint =100.0
                         End
                     End
@@ -919,11 +921,12 @@ Begin Form
                     IMESentenceMode =3
                     ListWidth =1440
                     Left =4440
-                    Top =4860
+                    Top =4020
                     Height =363
                     ColumnWidth =1590
                     ColumnOrder =15
-                    TabIndex =17
+                    TabIndex =8
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =3484194
                     ColumnInfo ="\"\";\"\";\"10\";\"510\""
@@ -937,14 +940,16 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =4440
-                    LayoutCachedTop =4860
+                    LayoutCachedTop =4020
                     LayoutCachedWidth =5880
-                    LayoutCachedHeight =5223
+                    LayoutCachedHeight =4383
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     Begin
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =4860
+                            Top =4020
                             Width =3825
                             Height =363
                             FontSize =12
@@ -953,9 +958,9 @@ Begin Form
                             Caption ="Subrecipient priority (Low, Med, High)"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =4860
+                            LayoutCachedTop =4020
                             LayoutCachedWidth =4365
-                            LayoutCachedHeight =5223
+                            LayoutCachedHeight =4383
                             ForeTint =100.0
                         End
                     End
@@ -966,10 +971,11 @@ Begin Form
                     IMESentenceMode =3
                     ColumnCount =2
                     Left =1620
-                    Top =2760
+                    Top =2220
                     Height =363
                     ColumnOrder =2
-                    TabIndex =18
+                    TabIndex =5
+                    BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
                     ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
@@ -982,9 +988,11 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =1620
-                    LayoutCachedTop =2760
+                    LayoutCachedTop =2220
                     LayoutCachedWidth =3060
-                    LayoutCachedHeight =3123
+                    LayoutCachedHeight =2583
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                     ForeThemeColorIndex =0
                     ForeTint =75.0
                     ForeShade =100.0
@@ -992,18 +1000,18 @@ Begin Form
                         Begin Label
                             OverlapFlags =215
                             Left =540
-                            Top =2760
+                            Top =2220
                             Width =1020
-                            Height =303
+                            Height =363
                             FontSize =12
                             BorderColor =8355711
                             Name ="Label45"
                             Caption ="Category"
                             GridlineColor =10921638
                             LayoutCachedLeft =540
-                            LayoutCachedTop =2760
+                            LayoutCachedTop =2220
                             LayoutCachedWidth =1560
-                            LayoutCachedHeight =3063
+                            LayoutCachedHeight =2583
                             ForeTint =100.0
                         End
                     End
@@ -1012,7 +1020,7 @@ Begin Form
                     FontUnderline = NotDefault
                     OverlapFlags =215
                     Left =7080
-                    Top =2400
+                    Top =1860
                     Width =4380
                     Height =360
                     FontSize =14
@@ -1023,9 +1031,9 @@ Begin Form
                     Caption ="Special Considerations"
                     GridlineColor =10921638
                     LayoutCachedLeft =7080
-                    LayoutCachedTop =2400
+                    LayoutCachedTop =1860
                     LayoutCachedWidth =11460
-                    LayoutCachedHeight =2760
+                    LayoutCachedHeight =2220
                     ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
@@ -1033,7 +1041,7 @@ Begin Form
                     FontUnderline = NotDefault
                     OverlapFlags =215
                     Left =240
-                    Top =660
+                    Top =120
                     Width =4380
                     Height =300
                     FontSize =14
@@ -1044,9 +1052,9 @@ Begin Form
                     Caption ="Site Information"
                     GridlineColor =10921638
                     LayoutCachedLeft =240
-                    LayoutCachedTop =660
+                    LayoutCachedTop =120
                     LayoutCachedWidth =4620
-                    LayoutCachedHeight =960
+                    LayoutCachedHeight =420
                     ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
@@ -1054,7 +1062,7 @@ Begin Form
                     FontUnderline = NotDefault
                     OverlapFlags =215
                     Left =240
-                    Top =2340
+                    Top =1800
                     Width =4380
                     Height =360
                     FontSize =14
@@ -1065,9 +1073,9 @@ Begin Form
                     Caption ="Damage  Information"
                     GridlineColor =10921638
                     LayoutCachedLeft =240
-                    LayoutCachedTop =2340
+                    LayoutCachedTop =1800
                     LayoutCachedWidth =4620
-                    LayoutCachedHeight =2700
+                    LayoutCachedHeight =2160
                     ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
@@ -1075,7 +1083,7 @@ Begin Form
                     FontUnderline = NotDefault
                     OverlapFlags =215
                     Left =240
-                    Top =4380
+                    Top =3600
                     Width =4380
                     Height =360
                     FontSize =14
@@ -1086,23 +1094,23 @@ Begin Form
                     Caption ="Repair Information"
                     GridlineColor =10921638
                     LayoutCachedLeft =240
-                    LayoutCachedTop =4380
+                    LayoutCachedTop =3600
                     LayoutCachedWidth =4620
-                    LayoutCachedHeight =4740
+                    LayoutCachedHeight =3960
                     ForeThemeColorIndex =8
                     ForeTint =100.0
                 End
                 Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =215
-                    Left =9660
-                    Top =6300
-                    Width =1500
-                    Height =405
+                    Left =11460
+                    Top =5460
+                    Width =1680
+                    Height =465
                     TabIndex =19
                     ForeColor =4210752
                     Name ="cmdAddNewSite"
-                    Caption ="Add Record"
+                    Caption ="Add New Site"
                     GridlineColor =10921638
                     OnClickEmMacro = Begin
                         Version =196611
@@ -1141,10 +1149,10 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =9660
-                    LayoutCachedTop =6300
-                    LayoutCachedWidth =11160
-                    LayoutCachedHeight =6705
+                    LayoutCachedLeft =11460
+                    LayoutCachedTop =5460
+                    LayoutCachedWidth =13140
+                    LayoutCachedHeight =5925
                     BackColor =15123357
                     BorderColor =15123357
                     HoverColor =15652797
@@ -1157,12 +1165,443 @@ Begin Form
                     WebImagePaddingBottom =1
                     Overlaps =1
                 End
+                Begin TextBox
+                    Enabled = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =5760
+                    Top =120
+                    Width =1530
+                    Height =300
+                    FontSize =14
+                    BorderColor =10921638
+                    ForeColor =16777215
+                    Name ="SiteID"
+                    ControlSource ="SiteID"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =5760
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =7290
+                    LayoutCachedHeight =420
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =4680
+                            Top =120
+                            Width =1020
+                            Height =300
+                            FontSize =14
+                            BorderColor =8355711
+                            ForeColor =16777215
+                            Name ="Site Number_Label"
+                            Caption ="SiteID"
+                            EventProcPrefix ="Site_Number_Label"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =4680
+                            LayoutCachedTop =120
+                            LayoutCachedWidth =5700
+                            LayoutCachedHeight =420
+                            ForeThemeColorIndex =1
+                            ForeTint =100.0
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7500
+                    Top =5400
+                    Width =1260
+                    Height =600
+                    TabIndex =20
+                    ForeColor =4210752
+                    Name ="Command163"
+                    Caption ="First Record"
+                    GridlineColor =10921638
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="GoToRecord"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="2"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Command163\" xmlns=\"http://schemas.microsoft.com/office/acc"
+                                "essservices/2009/11/application\"><Statements><Action Name=\"GoToRecord\"><Argum"
+                                "ent Name=\"Record\">First</Argume"
+                        End
+                        Begin
+                            Comment ="_AXL:nt></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x000000000000000000000000000000000000000000000000b17d4a33b17d4ae1 ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x0000000000000000000000000000000000000000b17d4a60b17d4af6b17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x000000000000000000000000b17d4a06b17d4a96b17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x0000000000000000b17d4a18b17d4ac3b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000b17d4a39b17d4ae4b17d4affb17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4a66b17d4af9b17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4a66b17d4af9b17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000b17d4a39b17d4ae7b17d4affb17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x0000000000000000b17d4a18b17d4ac6b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x000000000000000000000000b17d4a06b17d4a99b17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x0000000000000000000000000000000000000000b17d4a66b17d4af9b17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x000000000000000000000000000000000000000000000000b17d4a39b17d4ae7 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    LayoutCachedLeft =7500
+                    LayoutCachedTop =5400
+                    LayoutCachedWidth =8760
+                    LayoutCachedHeight =6000
+                    PictureCaptionArrangement =3
+                    UseTheme =0
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverThemeColorIndex =-1
+                    HoverTint =100.0
+                    PressedThemeColorIndex =-1
+                    PressedShade =100.0
+                    HoverForeThemeColorIndex =-1
+                    HoverForeTint =100.0
+                    PressedForeThemeColorIndex =-1
+                    PressedForeTint =100.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =10140
+                    Top =5400
+                    Width =1215
+                    Height =600
+                    TabIndex =21
+                    ForeColor =4210752
+                    Name ="Command164"
+                    Caption ="Last Record"
+                    GridlineColor =10921638
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="GoToRecord"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="3"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"Command164\" xmlns=\"http://schemas.microsoft.com/office/acc"
+                                "essservices/2009/11/application\"><Statements><Action Name=\"GoToRecord\"><Argum"
+                                "ent Name=\"Record\">Last</Argumen"
+                        End
+                        Begin
+                            Comment ="_AXL:t></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000b17d4ae1b17d4a360000000000000000 ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4af6b17d4a6000000000 ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4a96 ,
+                        0xb17d4a06000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4ac3b17d4a180000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4affb17d4ae7b17d4a3900000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4af9b17d4a66b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4af9b17d4a66b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4affb17d4ae7b17d4a3900000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0xb17d4ac6b17d4a180000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4a99 ,
+                        0xb17d4a06000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4affb17d4af9b17d4a6600000000 ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x00000000000000000000000000000000b17d4ae7b17d4a390000000000000000 ,
+                        0x00000000000000000000000000000000b17d4affb17d4affb17d4affb17d4aff ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    LayoutCachedLeft =10140
+                    LayoutCachedTop =5400
+                    LayoutCachedWidth =11355
+                    LayoutCachedHeight =6000
+                    PictureCaptionArrangement =3
+                    UseTheme =0
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverThemeColorIndex =-1
+                    HoverTint =100.0
+                    PressedThemeColorIndex =-1
+                    PressedShade =100.0
+                    HoverForeThemeColorIndex =-1
+                    HoverForeTint =100.0
+                    PressedForeThemeColorIndex =-1
+                    PressedForeTint =100.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =8820
+                    Top =5400
+                    Width =576
+                    Height =576
+                    TabIndex =22
+                    ForeColor =4210752
+                    Name ="cmdPrevious"
+                    ControlTipText ="Previous Record"
+                    GridlineColor =10921638
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =10
+                        Begin
+                            Action ="OnError"
+                            Argument ="0"
+                        End
+                        Begin
+                            Action ="GoToRecord"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                        Begin
+                            Condition ="[MacroError]<>0"
+                            Action ="MsgBox"
+                            Argument ="=[MacroError].[Description]"
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"cmdPrevious\" xmlns=\"http://schemas.microsoft.com/office/ac"
+                                "cessservices/2009/11/application\"><Statements><Action Name=\"OnError\"/><Action"
+                                " Name=\"GoToRecord\"><Argument Na"
+                        End
+                        Begin
+                            Comment ="_AXL:me=\"Record\">Previous</Argument></Action><ConditionalBlock><If><Condition>"
+                                "[MacroError]&lt;&gt;0</Condition><Statements><Action Name=\"MessageBox\"><Argume"
+                                "nt Name=\"Message\">=[MacroError].[Description]</Argument></Action></Statements>"
+                                "</If></ConditionalB"
+                        End
+                        Begin
+                            Comment ="_AXL:lock></Statements></UserInterfaceMacro>"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000b17d4a33b17d4ae10000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000b17d4a60b17d4af6b17d4aff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000b17d4a06b17d4a96b17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xb17d4a18b17d4ac3b17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000b17d4a39 ,
+                        0xb17d4ae4b17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4a66b17d4af9 ,
+                        0xb17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4a66b17d4af9 ,
+                        0xb17d4affb17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x00000000000000000000000000000000000000000000000000000000b17d4a39 ,
+                        0xb17d4ae7b17d4affb17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xb17d4a18b17d4ac6b17d4affb17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000b17d4a06b17d4a99b17d4affb17d4affb17d4aff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000b17d4a66b17d4af9b17d4aff0000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000b17d4a39b17d4ae70000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    LayoutCachedLeft =8820
+                    LayoutCachedTop =5400
+                    LayoutCachedWidth =9396
+                    LayoutCachedHeight =5976
+                    UseTheme =0
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverThemeColorIndex =-1
+                    HoverTint =100.0
+                    PressedThemeColorIndex =-1
+                    PressedShade =100.0
+                    HoverForeThemeColorIndex =-1
+                    HoverForeTint =100.0
+                    PressedForeThemeColorIndex =-1
+                    PressedForeTint =100.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =9480
+                    Top =5400
+                    Width =576
+                    Height =576
+                    TabIndex =23
+                    ForeColor =4210752
+                    Name ="cmdNext"
+                    Caption ="Command92"
+                    ControlTipText ="Next Record"
+                    GridlineColor =10921638
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =10
+                        Begin
+                            Action ="OnError"
+                            Argument ="0"
+                        End
+                        Begin
+                            Action ="GoToRecord"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="1"
+                        End
+                        Begin
+                            Condition ="[MacroError]<>0"
+                            Action ="MsgBox"
+                            Argument ="=[MacroError].[Description]"
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"cmdNext\" xmlns=\"http://schemas.microsoft.com/office/access"
+                                "services/2009/11/application\"><Statements><Action Name=\"OnError\"/><Action Nam"
+                                "e=\"GoToRecord\"/><ConditionalBlo"
+                        End
+                        Begin
+                            Comment ="_AXL:ck><If><Condition>[MacroError]&lt;&gt;0</Condition><Statements><Action Name"
+                                "=\"MessageBox\"><Argument Name=\"Message\">=[MacroError].[Description]</Argument"
+                                "></Action></Statements></If></ConditionalBlock></Statements></UserInterfaceMacro"
+                                ">"
+                        End
+                    End
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4ae1b17d4a36 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4af6 ,
+                        0xb17d4a6000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4a96b17d4a060000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4ac3b17d4a1800000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4affb17d4ae7b17d4a39000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4affb17d4affb17d4af9b17d4a660000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4affb17d4affb17d4af9b17d4a660000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4affb17d4ae7b17d4a39000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4affb17d4ac6b17d4a1800000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4aff ,
+                        0xb17d4affb17d4a99b17d4a060000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4affb17d4af9 ,
+                        0xb17d4a6600000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000b17d4ae7b17d4a39 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    LayoutCachedLeft =9480
+                    LayoutCachedTop =5400
+                    LayoutCachedWidth =10056
+                    LayoutCachedHeight =5976
+                    UseTheme =0
+                    BackColor =15123357
+                    BorderColor =15123357
+                    HoverThemeColorIndex =-1
+                    HoverTint =100.0
+                    PressedThemeColorIndex =-1
+                    PressedShade =100.0
+                    HoverForeThemeColorIndex =-1
+                    HoverForeTint =100.0
+                    PressedForeThemeColorIndex =-1
+                    PressedForeTint =100.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
             End
         End
         Begin FormFooter
             Height =0
             Name ="FormFooter"
-            AutoHeight =1
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1

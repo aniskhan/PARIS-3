@@ -1,8 +1,10 @@
 ﻿Version =20
 VersionRequired =20
 Begin Form
+    AllowDeletions = NotDefault
     CloseButton = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     PictureAlignment =2
@@ -12,8 +14,8 @@ Begin Form
     Width =24285
     DatasheetFontHeight =11
     ItemSuffix =12
-    Right =11355
-    Bottom =8505
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xa960a2f609b7e440
@@ -25,9 +27,6 @@ Begin Form
         0x010000006801000000000000a10700000100000001000000
     End
     AllowDatasheetView =0
-    AllowPivotTableView =0
-    AllowPivotChartView =0
-    AllowPivotChartView =0
     FilterOnLoad =0
     ShowPageMargins =0
     DisplayOnSharePointSite =1

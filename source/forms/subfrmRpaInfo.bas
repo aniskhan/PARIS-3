@@ -3,7 +3,9 @@ VersionRequired =20
 Begin Form
     RecordSelectors = NotDefault
     NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ScrollBars =0
@@ -13,12 +15,12 @@ Begin Form
     GridY =24
     Width =14520
     DatasheetFontHeight =11
-    ItemSuffix =116
-    Right =16005
-    Bottom =8505
+    ItemSuffix =117
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x388fc438afa8e440
+        0xc2fe75d237b9e440
     End
     RecordSource ="fqryRpaInfo"
     DatasheetFontName ="Calibri"
@@ -91,7 +93,6 @@ Begin Form
             ForeTint =75.0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
-            UseTheme =1
             Shape =1
             Gradient =12
             BackThemeColorIndex =4
@@ -101,14 +102,6 @@ Begin Form
             BorderThemeColorIndex =4
             BorderTint =60.0
             ThemeFontIndex =1
-            HoverThemeColorIndex =4
-            HoverTint =40.0
-            PressedThemeColorIndex =4
-            PressedShade =75.0
-            HoverForeThemeColorIndex =0
-            HoverForeTint =75.0
-            PressedForeThemeColorIndex =0
-            PressedForeTint =75.0
         End
         Begin CheckBox
             BorderLineStyle =0
@@ -160,7 +153,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =420
+            Height =486
             BackColor =15921906
             Name ="FormHeader"
             AlternateBackThemeColorIndex =1
@@ -214,6 +207,68 @@ Begin Form
                     BackShade =95.0
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12960
+                    Top =60
+                    Width =426
+                    Height =366
+                    TabIndex =1
+                    ForeColor =4210752
+                    Name ="cmdRptApplicantPOC"
+                    Caption ="View Applicant POCs"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="View Applicant POCs"
+                    GridlineColor =10921638
+                    ImageData = Begin
+                        0x2800000010000000100000000100200000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000072727260727272cf727272eb727272c7727272967272720c ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000072727281727272ff727272ff727272ff727272ff727272ff7272728d ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x72727257727272ff727272ff727272ff727272ff727272ff727272ff7272726c ,
+                        0x000000000000000000000000000000000000000000000000000000007272721b ,
+                        0x727272ed727272ff727272ff727272ff727272ff727272ff727272fc7272721b ,
+                        0x00000000000000000000000000000000000000000000000000000000727272a5 ,
+                        0x727272ff727272ff727272db72727227727272a0727272f27272728400000000 ,
+                        0x00000000000000000000000000000000000000000000000072727236727272ff ,
+                        0x727272ff727272f3727272270000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000727272a8727272ff ,
+                        0x727272ff7272727e000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000007272721b727272fc727272ff ,
+                        0x727272f372727212000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000072727269727272ff727272ff ,
+                        0x7272729000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000727272ae727272ff727272ff ,
+                        0x7272724800000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000727272cf727272ff727272ff ,
+                        0x7272724900000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000727272db727272ff727272ff ,
+                        0x727272fb72727287000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000727272bd727272ff727272ff ,
+                        0x727272ff727272fc7272720c0000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000072727275727272ff727272ff ,
+                        0x727272ff727272c0000000000000000000000000000000000000000000000000 ,
+                        0x00000000000000000000000000000000000000007272720f727272ea727272d9 ,
+                        0x727272ff72727266000000000000000000000000000000000000000000000000 ,
+                        0x000000000000000000000000000000000000000000000000727272397272729a ,
+                        0x727272ba72727206000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+
+                    LayoutCachedLeft =12960
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =13386
+                    LayoutCachedHeight =426
+                    BackColor =15123357
+                    BorderColor =15123357
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
                 End
             End
         End
@@ -598,3 +653,13 @@ Begin Form
         End
     End
 End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub cmdRptApplicantPOC_Click()
+DoCmd.OpenReport "rptApplicantPOC", acViewReport, , "[ApplicantID] = '" & Me.ApplicantID & "'", acWindowNormal
+End Sub

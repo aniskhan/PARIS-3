@@ -31,9 +31,6 @@ Begin Form
         0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
         0x010000006801000000000000a10700000100000001000000
     End
-    AllowPivotTableView =0
-    AllowPivotChartView =0
-    AllowPivotChartView =0
     FilterOnLoad =0
     ShowPageMargins =0
     DisplayOnSharePointSite =1
@@ -130,7 +127,7 @@ Begin Form
                     Height =1920
                     BorderColor =10921638
                     Name ="fqryNavMainUserPositions subform"
-                    SourceObject ="Form.fqryNavMainUserPositions subform"
+                    SourceObject ="Form.subfrmNavMainUserPositions"
                     LinkChildFields ="StaffID"
                     LinkMasterFields ="StaffID"
                     EventProcPrefix ="fqryNavMainUserPositions_subform"

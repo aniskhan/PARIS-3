@@ -37,10 +37,6 @@ dbBoolean "OrderByOnLoad" ="-1"
 dbBoolean "TotalsRow" ="0"
 Begin
     Begin
-        dbText "Name" ="tblDisaster.[JFO Start Date]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
         dbText "Name" ="DueDate"
         dbLong "AggregateType" ="-1"
     End
@@ -62,10 +58,6 @@ Begin
     End
     Begin
         dbText "Name" ="fqryRfiBanner.tblSubRecipient.[Subrecipient Name]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="tblDisaster.[JFO End Date]"
         dbLong "AggregateType" ="-1"
     End
     Begin
@@ -122,30 +114,6 @@ Begin
     End
     Begin
         dbText "Name" ="tblDisaster.[HSIN Address]"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="Date Sent to Recipient"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="Response Time Requested"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="JFO Street Address"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="JFO City, State, Zip"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="HSIN Address"
-        dbLong "AggregateType" ="-1"
-    End
-    Begin
-        dbText "Name" ="RFI Response Email Address"
         dbLong "AggregateType" ="-1"
     End
 End

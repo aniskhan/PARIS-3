@@ -12,14 +12,14 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =12540
+    Width =12600
     DatasheetFontHeight =11
     ItemSuffix =48
-    Right =16005
-    Bottom =8505
+    Right =20235
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x8ca256aaf8b6e440
+        0xe10fc934f5b8e440
     End
     RecordSource ="fqryRfiConcurrence"
     Caption ="RFI Concurrence"
@@ -138,9 +138,8 @@ Begin Form
                     SpecialEffect =3
                     BackStyle =1
                     OverlapFlags =85
-                    Left =60
                     Top =60
-                    Width =11340
+                    Width =12540
                     Height =720
                     FontSize =20
                     BackColor =15921906
@@ -149,9 +148,8 @@ Begin Form
                     Name ="Label32"
                     Caption ="Request for Information (RFI) Quality Control and Concurrence"
                     GridlineColor =10921638
-                    LayoutCachedLeft =60
                     LayoutCachedTop =60
-                    LayoutCachedWidth =11400
+                    LayoutCachedWidth =12540
                     LayoutCachedHeight =780
                     BackShade =95.0
                     ForeThemeColorIndex =-1
@@ -161,7 +159,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =13020
+            Height =12840
             Name ="Detail"
             AlternateBackColor =16777215
             AlternateBackThemeColorIndex =1
@@ -170,18 +168,16 @@ Begin Form
                 Begin Rectangle
                     BackStyle =1
                     OverlapFlags =93
-                    Left =60
-                    Top =7860
-                    Width =11340
+                    Top =7620
+                    Width =12540
                     Height =3120
                     BackColor =15983578
                     BorderColor =10921638
                     Name ="Box47"
                     GridlineColor =10921638
-                    LayoutCachedLeft =60
-                    LayoutCachedTop =7860
-                    LayoutCachedWidth =11400
-                    LayoutCachedHeight =10980
+                    LayoutCachedTop =7620
+                    LayoutCachedWidth =12540
+                    LayoutCachedHeight =10740
                     BackThemeColorIndex =8
                     BackTint =20.0
                 End
@@ -190,18 +186,16 @@ Begin Form
                     BackStyle =1
                     BorderWidth =1
                     OverlapFlags =93
-                    Left =60
-                    Top =2340
-                    Width =11340
+                    Top =2100
+                    Width =12540
                     Height =5460
                     BackColor =15921906
                     BorderColor =8210719
                     Name ="Box39"
                     GridlineColor =10921638
-                    LayoutCachedLeft =60
-                    LayoutCachedTop =2340
-                    LayoutCachedWidth =11400
-                    LayoutCachedHeight =7800
+                    LayoutCachedTop =2100
+                    LayoutCachedWidth =12540
+                    LayoutCachedHeight =7560
                     BackShade =95.0
                     BorderThemeColorIndex =-1
                     BorderShade =100.0
@@ -405,29 +399,8 @@ Begin Form
                     ForeColor =16777215
                     Name ="cmdOpenRFI"
                     Caption ="Open Draft RFI Letter"
+                    OnClick ="[Event Procedure]"
                     GridlineColor =10921638
-                    OnClickEmMacro = Begin
-                        Version =196611
-                        ColumnsShown =0
-                        Begin
-                            Action ="OpenReport"
-                            Argument ="rptRFI"
-                            Argument ="2"
-                            Argument =""
-                            Argument =""
-                            Argument ="0"
-                        End
-                        Begin
-                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
-                                "nterfaceMacro For=\"cmdOpenRFI\" Event=\"OnClick\" xmlns=\"http://schemas.micros"
-                                "oft.com/office/accessservices/2009/11/application\"><Statements><Action Name=\"O"
-                                "penReport\"><Argument Name=\"Repor"
-                        End
-                        Begin
-                            Comment ="_AXL:tName\">rptRFI</Argument><Argument Name=\"View\">Print Preview</Argument></"
-                                "Action></Statements></UserInterfaceMacro>"
-                        End
-                    End
 
                     LayoutCachedLeft =540
                     LayoutCachedTop =8460
@@ -558,7 +531,7 @@ Begin Form
                     LayoutCachedHeight =9825
                 End
                 Begin CommandButton
-                    OverlapFlags =215
+                    OverlapFlags =223
                     Left =540
                     Top =10260
                     Width =3480
@@ -599,7 +572,7 @@ Begin Form
                 End
                 Begin Subform
                     OverlapFlags =215
-                    Width =11520
+                    Width =12540
                     Height =2039
                     TabIndex =7
                     BorderColor =10921638
@@ -609,7 +582,7 @@ Begin Form
                     LinkMasterFields ="RfiID"
                     GridlineColor =10921638
 
-                    LayoutCachedWidth =11520
+                    LayoutCachedWidth =12540
                     LayoutCachedHeight =2039
                     Begin
                         Begin Label
@@ -628,8 +601,8 @@ Begin Form
                     End
                 End
                 Begin Subform
-                    OverlapFlags =85
-                    Top =11100
+                    OverlapFlags =87
+                    Top =10800
                     Width =12540
                     Height =1920
                     TabIndex =8
@@ -640,9 +613,9 @@ Begin Form
                     LinkMasterFields ="RfiID"
                     GridlineColor =10921638
 
-                    LayoutCachedTop =11100
+                    LayoutCachedTop =10800
                     LayoutCachedWidth =12540
-                    LayoutCachedHeight =13020
+                    LayoutCachedHeight =12720
                 End
             End
         End
@@ -658,7 +631,7 @@ Begin Form
                     BackStyle =1
                     OldBorderStyle =1
                     OverlapFlags =93
-                    Width =11466
+                    Width =12540
                     Height =720
                     FontSize =20
                     BackColor =15527148
@@ -667,7 +640,7 @@ Begin Form
                     Name ="Label36"
                     Caption ="Request for Information (RFI) Processsing"
                     GridlineColor =10921638
-                    LayoutCachedWidth =11466
+                    LayoutCachedWidth =12540
                     LayoutCachedHeight =720
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
@@ -675,9 +648,10 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =9060
-                    Top =180
-                    Height =405
+                    Left =10560
+                    Top =60
+                    Width =1620
+                    Height =525
                     ForeColor =4210752
                     Name ="cmdCloseForm"
                     Caption ="Save / Close"
@@ -702,9 +676,9 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =9060
-                    LayoutCachedTop =180
-                    LayoutCachedWidth =10500
+                    LayoutCachedLeft =10560
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =12180
                     LayoutCachedHeight =585
                     BackColor =15123357
                     BorderColor =15123357
@@ -1126,12 +1100,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

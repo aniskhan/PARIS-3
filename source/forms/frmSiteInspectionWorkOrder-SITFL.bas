@@ -15,13 +15,13 @@ Begin Form
     Width =20460
     DatasheetFontHeight =11
     ItemSuffix =180
-    Right =14835
-    Bottom =8580
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x9c5223c2aeb1e440
+        0x6078eaafb4b9e440
     End
-    RecordSource ="fqryProjectStInspectionAssignment"
+    RecordSource ="fqryProjectInfo"
     Caption ="Site Inspection Assignment"
     OnCurrent ="[Event Procedure]"
     DatasheetFontName ="Calibri"
@@ -184,12 +184,10 @@ Begin Form
                     Visible = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
-                    Left =7740
+                    Left =18120
                     Top =240
                     Width =1530
                     Height =315
-                    ColumnWidth =1530
-                    ColumnOrder =0
                     FontSize =12
                     FontWeight =700
                     BackColor =15527148
@@ -199,9 +197,9 @@ Begin Form
                     EventProcPrefix ="Reference_Number"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =7740
+                    LayoutCachedLeft =18120
                     LayoutCachedTop =240
-                    LayoutCachedWidth =9270
+                    LayoutCachedWidth =19650
                     LayoutCachedHeight =555
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
@@ -210,7 +208,7 @@ Begin Form
                         Begin Label
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =4860
+                            Left =15240
                             Top =240
                             Width =2790
                             Height =345
@@ -221,147 +219,10 @@ Begin Form
                             Caption ="Project Reference Number"
                             EventProcPrefix ="Reference_Number_Label"
                             GridlineColor =10921638
-                            LayoutCachedLeft =4860
+                            LayoutCachedLeft =15240
                             LayoutCachedTop =240
-                            LayoutCachedWidth =7650
+                            LayoutCachedWidth =18030
                             LayoutCachedHeight =585
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin TextBox
-                    Visible = NotDefault
-                    EnterKeyBehavior = NotDefault
-                    ScrollBars =2
-                    OverlapFlags =223
-                    IMESentenceMode =3
-                    Left =10140
-                    Top =240
-                    Width =2565
-                    Height =300
-                    ColumnWidth =3000
-                    ColumnOrder =1
-                    FontSize =12
-                    FontWeight =700
-                    TabIndex =1
-                    BackColor =15527148
-                    BorderColor =10921638
-                    Name ="County"
-                    ControlSource ="County"
-                    StatusBarText ="Should be a lookup"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =10140
-                    LayoutCachedTop =240
-                    LayoutCachedWidth =12705
-                    LayoutCachedHeight =540
-                    BackThemeColorIndex =-1
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
-                    Begin
-                        Begin Label
-                            Visible = NotDefault
-                            OverlapFlags =215
-                            Left =9300
-                            Top =240
-                            Width =735
-                            Height =315
-                            FontSize =12
-                            FontWeight =700
-                            BorderColor =8355711
-                            Name ="County_Label"
-                            Caption ="County"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =9300
-                            LayoutCachedTop =240
-                            LayoutCachedWidth =10035
-                            LayoutCachedHeight =555
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin TextBox
-                    Visible = NotDefault
-                    OverlapFlags =223
-                    IMESentenceMode =3
-                    Left =13440
-                    Top =240
-                    Width =3600
-                    Height =315
-                    ColumnOrder =2
-                    TabIndex =2
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Text149"
-                    ControlSource ="Assigned FEMA PDC"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =13440
-                    LayoutCachedTop =240
-                    LayoutCachedWidth =17040
-                    LayoutCachedHeight =555
-                    Begin
-                        Begin Label
-                            Visible = NotDefault
-                            OverlapFlags =247
-                            Left =12060
-                            Top =240
-                            Width =1320
-                            Height =315
-                            FontSize =12
-                            FontWeight =600
-                            BorderColor =8355711
-                            Name ="Label150"
-                            Caption ="FEMA PDM"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =12060
-                            LayoutCachedTop =240
-                            LayoutCachedWidth =13380
-                            LayoutCachedHeight =555
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin TextBox
-                    Visible = NotDefault
-                    OverlapFlags =215
-                    IMESentenceMode =3
-                    Left =17280
-                    Top =300
-                    Width =3180
-                    Height =315
-                    ColumnOrder =3
-                    TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Text151"
-                    ControlSource ="Assigned State PDC"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =17280
-                    LayoutCachedTop =300
-                    LayoutCachedWidth =20460
-                    LayoutCachedHeight =615
-                    Begin
-                        Begin Label
-                            OverlapFlags =247
-                            Left =16020
-                            Top =300
-                            Width =1200
-                            Height =315
-                            FontSize =12
-                            FontWeight =600
-                            BorderColor =8355711
-                            Name ="Label152"
-                            Caption ="State PDM"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =16020
-                            LayoutCachedTop =300
-                            LayoutCachedWidth =17220
-                            LayoutCachedHeight =615
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
                         End
@@ -493,7 +354,7 @@ Begin Form
                     Top =9300
                     Width =1740
                     Height =900
-                    TabIndex =8
+                    TabIndex =5
                     ForeColor =4210752
                     Name ="cmdAssignSI"
                     Caption ="SITFL Submits to Assigned Site Inspector"
@@ -522,7 +383,7 @@ Begin Form
                     Left =1200
                     Width =1290
                     Height =360
-                    TabIndex =9
+                    TabIndex =6
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="DisasterID"
@@ -554,7 +415,7 @@ Begin Form
                     Top =300
                     Width =1500
                     Height =315
-                    TabIndex =10
+                    TabIndex =7
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text2"
@@ -607,7 +468,7 @@ Begin Form
                     Top =2880
                     Width =17280
                     Height =1320
-                    TabIndex =11
+                    TabIndex =8
                     BorderColor =10921638
                     Name ="subfrmSITFLAssignProjects"
                     SourceObject ="Form.subfrmlProjects banner"
@@ -671,149 +532,6 @@ Begin Form
                     WebImagePaddingBottom =1
                     Overlaps =1
                 End
-                Begin ComboBox
-                    LimitToList = NotDefault
-                    Visible = NotDefault
-                    TabStop = NotDefault
-                    RowSourceTypeInt =1
-                    OverlapFlags =215
-                    IMESentenceMode =3
-                    ColumnCount =2
-                    ListWidth =4440
-                    Left =17805
-                    Top =2040
-                    Width =2370
-                    Height =330
-                    TabIndex =7
-                    BoundColumn =1
-                    BorderColor =10921638
-                    Name ="Damage Level"
-                    ControlSource ="Damage Level"
-                    RowSourceType ="Value List"
-                    RowSource ="\"Repair\";\"Funtional but needs repair\";\"Repair\";\"Repair need to restore fu"
-                        "nction\""
-                    ColumnWidths ="1440;2999"
-                    EventProcPrefix ="Damage_Level"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =17805
-                    LayoutCachedTop =2040
-                    LayoutCachedWidth =20175
-                    LayoutCachedHeight =2370
-                    ForeThemeColorIndex =-1
-                    ForeShade =100.0
-                    Begin
-                        Begin Label
-                            Visible = NotDefault
-                            OverlapFlags =215
-                            Left =17760
-                            Top =1680
-                            Width =1365
-                            Height =315
-                            BorderColor =8355711
-                            Name ="Damage Level_Label"
-                            Caption ="Damage Level"
-                            EventProcPrefix ="Damage_Level_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =17760
-                            LayoutCachedTop =1680
-                            LayoutCachedWidth =19125
-                            LayoutCachedHeight =1995
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin TextBox
-                    Visible = NotDefault
-                    TabStop = NotDefault
-                    EnterKeyBehavior = NotDefault
-                    ScrollBars =2
-                    OverlapFlags =215
-                    IMESentenceMode =3
-                    Left =19380
-                    Top =2520
-                    Width =600
-                    Height =360
-                    TabIndex =6
-                    BorderColor =10921638
-                    Name ="Critical Facility"
-                    ControlSource ="Critical Facility"
-                    EventProcPrefix ="Critical_Facility"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =19380
-                    LayoutCachedTop =2520
-                    LayoutCachedWidth =19980
-                    LayoutCachedHeight =2880
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
-                    Begin
-                        Begin Label
-                            Visible = NotDefault
-                            OverlapFlags =215
-                            Left =17880
-                            Top =2535
-                            Width =1425
-                            Height =345
-                            BorderColor =8355711
-                            Name ="Critical Facility_Label"
-                            Caption ="Critical Facility"
-                            EventProcPrefix ="Critical_Facility_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =17880
-                            LayoutCachedTop =2535
-                            LayoutCachedWidth =19305
-                            LayoutCachedHeight =2880
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
-                Begin TextBox
-                    Visible = NotDefault
-                    TabStop = NotDefault
-                    EnterKeyBehavior = NotDefault
-                    ScrollBars =2
-                    OverlapFlags =215
-                    IMESentenceMode =3
-                    Left =17760
-                    Top =3540
-                    Width =1680
-                    Height =300
-                    TabIndex =5
-                    BorderColor =10921638
-                    Name ="Function"
-                    ControlSource ="Function"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =17760
-                    LayoutCachedTop =3540
-                    LayoutCachedWidth =19440
-                    LayoutCachedHeight =3840
-                    ForeThemeColorIndex =-1
-                    ForeTint =100.0
-                    Begin
-                        Begin Label
-                            Visible = NotDefault
-                            OverlapFlags =215
-                            Left =17940
-                            Top =3060
-                            Width =885
-                            Height =315
-                            BorderColor =8355711
-                            Name ="Function_Label"
-                            Caption ="Function"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =17940
-                            LayoutCachedTop =3060
-                            LayoutCachedWidth =18825
-                            LayoutCachedHeight =3375
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
-                End
                 Begin Label
                     BackStyle =1
                     OldBorderStyle =1
@@ -850,7 +568,7 @@ Begin Form
                     Width =1620
                     Height =390
                     FontSize =12
-                    TabIndex =12
+                    TabIndex =9
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
@@ -896,7 +614,7 @@ Begin Form
                     Width =180
                     Height =0
                     FontSize =12
-                    TabIndex =13
+                    TabIndex =10
                     ForeColor =4210752
                     Name ="Command133"
                     Caption ="Command133"
@@ -926,7 +644,7 @@ Begin Form
                     Height =390
                     FontSize =12
                     FontWeight =700
-                    TabIndex =14
+                    TabIndex =11
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -979,7 +697,7 @@ Begin Form
                     Height =390
                     FontSize =12
                     FontWeight =700
-                    TabIndex =15
+                    TabIndex =12
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -1030,7 +748,7 @@ Begin Form
                     Width =1620
                     Height =390
                     FontSize =12
-                    TabIndex =16
+                    TabIndex =13
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
@@ -1084,7 +802,7 @@ Begin Form
                     Height =390
                     FontSize =12
                     FontWeight =700
-                    TabIndex =17
+                    TabIndex =14
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -1136,7 +854,7 @@ Begin Form
                     Height =390
                     FontSize =12
                     FontWeight =700
-                    TabIndex =19
+                    TabIndex =16
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -1186,7 +904,7 @@ Begin Form
                     Height =390
                     FontSize =12
                     FontWeight =700
-                    TabIndex =20
+                    TabIndex =17
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -1236,7 +954,7 @@ Begin Form
                     Height =390
                     FontSize =12
                     FontWeight =700
-                    TabIndex =21
+                    TabIndex =18
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -1286,7 +1004,7 @@ Begin Form
                     Height =390
                     FontSize =12
                     FontWeight =700
-                    TabIndex =22
+                    TabIndex =19
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -1389,7 +1107,7 @@ Begin Form
                     Height =375
                     FontSize =12
                     FontWeight =700
-                    TabIndex =18
+                    TabIndex =15
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =12874308
@@ -1445,7 +1163,7 @@ Begin Form
                     Top =7260
                     Width =1620
                     Height =540
-                    TabIndex =23
+                    TabIndex =20
                     ForeColor =4210752
                     Name ="cmdApplyToAll"
                     Caption ="Apply to all"
@@ -1475,7 +1193,7 @@ Begin Form
                     Width =1620
                     Height =390
                     FontSize =12
-                    TabIndex =24
+                    TabIndex =21
                     BackColor =13431551
                     BorderColor =10921638
                     ForeColor =4210752
@@ -2367,12 +2085,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

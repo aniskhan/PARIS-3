@@ -1,6 +1,7 @@
 ﻿Version =20
 VersionRequired =20
 Begin Form
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
@@ -12,10 +13,8 @@ Begin Form
     Width =12458
     DatasheetFontHeight =11
     ItemSuffix =24
-    Left =-15
-    Top =-5625
-    Right =13650
-    Bottom =-4005
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xbb9771b7acb7e440

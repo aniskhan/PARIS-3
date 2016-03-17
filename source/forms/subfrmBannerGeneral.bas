@@ -18,18 +18,13 @@ Begin Form
     Width =20400
     DatasheetFontHeight =11
     ItemSuffix =134
-    Right =11745
-    Bottom =7920
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xff88395bd8b7e440
+        0xf6c393aeb4b9e440
     End
-    RecordSource ="SELECT tblDisaster.*, tblSubRecipient.ApplicantID, tblSubRecipient.[Subrecipient"
-        " Name], tblSubRecipient.[Assigned PDC], tblProjects.ProjectID, tblProjects.[Proj"
-        "ect Category], tblProjects.[Application Title], tblProjects.[Lane Assigned] FROM"
-        " (tblDisaster INNER JOIN tblSubRecipient ON tblDisaster.DisasterID = tblSubRecip"
-        "ient.DisasterID) INNER JOIN tblProjects ON (tblSubRecipient.DisasterID = tblProj"
-        "ects.DisasterID) AND (tblSubRecipient.ApplicantID = tblProjects.ApplicantID); "
+    RecordSource ="fqryBannerGeneral"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
         0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
@@ -533,13 +528,13 @@ Begin Form
                 Begin TextBox
                     TabStop = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =85
+                    OverlapFlags =93
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
                     Left =7560
                     Top =420
-                    Width =1380
+                    Width =1260
                     Height =315
                     FontSize =16
                     FontWeight =700
@@ -551,7 +546,7 @@ Begin Form
 
                     LayoutCachedLeft =7560
                     LayoutCachedTop =420
-                    LayoutCachedWidth =8940
+                    LayoutCachedWidth =8820
                     LayoutCachedHeight =735
                     ForeTint =100.0
                     Begin
@@ -580,11 +575,11 @@ Begin Form
                 Begin TextBox
                     TabStop = NotDefault
                     OldBorderStyle =0
-                    OverlapFlags =85
+                    OverlapFlags =93
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =10440
+                    Left =10200
                     Top =420
                     Width =600
                     Height =315
@@ -596,15 +591,15 @@ Begin Form
                     ControlSource ="Project Category"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =10440
+                    LayoutCachedLeft =10200
                     LayoutCachedTop =420
-                    LayoutCachedWidth =11040
+                    LayoutCachedWidth =10800
                     LayoutCachedHeight =735
                     ForeTint =100.0
                     Begin
                         Begin Label
-                            OverlapFlags =85
-                            Left =9060
+                            OverlapFlags =87
+                            Left =8820
                             Top =420
                             Width =1365
                             Height =315
@@ -615,9 +610,9 @@ Begin Form
                             Name ="Label129"
                             Caption =" Category:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =9060
+                            LayoutCachedLeft =8820
                             LayoutCachedTop =420
-                            LayoutCachedWidth =10425
+                            LayoutCachedWidth =10185
                             LayoutCachedHeight =735
                             ForeThemeColorIndex =-1
                             ForeTint =100.0
@@ -631,7 +626,7 @@ Begin Form
                     TextAlign =1
                     BackStyle =0
                     IMESentenceMode =3
-                    Left =13500
+                    Left =13140
                     Top =420
                     Width =6600
                     Height =315
@@ -643,15 +638,15 @@ Begin Form
                     ControlSource ="Application Title"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =13500
+                    LayoutCachedLeft =13140
                     LayoutCachedTop =420
-                    LayoutCachedWidth =20100
+                    LayoutCachedWidth =19740
                     LayoutCachedHeight =735
                     ForeTint =100.0
                     Begin
                         Begin Label
-                            OverlapFlags =85
-                            Left =11160
+                            OverlapFlags =87
+                            Left =10800
                             Top =420
                             Width =2280
                             Height =315
@@ -662,9 +657,9 @@ Begin Form
                             Name ="Label131"
                             Caption ="Application Title:"
                             GridlineColor =10921638
-                            LayoutCachedLeft =11160
+                            LayoutCachedLeft =10800
                             LayoutCachedTop =420
-                            LayoutCachedWidth =13440
+                            LayoutCachedWidth =13080
                             LayoutCachedHeight =735
                             ForeThemeColorIndex =-1
                             ForeTint =100.0

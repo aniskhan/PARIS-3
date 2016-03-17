@@ -17,9 +17,9 @@ Begin Report
     ItemSuffix =103
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x909ce9ecf1b1e440
+        0xacbbc78694b8e440
     End
-    RecordSource ="qrySiteInsepctionWorkOrder"
+    RecordSource ="rqrySiteInspectionWorkOrder"
     Caption ="rptSiteInsepctionWorkOrder"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -360,21 +360,21 @@ Begin Report
                     TextAlign =1
                     Left =10320
                     Top =1020
-                    Width =2340
+                    Width =2280
                     Height =480
                     FontSize =18
                     FontWeight =700
                     BorderColor =8355711
                     ForeColor =12874308
                     Name ="Assigned PDC_Label"
-                    Caption ="Assigned PDM:"
+                    Caption ="Assigned PDC:"
                     Tag ="DetachedLabel"
                     EventProcPrefix ="Assigned_PDC_Label"
                     GridlineStyleBottom =1
                     GridlineColor =10921638
                     LayoutCachedLeft =10320
                     LayoutCachedTop =1020
-                    LayoutCachedWidth =12660
+                    LayoutCachedWidth =12600
                     LayoutCachedHeight =1500
                     ForeThemeColorIndex =8
                     ForeTint =100.0

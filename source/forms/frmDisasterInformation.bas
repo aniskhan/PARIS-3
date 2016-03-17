@@ -2,6 +2,7 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
@@ -13,13 +14,13 @@ Begin Form
     Width =25560
     DatasheetFontHeight =11
     ItemSuffix =68
-    Right =16005
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x7c67039a16a5e440
+        0xa637ddafb4b9e440
     End
-    RecordSource ="tblDisaster"
+    RecordSource ="fqryDisasterInfo"
     Caption ="Disaster Setup"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -998,35 +999,6 @@ Begin Form
                         End
                     End
                 End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =9600
-                    Top =8160
-                    Width =1860
-                    Height =540
-                    TabIndex =18
-                    ForeColor =4210752
-                    Name ="cmdImport"
-                    Caption ="Admin-Import"
-                    OnClick ="[Event Procedure]"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =9600
-                    LayoutCachedTop =8160
-                    LayoutCachedWidth =11460
-                    LayoutCachedHeight =8700
-                    BackColor =15123357
-                    BorderColor =15123357
-                    HoverColor =15652797
-                    PressedColor =11957550
-                    HoverForeColor =4210752
-                    PressedForeColor =4210752
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
                 Begin TextBox
                     OverlapFlags =215
                     IMESentenceMode =3
@@ -1034,7 +1006,7 @@ Begin Form
                     Top =9060
                     Width =1920
                     Height =360
-                    TabIndex =19
+                    TabIndex =18
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text47"
@@ -1076,7 +1048,7 @@ Begin Form
                     Top =9540
                     Width =1920
                     Height =360
-                    TabIndex =20
+                    TabIndex =19
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text49"
@@ -1139,7 +1111,7 @@ Begin Form
                     Top =3720
                     Width =3960
                     Height =360
-                    TabIndex =21
+                    TabIndex =20
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text52"
@@ -1181,7 +1153,7 @@ Begin Form
                     Top =4200
                     Width =3420
                     Height =360
-                    TabIndex =22
+                    TabIndex =21
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text54"
@@ -1347,7 +1319,7 @@ Begin Form
                     Top =6780
                     Width =2820
                     Height =345
-                    TabIndex =23
+                    TabIndex =22
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text62"
@@ -1389,7 +1361,7 @@ Begin Form
                     Top =7260
                     Width =2700
                     Height =345
-                    TabIndex =24
+                    TabIndex =23
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="Text64"
@@ -1528,7 +1500,3 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
 Option Explicit
-
-Private Sub cmdImport_Click()
-    ImportCSV.ImportFiles
-End Sub

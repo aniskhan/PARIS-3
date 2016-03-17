@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =2
     PictureAlignment =2
@@ -12,10 +14,8 @@ Begin Form
     Width =19080
     DatasheetFontHeight =11
     ItemSuffix =15
-    Left =270
-    Top =7680
-    Right =16155
-    Bottom =9960
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xf55a0a9d33b5e440
@@ -23,6 +23,10 @@ Begin Form
     RecordSource ="fqrySiteStInspectionSelect"
     Caption ="subformSites"
     DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
     OnDblClick ="[Event Procedure]"
     FilterOnLoad =0
     SplitFormOrientation =1

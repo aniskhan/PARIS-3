@@ -47,7 +47,8 @@ Private Function GetFileNamePath() As String
 End Function
 
 Private Sub ImportToTable(filePath As String)
-    DoCmd.TransferText acImportDelim, "RpaCsvImport", "importRpa", filePath, True
+    DoCmd.TransferText acImportDelim, , "importRpa", filePath, True
+    'DoCmd.TransferText acImportDelim, "RpaCsvImport", "importRpa", filePath, True
 End Sub
 Private Sub ClearTables()
     Dim Db As Database
@@ -93,6 +94,17 @@ Private Sub TransferRecords()
                     If Not IsNull(recImported![RPA Received Date]) Then recExisting![Date RPA Received] = CDate(recImported![RPA Received Date])
                     If Not IsNull(recImported![PNP Status]) Then recExisting![Applicant is a PNP] = (recImported![PNP Status] = "Yes")
                     If Not IsNull(recImported![RPA Entry Date]) Then recExisting![RPA Entered into EMMIE] = CDate(recImported![RPA Entry Date])
+                    If Not IsNull(recImported![Contact Name]) Then recExisting![Subrecipient POC] = recImported![Contact Name]
+                    If Not IsNull(recImported![Contact Title]) Then recExisting![Subrecipient POC Title] = recImported![Contact Title]
+                    If Not IsNull(recImported![Contact Phone Number]) Then recExisting![Subrecipient POC Contact Number] = recImported![Contact Phone Number]
+                    If Not IsNull(recImported![Contact Email]) Then recExisting![Subrecipient POC Contact Email] = recImported![Contact Email]
+
+                    If Not IsNull(recImported![Alternate Contact Name]) Then recExisting![Alt Subrecipient POC] = recImported![Alternate Contact Name]
+                    If Not IsNull(recImported![Alternate Contact Title]) Then recExisting![Alt Subrecipient POC Title] = recImported![Alternate Contact Title]
+                    If Not IsNull(recImported![Alternate Business Number]) Then recExisting![Alt Subrecipient POC Contact Number] = recImported![Alternate Business Number]
+                    If Not IsNull(recImported![Alternate Contact Email]) Then recExisting![Alt Subrecipient POC Contact Email] = recImported![Alternate Contact Email]
+                    
+                
                 recExisting.Update
                 
                 Reviews.EnterReview GetInsertDims(recImported)

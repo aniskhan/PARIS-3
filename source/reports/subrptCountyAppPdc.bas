@@ -13,6 +13,8 @@ Begin Report
     Width =6480
     DatasheetFontHeight =11
     ItemSuffix =15
+    Left =465
+    Top =4725
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x0d3b16072ca7e440
@@ -103,13 +105,28 @@ Begin Report
         End
         Begin FormHeader
             KeepTogether = NotDefault
-            Height =0
-            BackColor =15064278
+            Height =480
             Name ="ReportHeader"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
-            BackThemeColorIndex =2
-            BackTint =20.0
+            BackThemeColorIndex =1
+            Begin
+                Begin Label
+                    Width =5040
+                    Height =300
+                    FontSize =14
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =12874308
+                    Name ="Label15"
+                    Caption ="All Applicants In County"
+                    GridlineColor =10921638
+                    LayoutCachedWidth =5040
+                    LayoutCachedHeight =300
+                    ForeThemeColorIndex =8
+                    ForeTint =100.0
+                End
+            End
         End
         Begin PageHeader
             Height =0

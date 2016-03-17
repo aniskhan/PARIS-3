@@ -4,6 +4,7 @@ Begin Form
     RecordSelectors = NotDefault
     AutoCenter = NotDefault
     NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
@@ -16,13 +17,13 @@ Begin Form
     Width =21615
     DatasheetFontHeight =11
     ItemSuffix =106
-    Right =13605
-    Bottom =14055
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xe1dd415d0ea9e440
+        0x9159d0aeb4b9e440
     End
-    RecordSource ="tblDisaster"
+    RecordSource ="fqryDisasterInfo"
     Caption ="Document Transmittal"
     DatasheetFontName ="Calibri"
     PrtMip = Begin

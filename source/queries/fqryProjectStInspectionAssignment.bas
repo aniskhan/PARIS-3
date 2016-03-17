@@ -33,7 +33,6 @@ Begin OutputColumns
     Expression ="tblProjects.[Recipient POC]"
     Expression ="tblProjects.[Subrecipient POC]"
     Expression ="tblProjects.[Inspection Notes]"
-    Expression ="tblProjects.[Scheduled Time of Site Inspection]"
 End
 Begin Joins
     LeftTable ="tblProjects"
@@ -96,11 +95,15 @@ Begin
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblProjects.[Inspection Notes]"
+        dbText "Name" ="tblSubRecipient.[Recipient POC]"
         dbLong "AggregateType" ="-1"
     End
     Begin
-        dbText "Name" ="tblProjects.[Scheduled Time of Site Inspection]"
+        dbText "Name" ="tblSubRecipient.[Subrecipient POC]"
+        dbLong "AggregateType" ="-1"
+    End
+    Begin
+        dbText "Name" ="tblProjects.[Inspection Notes]"
         dbLong "AggregateType" ="-1"
     End
     Begin
@@ -116,11 +119,11 @@ Begin
     State =0
     Left =0
     Top =0
-    Right =1134
+    Right =1158
     Bottom =860
     Left =-1
     Top =-1
-    Right =1118
+    Right =1142
     Bottom =567
     Left =0
     Top =0

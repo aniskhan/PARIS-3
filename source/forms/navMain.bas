@@ -4,6 +4,7 @@ Begin Form
     RecordSelectors = NotDefault
     NavigationButtons = NotDefault
     AllowDeletions = NotDefault
+    CloseButton = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
@@ -15,9 +16,9 @@ Begin Form
     GridY =24
     Width =15480
     DatasheetFontHeight =11
-    ItemSuffix =118
-    Right =15825
-    Bottom =7260
+    ItemSuffix =123
+    Right =15810
+    Bottom =7830
     TimerInterval =30
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
@@ -770,7 +771,7 @@ Begin Form
                     LayoutCachedTop =2400
                     LayoutCachedWidth =13380
                     LayoutCachedHeight =4620
-                    TabIndex =31
+                    TabIndex =32
                 End
                 Begin Image
                     SizeMode =0
@@ -1391,7 +1392,7 @@ Begin Form
                     LayoutCachedTop =1560
                     LayoutCachedWidth =10140
                     LayoutCachedHeight =3780
-                    TabIndex =30
+                    TabIndex =31
                 End
                 Begin Image
                     SizeMode =0
@@ -2012,7 +2013,7 @@ Begin Form
                     LayoutCachedTop =960
                     LayoutCachedWidth =7080
                     LayoutCachedHeight =3300
-                    TabIndex =29
+                    TabIndex =30
                 End
                 Begin Rectangle
                     SpecialEffect =0
@@ -2252,7 +2253,7 @@ Begin Form
                     Visible = NotDefault
                     Enabled = NotDefault
                     OverlapFlags =93
-                    Left =9060
+                    Left =9660
                     Top =9300
                     Width =2820
                     Height =780
@@ -2262,9 +2263,9 @@ Begin Form
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
-                    LayoutCachedLeft =9060
+                    LayoutCachedLeft =9660
                     LayoutCachedTop =9300
-                    LayoutCachedWidth =11880
+                    LayoutCachedWidth =12480
                     LayoutCachedHeight =10080
                     UseTheme =1
                     Gradient =0
@@ -2335,7 +2336,7 @@ Begin Form
                     Enabled = NotDefault
                     OverlapFlags =223
                     Left =180
-                    Top =8820
+                    Top =9300
                     Width =2040
                     Height =420
                     TabIndex =2
@@ -2345,9 +2346,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =8820
+                    LayoutCachedTop =9300
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =9240
+                    LayoutCachedHeight =9720
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -2375,7 +2376,7 @@ Begin Form
                     BorderWidth =3
                     OverlapFlags =223
                     TextAlign =2
-                    Top =1680
+                    Top =3360
                     Width =2385
                     Height =360
                     FontWeight =700
@@ -2385,9 +2386,9 @@ Begin Form
                     Name ="Label60"
                     Caption ="Disaster Administration"
                     GridlineColor =10921638
-                    LayoutCachedTop =1680
+                    LayoutCachedTop =3360
                     LayoutCachedWidth =2385
-                    LayoutCachedHeight =2040
+                    LayoutCachedHeight =3720
                     BackThemeColorIndex =7
                     BackTint =40.0
                     BorderThemeColorIndex =7
@@ -2396,22 +2397,43 @@ Begin Form
                     ForeTint =100.0
                 End
                 Begin CommandButton
-                    Enabled = NotDefault
                     OverlapFlags =223
                     Left =180
-                    Top =4440
+                    Top =5220
                     Width =2040
-                    Height =720
+                    Height =420
                     TabIndex =3
                     ForeColor =4210752
                     Name ="cmdOpenReports"
                     Caption ="Reports"
                     GridlineColor =10921638
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =0
+                        Begin
+                            Action ="OpenForm"
+                            Argument ="navReports"
+                            Argument ="0"
+                            Argument =""
+                            Argument =""
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"cmdOpenReports\" Event=\"OnClick\" xmlns=\"http://schemas.mi"
+                                "crosoft.com/office/accessservices/2009/11/application\"><Statements><Action Name"
+                                "=\"OpenForm\"><Argument Name=\"For"
+                        End
+                        Begin
+                            Comment ="_AXL:mName\">navReports</Argument></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =4440
+                    LayoutCachedTop =5220
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =5160
+                    LayoutCachedHeight =5640
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -2723,7 +2745,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =255
                     Left =180
-                    Top =8220
+                    Top =8700
                     Width =2040
                     Height =480
                     TabIndex =9
@@ -2734,9 +2756,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =8220
+                    LayoutCachedTop =8700
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =8700
+                    LayoutCachedHeight =9180
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -2765,7 +2787,7 @@ Begin Form
                     Enabled = NotDefault
                     OverlapFlags =247
                     Left =180
-                    Top =9360
+                    Top =9840
                     Width =2040
                     Height =420
                     TabIndex =10
@@ -2775,9 +2797,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =9360
+                    LayoutCachedTop =9840
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =9780
+                    LayoutCachedHeight =10260
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -2908,7 +2930,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =247
                     Left =180
-                    Top =2160
+                    Top =3720
                     Width =2040
                     Height =720
                     TabIndex =13
@@ -2919,9 +2941,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =2160
+                    LayoutCachedTop =3720
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =2880
+                    LayoutCachedHeight =4440
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -2948,9 +2970,9 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =255
                     Left =180
-                    Top =5760
+                    Top =6420
                     Width =2040
-                    Height =480
+                    Height =420
                     TabIndex =14
                     ForeColor =4210752
                     Name ="cmdOpenMyTasks"
@@ -2959,49 +2981,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =5760
+                    LayoutCachedTop =6420
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =6240
-                    UseTheme =1
-                    Gradient =0
-                    BackThemeColorIndex =1
-                    BackTint =100.0
-                    BorderColor =15123357
-                    HoverColor =15652797
-                    HoverThemeColorIndex =4
-                    HoverTint =40.0
-                    PressedColor =11957550
-                    PressedThemeColorIndex =4
-                    PressedShade =75.0
-                    HoverForeColor =4210752
-                    HoverForeThemeColorIndex =0
-                    HoverForeTint =75.0
-                    PressedForeColor =4210752
-                    PressedForeThemeColorIndex =0
-                    PressedForeTint =75.0
-                    WebImagePaddingLeft =2
-                    WebImagePaddingTop =2
-                    WebImagePaddingRight =1
-                    WebImagePaddingBottom =1
-                    Overlaps =1
-                End
-                Begin CommandButton
-                    Enabled = NotDefault
-                    OverlapFlags =255
-                    Left =180
-                    Top =3660
-                    Width =2040
-                    Height =660
-                    TabIndex =15
-                    ForeColor =4210752
-                    Name ="Command87"
-                    Caption ="Process Phase and Step Report"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =180
-                    LayoutCachedTop =3660
-                    LayoutCachedWidth =2220
-                    LayoutCachedHeight =4320
+                    LayoutCachedHeight =6840
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -3031,7 +3013,7 @@ Begin Form
                     Top =4860
                     Width =2640
                     Height =720
-                    TabIndex =16
+                    TabIndex =15
                     ForeColor =4210752
                     Name ="cmdOpenExpeditedLaneDI"
                     Caption ="Expedited Lane"
@@ -3093,7 +3075,7 @@ Begin Form
                     Top =4440
                     Width =2640
                     Height =780
-                    TabIndex =17
+                    TabIndex =16
                     ForeColor =4210752
                     Name ="cmdOpen ExpeditedScopingCosting"
                     Caption ="Expedited Lane"
@@ -3153,7 +3135,7 @@ Begin Form
                     Top =5220
                     Width =2640
                     Height =840
-                    TabIndex =18
+                    TabIndex =17
                     ForeColor =4210752
                     Name ="cmdOpenExpeditedComplianceReviews"
                     Caption ="Compliance Reviews          All PWs"
@@ -3220,7 +3202,7 @@ Begin Form
                     Height =780
                     ColumnOrder =0
                     FontSize =36
-                    TabIndex =19
+                    TabIndex =18
                     BorderColor =8355711
                     Name ="Label37"
                     ControlSource ="=\"FEMA-\" & [DisasterID] & \"-\" & [Disaster Type] & \"-\" & [State]"
@@ -3239,7 +3221,7 @@ Begin Form
                     BorderWidth =3
                     OverlapFlags =247
                     TextAlign =2
-                    Top =3360
+                    Top =4920
                     Width =2400
                     Height =360
                     FontWeight =700
@@ -3249,9 +3231,9 @@ Begin Form
                     Name ="Label91"
                     Caption ="Reports"
                     GridlineColor =10921638
-                    LayoutCachedTop =3360
+                    LayoutCachedTop =4920
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =3720
+                    LayoutCachedHeight =5280
                     BackThemeColorIndex =7
                     BackTint =40.0
                     BorderThemeColorIndex =7
@@ -3263,7 +3245,7 @@ Begin Form
                     BorderWidth =3
                     OverlapFlags =247
                     TextAlign =2
-                    Top =7860
+                    Top =8340
                     Width =2400
                     Height =360
                     FontWeight =700
@@ -3273,9 +3255,9 @@ Begin Form
                     Name ="Label92"
                     Caption ="Case Management File"
                     GridlineColor =10921638
-                    LayoutCachedTop =7860
+                    LayoutCachedTop =8340
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =8220
+                    LayoutCachedHeight =8700
                     BackThemeColorIndex =7
                     BackTint =40.0
                     BorderThemeColorIndex =7
@@ -3287,7 +3269,7 @@ Begin Form
                     BorderWidth =3
                     OverlapFlags =247
                     TextAlign =2
-                    Top =5400
+                    Top =6060
                     Width =2400
                     Height =360
                     FontWeight =700
@@ -3297,9 +3279,9 @@ Begin Form
                     Name ="Label93"
                     Caption ="Pending Actions"
                     GridlineColor =10921638
-                    LayoutCachedTop =5400
+                    LayoutCachedTop =6060
                     LayoutCachedWidth =2400
-                    LayoutCachedHeight =5760
+                    LayoutCachedHeight =6420
                     BackThemeColorIndex =7
                     BackTint =40.0
                     BorderThemeColorIndex =7
@@ -3310,10 +3292,10 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =247
                     Left =180
-                    Top =6360
+                    Top =6960
                     Width =2040
-                    Height =480
-                    TabIndex =20
+                    Height =420
+                    TabIndex =19
                     ForeColor =4210752
                     Name ="cmdOpenAllTasks"
                     Caption ="All Tasks"
@@ -3321,9 +3303,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =6360
+                    LayoutCachedTop =6960
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =6840
+                    LayoutCachedHeight =7380
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -3354,7 +3336,7 @@ Begin Form
                     Top =6240
                     Width =2640
                     Height =780
-                    TabIndex =21
+                    TabIndex =20
                     ForeColor =4210752
                     Name ="Command99"
                     Caption ="Specialized Lane"
@@ -3390,7 +3372,7 @@ Begin Form
                     Top =5700
                     Width =2640
                     Height =720
-                    TabIndex =22
+                    TabIndex =21
                     ForeColor =4210752
                     Name ="cmdOpenStandardLane"
                     Caption ="Standard Lane"
@@ -3455,7 +3437,7 @@ Begin Form
                     Top =300
                     Height =315
                     ColumnOrder =1
-                    TabIndex =23
+                    TabIndex =22
                     BorderColor =10921638
                     ForeColor =4210752
                     Name ="tbDisasterID"
@@ -3491,7 +3473,7 @@ Begin Form
                     Top =5340
                     Width =2640
                     Height =780
-                    TabIndex =24
+                    TabIndex =23
                     ForeColor =4210752
                     Name ="cmdOpenStScopeCost"
                     Caption ="Standard Lane"
@@ -3541,10 +3523,10 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =247
                     Left =180
-                    Top =6960
+                    Top =7500
                     Width =2040
                     Height =480
-                    TabIndex =25
+                    TabIndex =24
                     ForeColor =4210752
                     Name ="cmdOpenUnassignedTasks"
                     Caption ="Unassigned Tasks"
@@ -3552,9 +3534,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =180
-                    LayoutCachedTop =6960
+                    LayoutCachedTop =7500
                     LayoutCachedWidth =2220
-                    LayoutCachedHeight =7440
+                    LayoutCachedHeight =7980
                     UseTheme =1
                     Gradient =0
                     BackThemeColorIndex =1
@@ -3580,14 +3562,16 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =247
-                    Left =5760
+                    Left =5820
                     Top =9300
-                    Width =2880
+                    Width =3420
                     Height =780
-                    TabIndex =26
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =25
                     ForeColor =4210752
                     Name ="cmdOpenRFINav"
-                    Caption ="RFI Processing"
+                    Caption ="RFI and Determination Memo Processing"
                     GridlineColor =10921638
                     OnClickEmMacro = Begin
                         Version =196611
@@ -3612,9 +3596,9 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =5760
+                    LayoutCachedLeft =5820
                     LayoutCachedTop =9300
-                    LayoutCachedWidth =8640
+                    LayoutCachedWidth =9240
                     LayoutCachedHeight =10080
                     UseTheme =1
                     Gradient =0
@@ -3647,7 +3631,7 @@ Begin Form
                     Top =420
                     Height =210
                     FontSize =8
-                    TabIndex =27
+                    TabIndex =26
                     BackColor =14277081
                     BorderColor =10921638
                     ForeColor =8355711
@@ -3704,7 +3688,7 @@ Begin Form
                     Top =150
                     Height =210
                     FontSize =8
-                    TabIndex =28
+                    TabIndex =27
                     BackColor =14277081
                     BorderColor =10921638
                     ForeColor =13998939
@@ -3741,6 +3725,110 @@ Begin Form
                         End
                     End
                 End
+                Begin Label
+                    BorderWidth =3
+                    OverlapFlags =255
+                    TextAlign =2
+                    Top =1440
+                    Width =2415
+                    Height =360
+                    FontWeight =700
+                    BackColor =10086143
+                    BorderColor =13431551
+                    ForeColor =12349952
+                    Name ="Label120"
+                    Caption ="Help / Resources"
+                    GridlineColor =10921638
+                    LayoutCachedTop =1440
+                    LayoutCachedWidth =2415
+                    LayoutCachedHeight =1800
+                    BackThemeColorIndex =7
+                    BackTint =40.0
+                    BorderThemeColorIndex =7
+                    BorderTint =20.0
+                    ForeThemeColorIndex =-1
+                    ForeTint =100.0
+                End
+                Begin CommandButton
+                    OverlapFlags =247
+                    Left =120
+                    Top =1740
+                    Width =2100
+                    Height =480
+                    TabIndex =28
+                    ForeColor =4210752
+                    Name ="Command121"
+                    Caption ="Report An Issue\015\012"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =1740
+                    LayoutCachedWidth =2220
+                    LayoutCachedHeight =2220
+                    UseTheme =1
+                    Gradient =0
+                    BackThemeColorIndex =1
+                    BackTint =100.0
+                    BorderColor =15123357
+                    HoverColor =15652797
+                    HoverThemeColorIndex =4
+                    HoverTint =40.0
+                    PressedColor =11957550
+                    PressedThemeColorIndex =4
+                    PressedShade =75.0
+                    HoverForeColor =4210752
+                    HoverForeThemeColorIndex =0
+                    HoverForeTint =75.0
+                    PressedForeColor =4210752
+                    PressedForeThemeColorIndex =0
+                    PressedForeTint =75.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin CommandButton
+                    OverlapFlags =247
+                    Left =120
+                    Top =2340
+                    Width =2100
+                    Height =720
+                    TabIndex =29
+                    ForeColor =4210752
+                    Name ="Command122"
+                    Caption ="The New PA Sharepoint"
+                    OnClick ="[Event Procedure]"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =2340
+                    LayoutCachedWidth =2220
+                    LayoutCachedHeight =3060
+                    UseTheme =1
+                    Gradient =0
+                    BackThemeColorIndex =1
+                    BackTint =100.0
+                    BorderColor =15123357
+                    HoverColor =15652797
+                    HoverThemeColorIndex =4
+                    HoverTint =40.0
+                    PressedColor =11957550
+                    PressedThemeColorIndex =4
+                    PressedShade =75.0
+                    HoverForeColor =4210752
+                    HoverForeThemeColorIndex =0
+                    HoverForeTint =75.0
+                    PressedForeColor =4210752
+                    PressedForeThemeColorIndex =0
+                    PressedForeTint =75.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
             End
         End
     End
@@ -3769,6 +3857,7 @@ Private Sub cmdOpenUpdateProjections_Click()
 '///Error Handling
 
 '///Code
+    'DoCmd.OpenForm "frmUpdateRSMProjections", acNormal, , "[Assigned PDC] = '" & Environ("UserName") & "'"
     DoCmd.OpenForm "frmUpdateRSMProjections", acNormal
 '///Code
 
@@ -3990,6 +4079,15 @@ Private Sub cmdOpenRecoveryScopingMeeting_Click()
     DoCmd.OpenForm "frmSubrecipientRSM", acNormal, , "[Assigned PDC] = '" & Environ("UserName") & "'"
 End Sub
 
+
+Private Sub Command121_Click()
+Application.FollowHyperlink "https://intranet.fema.net/org/orr/recovery/pad/NewPA/Lists/HSIN Bug Tracker"
+End Sub
+
+Private Sub Command122_Click()
+Application.FollowHyperlink "https://intranet.fema.net/org/orr/recovery/pad/NewPA/Pages/default.aspx"
+
+End Sub
 
 Private Sub Form_Load()
 Dim thisFEVersion As String

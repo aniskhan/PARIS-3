@@ -21,8 +21,8 @@ Begin Form
     Width =11520
     DatasheetFontHeight =11
     ItemSuffix =11
-    Right =16005
-    Bottom =8505
+    Right =25020
+    Bottom =12765
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x5f45d0440fb7e440
@@ -112,6 +112,7 @@ Begin Form
                 Begin TextBox
                     Locked = NotDefault
                     TabStop = NotDefault
+                    EnterKeyBehavior = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     BackStyle =0
@@ -159,6 +160,7 @@ Begin Form
                 Begin TextBox
                     Locked = NotDefault
                     TabStop = NotDefault
+                    EnterKeyBehavior = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =93
                     BackStyle =0
@@ -187,6 +189,7 @@ Begin Form
                 Begin TextBox
                     Locked = NotDefault
                     TabStop = NotDefault
+                    EnterKeyBehavior = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =87
                     BackStyle =0
@@ -288,6 +291,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =93
                     BackStyle =0
@@ -333,6 +337,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =93
                     BackStyle =0
@@ -378,6 +383,7 @@ Begin Form
                 End
                 Begin TextBox
                     Locked = NotDefault
+                    TabStop = NotDefault
                     OldBorderStyle =0
                     OverlapFlags =85
                     BackStyle =0

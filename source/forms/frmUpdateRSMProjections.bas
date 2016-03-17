@@ -17,10 +17,9 @@ Begin Form
     Width =16500
     DatasheetFontHeight =11
     ItemSuffix =111
-    Right =15825
-    Bottom =7260
+    Right =20235
+    Bottom =12645
     DatasheetGridlinesColor =15132391
-    Filter ="[ID] = 2"
     RecSrcDt = Begin
         0x998eff7ddbb2e440
     End
@@ -466,7 +465,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =3000
@@ -512,7 +510,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =3840
@@ -558,7 +555,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =9390
@@ -604,7 +600,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =9390
@@ -650,7 +645,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4320
@@ -698,7 +692,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4320
@@ -746,7 +739,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4320
@@ -794,7 +786,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4320
@@ -842,7 +833,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4320
@@ -890,7 +880,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4320
@@ -938,7 +927,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =4320
@@ -986,7 +974,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10320
@@ -1034,7 +1021,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10320
@@ -1082,7 +1068,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10320
@@ -1130,7 +1115,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10320
@@ -1178,7 +1162,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10320
@@ -1226,7 +1209,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10320
@@ -1274,7 +1256,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =10320
@@ -1322,7 +1303,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =7710
@@ -1370,7 +1350,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =7710
@@ -1418,7 +1397,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =7710
@@ -1466,7 +1444,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =7710
@@ -1514,7 +1491,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =7710
@@ -1562,7 +1538,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =7710
@@ -1610,7 +1585,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =7710
@@ -1658,7 +1632,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =3780
@@ -1702,7 +1675,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =8760
@@ -1746,7 +1718,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =3960
@@ -1792,7 +1763,6 @@ Begin Form
                 End
                 Begin TextBox
                     Enabled = NotDefault
-                    EnterKeyBehavior = NotDefault
                     OverlapFlags =215
                     IMESentenceMode =3
                     Left =3960
@@ -2443,7 +2413,7 @@ Begin Form
                     TabIndex =43
                     ForeColor =4210752
                     Name ="cmdViewHistory"
-                    Caption ="View History of Projection Updates"
+                    Caption ="View History of Projection UpdatescmdViewHistory"
                     OnClick ="[Event Procedure]"
                     GridlineColor =10921638
 
@@ -2778,34 +2748,36 @@ Set frm = Me.Form
 
 
 countUnfiltered = DCount("DisasterID", frm.RecordSource)
-If countUnfiltered < 0 Then
-FormFilter.RecordFilterCheck Me.Form, FormItemType
-Else
 
-UserIsPDC = False
-UserIsDIU = False
-    If DCount("*", "fqryProjectionsMaxUpdate_PDC") = 0 Then
-        With Me!subfrm_fqryProjectionsMaxUpdate.Form
-            .RecordSource = "fqryProjectionsMaxUpdate_ALL"
-        End With
-        UserIsPDC = False
-    Else
-        With Me!subfrm_fqryProjectionsMaxUpdate.Form
-            .RecordSource = "fqryProjectionsMaxUpdate_PDC"
-        End With
-        UserIsPDC = True
-    End If
+If countUnfiltered = 0 Or countUnfiltered < 0 Then
+    FormFilter.RecordFilterCheck Me.Form, FormItemType
+    GoTo PROC_EXIT
+Else
     
-    Set rs = Db.OpenRecordset("qryUserPositions")
-        rs.MoveFirst
-        While Not rs.EOF
-            If rs!Position = "DIUL" Or rs!Position = "DIUS" Then
-                UserIsDIU = True
-            Else
-            End If
-            rs.MoveNext
-        Wend
-        Set rs = Nothing
+    UserIsPDC = False
+    UserIsDIU = False
+        If DCount("*", "fqryProjectionsMaxUpdate_PDC") < 0 Then
+            With Me!subfrm_fqryProjectionsMaxUpdate.Form
+                .RecordSource = "fqryProjectionsMaxUpdate_ALL"
+            End With
+            UserIsPDC = False
+        Else
+            With Me!subfrm_fqryProjectionsMaxUpdate.Form
+                .RecordSource = "fqryProjectionsMaxUpdate_PDC"
+            End With
+            UserIsPDC = True
+        End If
+        
+        Set rs = Db.OpenRecordset("qryUserPositions")
+            rs.MoveFirst
+            While Not rs.EOF
+                If rs!Position = "DIUL" Or rs!Position = "DIUS" Then
+                    UserIsDIU = True
+                Else
+                End If
+                rs.MoveNext
+            Wend
+            Set rs = Nothing
 End If
 '///Code
 
@@ -3069,12 +3041,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

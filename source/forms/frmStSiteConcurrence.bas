@@ -2,7 +2,9 @@
 VersionRequired =20
 Begin Form
     AutoCenter = NotDefault
+    AllowDeletions = NotDefault
     DividingLines = NotDefault
+    AllowAdditions = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     ViewsAllowed =1
@@ -13,8 +15,8 @@ Begin Form
     Width =16560
     DatasheetFontHeight =11
     ItemSuffix =66
-    Right =13605
-    Bottom =14055
+    Right =13875
+    Bottom =12645
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0xcfaeb7f475b5e440
@@ -1360,7 +1362,28 @@ Option Explicit
 
 Private Const FormItemType As String = "Project" 'used in determining what type of record is handled
 
+
 'BUTTONS
+Private Sub cmdSubmitToCostScope_Click()
+'///Error Handling
+    If gcfHandleErrors Then On Error GoTo PROC_ERR
+    PushCallStack Me.name & "." & "cmdSubmitToCostScope_Click"
+'///Error Handling
+
+'///Code
+    CompleteReview "DDD Concurrence"
+'///Code
+
+'///ErrorHandling
+PROC_EXIT:
+    PopCallStack
+    Exit Sub
+    
+PROC_ERR:
+    GlobalErrHandler
+    Resume PROC_EXIT
+'///ErrorHandling
+End Sub
 
 
 'OTHER PAGE EVENTS
@@ -1541,7 +1564,8 @@ Private Sub HandleDisposition(ReviewType As String, frm As Form)
 '            Main section of page specific code. Creates new reviews as needed.
             Select Case ReviewType
                 Case "DDD Concurrence"
-                    Reviews.EnterReview GetItemDims("Exploratory Call"), Me.[Assigned PDC]
+                    Reviews.EnterReview GetItemDims("Scoping and Costing")
+                    Reviews.PushAllChildren GetItemDims("DDD Concurrence"), Environ("UserName"), frm.cboResult, "Scoping and Costing"
                 Case Else
                     Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & ReviewType
             End Select
@@ -1664,12 +1688,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

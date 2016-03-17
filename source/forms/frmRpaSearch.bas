@@ -16,12 +16,11 @@ Begin Form
     Width =9000
     DatasheetFontHeight =11
     ItemSuffix =24
-    Left =3855
-    Top =2415
-    Right =14190
-    Bottom =10335
+    Left =32580
+    Top =2505
+    Right =-18436
+    Bottom =15150
     DatasheetGridlinesColor =15132391
-    Filter ="[County] Like '*wrig*'"
     OrderBy ="[Subrecipient Name] DESC"
     RecSrcDt = Begin
         0xce04b0ae90a5e440

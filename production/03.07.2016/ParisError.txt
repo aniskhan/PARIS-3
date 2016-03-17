@@ -1,0 +1,43 @@
+User	akhandka
+Time	03/08/2016 15:43:47
+Procedure	Form passed: navStaffDisasterAdmin | Case else passed: Admin/DIUL | FormFilter.FormPermission
+Line	0
+Error	2450	Microsoft Access cannot find the referenced form 'navMain'.
+Stack
+	Form passed: navStaffDisasterAdmin | Case else passed: Admin/DIUL | FormFilter.FormPermission
+
+User	akhandka
+Time	03/09/2016 14:03:12
+Procedure	frmEnterListofDamages.ColumnOrder
+Line	0
+Error	2455	You entered an expression that has an invalid reference to the property Form/Report.
+Stack
+	navProjectFormulation.cmdEnterListofDamages_Click
+	frmEnterListofDamages.ColumnOrder
+
+User	akhandka
+Time	03/09/2016 14:03:18
+Procedure	frmEnterListofDamages.cmdSwitch_Click
+Line	0
+Error	2105	You can't go to the specified record.
+Stack
+	frmEnterListofDamages.cmdSwitch_Click
+
+User	akhandka
+Time	03/09/2016 14:10:49
+Procedure	frmEnterListofDamages.ColumnOrder
+Line	0
+Error	2455	You entered an expression that has an invalid reference to the property Form/Report.
+Stack
+	navProjectFormulation.cmdEnterListofDamages_Click
+	frmEnterListofDamages.ColumnOrder
+
+User	akhandka
+Time	03/09/2016 15:17:01
+Procedure	frmEnterListofDamages.ColumnOrder
+Line	0
+Error	2455	You entered an expression that has an invalid reference to the property Form/Report.
+Stack
+	navProjectFormulation.cmdEnterListofDamages_Click
+	frmEnterListofDamages.ColumnOrder
+

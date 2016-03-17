@@ -1,5 +1,5 @@
 ﻿dbMemo "SQL" ="Select * From qryTaskRpa\015\012UNION Select * From qryTaskProject\015\012UNION "
-    "Select * From qryTaskSite;\015\012"
+    "Select * From qryTaskSite\015\012UNION Select * From qryTaskRfi;\015\012"
 dbMemo "Connect" =""
 dbBoolean "ReturnsRecords" ="-1"
 dbInteger "ODBCTimeout" ="60"

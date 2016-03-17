@@ -16,11 +16,10 @@ Begin Form
     GridY =24
     Width =16740
     DatasheetFontHeight =11
-    ItemSuffix =92
-    Right =14835
-    Bottom =8580
+    ItemSuffix =93
+    Right =20235
+    Bottom =12645
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999' and [ApplicantID]='810-19JXO-00' and [ProjectID]=1"
     RecSrcDt = Begin
         0xf2adfb1f35aee440
     End
@@ -174,17 +173,15 @@ Begin Form
         Begin FormHeader
             CanGrow = NotDefault
             Height =660
-            BackColor =15921906
             Name ="FormHeader"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
-            BackShade =95.0
             Begin
                 Begin Label
                     BackStyle =1
                     OverlapFlags =85
-                    Width =16560
+                    Width =16620
                     Height =660
                     FontSize =24
                     FontWeight =800
@@ -193,7 +190,7 @@ Begin Form
                     Name ="lbHeader"
                     Caption ="DIU: Process Project Routing Sheet"
                     GridlineColor =10921638
-                    LayoutCachedWidth =16560
+                    LayoutCachedWidth =16620
                     LayoutCachedHeight =660
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
@@ -203,7 +200,7 @@ Begin Form
         End
         Begin Section
             CanGrow = NotDefault
-            Height =13740
+            Height =14160
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -211,77 +208,60 @@ Begin Form
             BackThemeColorIndex =1
             Begin
                 Begin Rectangle
-                    SpecialEffect =0
-                    BackStyle =1
-                    OverlapFlags =93
-                    Left =13620
-                    Top =10740
-                    Width =2940
-                    Height =2640
-                    BackColor =15788753
-                    BorderColor =10921638
-                    Name ="Box94"
-                    GridlineColor =10921638
-                    LayoutCachedLeft =13620
-                    LayoutCachedTop =10740
-                    LayoutCachedWidth =16560
-                    LayoutCachedHeight =13380
-                    BackThemeColorIndex =-1
-                End
-                Begin Rectangle
                     SpecialEffect =2
                     BackStyle =1
                     OverlapFlags =93
-                    Left =13560
+                    Left =13620
                     Top =120
                     Width =3000
-                    Height =10560
+                    Height =4860
                     BackColor =15788753
                     BorderColor =10921638
                     Name ="Box84"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13560
+                    LayoutCachedLeft =13620
                     LayoutCachedTop =120
-                    LayoutCachedWidth =16560
-                    LayoutCachedHeight =10680
+                    LayoutCachedWidth =16620
+                    LayoutCachedHeight =4980
                     BackThemeColorIndex =-1
                 End
                 Begin Rectangle
                     BackStyle =1
-                    OverlapFlags =223
-                    Left =13680
-                    Top =4800
-                    Width =2760
-                    Height =3960
-                    BackColor =15921906
+                    OverlapFlags =93
+                    Left =13620
+                    Top =5400
+                    Width =3000
+                    Height =5640
+                    BackColor =13431551
                     BorderColor =10921638
                     Name ="Box90"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13680
-                    LayoutCachedTop =4800
-                    LayoutCachedWidth =16440
-                    LayoutCachedHeight =8760
-                    BackShade =95.0
+                    LayoutCachedLeft =13620
+                    LayoutCachedTop =5400
+                    LayoutCachedWidth =16620
+                    LayoutCachedHeight =11040
+                    BackThemeColorIndex =7
+                    BackTint =20.0
                 End
                 Begin Rectangle
                     BackStyle =1
                     OverlapFlags =93
                     Top =4320
-                    Width =13500
+                    Width =13560
                     Height =660
                     BackColor =15921906
                     BorderColor =10921638
                     Name ="Box89"
                     GridlineColor =10921638
                     LayoutCachedTop =4320
-                    LayoutCachedWidth =13500
+                    LayoutCachedWidth =13560
                     LayoutCachedHeight =4980
                     BackShade =95.0
                 End
                 Begin TextBox
                     Visible = NotDefault
                     TabStop = NotDefault
-                    OverlapFlags =215
+                    OverlapFlags =93
                     IMESentenceMode =3
                     Left =14880
                     Top =11460
@@ -303,7 +283,7 @@ Begin Form
                     Begin
                         Begin Label
                             Visible = NotDefault
-                            OverlapFlags =215
+                            OverlapFlags =93
                             Left =13800
                             Top =11460
                             Width =1020
@@ -329,7 +309,7 @@ Begin Form
                     TabStop = NotDefault
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
-                    OverlapFlags =215
+                    OverlapFlags =93
                     IMESentenceMode =3
                     Left =15000
                     Top =11820
@@ -351,7 +331,7 @@ Begin Form
                     Begin
                         Begin Label
                             Visible = NotDefault
-                            OverlapFlags =215
+                            OverlapFlags =93
                             Left =13740
                             Top =11820
                             Width =1200
@@ -425,7 +405,7 @@ Begin Form
                     TabStop = NotDefault
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
-                    OverlapFlags =215
+                    OverlapFlags =93
                     IMESentenceMode =3
                     Left =15630
                     Top =12600
@@ -447,7 +427,7 @@ Begin Form
                     Begin
                         Begin Label
                             Visible = NotDefault
-                            OverlapFlags =215
+                            OverlapFlags =93
                             Left =13680
                             Top =12600
                             Width =1860
@@ -473,7 +453,7 @@ Begin Form
                     TabStop = NotDefault
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
-                    OverlapFlags =215
+                    OverlapFlags =93
                     IMESentenceMode =3
                     Left =15510
                     Top =12180
@@ -495,7 +475,7 @@ Begin Form
                     Begin
                         Begin Label
                             Visible = NotDefault
-                            OverlapFlags =223
+                            OverlapFlags =93
                             Left =13560
                             Top =12180
                             Width =1860
@@ -563,6 +543,7 @@ Begin Form
                     End
                 End
                 Begin Subform
+                    Locked = NotDefault
                     TabStop = NotDefault
                     OverlapFlags =215
                     SpecialEffect =2
@@ -573,7 +554,7 @@ Begin Form
                     TabIndex =8
                     BorderColor =16247774
                     Name ="subrptProject Sites"
-                    SourceObject ="Form.subfrmProjectSites"
+                    SourceObject ="Form.subfrmProjectSitesDIU"
                     LinkChildFields ="DisasterID;ApplicantID;ProjectID"
                     LinkMasterFields ="DisasterID;ApplicantID;ProjectID"
                     EventProcPrefix ="subrptProject_Sites"
@@ -636,7 +617,7 @@ Begin Form
                 Begin TextBox
                     Visible = NotDefault
                     TabStop = NotDefault
-                    OverlapFlags =215
+                    OverlapFlags =95
                     IMESentenceMode =3
                     Left =14820
                     Top =11100
@@ -656,7 +637,7 @@ Begin Form
                     Begin
                         Begin Label
                             Visible = NotDefault
-                            OverlapFlags =223
+                            OverlapFlags =93
                             Left =13680
                             Top =11100
                             Width =1140
@@ -818,27 +799,28 @@ Begin Form
                     BackStyle =1
                     OverlapFlags =215
                     Left =13920
-                    Top =6210
+                    Top =7890
                     Width =2222
                     Height =1348
                     TabIndex =9
-                    BackColor =15590879
+                    BackColor =9917743
                     BorderColor =10921638
                     Name ="grpLane"
                     AfterUpdate ="[Event Procedure]"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =13920
-                    LayoutCachedTop =6210
+                    LayoutCachedTop =7890
                     LayoutCachedWidth =16142
-                    LayoutCachedHeight =7558
-                    BackThemeColorIndex =-1
+                    LayoutCachedHeight =9238
+                    BackThemeColorIndex =8
+                    BackShade =75.0
                     Begin
                         Begin Label
                             BackStyle =1
                             OverlapFlags =215
                             Left =13920
-                            Top =5880
+                            Top =7560
                             Width =2220
                             Height =315
                             FontSize =12
@@ -847,12 +829,12 @@ Begin Form
                             BorderColor =8355711
                             ForeColor =7949855
                             Name ="Label72"
-                            Caption ="DIU Select Lane "
+                            Caption ="DIU Lane Selection"
                             GridlineColor =10921638
                             LayoutCachedLeft =13920
-                            LayoutCachedTop =5880
+                            LayoutCachedTop =7560
                             LayoutCachedWidth =16140
-                            LayoutCachedHeight =6195
+                            LayoutCachedHeight =7875
                             BackThemeColorIndex =-1
                             BackTint =95.0
                             ForeThemeColorIndex =4
@@ -862,108 +844,120 @@ Begin Form
                         Begin OptionButton
                             SpecialEffect =2
                             OverlapFlags =87
-                            Left =13986
-                            Top =6238
+                            Left =13980
+                            Top =8008
                             OptionValue =1
                             BorderColor =10921638
                             Name ="opEx"
                             GridlineColor =10921638
 
-                            LayoutCachedLeft =13986
-                            LayoutCachedTop =6238
-                            LayoutCachedWidth =14246
-                            LayoutCachedHeight =6478
+                            LayoutCachedLeft =13980
+                            LayoutCachedTop =8008
+                            LayoutCachedWidth =14240
+                            LayoutCachedHeight =8248
                             Begin
                                 Begin Label
                                     OverlapFlags =247
-                                    Left =14216
-                                    Top =6210
-                                    Width =1500
+                                    Left =14210
+                                    Top =7980
+                                    Width =1740
                                     Height =315
+                                    FontSize =13
+                                    FontWeight =700
                                     BorderColor =8355711
-                                    ForeColor =8355711
+                                    ForeColor =16777215
                                     Name ="Label75"
                                     Caption ="Expedited Lane"
                                     GridlineColor =10921638
-                                    LayoutCachedLeft =14216
-                                    LayoutCachedTop =6210
-                                    LayoutCachedWidth =15716
-                                    LayoutCachedHeight =6525
+                                    LayoutCachedLeft =14210
+                                    LayoutCachedTop =7980
+                                    LayoutCachedWidth =15950
+                                    LayoutCachedHeight =8295
+                                    ForeThemeColorIndex =1
+                                    ForeTint =100.0
                                 End
                             End
                         End
                         Begin OptionButton
                             SpecialEffect =2
                             OverlapFlags =87
-                            Left =13986
-                            Top =6568
+                            Left =13980
+                            Top =8428
                             OptionValue =2
                             BorderColor =10921638
                             Name ="opSt"
                             GridlineColor =10921638
 
-                            LayoutCachedLeft =13986
-                            LayoutCachedTop =6568
-                            LayoutCachedWidth =14246
-                            LayoutCachedHeight =6808
+                            LayoutCachedLeft =13980
+                            LayoutCachedTop =8428
+                            LayoutCachedWidth =14240
+                            LayoutCachedHeight =8668
                             Begin
                                 Begin Label
                                     OverlapFlags =247
-                                    Left =14216
-                                    Top =6540
-                                    Width =1380
+                                    Left =14210
+                                    Top =8400
+                                    Width =1620
                                     Height =315
+                                    FontSize =13
+                                    FontWeight =700
                                     BorderColor =8355711
-                                    ForeColor =8355711
+                                    ForeColor =16777215
                                     Name ="Label77"
                                     Caption ="Standard Lane"
                                     GridlineColor =10921638
-                                    LayoutCachedLeft =14216
-                                    LayoutCachedTop =6540
-                                    LayoutCachedWidth =15596
-                                    LayoutCachedHeight =6855
+                                    LayoutCachedLeft =14210
+                                    LayoutCachedTop =8400
+                                    LayoutCachedWidth =15830
+                                    LayoutCachedHeight =8715
+                                    ForeThemeColorIndex =1
+                                    ForeTint =100.0
                                 End
                             End
                         End
                         Begin OptionButton
                             SpecialEffect =2
                             OverlapFlags =87
-                            Left =13986
-                            Top =6898
+                            Left =13980
+                            Top =8848
                             OptionValue =3
                             BorderColor =10921638
                             Name ="opSp"
                             GridlineColor =10921638
 
-                            LayoutCachedLeft =13986
-                            LayoutCachedTop =6898
-                            LayoutCachedWidth =14246
-                            LayoutCachedHeight =7138
+                            LayoutCachedLeft =13980
+                            LayoutCachedTop =8848
+                            LayoutCachedWidth =14240
+                            LayoutCachedHeight =9088
                             Begin
                                 Begin Label
                                     OverlapFlags =247
-                                    Left =14216
-                                    Top =6870
-                                    Width =1605
+                                    Left =14210
+                                    Top =8820
+                                    Width =1845
                                     Height =315
+                                    FontSize =13
+                                    FontWeight =700
                                     BorderColor =8355711
-                                    ForeColor =8355711
+                                    ForeColor =16777215
                                     Name ="Label79"
                                     Caption ="Specialized Lane"
                                     GridlineColor =10921638
-                                    LayoutCachedLeft =14216
-                                    LayoutCachedTop =6870
-                                    LayoutCachedWidth =15821
-                                    LayoutCachedHeight =7185
+                                    LayoutCachedLeft =14210
+                                    LayoutCachedTop =8820
+                                    LayoutCachedWidth =16055
+                                    LayoutCachedHeight =9135
+                                    ForeThemeColorIndex =1
+                                    ForeTint =100.0
                                 End
                             End
                         End
                     End
                 End
                 Begin Subform
-                    OverlapFlags =87
+                    OverlapFlags =247
                     Top =11100
-                    Width =13560
+                    Width =16620
                     Height =2640
                     TabIndex =13
                     BorderColor =10921638
@@ -974,15 +968,17 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedTop =11100
-                    LayoutCachedWidth =13560
+                    LayoutCachedWidth =16620
                     LayoutCachedHeight =13740
                 End
                 Begin CommandButton
                     OverlapFlags =215
                     Left =13920
-                    Top =4980
+                    Top =5640
                     Width =2160
                     Height =780
+                    FontSize =13
+                    FontWeight =700
                     TabIndex =7
                     ForeColor =4210752
                     Name ="cmdLaneSelectStart"
@@ -991,9 +987,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =13920
-                    LayoutCachedTop =4980
+                    LayoutCachedTop =5640
                     LayoutCachedWidth =16080
-                    LayoutCachedHeight =5760
+                    LayoutCachedHeight =6420
                     UseTheme =1
                     BackColor =15123357
                     BorderColor =15123357
@@ -1018,9 +1014,11 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =13920
-                    Top =7800
+                    Top =9660
                     Width =2160
                     Height =780
+                    FontSize =13
+                    FontWeight =700
                     TabIndex =10
                     ForeColor =4210752
                     Name ="cmdLaneSelectComplete"
@@ -1029,9 +1027,9 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedLeft =13920
-                    LayoutCachedTop =7800
+                    LayoutCachedTop =9660
                     LayoutCachedWidth =16080
-                    LayoutCachedHeight =8580
+                    LayoutCachedHeight =10440
                     UseTheme =1
                     BackColor =15123357
                     BorderColor =15123357
@@ -1058,7 +1056,7 @@ Begin Form
                     SpecialEffect =2
                     BorderWidth =2
                     Top =60
-                    Width =13500
+                    Width =13560
                     Height =1320
                     BorderColor =10921638
                     Name ="subfrmDisasterInfoRevised short"
@@ -1069,7 +1067,7 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedTop =60
-                    LayoutCachedWidth =13500
+                    LayoutCachedWidth =13560
                     LayoutCachedHeight =1380
                     Begin
                         Begin Label
@@ -1092,7 +1090,7 @@ Begin Form
                     SpecialEffect =2
                     BorderWidth =2
                     Top =1440
-                    Width =13500
+                    Width =13560
                     Height =1380
                     TabIndex =2
                     BorderColor =10921638
@@ -1104,7 +1102,7 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedTop =1440
-                    LayoutCachedWidth =13500
+                    LayoutCachedWidth =13560
                     LayoutCachedHeight =2820
                 End
                 Begin Subform
@@ -1112,7 +1110,7 @@ Begin Form
                     SpecialEffect =2
                     BorderWidth =2
                     Top =2880
-                    Width =13500
+                    Width =13560
                     TabIndex =4
                     BorderColor =10921638
                     Name ="subfrmlProjects banner"
@@ -1123,14 +1121,14 @@ Begin Form
                     GridlineColor =10921638
 
                     LayoutCachedTop =2880
-                    LayoutCachedWidth =13500
+                    LayoutCachedWidth =13560
                     LayoutCachedHeight =4320
                 End
                 Begin Label
                     BackStyle =1
                     OverlapFlags =93
                     Top =5040
-                    Width =13500
+                    Width =13560
                     Height =360
                     FontSize =14
                     BackColor =8210719
@@ -1140,51 +1138,105 @@ Begin Form
                     Caption ="Sites Contained in Project"
                     GridlineColor =10921638
                     LayoutCachedTop =5040
-                    LayoutCachedWidth =13500
+                    LayoutCachedWidth =13560
                     LayoutCachedHeight =5400
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
                 Begin Label
+                    BackStyle =1
                     OverlapFlags =215
                     TextAlign =2
-                    Left =13620
-                    Top =4380
-                    Width =2820
-                    Height =420
+                    Left =13605
+                    Top =5040
+                    Width =3015
+                    Height =360
                     FontSize =12
                     FontWeight =700
+                    BackColor =9917743
                     BorderColor =8355711
-                    ForeColor =7949855
+                    ForeColor =16777215
                     Name ="Label91"
-                    Caption ="DIU Select Lane forProject"
+                    Caption ="DIU Select Lane for Project"
                     GridlineColor =10921638
-                    LayoutCachedLeft =13620
-                    LayoutCachedTop =4380
-                    LayoutCachedWidth =16440
-                    LayoutCachedHeight =4800
-                    ForeThemeColorIndex =4
+                    LayoutCachedLeft =13605
+                    LayoutCachedTop =5040
+                    LayoutCachedWidth =16620
+                    LayoutCachedHeight =5400
+                    BackThemeColorIndex =8
+                    BackShade =75.0
+                    ForeThemeColorIndex =1
                     ForeTint =100.0
-                    ForeShade =50.0
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Enabled = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =13920
+                    Top =7140
+                    Width =2205
+                    Height =315
+                    TabIndex =19
+                    BackColor =13431551
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
+                    Name ="Lane Recommendation"
+                    ControlSource ="Lane Recommendation"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT lutblLanes.LaneID, lutblLanes.LaneName FROM lutblLanes ORDER BY lutblLane"
+                        "s.Order; "
+                    ColumnWidths ="0;1800"
+                    EventProcPrefix ="Lane_Recommendation"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =13920
+                    LayoutCachedTop =7140
+                    LayoutCachedWidth =16125
+                    LayoutCachedHeight =7455
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                    ForeThemeColorIndex =0
+                    ForeTint =75.0
+                    ForeShade =100.0
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =13680
+                            Top =6780
+                            Width =2685
+                            Height =315
+                            FontWeight =700
+                            BorderColor =8355711
+                            Name ="Label93"
+                            Caption ="PDM Lane Recommendation"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =13680
+                            LayoutCachedTop =6780
+                            LayoutCachedWidth =16365
+                            LayoutCachedHeight =7095
+                            ForeTint =100.0
+                        End
+                    End
                 End
             End
         End
         Begin FormFooter
             Height =900
-            BackColor =15921906
             Name ="FormFooter"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
-            BackShade =95.0
             Begin
                 Begin Label
                     BackStyle =1
                     OverlapFlags =93
                     TextFontFamily =82
-                    Width =16560
-                    Height =780
+                    Width =16620
+                    Height =900
                     FontSize =20
                     BackColor =15788753
                     BorderColor =8355711
@@ -1192,19 +1244,38 @@ Begin Form
                     Caption ="Intake Damage and Eligibility Analysis"
                     FontName ="Broadway"
                     GridlineColor =10921638
-                    LayoutCachedWidth =16560
-                    LayoutCachedHeight =780
+                    LayoutCachedWidth =16620
+                    LayoutCachedHeight =900
                     ThemeFontIndex =-1
                     BackThemeColorIndex =-1
                     ForeTint =100.0
                 End
+                Begin Rectangle
+                    BackStyle =1
+                    OverlapFlags =223
+                    Left =10080
+                    Top =60
+                    Width =6300
+                    Height =780
+                    BackColor =13431551
+                    BorderColor =10921638
+                    Name ="Box92"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =10080
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =16380
+                    LayoutCachedHeight =840
+                    BackThemeColorIndex =7
+                    BackTint =20.0
+                End
                 Begin CommandButton
                     OverlapFlags =215
                     Left =14700
-                    Top =60
-                    Width =1380
+                    Top =120
                     Height =600
-                    ForeColor =4210752
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
                     Name ="cmdCloseForm"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -1229,11 +1300,29 @@ Begin Form
                     End
 
                     LayoutCachedLeft =14700
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =16080
-                    LayoutCachedHeight =660
-                    BackColor =15123357
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =16140
+                    LayoutCachedHeight =720
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -1243,7 +1332,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =10500
-                    Top =60
+                    Top =120
                     Width =1260
                     Height =600
                     TabIndex =1
@@ -1308,9 +1397,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =10500
-                    LayoutCachedTop =60
+                    LayoutCachedTop =120
                     LayoutCachedWidth =11760
-                    LayoutCachedHeight =660
+                    LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -1323,7 +1412,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =13200
-                    Top =60
+                    Top =120
                     Width =1215
                     Height =600
                     TabIndex =2
@@ -1388,9 +1477,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =13200
-                    LayoutCachedTop =60
+                    LayoutCachedTop =120
                     LayoutCachedWidth =14415
-                    LayoutCachedHeight =660
+                    LayoutCachedHeight =720
                     PictureCaptionArrangement =3
                     BackColor =15123357
                     BorderColor =15123357
@@ -1403,7 +1492,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =11880
-                    Top =60
+                    Top =120
                     Width =576
                     Height =576
                     TabIndex =3
@@ -1485,9 +1574,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =11880
-                    LayoutCachedTop =60
+                    LayoutCachedTop =120
                     LayoutCachedWidth =12456
-                    LayoutCachedHeight =636
+                    LayoutCachedHeight =696
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -1499,7 +1588,7 @@ Begin Form
                 Begin CommandButton
                     OverlapFlags =215
                     Left =12540
-                    Top =60
+                    Top =120
                     Width =576
                     Height =576
                     TabIndex =4
@@ -1579,9 +1668,9 @@ Begin Form
                     End
 
                     LayoutCachedLeft =12540
-                    LayoutCachedTop =60
+                    LayoutCachedTop =120
                     LayoutCachedWidth =13116
-                    LayoutCachedHeight =636
+                    LayoutCachedHeight =696
                     BackColor =15123357
                     BorderColor =15123357
                     WebImagePaddingLeft =2
@@ -1810,7 +1899,9 @@ Private Sub EnableFormArea(AreaName As String, Optional Override As String = "")
             Me.grpLane.Enabled = CanEnable
             Me.cmdLaneSelectStart.Enabled = CanEnable
             Me.cmdLaneSelectComplete.Enabled = CanEnable
-
+            Me.Text32.Enabled = CanEnable
+            Me.Text34.Enabled = CanEnable
+            Me.Text36.Enabled = CanEnable
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & AreaName
     End Select
@@ -1839,7 +1930,7 @@ Private Function PreDialogCheck(ReviewType As String) As Boolean
 
 '///Code
 '    No checks on this page.
-    PreDialogCheck = True
+        PreDialogCheck = True
 '///Code
 
 '///ErrorHandling
@@ -1865,7 +1956,7 @@ Private Function PostDialogCheck(ReviewType As String, DialogResult As String) A
 '///Code
 '   No Check Needed.
     If IsNull(Me![Lane Assigned]) And ReviewType = "DIU Lane Select" And DialogResult = "SUB" Then
-        MsgBox "Please select a lane before trying to submit this to the next step."
+        MsgBox "Please select a Lane before trying to submit this."
         PostDialogCheck = False
     Else
         PostDialogCheck = True
@@ -2028,12 +2119,13 @@ Private Sub HandleStandardDisposition(ReviewType As String, frm As Form)
         Case "DM"
             Reviews.EnterReview GetItemDims("Determination Memo")
         Case "RFI"
+            Reviews.CreateRFI GetItemDims(ReviewType)
             Reviews.EnterReview GetItemDims("RFI")
-            DoCmd.OpenForm "frmRFIRequest", , , , , , GetItemDims(ReviewType).OpenString
+            DoCmd.OpenForm "frmRFIRequest", , , GetItemDims.WhereID(False)
         Case "RSN"
             Reviews.EnterReview GetItemDims(ReviewType), frm.cboAssign, "Reassigned to " & frm.cboAssign
         Case "RW"
-            Reviews.EnterReview GetItemDims(frm.cboRework)
+            Reviews.EnterReview GetItemDims(frm.cboRework), frm.cboAssign
         Case Else
             Err.Raise vbObjectError + ErrorHandler.CaseElseException, , "Case Else Exception when looking for " & frm.cboResult
     End Select

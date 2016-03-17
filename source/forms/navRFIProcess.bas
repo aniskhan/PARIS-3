@@ -12,16 +12,16 @@ Begin Form
     DatasheetGridlinesBehavior =3
     GridX =24
     GridY =24
-    Width =15960
+    Width =16020
     DatasheetFontHeight =11
-    ItemSuffix =36
-    Right =16005
-    Bottom =8505
+    ItemSuffix =41
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0xecfa0503d4a7e440
+        0x8986edaeb4b9e440
     End
-    RecordSource ="SELECT tblDisaster.DisasterID, tblDisaster.State FROM tblDisaster; "
+    RecordSource ="fqryDisasterInfo"
     Caption ="RFI Menu"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -64,6 +64,12 @@ Begin Form
             BackThemeColorIndex =1
             BorderThemeColorIndex =1
             BorderShade =65.0
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin Line
+            BorderLineStyle =0
+            BorderThemeColorIndex =0
             GridlineThemeColorIndex =1
             GridlineShade =65.0
         End
@@ -123,7 +129,7 @@ Begin Form
             GridlineShade =65.0
         End
         Begin FormHeader
-            Height =1200
+            Height =1020
             Name ="FormHeader"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
@@ -158,31 +164,75 @@ Begin Form
                     GroupTable =1
                 End
                 Begin Label
+                    SpecialEffect =2
                     BackStyle =1
-                    OverlapFlags =85
+                    OverlapFlags =93
                     Left =60
-                    Top =180
-                    Width =15840
+                    Top =60
+                    Width =15900
                     Height =900
                     FontSize =20
                     FontWeight =700
                     BackColor =15527148
                     BorderColor =8355711
                     Name ="Label21"
-                    Caption ="Request for Information (RFI) Development and Tracking"
+                    Caption ="Request for Information (RFI) and Determination Memo Development and Tracking"
                     GridlineColor =10921638
                     LayoutCachedLeft =60
-                    LayoutCachedTop =180
-                    LayoutCachedWidth =15900
-                    LayoutCachedHeight =1080
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =15960
+                    LayoutCachedHeight =960
                     BackThemeColorIndex =-1
                     ForeThemeColorIndex =-1
                     ForeTint =100.0
                 End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =215
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =14880
+                    Top =600
+                    Width =1020
+                    Height =300
+                    FontSize =12
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =4210752
+                    Name ="Text15"
+                    ControlSource ="DisasterID"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =14880
+                    LayoutCachedTop =600
+                    LayoutCachedWidth =15900
+                    LayoutCachedHeight =900
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            Left =14160
+                            Top =600
+                            Width =720
+                            Height =300
+                            FontSize =12
+                            FontWeight =700
+                            BorderColor =8355711
+                            Name ="Label16"
+                            Caption ="FEMA-"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =14160
+                            LayoutCachedTop =600
+                            LayoutCachedWidth =14880
+                            LayoutCachedHeight =900
+                            ForeThemeColorIndex =-1
+                            ForeTint =100.0
+                        End
+                    End
+                End
             End
         End
         Begin Section
-            Height =10800
+            Height =10920
             Name ="Detail"
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
@@ -193,9 +243,27 @@ Begin Form
                     SpecialEffect =2
                     BackStyle =1
                     OverlapFlags =93
+                    Left =8220
+                    Top =1260
+                    Width =4380
+                    Height =1980
+                    BackColor =16249583
+                    BorderColor =10921638
+                    Name ="Box40"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =8220
+                    LayoutCachedTop =1260
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =3240
+                    BackThemeColorIndex =-1
+                End
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    OverlapFlags =93
                     Left =120
                     Top =3780
-                    Width =12840
+                    Width =7500
                     Height =1860
                     BackColor =16249583
                     BorderColor =10921638
@@ -203,7 +271,7 @@ Begin Form
                     GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =3780
-                    LayoutCachedWidth =12960
+                    LayoutCachedWidth =7620
                     LayoutCachedHeight =5640
                     BackThemeColorIndex =-1
                 End
@@ -213,7 +281,7 @@ Begin Form
                     OverlapFlags =93
                     Left =120
                     Top =6240
-                    Width =12840
+                    Width =7500
                     Height =1920
                     BackColor =16249583
                     BorderColor =10921638
@@ -221,7 +289,7 @@ Begin Form
                     GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =6240
-                    LayoutCachedWidth =12960
+                    LayoutCachedWidth =7620
                     LayoutCachedHeight =8160
                     BackThemeColorIndex =-1
                 End
@@ -232,7 +300,7 @@ Begin Form
                     OverlapFlags =93
                     Left =120
                     Top =1260
-                    Width =12840
+                    Width =7500
                     Height =1980
                     BackColor =16249583
                     BorderColor =10921638
@@ -240,98 +308,57 @@ Begin Form
                     GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =1260
-                    LayoutCachedWidth =12960
+                    LayoutCachedWidth =7620
                     LayoutCachedHeight =3240
                     BackThemeColorIndex =-1
                 End
                 Begin Label
                     OverlapFlags =215
-                    Left =6960
+                    Left =3420
                     Top =1620
-                    Width =5280
+                    Width =3840
                     Height =1380
                     BorderColor =8355711
                     ForeColor =8355711
                     Name ="Label7"
                     Caption ="new"
                     GridlineColor =10921638
-                    LayoutCachedLeft =6960
+                    LayoutCachedLeft =3420
                     LayoutCachedTop =1620
-                    LayoutCachedWidth =12240
+                    LayoutCachedWidth =7260
                     LayoutCachedHeight =3000
                 End
                 Begin Label
                     OverlapFlags =215
-                    Left =7020
+                    Left =3480
                     Top =4020
-                    Width =5280
+                    Width =3840
                     Height =1380
                     BorderColor =8355711
                     ForeColor =8355711
                     Name ="Label10"
                     Caption ="new"
                     GridlineColor =10921638
-                    LayoutCachedLeft =7020
+                    LayoutCachedLeft =3480
                     LayoutCachedTop =4020
-                    LayoutCachedWidth =12300
+                    LayoutCachedWidth =7320
                     LayoutCachedHeight =5400
                 End
                 Begin Label
                     OverlapFlags =215
-                    Left =6960
+                    Left =3420
                     Top =6420
-                    Width =5280
+                    Width =3840
                     Height =1380
                     BorderColor =8355711
                     ForeColor =8355711
                     Name ="Label12"
                     Caption ="new"
                     GridlineColor =10921638
-                    LayoutCachedLeft =6960
+                    LayoutCachedLeft =3420
                     LayoutCachedTop =6420
-                    LayoutCachedWidth =12240
+                    LayoutCachedWidth =7260
                     LayoutCachedHeight =7800
-                End
-                Begin TextBox
-                    OldBorderStyle =0
-                    OverlapFlags =215
-                    BackStyle =0
-                    IMESentenceMode =3
-                    Left =1500
-                    Top =60
-                    Width =2400
-                    Height =645
-                    FontSize =24
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Text15"
-                    ControlSource ="DisasterID"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =1500
-                    LayoutCachedTop =60
-                    LayoutCachedWidth =3900
-                    LayoutCachedHeight =705
-                    Begin
-                        Begin Label
-                            OverlapFlags =93
-                            Left =180
-                            Top =60
-                            Width =1380
-                            Height =660
-                            FontSize =24
-                            BorderColor =8355711
-                            Name ="Label16"
-                            Caption ="FEMA-"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =180
-                            LayoutCachedTop =60
-                            LayoutCachedWidth =1560
-                            LayoutCachedHeight =720
-                            ForeThemeColorIndex =-1
-                            ForeTint =100.0
-                        End
-                    End
                 End
                 Begin Rectangle
                     SpecialEffect =2
@@ -339,7 +366,7 @@ Begin Form
                     OverlapFlags =93
                     Left =120
                     Top =8700
-                    Width =12840
+                    Width =7500
                     Height =1920
                     BackColor =16249583
                     BorderColor =10921638
@@ -347,31 +374,31 @@ Begin Form
                     GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =8700
-                    LayoutCachedWidth =12960
+                    LayoutCachedWidth =7620
                     LayoutCachedHeight =10620
                     BackThemeColorIndex =-1
                 End
                 Begin Label
                     OverlapFlags =215
-                    Left =6960
+                    Left =3420
                     Top =8880
-                    Width =5280
+                    Width =3840
                     Height =1380
                     BorderColor =8355711
                     ForeColor =8355711
                     Name ="Label25"
                     Caption ="new"
                     GridlineColor =10921638
-                    LayoutCachedLeft =6960
+                    LayoutCachedLeft =3420
                     LayoutCachedTop =8880
-                    LayoutCachedWidth =12240
+                    LayoutCachedWidth =7260
                     LayoutCachedHeight =10260
                 End
                 Begin Label
-                    OverlapFlags =215
+                    OverlapFlags =223
                     Left =120
                     Top =840
-                    Width =12540
+                    Width =7680
                     Height =420
                     FontSize =14
                     FontWeight =700
@@ -382,7 +409,7 @@ Begin Form
                     GridlineColor =10921638
                     LayoutCachedLeft =120
                     LayoutCachedTop =840
-                    LayoutCachedWidth =12660
+                    LayoutCachedWidth =7800
                     LayoutCachedHeight =1260
                     ForeThemeColorIndex =8
                     ForeTint =100.0
@@ -448,20 +475,21 @@ Begin Form
                     ForeTint =100.0
                 End
                 Begin Rectangle
+                    SpecialEffect =2
                     BackStyle =1
                     OverlapFlags =85
                     Left =13080
-                    Top =120
+                    Top =60
                     Width =2880
-                    Height =10500
+                    Height =10800
                     BackColor =15527148
                     BorderColor =10921638
                     Name ="Box31"
                     GridlineColor =10921638
                     LayoutCachedLeft =13080
-                    LayoutCachedTop =120
+                    LayoutCachedTop =60
                     LayoutCachedWidth =15960
-                    LayoutCachedHeight =10620
+                    LayoutCachedHeight =10860
                     BackThemeColorIndex =-1
                 End
                 Begin CommandButton
@@ -472,7 +500,6 @@ Begin Form
                     Height =1200
                     FontSize =14
                     FontWeight =700
-                    TabIndex =1
                     ForeColor =16777215
                     Name ="cmdOpenRFICreation"
                     Caption ="Complete RFI"
@@ -515,8 +542,13 @@ Begin Form
                     HoverColor =14282978
                     HoverThemeColorIndex =9
                     HoverTint =20.0
+                    PressedColor =12874308
+                    PressedThemeColorIndex =8
                     HoverForeColor =0
                     HoverForeThemeColorIndex =0
+                    PressedForeColor =13431551
+                    PressedForeThemeColorIndex =7
+                    PressedForeTint =20.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -531,7 +563,7 @@ Begin Form
                     Height =1200
                     FontSize =14
                     FontWeight =700
-                    TabIndex =2
+                    TabIndex =1
                     ForeColor =16777215
                     Name ="cmdOpenRFIConcurrence"
                     Caption ="RFI Concurrence"
@@ -574,10 +606,13 @@ Begin Form
                     HoverColor =14282978
                     HoverThemeColorIndex =9
                     HoverTint =20.0
+                    PressedColor =12874308
+                    PressedThemeColorIndex =8
                     HoverForeColor =0
                     HoverForeThemeColorIndex =0
-                    PressedForeColor =0
-                    PressedForeThemeColorIndex =0
+                    PressedForeColor =13431551
+                    PressedForeThemeColorIndex =7
+                    PressedForeTint =20.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -592,7 +627,7 @@ Begin Form
                     Height =1080
                     FontSize =14
                     FontWeight =700
-                    TabIndex =3
+                    TabIndex =2
                     ForeColor =16777215
                     Name ="cmdOpenRFITransmittal"
                     Caption ="RFI Transmittal"
@@ -635,8 +670,13 @@ Begin Form
                     HoverColor =14282978
                     HoverThemeColorIndex =9
                     HoverTint =20.0
+                    PressedColor =12874308
+                    PressedThemeColorIndex =8
                     HoverForeColor =0
                     HoverForeThemeColorIndex =0
+                    PressedForeColor =13431551
+                    PressedForeThemeColorIndex =7
+                    PressedForeTint =20.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -651,7 +691,7 @@ Begin Form
                     Height =1080
                     FontSize =14
                     FontWeight =700
-                    TabIndex =4
+                    TabIndex =3
                     ForeColor =16777215
                     Name ="cmdOpenRFIReceipt"
                     Caption ="RFI Receipt"
@@ -694,37 +734,171 @@ Begin Form
                     HoverColor =14282978
                     HoverThemeColorIndex =9
                     HoverTint =20.0
+                    PressedColor =12874308
+                    PressedThemeColorIndex =8
                     HoverForeColor =0
                     HoverForeThemeColorIndex =0
+                    PressedForeColor =13431551
+                    PressedForeThemeColorIndex =7
+                    PressedForeTint =20.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
                     WebImagePaddingBottom =1
                     Overlaps =1
                 End
+                Begin Line
+                    BorderWidth =2
+                    OverlapFlags =85
+                    Left =7860
+                    Top =60
+                    Width =0
+                    Height =10860
+                    BorderColor =9917743
+                    Name ="Line36"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =7860
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =7860
+                    LayoutCachedHeight =10920
+                    BorderThemeColorIndex =8
+                    BorderShade =75.0
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =8085
+                    Top =420
+                    Width =4755
+                    Height =420
+                    FontSize =18
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =9917743
+                    Name ="Label37"
+                    Caption ="Determination Memo Process"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =8085
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =12840
+                    LayoutCachedHeight =840
+                    ForeThemeColorIndex =8
+                    ForeTint =100.0
+                    ForeShade =75.0
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =8820
+                    Top =1560
+                    Width =3180
+                    Height =1200
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =4
+                    ForeColor =16777215
+                    Name ="cmdOpenDeterminationMemo"
+                    Caption ="Complete Determination Memo "
+                    GridlineColor =10921638
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="OpenForm"
+                            Argument ="frmDeterminationMemo"
+                            Argument ="0"
+                            Argument =""
+                            Argument =""
+                            Argument ="-1"
+                            Argument ="0"
+                        End
+                        Begin
+                            Comment ="_AXL:<?xml version=\"1.0\" encoding=\"UTF-16\" standalone=\"no\"?>\015\012<UserI"
+                                "nterfaceMacro For=\"cmdOpenDeterminationMemo\" xmlns=\"http://schemas.microsoft."
+                                "com/office/accessservices/2009/11/application\"><Statements><Action Name=\"OpenF"
+                                "orm\"><Argument Name=\"FormName\""
+                        End
+                        Begin
+                            Comment ="_AXL:>frmDeterminationMemo</Argument></Action></Statements></UserInterfaceMacro>"
+                        End
+                    End
+
+                    LayoutCachedLeft =8820
+                    LayoutCachedTop =1560
+                    LayoutCachedWidth =12000
+                    LayoutCachedHeight =2760
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =255
+                    Gradient =0
+                    BackColor =12874308
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BorderColor =15123357
+                    HoverColor =14282978
+                    HoverThemeColorIndex =9
+                    HoverTint =20.0
+                    PressedColor =9917743
+                    PressedThemeColorIndex =8
+                    PressedShade =75.0
+                    HoverForeColor =0
+                    HoverForeThemeColorIndex =0
+                    PressedForeColor =13431551
+                    PressedForeThemeColorIndex =7
+                    PressedForeTint =20.0
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
+                    Overlaps =1
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    OverlapFlags =87
+                    TextAlign =2
+                    Left =120
+                    Top =420
+                    Width =7560
+                    Height =420
+                    FontSize =18
+                    FontWeight =700
+                    BorderColor =8355711
+                    ForeColor =9917743
+                    Name ="Label39"
+                    Caption ="Request for Information (RFI)  Process"
+                    GridlineColor =10921638
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =420
+                    LayoutCachedWidth =7680
+                    LayoutCachedHeight =840
+                    ForeThemeColorIndex =8
+                    ForeTint =100.0
+                    ForeShade =75.0
+                End
             End
         End
         Begin FormFooter
             Height =780
-            BackColor =15527148
             Name ="FormFooter"
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
+            BackThemeColorIndex =1
             Begin
                 Begin Label
+                    SpecialEffect =2
                     BackStyle =1
                     OverlapFlags =93
                     TextFontFamily =82
-                    Width =15840
+                    Width =15960
                     Height =660
                     FontSize =20
                     BackColor =15921906
                     BorderColor =8355711
                     Name ="lbFooter"
-                    Caption ="RFI Development and Tracking"
+                    Caption ="RFI and Determination Memo Development and Tracking"
                     FontName ="Broadway"
                     GridlineColor =10921638
-                    LayoutCachedWidth =15840
+                    LayoutCachedWidth =15960
                     LayoutCachedHeight =660
                     ThemeFontIndex =-1
                     BackShade =95.0
@@ -732,10 +906,12 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =13980
+                    Left =13860
                     Top =120
+                    Width =1560
                     Height =405
-                    ForeColor =4210752
+                    FontSize =12
+                    FontWeight =700
                     Name ="Command28"
                     Caption ="Save / Close"
                     GridlineColor =10921638
@@ -756,12 +932,27 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =13980
+                    LayoutCachedLeft =13860
                     LayoutCachedTop =120
                     LayoutCachedWidth =15420
                     LayoutCachedHeight =525
-                    BackColor =15123357
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =16247774
+                    BackTint =20.0
                     BorderColor =15123357
+                    HoverColor =14282978
+                    HoverThemeColorIndex =9
+                    HoverTint =20.0
+                    PressedColor =9917743
+                    PressedThemeColorIndex =8
+                    PressedShade =75.0
+                    HoverForeColor =0
+                    HoverForeThemeColorIndex =0
+                    PressedForeColor =13431551
+                    PressedForeThemeColorIndex =7
+                    PressedForeTint =20.0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1

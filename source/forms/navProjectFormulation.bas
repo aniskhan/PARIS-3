@@ -6,7 +6,6 @@ Begin Form
     AllowDeletions = NotDefault
     DividingLines = NotDefault
     AllowAdditions = NotDefault
-    FilterOn = NotDefault
     AllowDesignChanges = NotDefault
     DefaultView =0
     PictureAlignment =2
@@ -16,17 +15,13 @@ Begin Form
     Width =31680
     DatasheetFontHeight =11
     ItemSuffix =42
-    Right =14985
-    Bottom =8505
+    Right =5625
+    Bottom =7005
     DatasheetGridlinesColor =15132391
-    Filter ="[DisasterID]='9999'"
     RecSrcDt = Begin
-        0x25b169bb0cb7e440
+        0x03e109b0b4b9e440
     End
-    RecordSource ="SELECT tblDisaster.DisasterID, tblSubRecipient.ApplicantID, tblSubRecipient.[Sub"
-        "recipient Name], tblDisaster.[Disaster Type], tblDisaster.State FROM tblDisaster"
-        " INNER JOIN tblSubRecipient ON tblDisaster.DisasterID = tblSubRecipient.Disaster"
-        "ID; "
+    RecordSource ="fqryDisasterSubrecipient"
     Caption ="Project Formulation Menu"
     DatasheetFontName ="Calibri"
     PrtMip = Begin
@@ -905,13 +900,15 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =215
-                    Left =14280
+                    Left =13980
                     Top =120
-                    Width =1800
-                    Height =405
-                    ForeColor =4210752
+                    Width =2100
+                    Height =540
+                    FontSize =13
+                    FontWeight =700
+                    ForeColor =16777215
                     Name ="cmdClose"
-                    Caption ="Save / Close"
+                    Caption =" Close"
                     GridlineColor =10921638
                     OnClickEmMacro = Begin
                         Version =196611
@@ -930,12 +927,30 @@ Begin Form
                         End
                     End
 
-                    LayoutCachedLeft =14280
+                    LayoutCachedLeft =13980
                     LayoutCachedTop =120
                     LayoutCachedWidth =16080
-                    LayoutCachedHeight =525
-                    BackColor =15123357
+                    LayoutCachedHeight =660
+                    ForeThemeColorIndex =1
+                    ForeTint =100.0
+                    UseTheme =1
+                    Gradient =0
+                    BackColor =9917743
+                    BackThemeColorIndex =8
+                    BackTint =100.0
+                    BackShade =75.0
                     BorderColor =15123357
+                    HoverColor =9917743
+                    HoverThemeColorIndex =8
+                    HoverShade =75.0
+                    PressedColor =15983578
+                    PressedThemeColorIndex =8
+                    PressedTint =20.0
+                    HoverForeColor =13431551
+                    HoverForeThemeColorIndex =7
+                    HoverForeTint =20.0
+                    PressedForeColor =0
+                    PressedForeThemeColorIndex =0
                     WebImagePaddingLeft =2
                     WebImagePaddingTop =2
                     WebImagePaddingRight =1
@@ -960,7 +975,7 @@ Public Sub cmdDamInvTemplate_Click()
     Dim xlapp As Object
     Dim filenamepath As String
     Dim NeedToClose As Boolean
-    filenamepath = "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/Damage_Inventory_2016-02-23.xlsx"
+    filenamepath = "https://intranet.fema.net/org/orr/recovery/pad/NewPA/New PA Training/Program Delivery Manager and Program Delivery Task Force Leader/Damage Inventory OR.xlsx"
     fileName = Right(filenamepath, Len(filenamepath) - InStrRev(filenamepath, "\"))
 
     Set xlapp = Nothing
