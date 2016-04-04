@@ -2,6 +2,8 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
+'something here
+'something else
 Option Compare Database
 Option Explicit
 
