@@ -3,7 +3,10 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
 'something here
+<<<<<<< HEAD
 'something else
+=======
+>>>>>>> 3559fe31bb8d3c691490ca2c823173082a49a58f
 Option Compare Database
 Option Explicit
 
